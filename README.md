@@ -21,6 +21,7 @@ Package format and fields are documented in the [TSI documentation](https://gith
 
 - **Adding or editing packages:** Submit a pull request that adds or modifies JSON files under `packages/`.
 - **Validation:** The Package Validation workflow runs on push/PR and checks JSON syntax, required fields, source types, build systems, and that all dependencies reference existing packages in this repository.
+- **Test build:** The Test Build Packages workflow runs on push/PR when package definitions change and performs a real build of each changed package (latest version only) via TSI to verify they are buildable. TSI is built from source in CI; known slow packages (e.g. gcc, llvm) are skipped. See `scripts/README.md` for the changed-packages script.
 - **Version discovery:** The discover-versions workflow can add new versions to existing packages; see `scripts/README.md` for the discovery script usage.
 
 ## Repository Layout
@@ -28,7 +29,7 @@ Package format and fields are documented in the [TSI documentation](https://gith
 ```
 packages/          # One .json file per package (e.g. zlib.json, openssl.json)
 scripts/           # Package tooling (validate, discover-versions, merge-external)
-.github/workflows/ # CI: Package Validation, discover-versions, sync-external-packages
+.github/workflows/ # CI: Package Validation, test-build-packages, discover-versions, sync-external-packages
 ```
 
 TSI expects a `packages/` directory at the repository root when using `tsi update`.

@@ -2,6 +2,35 @@
 
 This directory contains utility scripts for TSI package management.
 
+## changed-packages.sh
+
+Outputs package names (one per line) for `packages/*.json` files changed since a given git ref. Used by the Test Build Packages CI workflow to decide which packages to test-build.
+
+### Usage
+
+```bash
+./changed-packages.sh <base_ref> [path_filter]
+```
+
+### Arguments
+
+- `base_ref`: Git ref to diff against (e.g. `origin/main`, `HEAD^`)
+- `path_filter`: Path prefix for changed files (default: `packages/`)
+
+### Examples
+
+```bash
+# Packages changed since main
+./changed-packages.sh origin/main
+
+# Packages changed in last commit
+./changed-packages.sh HEAD^
+```
+
+### Integration
+
+The Test Build workflow (`.github/workflows/test-build-packages.yml`) runs on push/PR when package JSONs change: it installs TSI from source, points it at this repo’s `packages/` directory, and runs a real build for each changed package (latest version only). Known slow packages (e.g. gcc, llvm) are excluded. TSI must be buildable from the [PanterSoft/tsi](https://github.com/PanterSoft/tsi) repository in CI.
+
 ## merge-external-package.py
 
 Merges an external `.tsi.json` file (single-version format) into the TSI packages repository (multi-version format).

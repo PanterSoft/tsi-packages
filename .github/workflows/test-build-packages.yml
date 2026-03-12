@@ -1,0 +1,137 @@
+name: Test Build Packages
+
+on:
+  push:
+    paths:
+      - 'packages/**/*.json'
+      - '.github/workflows/test-build-packages.yml'
+  pull_request:
+    paths:
+      - 'packages/**/*.json'
+      - '.github/workflows/test-build-packages.yml'
+  workflow_dispatch:
+    inputs:
+      package:
+        description: 'Package name to build (leave empty to build all changed packages)'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+env:
+  TSI_PREFIX: ${{ runner.temp }}/tsi-install
+  SLOW_PACKAGES: 'gcc|llvm|clang|rust|python|boost|mongodb|mysql|mariadb|postgresql|ros2|emacs'
+
+jobs:
+  test-build:
+    name: Test build changed packages
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Determine base ref and changed packages
+        id: changed
+        run: |
+          if [ "${{ github.event_name }}" = 'workflow_dispatch' ]; then
+            if [ -n '${{ github.event.inputs.package }}' ]; then
+              echo '${{ github.event.inputs.package }}'
+            else
+              BASE_REF="origin/${{ github.event.repository.default_branch }}"
+              bash scripts/changed-packages.sh "$BASE_REF" packages/
+            fi
+          elif [ "${{ github.event_name }}" = 'pull_request' ]; then
+            BASE_REF="origin/${{ github.base_ref }}"
+            bash scripts/changed-packages.sh "$BASE_REF" packages/
+          else
+            BASE_REF="HEAD^"
+            bash scripts/changed-packages.sh "$BASE_REF" packages/
+          fi | tee /tmp/changed-packages.txt
+          PACKAGES=$(cat /tmp/changed-packages.txt | tr '\n' ' ' | sed 's/ $//')
+          echo "packages<<EOF" >> $GITHUB_OUTPUT
+          echo "$PACKAGES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          COUNT=$(wc -w < /tmp/changed-packages.txt)
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+
+      - name: Filter out known slow packages
+        id: filter
+        run: |
+          COUNT="${{ steps.changed.outputs.count }}"
+          if [ "$COUNT" = '0' ]; then
+            echo "packages<<EOF" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+            echo "count=0" >> $GITHUB_OUTPUT
+            echo "No package files changed; skipping test build."
+            exit 0
+          fi
+          EXCLUDED="${{ env.SLOW_PACKAGES }}"
+          TO_BUILD=""
+          for pkg in ${{ steps.changed.outputs.packages }}; do
+            if echo "$pkg" | grep -qEx "$EXCLUDED"; then
+              echo "Skipping slow package (not test-built in CI): $pkg"
+            else
+              TO_BUILD="$TO_BUILD $pkg"
+            fi
+          done
+          TO_BUILD=$(echo "$TO_BUILD" | sed 's/^ *//; s/ *$//')
+          echo "packages<<EOF" >> $GITHUB_OUTPUT
+          echo "$TO_BUILD" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          echo "count=$(echo "$TO_BUILD" | wc -w | tr -d ' ')" >> $GITHUB_OUTPUT
+
+      - name: Install build essentials
+        if: steps.filter.outputs.count != '0'
+        run: sudo apt-get update && sudo apt-get install -y build-essential curl git
+
+      - name: Set up Rust
+        if: steps.filter.outputs.count != '0'
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Clone and build TSI
+        if: steps.filter.outputs.count != '0'
+        run: |
+          git clone --depth 1 https://github.com/PanterSoft/tsi.git /tmp/tsi
+          cd /tmp/tsi
+          cargo build --release
+          echo "$(pwd)/target/release" >> $GITHUB_PATH
+          echo "TSI_BIN=$(pwd)/target/release/tsi" >> $GITHUB_ENV
+          "$(pwd)/target/release/tsi" --version || true
+
+      - name: Configure TSI to use local packages
+        if: steps.filter.outputs.count != '0'
+        working-directory: ${{ github.workspace }}
+        run: |
+          mkdir -p "$TSI_PREFIX"
+          export PATH="$(dirname $TSI_BIN):$PATH"
+          tsi update --local "${{ github.workspace }}/packages" || tsi update --local "${{ github.workspace }}" || true
+
+      - name: Test build packages
+        if: steps.filter.outputs.count != '0'
+        working-directory: ${{ github.workspace }}
+        env:
+          PATH: "/tmp/tsi/target/release:$PATH"
+          TSI_PREFIX: ${{ env.TSI_PREFIX }}
+        run: |
+          mkdir -p "$TSI_PREFIX"
+          FAILED=""
+          for pkg in ${{ steps.filter.outputs.packages }}; do
+            echo "Building package: $pkg"
+            if ! tsi install "$pkg"; then
+              echo "::error::Build failed for package: $pkg"
+              FAILED="${FAILED} ${pkg}"
+            fi
+          done
+          if [ -n "$FAILED" ]; then
+            echo "::error::Failed packages:$FAILED"
+            exit 1
+          fi
+          echo "All packages built successfully."
