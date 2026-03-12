@@ -1,0 +1,17 @@
+{
+  "name": "findutils",
+  "version": "4.9.0",
+  "description": "GNU findutils - file search utilities (find, locate, xargs)",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.9.0.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

@@ -1,0 +1,14 @@
+{
+  "name": "patch",
+  "version": "2.7.6",
+  "description": "GNU patch utility - applies diff files to original files",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": ["coreutils", "make"],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

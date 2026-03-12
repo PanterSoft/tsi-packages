@@ -1,0 +1,20 @@
+{
+  "name": "sqlite",
+  "version": "3.46.0",
+  "description": "SQL database engine",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.sqlite.org/2024/sqlite-autoconf-3460000.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--enable-static",
+    "--enable-dynamic-extensions"
+  ],
+  "env": {}
+}

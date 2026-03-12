@@ -1,0 +1,17 @@
+{
+  "name": "unzip",
+  "version": "6.0",
+  "description": "Extraction utility for .zip archives",
+  "source": {
+    "type": "tarball",
+    "url": "https://sourceforge.net/projects/infozip/files/UnZip%206.0%20%28latest%29/unzip60.tar.gz/download"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "make",
+  "make_args": [
+    "-f unix/Makefile generic"
+  ],
+  "env": {}
+}
+

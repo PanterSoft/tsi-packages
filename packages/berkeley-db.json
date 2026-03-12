@@ -1,0 +1,20 @@
+{
+  "name": "berkeley-db",
+  "version": "18.1.40",
+  "description": "Berkeley DB embedded database library",
+  "source": {
+    "type": "tarball",
+    "url": "https://download.oracle.com/berkeley-db/db-18.1.40.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--enable-cxx",
+    "--enable-dbm"
+  ],
+  "env": {}
+}

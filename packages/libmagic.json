@@ -1,0 +1,21 @@
+{
+  "name": "libmagic",
+  "version": "5.45",
+  "description": "File type identification library",
+  "source": {
+    "type": "tarball",
+    "url": "https://astron.com/pub/file/file-5.45.tar.gz"
+  },
+  "dependencies": [
+    "zlib"
+  ],
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--enable-static"
+  ],
+  "env": {}
+}

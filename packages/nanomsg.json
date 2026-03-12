@@ -1,0 +1,328 @@
+{
+  "name": "nanomsg",
+  "versions": [
+    {
+      "version": "1.2.2",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/1.2.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.2.1",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/1.2.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.2",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/1.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.1.4",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/1.1.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.1.3",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/1.1.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.1.2",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/1.1.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.1.1",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/1.1.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.1.0",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/1.1.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.1.0-rc1",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/1.1.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.0",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/1.0.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.0-rc2",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/1.0.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.0-rc1",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/1.0.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "0.9-beta",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/0.9-beta.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "0.8-beta",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/0.8-beta.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "0.7-beta",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/0.7-beta.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "0.6-beta",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/0.6-beta.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.1.5",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/1.1.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    }
+  ]
+}

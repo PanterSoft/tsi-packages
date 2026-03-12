@@ -1,0 +1,20 @@
+{
+  "name": "readline",
+  "version": "8.2",
+  "description": "Command-line editing library",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/readline/readline-8.2.tar.gz"
+  },
+  "dependencies": [
+    "ncurses"
+  ],
+  "build_dependencies": [
+    "m4",
+    "coreutils",
+    "make"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

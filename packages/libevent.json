@@ -1,0 +1,215 @@
+{
+  "name": "libevent",
+  "versions": [
+    {
+      "version": "1.4.6",
+      "description": "Event notification library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libevent/libevent/releases/download/release-1.4.6-stable/libevent-1.4.6-stable.tar.gz"
+      },
+      "dependencies": [
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.3e",
+      "description": "Event notification library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libevent/libevent/releases/download/release-1.3e-stable/libevent-1.3e-stable.tar.gz"
+      },
+      "dependencies": [
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.3d",
+      "description": "Event notification library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libevent/libevent/releases/download/release-1.3d-stable/libevent-1.3d-stable.tar.gz"
+      },
+      "dependencies": [
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.3c",
+      "description": "Event notification library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libevent/libevent/releases/download/release-1.3c-stable/libevent-1.3c-stable.tar.gz"
+      },
+      "dependencies": [
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.3b",
+      "description": "Event notification library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libevent/libevent/releases/download/release-1.3b-stable/libevent-1.3b-stable.tar.gz"
+      },
+      "dependencies": [
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.3a",
+      "description": "Event notification library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libevent/libevent/releases/download/release-1.3a-stable/libevent-1.3a-stable.tar.gz"
+      },
+      "dependencies": [
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.2",
+      "description": "Event notification library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libevent/libevent/releases/download/release-1.2-stable/libevent-1.2-stable.tar.gz"
+      },
+      "dependencies": [
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.2a",
+      "description": "Event notification library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libevent/libevent/releases/download/release-1.2a-stable/libevent-1.2a-stable.tar.gz"
+      },
+      "dependencies": [
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.1b",
+      "description": "Event notification library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libevent/libevent/releases/download/release-1.1b-stable/libevent-1.1b-stable.tar.gz"
+      },
+      "dependencies": [
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2.1.12",
+      "description": "Event notification library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz"
+      },
+      "dependencies": [
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-openssl"
+      ],
+      "env": {}
+    }
+  ]
+}

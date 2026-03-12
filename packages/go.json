@@ -1,0 +1,19 @@
+{
+  "name": "go",
+  "version": "1.22.1",
+  "description": "Go programming language",
+  "source": {
+    "type": "tarball",
+    "url": "https://go.dev/dl/go1.22.1.src.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "custom",
+  "build_commands": [
+    "cd src && ./make.bash"
+  ],
+  "env": {
+    "GOROOT_FINAL": "$TSI_INSTALL_DIR"
+  }
+}
+

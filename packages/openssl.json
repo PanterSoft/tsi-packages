@@ -1,0 +1,19 @@
+{
+  "name": "openssl",
+  "version": "3.2.1",
+  "description": "Cryptography and SSL/TLS toolkit",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.openssl.org/source/openssl-3.2.1.tar.gz"
+  },
+  "dependencies": ["zlib"],
+  "build_dependencies": ["coreutils", "make", "sed", "grep", "gawk", "bash", "perl"],
+  "build_system": "custom",
+  "build_commands": [
+    "./config --prefix=$TSI_INSTALL_DIR --openssldir=$TSI_INSTALL_DIR/ssl shared zlib",
+    "make",
+    "make install_sw install_ssldirs"
+  ],
+  "env": {}
+}
+

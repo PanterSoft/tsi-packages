@@ -1,0 +1,25 @@
+{
+  "name": "automake",
+  "version": "1.17",
+  "description": "Tool for generating Makefile.in files",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/automake/automake-1.17.tar.gz"
+  },
+  "dependencies": [
+    "autoconf"
+  ],
+  "build_dependencies": [
+    "m4",
+    "make",
+    "coreutils",
+    "sed",
+    "grep",
+    "gawk",
+    "bash",
+    "autoconf"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

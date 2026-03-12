@@ -1,0 +1,230 @@
+{
+  "name": "lz4",
+  "versions": [
+    {
+      "version": "1.10.0",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.10.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.9.3",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.9.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.9.2",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.9.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.9.1",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.9.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.9.0",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.9.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.8.3",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.8.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.8.2",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.8.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.8.1.2",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.8.1.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.8.1",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.8.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.8.0",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.8.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.7.5",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.7.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.7.4.2",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.7.4.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.7.4",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.7.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.7.3",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.7.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.9.4",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.9.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "mysql",
+  "version": "8.0.36",
+  "description": "MySQL database server",
+  "source": {
+    "type": "tarball",
+    "url": "https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.36.tar.gz"
+  },
+  "dependencies": [
+    "openssl",
+    "zlib",
+    "zstd"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DWITH_SSL=system",
+    "-DWITH_ZLIB=system",
+    "-DWITH_ZSTD=system",
+    "-DDOWNLOAD_BOOST=0"
+  ],
+  "env": {}
+}

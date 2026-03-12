@@ -1,0 +1,14 @@
+{
+  "name": "grep",
+  "version": "3.11",
+  "description": "GNU grep - text search utility",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/grep/grep-3.11.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": ["coreutils"],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

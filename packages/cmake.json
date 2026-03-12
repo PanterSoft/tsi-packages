@@ -1,0 +1,6065 @@
+{
+  "name": "cmake",
+  "versions": [
+    {
+      "version": "4.2.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.2.1/cmake-4.2.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.1.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.1.4/cmake-4.1.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.2.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.2.0/cmake-4.2.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.1.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.1.3/cmake-4.1.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.0.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.0.5/cmake-4.0.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.2.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.2.0-rc4/cmake-4.2.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.31.10",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.10/cmake-3.31.10.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.2.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.2.0-rc3/cmake-4.2.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.2.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.2.0-rc2/cmake-4.2.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.2.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.2.0-rc1/cmake-4.2.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.1.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.1.2/cmake-4.1.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.31.9",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.9/cmake-3.31.9.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.0.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.0.4/cmake-4.0.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.1.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.1.1/cmake-4.1.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.1.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.1.0/cmake-4.1.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.1.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.1.0-rc4/cmake-4.1.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.1.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.1.0-rc3/cmake-4.1.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.1.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.1.0-rc2/cmake-4.1.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.1.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.1.0-rc1/cmake-4.1.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.0.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.0.3/cmake-4.0.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.31.8",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.8/cmake-3.31.8.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.30.9",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.30.9/cmake-3.30.9.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.0.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.0.2/cmake-4.0.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.0.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.0.1/cmake-4.0.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.31.7",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.7/cmake-3.31.7.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.0.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.0.0/cmake-4.0.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.0.0-rc5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.0.0-rc5/cmake-4.0.0-rc5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.0.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.0.0-rc4/cmake-4.0.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.0.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.0.0-rc3/cmake-4.0.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.0.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.0.0-rc2/cmake-4.0.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.31.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.6/cmake-3.31.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.30.8",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.30.8/cmake-3.30.8.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.0.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.0.0-rc1/cmake-4.0.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.31.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.5/cmake-3.31.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.30.7",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.30.7/cmake-3.30.7.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.31.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.4/cmake-3.31.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.31.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.3/cmake-3.31.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.31.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.2/cmake-3.31.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.31.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.1/cmake-3.31.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.30.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.30.6/cmake-3.30.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.29.9",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.29.9/cmake-3.29.9.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.31.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.0/cmake-3.31.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.31.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.0-rc3/cmake-3.31.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.31.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.0-rc2/cmake-3.31.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.31.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.0-rc1/cmake-3.31.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.30.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.30.5/cmake-3.30.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.30.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.30.4/cmake-3.30.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.30.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.30.3/cmake-3.30.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.29.8",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.29.8/cmake-3.29.8.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.30.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.30.2/cmake-3.30.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.30.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.30.1/cmake-3.30.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.29.7",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.29.7/cmake-3.29.7.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.30.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.30.0/cmake-3.30.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.30.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.30.0-rc4/cmake-3.30.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.29.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.29.6/cmake-3.29.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.30.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.30.0-rc3/cmake-3.30.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.30.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.30.0-rc2/cmake-3.30.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.30.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.30.0-rc1/cmake-3.30.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.29.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.29.5/cmake-3.29.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.29.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.29.4/cmake-3.29.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.28.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.28.6/cmake-3.28.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.29.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.29.3/cmake-3.29.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.28.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.28.5/cmake-3.28.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.29.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.29.2/cmake-3.29.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.29.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.29.0/cmake-3.29.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.28.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.28.4/cmake-3.28.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.29.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.29.0-rc4/cmake-3.29.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.29.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.29.0-rc3/cmake-3.29.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.29.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.29.0-rc2/cmake-3.29.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.29.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.29.0-rc1/cmake-3.29.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.28.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.28.3/cmake-3.28.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.28.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.28.2/cmake-3.28.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.28.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.28.1/cmake-3.28.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.28.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.28.0/cmake-3.28.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.28.0-rc6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.28.0-rc6/cmake-3.28.0-rc6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.27.9",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.27.9/cmake-3.27.9.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.26.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.26.6/cmake-3.26.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.28.0-rc5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.28.0-rc5/cmake-3.28.0-rc5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.27.8",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.27.8/cmake-3.27.8.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.28.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.28.0-rc4/cmake-3.28.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.28.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.28.0-rc3/cmake-3.28.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.28.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.28.0-rc2/cmake-3.28.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.28.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.28.0-rc1/cmake-3.28.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.27.7",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.27.7/cmake-3.27.7.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.27.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.27.6/cmake-3.27.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.27.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.27.5/cmake-3.27.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.27.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.27.4/cmake-3.27.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.27.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.27.3/cmake-3.27.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.27.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.27.2/cmake-3.27.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.27.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.27.1/cmake-3.27.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.26.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.26.5/cmake-3.26.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.27.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.27.0/cmake-3.27.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.27.0-rc5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.27.0-rc5/cmake-3.27.0-rc5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.27.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.27.0-rc4/cmake-3.27.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.27.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.27.0-rc3/cmake-3.27.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.27.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.27.0-rc2/cmake-3.27.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.27.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.27.0-rc1/cmake-3.27.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.26.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.26.4/cmake-3.26.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.26.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.26.3/cmake-3.26.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.26.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.26.2/cmake-3.26.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.26.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.26.1/cmake-3.26.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.26.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.26.0/cmake-3.26.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.26.0-rc6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.26.0-rc6/cmake-3.26.0-rc6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.25.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.25.3/cmake-3.25.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.24.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.24.4/cmake-3.24.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.26.0-rc5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.26.0-rc5/cmake-3.26.0-rc5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.26.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.26.0-rc4/cmake-3.26.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.26.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.26.0-rc3/cmake-3.26.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.26.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.26.0-rc2/cmake-3.26.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.26.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.26.0-rc1/cmake-3.26.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.25.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.25.2/cmake-3.25.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.25.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.25.1/cmake-3.25.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.25.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.25.0/cmake-3.25.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.25.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.25.0-rc4/cmake-3.25.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.25.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.25.0-rc3/cmake-3.25.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.24.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.24.3/cmake-3.24.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.23.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.23.5/cmake-3.23.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.25.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.25.0-rc2/cmake-3.25.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.25.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.25.0-rc1/cmake-3.25.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.23.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.23.4/cmake-3.23.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.24.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.24.2/cmake-3.24.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.24.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.24.1/cmake-3.24.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.24.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.24.0/cmake-3.24.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.24.0-rc5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc5/cmake-3.24.0-rc5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.23.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.23.3/cmake-3.23.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.22.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.22.6/cmake-3.22.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.24.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc4/cmake-3.24.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.24.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc3/cmake-3.24.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.24.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc2/cmake-3.24.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.24.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.24.0-rc1/cmake-3.24.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.22.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.22.5/cmake-3.22.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.21.7",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.21.7/cmake-3.21.7.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.23.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.23.2/cmake-3.23.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.23.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.23.1/cmake-3.23.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.22.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.22.4/cmake-3.22.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.23.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.23.0/cmake-3.23.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.23.0-rc5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc5/cmake-3.23.0-rc5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.23.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc4/cmake-3.23.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.23.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc3/cmake-3.23.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.22.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.22.3/cmake-3.22.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.21.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.21.6/cmake-3.21.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.23.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc2/cmake-3.23.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.23.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.23.0-rc1/cmake-3.23.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.21.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.21.5/cmake-3.21.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.22.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3.22.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.22.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.22.1/cmake-3.22.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.22.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.22.0/cmake-3.22.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.22.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc3/cmake-3.22.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.22.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc2/cmake-3.22.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.21.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.21.4/cmake-3.21.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.22.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.22.0-rc1/cmake-3.22.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.21.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.21.3/cmake-3.21.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.20.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.20.6/cmake-3.20.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.21.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.21.2/cmake-3.21.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.21.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.21.1/cmake-3.21.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.21.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.21.0/cmake-3.21.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.21.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc3/cmake-3.21.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.21.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc2/cmake-3.21.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.21.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.21.0-rc1/cmake-3.21.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.20.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.20.5/cmake-3.20.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.20.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.20.4/cmake-3.20.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.20.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.20.3/cmake-3.20.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.20.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.20.2/cmake-3.20.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.20.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.20.1/cmake-3.20.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.19.8",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.19.8/cmake-3.19.8.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.20.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.20.0/cmake-3.20.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.20.0-rc5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.20.0-rc5/cmake-3.20.0-rc5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.19.7",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.19.7/cmake-3.19.7.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.20.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.20.0-rc4/cmake-3.20.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.20.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.20.0-rc3/cmake-3.20.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.20.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.20.0-rc2/cmake-3.20.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.19.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.19.6/cmake-3.19.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.20.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.20.0-rc1/cmake-3.20.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.19.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.19.5/cmake-3.19.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.18.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.18.6/cmake-3.18.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.19.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.19.4/cmake-3.19.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.19.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.19.3/cmake-3.19.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.19.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.19.2/cmake-3.19.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.19.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.19.1/cmake-3.19.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.19.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.19.0/cmake-3.19.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.18.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.18.5/cmake-3.18.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.19.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.19.0-rc3/cmake-3.19.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.19.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.19.0-rc2/cmake-3.19.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.19.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.19.0-rc1/cmake-3.19.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.18.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.18.4/cmake-3.18.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.18.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.18.3/cmake-3.18.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.17.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.17.5/cmake-3.17.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.16.9",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.16.9/cmake-3.16.9.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.18.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.18.2/cmake-3.18.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.18.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.18.1/cmake-3.18.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.17.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.17.4/cmake-3.17.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.18.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.18.0/cmake-3.18.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.18.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.18.0-rc4/cmake-3.18.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.18.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.18.0-rc3/cmake-3.18.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.18.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.18.0-rc2/cmake-3.18.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.18.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.18.0-rc1/cmake-3.18.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.16.8",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.16.8/cmake-3.16.8.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.17.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.17.3/cmake-3.17.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.16.7",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.16.7/cmake-3.16.7.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.17.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.17.2/cmake-3.17.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.16.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.16.6/cmake-3.16.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.17.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.17.1/cmake-3.17.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.17.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.17.0/cmake-3.17.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.17.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.17.0-rc3/cmake-3.17.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.16.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.16.5/cmake-3.16.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.17.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.17.0-rc2/cmake-3.17.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.17.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.17.0-rc1/cmake-3.17.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.16.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.16.4/cmake-3.16.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.15.7",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.15.7/cmake-3.15.7.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.16.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.16.3/cmake-3.16.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.16.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.16.2/cmake-3.16.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.15.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.15.6/cmake-3.15.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.16.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.16.1/cmake-3.16.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.16.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.16.0/cmake-3.16.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.16.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.16.0-rc4/cmake-3.16.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.16.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.16.0-rc3/cmake-3.16.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.15.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.15.5/cmake-3.15.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.16.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.16.0-rc2/cmake-3.16.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.16.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.16.0-rc1/cmake-3.16.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.15.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.15.4/cmake-3.15.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.14.7",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.14.7/cmake-3.14.7.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.15.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.15.3/cmake-3.15.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.15.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.15.2/cmake-3.15.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.15.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.15.1/cmake-3.15.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.15.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.15.0/cmake-3.15.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.14.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.14.6/cmake-3.14.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.15.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.15.0-rc4/cmake-3.15.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.15.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.15.0-rc3/cmake-3.15.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.15.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.15.0-rc2/cmake-3.15.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.15.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.15.0-rc1/cmake-3.15.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.14.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.14.5/cmake-3.14.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.14.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.14.4/cmake-3.14.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.13.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.13.5/cmake-3.13.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.14.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.14.3/cmake-3.14.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.14.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.14.2/cmake-3.14.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.14.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.14.1/cmake-3.14.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.14.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.14.0/cmake-3.14.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.14.0-rc4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.14.0-rc4/cmake-3.14.0-rc4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.14.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.14.0-rc3/cmake-3.14.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.14.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.14.0-rc2/cmake-3.14.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.14.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.14.0-rc1/cmake-3.14.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.13.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.13.4/cmake-3.13.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.13.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.13.3/cmake-3.13.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.13.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.13.2/cmake-3.13.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.13.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.13.1/cmake-3.13.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.13.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.13.0/cmake-3.13.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.12.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.12.4/cmake-3.12.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.12.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.12.3/cmake-3.12.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.12.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.12.2/cmake-3.12.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.12.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.12.1/cmake-3.12.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.12.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.12.0/cmake-3.12.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.11.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.11.4/cmake-3.11.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.11.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.11.3/cmake-3.11.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.11.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.11.2/cmake-3.11.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.11.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.11.1/cmake-3.11.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.11.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.11.0/cmake-3.11.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.10.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.10.3/cmake-3.10.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.10.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.10.2/cmake-3.10.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.10.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.10.1/cmake-3.10.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.10.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.10.0/cmake-3.10.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.9.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.9.6/cmake-3.9.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.9.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.9.5/cmake-3.9.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.9.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.9.4/cmake-3.9.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.9.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.9.3/cmake-3.9.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.9.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.9.2/cmake-3.9.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.9.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.9.1/cmake-3.9.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.9.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.9.0/cmake-3.9.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.8.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.8.2/cmake-3.8.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.8.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.8.1/cmake-3.8.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.8.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.8.0/cmake-3.8.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.7.2/cmake-3.7.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.7.1/cmake-3.7.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.7.0/cmake-3.7.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.6.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.6.3/cmake-3.6.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.6.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.6.2/cmake-3.6.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.6.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.6.1/cmake-3.6.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.6.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.6.0/cmake-3.6.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.5.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.5.2/cmake-3.5.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.5.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.5.1/cmake-3.5.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.5.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.5.0/cmake-3.5.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.4.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.4.3/cmake-3.4.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.4.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.4.2/cmake-3.4.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.4.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.4.1/cmake-3.4.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.4.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.4.0/cmake-3.4.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.3.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.3.2/cmake-3.3.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.3.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.3.1/cmake-3.3.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.3.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.3.0/cmake-3.3.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.2.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.2.3/cmake-3.2.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.2.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.2.2/cmake-3.2.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.2.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.2.1/cmake-3.2.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.2.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.2.0/cmake-3.2.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.1.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.1.3/cmake-3.1.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.1.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.1.2/cmake-3.1.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.1.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.1.1/cmake-3.1.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.1.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.1.0/cmake-3.1.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.0.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.0.2/cmake-3.0.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.0.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.0.1/cmake-3.0.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.0.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.0.0/cmake-3.0.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2.8.12.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v2.8.12.2/cmake-2.8.12.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2.8.10.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v2.8.10.2/cmake-2.8.10.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2.6.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v2.6.4/cmake-2.6.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2.4.8",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v2.4.8/cmake-2.4.8.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.29.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.29.1/cmake-3.29.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_USE_OPENSSL=ON"
+      ],
+      "env": {}
+    }
+  ]
+}

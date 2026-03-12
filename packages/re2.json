@@ -1,0 +1,1345 @@
+{
+  "name": "re2",
+  "versions": [
+    {
+      "version": "2025-11-05",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2025-11-05.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2025-08-12",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2025-08-12.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2025-08-05",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2025-08-05.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2025-07-22",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2025-07-22.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2025-07-17",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2025-07-17.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2024-07-02",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2024-07-02.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2024-07-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2024-07-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2024-06-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2024-06-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2024-05-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2024-05-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2024-04-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2024-04-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2024-03-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2024-03-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2023-11-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2023-11-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2023-09-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2023-09-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2023-08-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2023-08-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2023-07-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2023-07-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2023-06-02",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2023-06-02.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2023-06-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2023-06-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2023-03-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2023-03-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2023-02-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2023-02-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2022-12-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2022-12-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2022-06-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2022-06-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2022-04-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2022-04-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2022-02-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2022-02-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2021-11-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2021-11-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2021-09-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2021-09-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2021-08-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2021-08-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2021-06-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2021-06-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2021-04-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2021-04-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2021-02-02",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2021-02-02.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2021-02-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2021-02-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2020-11-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2020-11-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2020-10-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2020-10-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2020-08-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2020-08-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2020-07-06",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2020-07-06.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2020-07-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2020-07-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2020-06-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2020-06-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2020-05-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2020-05-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2020-04-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2020-04-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2020-03-03",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2020-03-03.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2020-03-02",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2020-03-02.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2020-03-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2020-03-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2020-01-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2020-01-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2019-12-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2019-12-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2019-11-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2019-11-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2019-09-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2019-09-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2019-08-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2019-08-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2019-07-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2019-07-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2019-06-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2019-06-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2019-04-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2019-04-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2019-03-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2019-03-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2019-01-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2019-01-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2018-12-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2018-12-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2018-10-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2018-10-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2018-09-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2018-09-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2018-08-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2018-08-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2018-07-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2018-07-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2018-04-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2018-04-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2018-03-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2018-03-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2018-02-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2018-02-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2018-01-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2018-01-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2017-12-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2017-12-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2017-11-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2017-11-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2017-08-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2017-08-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2017-07-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2017-07-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2017-06-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2017-06-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2017-05-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2017-05-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2024-02-01",
+      "description": "Fast, safe, thread-friendly regular expression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/re2/archive/2024-02-01.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DRE2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    }
+  ]
+}

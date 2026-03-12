@@ -1,0 +1,17 @@
+{
+  "name": "redis",
+  "version": "7.2.5",
+  "description": "In-memory data structure store",
+  "source": {
+    "type": "tarball",
+    "url": "https://download.redis.io/releases/redis-7.2.5.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "make",
+  "make_args": [
+    "PREFIX=$TSI_INSTALL_DIR"
+  ],
+  "env": {}
+}
+

@@ -1,0 +1,14 @@
+{
+  "name": "gzip",
+  "version": "1.13",
+  "description": "GNU compression utility",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": ["coreutils", "make"],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "rust",
+  "version": "1.76.0",
+  "description": "Rust programming language",
+  "source": {
+    "type": "tarball",
+    "url": "https://static.rust-lang.org/dist/rustc-1.76.0-src.tar.gz"
+  },
+  "dependencies": ["openssl", "zlib"],
+  "build_dependencies": [],
+  "build_system": "custom",
+  "build_commands": [
+    "./configure --prefix=$TSI_INSTALL_DIR",
+    "./x.py build",
+    "./x.py install"
+  ],
+  "env": {}
+}
+

@@ -1,0 +1,19 @@
+{
+  "name": "node",
+  "version": "20.11.1",
+  "description": "Node.js JavaScript runtime",
+  "source": {
+    "type": "tarball",
+    "url": "https://nodejs.org/dist/v20.11.1/node-v20.11.1.tar.gz"
+  },
+  "dependencies": ["openssl", "zlib"],
+  "build_dependencies": [],
+  "build_system": "custom",
+  "build_commands": [
+    "./configure --prefix=$TSI_INSTALL_DIR --openssl-use-def-ca-store",
+    "make",
+    "make install"
+  ],
+  "env": {}
+}
+

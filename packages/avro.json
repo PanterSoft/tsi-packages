@@ -1,0 +1,23 @@
+{
+  "name": "avro",
+  "version": "1.11.3",
+  "description": "Data serialization system",
+  "source": {
+    "type": "tarball",
+    "url": "https://archive.apache.org/dist/avro/avro-1.11.3/c/avro-c-1.11.3.tar.gz"
+  },
+  "dependencies": [
+    "zlib",
+    "snappy"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release"
+  ],
+  "env": {}
+}

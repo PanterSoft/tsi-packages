@@ -1,0 +1,18 @@
+{
+  "name": "libcap",
+  "version": "2.70",
+  "description": "Linux capabilities library",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.70.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "make",
+  "make_args": [
+    "prefix=$TSI_INSTALL_DIR",
+    "lib=lib"
+  ],
+  "env": {}
+}
+

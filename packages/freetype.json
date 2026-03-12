@@ -1,0 +1,26 @@
+{
+  "name": "freetype",
+  "version": "2.13.3",
+  "description": "FreeType font rendering library",
+  "source": {
+    "type": "tarball",
+    "url": "https://download.savannah.gnu.org/releases/freetype/freetype-2.13.3.tar.xz"
+  },
+  "dependencies": [
+    "zlib",
+    "libpng",
+    "bzip2"
+  ],
+  "build_dependencies": [
+    "pkg-config",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--with-zlib",
+    "--with-png",
+    "--with-bzip2"
+  ],
+  "env": {}
+}

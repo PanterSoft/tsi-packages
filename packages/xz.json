@@ -1,0 +1,17 @@
+{
+  "name": "xz",
+  "version": "5.6.2",
+  "description": "XZ compression library and utilities - needed for extracting .tar.xz archives",
+  "source": {
+    "type": "tarball",
+    "url": "https://tukaani.org/xz/xz-5.6.2.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-debug",
+    "--disable-dependency-tracking"
+  ],
+  "env": {}
+}

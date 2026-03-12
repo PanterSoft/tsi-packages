@@ -1,0 +1,16 @@
+{
+  "name": "bash",
+  "version": "5.2.21",
+  "description": "GNU Bourne-Again SHell",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/bash/bash-5.2.21.tar.gz"
+  },
+  "dependencies": [
+    "ncurses"
+  ],
+  "build_dependencies": ["ncurses"],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

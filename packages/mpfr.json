@@ -1,0 +1,19 @@
+{
+  "name": "mpfr",
+  "version": "4.2.1",
+  "description": "Multiple-precision floating-point library",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.mpfr.org/mpfr-4.2.1/mpfr-4.2.1.tar.xz"
+  },
+  "dependencies": [
+    "gmp"
+  ],
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

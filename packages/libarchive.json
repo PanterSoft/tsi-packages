@@ -1,0 +1,935 @@
+{
+  "name": "libarchive",
+  "versions": [
+    {
+      "version": "3.8.4",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.8.4/libarchive-3.8.4.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.8.3",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.8.3/libarchive-3.8.3.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.8.2",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.8.2/libarchive-3.8.2.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.8.1",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.8.1/libarchive-3.8.1.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.8.0",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.8.0/libarchive-3.8.0.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7.9",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.7.9/libarchive-3.7.9.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7.8",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.7.8/libarchive-3.7.8.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7.7",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.7.7/libarchive-3.7.7.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7.6",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.7.6/libarchive-3.7.6.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7.5",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.7.5/libarchive-3.7.5.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7.3",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.7.3/libarchive-3.7.3.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7.2",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.7.2/libarchive-3.7.2.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7.1",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.7.1/libarchive-3.7.1.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7.0",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.7.0/libarchive-3.7.0.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.6.2",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.6.2/libarchive-3.6.2.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.6.1",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.6.1/libarchive-3.6.1.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.6.0",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.6.0/libarchive-3.6.0.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.5.3",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.5.3/libarchive-3.5.3.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.5.2",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.5.2/libarchive-3.5.2.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.5.1",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.5.1/libarchive-3.5.1.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.5.0",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.5.0/libarchive-3.5.0.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.4.3",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.4.3/libarchive-3.4.3.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.4.2",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.4.2/libarchive-3.4.2.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.4.1",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.4.1/libarchive-3.4.1.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.4.0",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.4.0/libarchive-3.4.0.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.3.3",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.3.3/libarchive-3.3.3.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.3.2",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.3.2/libarchive-3.3.2.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.3.1",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.3.1/libarchive-3.3.1.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.3.0",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.3.0/libarchive-3.3.0.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7.4",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.7.4/libarchive-3.7.4.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    }
+  ]
+}

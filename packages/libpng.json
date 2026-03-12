@@ -1,0 +1,20 @@
+{
+  "name": "libpng",
+  "version": "1.6.43",
+  "description": "PNG reference library",
+  "source": {
+    "type": "tarball",
+    "url": "https://download.sourceforge.net/libpng/libpng-1.6.43.tar.xz"
+  },
+  "dependencies": [
+    "zlib"
+  ],
+  "build_dependencies": [
+    "pkg-config",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

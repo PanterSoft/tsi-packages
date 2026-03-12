@@ -1,0 +1,39 @@
+{
+  "name": "gcc",
+  "version": "13.2.0",
+  "description": "GNU Compiler Collection - C and C++ compiler",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz"
+  },
+  "dependencies": [
+    "gmp",
+    "mpfr",
+    "mpc",
+    "binutils",
+    "zlib"
+  ],
+  "build_dependencies": [
+    "m4",
+    "bash",
+    "coreutils",
+    "make",
+    "sed",
+    "grep",
+    "gawk",
+    "diffutils",
+    "patch",
+    "texinfo"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--enable-languages=c,c++",
+    "--disable-multilib",
+    "--disable-bootstrap",
+    "--with-system-zlib",
+    "--with-gmp",
+    "--with-mpfr",
+    "--with-mpc"
+  ],
+  "env": {}
+}

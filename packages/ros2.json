@@ -1,0 +1,114 @@
+{
+  "name": "ros2",
+  "versions": [
+    {
+      "version": "humble",
+      "description": "ROS 2 Humble Hawksbill - Long-term support distribution (from source)",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/ros2/ros2.git",
+        "branch": "humble"
+      },
+      "dependencies": [
+        "python",
+        "cmake",
+        "git"
+      ],
+      "build_dependencies": [
+        "python",
+        "cmake",
+        "git"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "mkdir -p ros2_ws/src/ros2",
+        "tar -c --exclude=ros2_ws . | tar -x -C ros2_ws/src/ros2/",
+        "cd ros2_ws/src/ros2",
+        "if [ -n \"$VIRTUAL_ENV\" ]; then python3 -m pip install -q vcstool colcon-common-extensions rosdep; else python3 -m pip install --user -q vcstool colcon-common-extensions rosdep; fi",
+        "vcs import < ros2.repos",
+        "cd ../..",
+        "export PATH=\"$HOME/.local/bin:$PATH\" && rosdep update || true",
+        "export PATH=\"$HOME/.local/bin:$PATH\" && rosdep install --from-paths ros2_ws/src --ignore-src -r -y || true",
+        "cd ros2_ws",
+        "colcon build --symlink-install --cmake-args -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR --install-base $TSI_INSTALL_DIR"
+      ],
+      "env": {
+        "ROS_DOMAIN_ID": "0",
+        "ROS_DISTRO": "humble"
+      }
+    },
+    {
+      "version": "iron",
+      "description": "ROS 2 Iron Irwini - Standard distribution (from source)",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/ros2/ros2.git",
+        "branch": "iron"
+      },
+      "dependencies": [
+        "python",
+        "cmake",
+        "git"
+      ],
+      "build_dependencies": [
+        "python",
+        "cmake",
+        "git"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "mkdir -p ros2_ws/src/ros2",
+        "tar -c --exclude=ros2_ws . | tar -x -C ros2_ws/src/ros2/",
+        "cd ros2_ws/src/ros2",
+        "if [ -n \"$VIRTUAL_ENV\" ]; then python3 -m pip install -q vcstool colcon-common-extensions rosdep; else python3 -m pip install --user -q vcstool colcon-common-extensions rosdep; fi",
+        "vcs import < ros2.repos",
+        "cd ../..",
+        "export PATH=\"$HOME/.local/bin:$PATH\" && rosdep update || true",
+        "export PATH=\"$HOME/.local/bin:$PATH\" && rosdep install --from-paths ros2_ws/src --ignore-src -r -y || true",
+        "cd ros2_ws",
+        "colcon build --symlink-install --cmake-args -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR --install-base $TSI_INSTALL_DIR"
+      ],
+      "env": {
+        "ROS_DOMAIN_ID": "0",
+        "ROS_DISTRO": "iron"
+      }
+    },
+    {
+      "version": "jazzy",
+      "description": "ROS 2 Jazzy Jalisco - Latest distribution (from source)",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/ros2/ros2.git",
+        "branch": "jazzy"
+      },
+      "dependencies": [
+        "python",
+        "cmake",
+        "git"
+      ],
+      "build_dependencies": [
+        "python",
+        "cmake",
+        "git"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "mkdir -p ros2_ws/src/ros2",
+        "tar -c --exclude=ros2_ws . | tar -x -C ros2_ws/src/ros2/",
+        "cd ros2_ws/src/ros2",
+        "if [ -n \"$VIRTUAL_ENV\" ]; then python3 -m pip install -q vcstool colcon-common-extensions rosdep; else python3 -m pip install --user -q vcstool colcon-common-extensions rosdep; fi",
+        "vcs import < ros2.repos",
+        "cd ../..",
+        "export PATH=\"$HOME/.local/bin:$PATH\" && rosdep update || true",
+        "export PATH=\"$HOME/.local/bin:$PATH\" && rosdep install --from-paths ros2_ws/src --ignore-src -r -y || true",
+        "cd ros2_ws",
+        "colcon build --symlink-install --cmake-args -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR --install-base $TSI_INSTALL_DIR"
+      ],
+      "env": {
+        "ROS_DOMAIN_ID": "0",
+        "ROS_DISTRO": "jazzy"
+      }
+    }
+  ]
+}
+

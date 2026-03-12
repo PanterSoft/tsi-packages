@@ -1,0 +1,17 @@
+{
+  "name": "make",
+  "version": "4.4.1",
+  "description": "GNU Make build tool",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": ["coreutils"],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {
+    "ac_cv_path_LS": "/bin/ls",
+    "gl_cv_func_lstat_dereferences_slashed_symlink": "yes"
+  }
+}

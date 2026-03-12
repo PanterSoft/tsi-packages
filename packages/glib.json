@@ -1,0 +1,23 @@
+{
+  "name": "glib",
+  "version": "2.80.3",
+  "description": "Core application building blocks",
+  "source": {
+    "type": "tarball",
+    "url": "https://download.gnome.org/sources/glib/2.80/glib-2.80.3.tar.xz"
+  },
+  "dependencies": [
+    "libffi",
+    "pcre2"
+  ],
+  "build_dependencies": [
+    "pkg-config",
+    "meson",
+    "ninja",
+    "python",
+    "coreutils"
+  ],
+  "build_system": "meson",
+  "configure_args": [],
+  "env": {}
+}

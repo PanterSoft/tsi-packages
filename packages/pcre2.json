@@ -1,0 +1,605 @@
+{
+  "name": "pcre2",
+  "versions": [
+    {
+      "version": "10.47",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.47/pcre2-10.47.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.46",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.46/pcre2-10.46.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.45",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.44",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.44/pcre2-10.44.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.42",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.42/pcre2-10.42.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.41",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.41/pcre2-10.41.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.40",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.40/pcre2-10.40.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.39",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.39/pcre2-10.39.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.38",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.38/pcre2-10.38.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.37",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.37/pcre2-10.37.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.36",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.36/pcre2-10.36.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.35",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.35/pcre2-10.35.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.34",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.34/pcre2-10.34.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.33",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.33/pcre2-10.33.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.32",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.32/pcre2-10.32.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.31",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.31/pcre2-10.31.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.30",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.30/pcre2-10.30.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.23",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.23/pcre2-10.23.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.22",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.22/pcre2-10.22.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.21",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.21/pcre2-10.21.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.20",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.20/pcre2-10.20.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.10",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.10/pcre2-10.10.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.00",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.00/pcre2-10.00.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.43",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.43/pcre2-10.43.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    }
+  ]
+}

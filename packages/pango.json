@@ -1,0 +1,25 @@
+{
+  "name": "pango",
+  "version": "1.52.2",
+  "description": "Text layout and rendering library",
+  "source": {
+    "type": "tarball",
+    "url": "https://download.gnome.org/sources/pango/1.52/pango-1.52.2.tar.xz"
+  },
+  "dependencies": [
+    "glib",
+    "harfbuzz",
+    "cairo",
+    "freetype"
+  ],
+  "build_dependencies": [
+    "pkg-config",
+    "meson",
+    "ninja",
+    "python",
+    "coreutils"
+  ],
+  "build_system": "meson",
+  "configure_args": [],
+  "env": {}
+}

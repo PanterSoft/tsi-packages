@@ -1,0 +1,26 @@
+{
+  "name": "mariadb",
+  "version": "11.3.2",
+  "description": "MariaDB database server",
+  "source": {
+    "type": "tarball",
+    "url": "https://downloads.mariadb.org/mariadb/11.3.2/source/mariadb-11.3.2.tar.gz"
+  },
+  "dependencies": [
+    "openssl",
+    "zlib",
+    "zstd"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DWITH_SSL=system",
+    "-DWITH_ZLIB=system"
+  ],
+  "env": {}
+}

@@ -1,0 +1,18 @@
+{
+  "name": "ncurses",
+  "version": "6.4",
+  "description": "Terminal control library",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/ncurses/ncurses-6.4.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--with-shared",
+    "--with-termlib",
+    "--enable-widec"
+  ],
+  "env": {}
+}

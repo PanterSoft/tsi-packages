@@ -1,0 +1,17 @@
+{
+  "name": "gmp",
+  "version": "6.3.0",
+  "description": "GNU Multiple Precision Arithmetic Library",
+  "source": {
+    "type": "tarball",
+    "url": "https://gmplib.org/download/gmp/gmp-6.3.0.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

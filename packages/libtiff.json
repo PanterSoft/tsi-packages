@@ -1,0 +1,23 @@
+{
+  "name": "libtiff",
+  "version": "4.6.0",
+  "description": "TIFF library and utilities",
+  "source": {
+    "type": "tarball",
+    "url": "https://download.osgeo.org/libtiff/tiff-4.6.0.tar.gz"
+  },
+  "dependencies": [
+    "zlib",
+    "libjpeg-turbo"
+  ],
+  "build_dependencies": [
+    "pkg-config",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--with-jpeg"
+  ],
+  "env": {}
+}

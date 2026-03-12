@@ -1,0 +1,385 @@
+{
+  "name": "yajl",
+  "versions": [
+    {
+      "version": "2.0.4",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/2.0.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2.0.3",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/2.0.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2.0.2",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/2.0.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2.0.1",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/2.0.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2.0.0",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/2.0.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.12",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/1.0.12.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.11",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/1.0.11.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.10",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/1.0.10.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.9",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/1.0.9.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.8",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/1.0.8.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.7",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/1.0.7.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.6",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/1.0.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.5",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/1.0.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.4",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/1.0.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.3",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/1.0.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.2",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/1.0.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.1",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/1.0.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.0",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/1.0.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "0.4.0",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/0.4.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2.1.0",
+      "description": "Yet Another JSON Library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lloyd/yajl/archive/2.1.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    }
+  ]
+}

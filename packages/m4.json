@@ -1,0 +1,19 @@
+{
+  "name": "m4",
+  "version": "1.4.19",
+  "description": "GNU m4 macro processor - required by autotools",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {
+    "CFLAGS": "-O2 -g"
+  },
+  "env_darwin": {
+    "CFLAGS": "-O2 -g -Wno-format-nonliteral -Wno-error=format-nonliteral -Wno-error"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "libev",
+  "version": "4.33",
+  "description": "High-performance event loop library",
+  "source": {
+    "type": "tarball",
+    "url": "http://dist.schmorp.de/libev/libev-4.33.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

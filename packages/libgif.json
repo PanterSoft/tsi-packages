@@ -1,0 +1,17 @@
+{
+  "name": "libgif",
+  "version": "5.2.2",
+  "description": "GIF library",
+  "source": {
+    "type": "tarball",
+    "url": "https://sourceforge.net/projects/giflib/files/giflib-5.2.2.tar.gz/download"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "make",
+  "make_args": [
+    "PREFIX=$TSI_INSTALL_DIR"
+  ],
+  "env": {}
+}
+

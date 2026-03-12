@@ -1,0 +1,517 @@
+{
+  "name": "jansson",
+  "versions": [
+    {
+      "version": "2.14.1",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.14.1/jansson-2.14.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.13.1",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.13.1/jansson-2.13.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.13",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.13/jansson-2.13.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.12",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.12/jansson-2.12.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.11",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.11/jansson-2.11.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.10",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.10/jansson-2.10.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.9",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.9/jansson-2.9.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.8",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.8/jansson-2.8.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.7",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.7/jansson-2.7.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.6",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.6/jansson-2.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.5",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.5/jansson-2.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.4",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.4/jansson-2.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.3.1",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.3.1/jansson-2.3.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.3",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.3/jansson-2.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.2.1",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.2.1/jansson-2.2.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.2",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.2/jansson-2.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.1",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.1/jansson-2.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.0.1",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.0.1/jansson-2.0.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.0",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.0/jansson-2.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.3",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v1.3/jansson-1.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.2.1",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v1.2.1/jansson-1.2.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.2",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v1.2/jansson-1.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.1.3",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v1.1.3/jansson-1.1.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.1.2",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v1.1.2/jansson-1.1.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.1.1",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v1.1.1/jansson-1.1.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.1",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v1.1/jansson-1.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.0.4",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v1.0.4/jansson-1.0.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.0.3",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v1.0.3/jansson-1.0.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.0.2",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v1.0.2/jansson-1.0.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.0.1",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v1.0.1/jansson-1.0.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.0",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v1.0/jansson-1.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.14",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    }
+  ]
+}

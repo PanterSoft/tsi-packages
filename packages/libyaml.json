@@ -1,0 +1,17 @@
+{
+  "name": "libyaml",
+  "version": "0.2.5",
+  "description": "YAML parser and emitter library",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

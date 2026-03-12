@@ -1,0 +1,18 @@
+{
+  "name": "boost",
+  "version": "1.84.0",
+  "description": "C++ libraries",
+  "source": {
+    "type": "tarball",
+    "url": "https://archives.boost.io/release/1.84.0/source/boost_1_84_0.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "custom",
+  "build_commands": [
+    "./bootstrap.sh --prefix=$TSI_INSTALL_DIR",
+    "./b2 install"
+  ],
+  "env": {}
+}
+

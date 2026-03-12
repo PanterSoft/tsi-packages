@@ -1,0 +1,24 @@
+{
+  "name": "help2man",
+  "version": "1.49.3",
+  "description": "GNU help2man - generates manual pages from program --help output",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/help2man/help2man-1.49.3.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "m4",
+    "bash",
+    "make"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {
+    "CFLAGS": "-O2 -g"
+  },
+  "env_darwin": {
+    "CFLAGS": "-O2 -g"
+  }
+}
+

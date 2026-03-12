@@ -1,0 +1,101 @@
+{
+  "name": "flex",
+  "versions": [
+    {
+      "version": "2.6.3",
+      "description": "Fast Lexical Analyzer - lexical analyzer generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/westes/flex/releases/download/v2.6.3/flex-2.6.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.6.2",
+      "description": "Fast Lexical Analyzer - lexical analyzer generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/westes/flex/releases/download/v2.6.2/flex-2.6.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.6.1",
+      "description": "Fast Lexical Analyzer - lexical analyzer generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/westes/flex/releases/download/v2.6.1/flex-2.6.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.6.0",
+      "description": "Fast Lexical Analyzer - lexical analyzer generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/westes/flex/releases/download/v2.6.0/flex-2.6.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.5.39",
+      "description": "Fast Lexical Analyzer - lexical analyzer generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/westes/flex/releases/download/v2.5.39/flex-2.5.39.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.6.4",
+      "description": "Fast Lexical Analyzer - lexical analyzer generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    }
+  ]
+}

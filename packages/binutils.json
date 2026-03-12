@@ -1,0 +1,25 @@
+{
+  "name": "binutils",
+  "version": "2.41",
+  "description": "GNU Binary Utilities - linker, assembler, and other tools (ld, as, ar, objdump, etc.)",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/binutils/binutils-2.41.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "m4",
+    "bash",
+    "coreutils",
+    "make"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-werror",
+    "--enable-gold",
+    "--enable-ld=default",
+    "--enable-plugins",
+    "--enable-shared"
+  ],
+  "env": {}
+}

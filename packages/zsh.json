@@ -1,0 +1,19 @@
+{
+  "name": "zsh",
+  "version": "5.9",
+  "description": "Z shell",
+  "source": {
+    "type": "tarball",
+    "url": "https://sourceforge.net/projects/zsh/files/zsh/5.9/zsh-5.9.tar.xz/download"
+  },
+  "dependencies": [
+    "ncurses"
+  ],
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

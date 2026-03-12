@@ -1,0 +1,242 @@
+name: Package Validation
+
+on:
+  push:
+    paths:
+      - 'packages/**/*.json'
+      - '.github/workflows/Package Validation.yml'
+  pull_request:
+    paths:
+      - 'packages/**/*.json'
+  workflow_dispatch:  # Manual trigger
+
+permissions:
+  contents: read
+
+jobs:
+  validate-format:
+    name: Validate Package Format
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5.0.1
+
+      - name: Find all package files
+        id: find-packages
+        run: |
+          echo "packages=$(find packages -name '*.json' -type f | sort | tr '\n' ' ')" >> $GITHUB_OUTPUT
+          find packages -name '*.json' -type f | sort
+
+      - name: Validate JSON syntax
+        run: |
+          echo "Validating JSON syntax for all package files..."
+          FAILED=0
+          for pkg in packages/*.json; do
+            if [ -f "$pkg" ]; then
+              echo "Checking: $pkg"
+              if ! python3 -m json.tool "$pkg" > /dev/null 2>&1; then
+                echo "❌ Invalid JSON syntax in $pkg"
+                python3 -m json.tool "$pkg" 2>&1 || true
+                FAILED=1
+              else
+                echo "✓ Valid JSON: $pkg"
+              fi
+            fi
+          done
+
+          if [ $FAILED -eq 1 ]; then
+            echo "::error::Some package files have invalid JSON syntax"
+            exit 1
+          fi
+          echo "✓ All package files have valid JSON syntax"
+
+      - name: Validate package structure
+        run: |
+          echo "Validating package structure..."
+          FAILED=0
+
+          for pkg in packages/*.json; do
+            if [ -f "$pkg" ]; then
+              echo "Validating structure: $pkg"
+
+              # Check if this is a multi-version package (has "versions" array) or single-version
+              HAS_VERSIONS=$(python3 -c "import json; data = json.load(open('$pkg')); print('yes' if 'versions' in data and isinstance(data.get('versions'), list) else 'no')" 2>/dev/null || echo "no")
+
+              if [ "$HAS_VERSIONS" = "yes" ]; then
+                # Multi-version package: validate versions array
+                VERSION_COUNT=$(python3 -c "import json; data = json.load(open('$pkg')); print(len(data.get('versions', [])))" 2>/dev/null || echo "0")
+                if [ "$VERSION_COUNT" -eq 0 ]; then
+                  echo "❌ Package has 'versions' array but it is empty in $pkg"
+                  FAILED=1
+                else
+                  # Validate each version in the array using Python script
+                  if ! python3 scripts/validate-package-versions.py "$pkg" 2>/dev/null; then
+                    FAILED=1
+                  fi
+                fi
+              else
+                # Single-version package: validate top-level fields
+                REQUIRED_FIELDS=("name" "source")
+                for field in "${REQUIRED_FIELDS[@]}"; do
+                  if ! python3 -c "import json, sys; data = json.load(open('$pkg')); sys.exit(0 if '$field' in data else 1)" 2>/dev/null; then
+                    echo "❌ Missing required field '$field' in $pkg"
+                    FAILED=1
+                  fi
+                done
+
+                # Validate source object (url for git/tarball/zip; path for type local)
+                if ! python3 -c "
+import json, sys
+data = json.load(open('$pkg'))
+s = data.get('source', {})
+ok = isinstance(s, dict) and 'type' in s and ('url' in s or (s.get('type') == 'local' and 'path' in s))
+sys.exit(0 if ok else 1)
+" 2>/dev/null; then
+                  echo "❌ Invalid or missing 'source' object in $pkg"
+                  echo "  Source must have 'type' and either 'url' (git/tarball/zip) or 'path' (local)"
+                  FAILED=1
+                fi
+
+                # Validate source type
+                SOURCE_TYPE=$(python3 -c "import json; data = json.load(open('$pkg')); print(data.get('source', {}).get('type', ''))" 2>/dev/null)
+                VALID_TYPES=("git" "tarball" "zip" "local")
+                if [ -n "$SOURCE_TYPE" ] && [[ ! " ${VALID_TYPES[@]} " =~ " ${SOURCE_TYPE} " ]]; then
+                  echo "❌ Invalid source type '$SOURCE_TYPE' in $pkg"
+                  echo "  Valid types: ${VALID_TYPES[*]}"
+                  FAILED=1
+                fi
+
+                # Validate build_system if present
+                BUILD_SYSTEM=$(python3 -c "import json; data = json.load(open('$pkg')); print(data.get('build_system', ''))" 2>/dev/null)
+                if [ -n "$BUILD_SYSTEM" ]; then
+                  VALID_BUILD_SYSTEMS=("autotools" "cmake" "meson" "make" "cargo" "custom")
+                  if [[ ! " ${VALID_BUILD_SYSTEMS[@]} " =~ " ${BUILD_SYSTEM} " ]]; then
+                    echo "❌ Invalid build_system '$BUILD_SYSTEM' in $pkg"
+                    echo "  Valid build systems: ${VALID_BUILD_SYSTEMS[*]}"
+                    FAILED=1
+                  fi
+                fi
+
+                # Validate arrays are actually arrays
+                ARRAY_FIELDS=("dependencies" "build_dependencies" "configure_args" "cmake_args" "make_args" "patches")
+                for field in "${ARRAY_FIELDS[@]}"; do
+                  if ! python3 -c "import json, sys; data = json.load(open('$pkg')); sys.exit(0 if '$field' not in data or isinstance(data.get('$field'), list) else 1)" 2>/dev/null; then
+                    echo "❌ Field '$field' must be an array in $pkg"
+                    FAILED=1
+                  fi
+                done
+
+                # Validate env is an object if present
+                if ! python3 -c "import json, sys; data = json.load(open('$pkg')); sys.exit(0 if 'env' not in data or isinstance(data.get('env'), dict) else 1)" 2>/dev/null; then
+                  echo "❌ Field 'env' must be an object in $pkg"
+                  FAILED=1
+                fi
+              fi
+
+              if [ $FAILED -eq 0 ]; then
+                echo "✓ Valid structure: $pkg"
+              fi
+            fi
+          done
+
+          if [ $FAILED -eq 1 ]; then
+            echo "::error::Some package files have invalid structure"
+            exit 1
+          fi
+          echo "✓ All package files have valid structure"
+
+      - name: Check for duplicate package names
+        run: |
+          echo "Checking for duplicate package names..."
+          python3 << 'EOF'
+          import json
+          import os
+          from collections import Counter
+
+          names = []
+          for filename in os.listdir('packages'):
+              if filename.endswith('.json'):
+                  filepath = os.path.join('packages', filename)
+                  try:
+                      with open(filepath, 'r') as f:
+                          data = json.load(f)
+                          if 'name' in data:
+                              names.append((data['name'], filepath))
+                  except Exception as e:
+                      print(f"Error reading {filepath}: {e}")
+
+          name_counts = Counter([name for name, _ in names])
+          duplicates = {name: count for name, count in name_counts.items() if count > 1}
+
+          if duplicates:
+              print("❌ Found duplicate package names:")
+              for name, count in duplicates.items():
+                  files = [path for n, path in names if n == name]
+                  print(f"  '{name}' appears in {count} files:")
+                  for f in files:
+                      print(f"    - {f}")
+              exit(1)
+          else:
+              print("✓ No duplicate package names found")
+          EOF
+
+  validate-dependencies:
+    name: Validate Package Dependencies
+    runs-on: ubuntu-latest
+    needs: validate-format
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5.0.1
+
+      - name: Validate dependencies exist
+        run: |
+          echo "Validating that all dependencies reference existing packages..."
+          python3 << 'EOF'
+          import json
+          import os
+          import sys
+
+          # Load all package names
+          package_names = set()
+          for filename in os.listdir('packages'):
+              if filename.endswith('.json'):
+                  filepath = os.path.join('packages', filename)
+                  try:
+                      with open(filepath, 'r') as f:
+                          data = json.load(f)
+                          if 'name' in data:
+                              package_names.add(data['name'])
+                  except Exception as e:
+                      print(f"Error reading {filepath}: {e}")
+
+          # Check dependencies
+          failed = False
+          for filename in os.listdir('packages'):
+              if filename.endswith('.json'):
+                  filepath = os.path.join('packages', filename)
+                  try:
+                      with open(filepath, 'r') as f:
+                          data = json.load(f)
+                          pkg_name = data.get('name', 'unknown')
+
+                          # Check dependencies
+                          for dep_type in ['dependencies', 'build_dependencies']:
+                              deps = data.get(dep_type, [])
+                              for dep in deps:
+                                  # Extract package name from dependency (may be package@version)
+                                  dep_name = dep.split('@')[0] if '@' in dep else dep
+                                  if dep_name not in package_names:
+                                      print(f"❌ {pkg_name}: {dep_type} '{dep}' (package '{dep_name}') not found in packages/")
+                                      failed = True
+
+                  except Exception as e:
+                      print(f"Error reading {filepath}: {e}")
+
+          if failed:
+              print("\n::error::Some dependencies reference non-existent packages")
+              sys.exit(1)
+          else:
+              print("✓ All dependencies reference existing packages")
+          EOF

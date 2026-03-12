@@ -1,0 +1,14 @@
+{
+  "name": "tar",
+  "version": "1.35",
+  "description": "GNU tar archiving utility",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/tar/tar-1.35.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": ["coreutils", "make"],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ruby",
+  "version": "3.3.0",
+  "description": "Ruby programming language",
+  "source": {
+    "type": "tarball",
+    "url": "https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.0.tar.gz"
+  },
+  "dependencies": [
+    "openssl",
+    "zlib",
+    "readline",
+    "libyaml"
+  ],
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--enable-shared",
+    "--with-openssl-dir=$TSI_INSTALL_DIR"
+  ],
+  "env": {}
+}

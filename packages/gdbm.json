@@ -1,0 +1,17 @@
+{
+  "name": "gdbm",
+  "version": "1.23",
+  "description": "GNU database manager",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/gdbm/gdbm-1.23.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

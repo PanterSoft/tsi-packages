@@ -1,0 +1,18 @@
+{
+  "name": "perl",
+  "version": "5.38.2",
+  "description": "Perl programming language - required by many build scripts",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.cpan.org/src/5.0/perl-5.38.2.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": ["make", "coreutils", "sed"],
+  "build_system": "custom",
+  "build_commands": [
+    "sh Configure -des -Dprefix=$TSI_INSTALL_DIR",
+    "make",
+    "make install"
+  ],
+  "env": {}
+}

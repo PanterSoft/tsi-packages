@@ -1,0 +1,14 @@
+{
+  "name": "sed",
+  "version": "4.9",
+  "description": "GNU sed - stream editor for filtering and transforming text",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/sed/sed-4.9.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": ["coreutils"],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

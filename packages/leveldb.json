@@ -1,0 +1,467 @@
+{
+  "name": "leveldb",
+  "versions": [
+    {
+      "version": "1.22",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.22.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.21",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.21.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.20",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.20.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.19",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.19.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.18",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.18.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.17",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.17.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.16",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.16.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.15",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.15.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.14",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.14.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.13",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.13.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.12",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.12.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.11",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.11.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.10",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.10.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.9",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.9.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.8",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.8.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.7",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.7.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.6",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.6.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.5",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.5.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.4",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.4.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.3",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.3.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.23",
+      "description": "Fast key-value storage library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/leveldb/archive/1.23.tar.gz"
+      },
+      "dependencies": [
+        "snappy"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON"
+      ],
+      "env": {}
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "libwebp",
+  "version": "1.4.0",
+  "description": "WebP image library",
+  "source": {
+    "type": "tarball",
+    "url": "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.4.0.tar.gz"
+  },
+  "dependencies": [
+    "libpng",
+    "libjpeg-turbo"
+  ],
+  "build_dependencies": [
+    "pkg-config",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

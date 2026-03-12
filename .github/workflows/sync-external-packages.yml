@@ -1,0 +1,161 @@
+name: Sync External Packages
+
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repository URL (e.g., https://github.com/user/repo)'
+        required: true
+        type: string
+      branch:
+        description: 'Branch name'
+        required: false
+        default: 'main'
+        type: string
+      path:
+        description: 'Path to .tsi.json file in the repository'
+        required: false
+        default: '.tsi.json'
+        type: string
+      package_name:
+        description: 'Package name (optional, extracted from JSON if not provided)'
+        required: false
+        type: string
+  repository_dispatch:
+    types: [package-updated]
+
+jobs:
+  sync-package:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: Checkout TSI repository
+        uses: actions/checkout@v5.0.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Determine repository URL
+        id: repo-info
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "repo_url=${{ github.event.inputs.repo }}" >> $GITHUB_OUTPUT
+            echo "branch=${{ github.event.inputs.branch }}" >> $GITHUB_OUTPUT
+            echo "tsi_path=${{ github.event.inputs.path }}" >> $GITHUB_OUTPUT
+            echo "package_name=${{ github.event.inputs.package_name }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event_name }}" == "repository_dispatch" ]; then
+            echo "repo_url=${{ github.event.client_payload.repo }}" >> $GITHUB_OUTPUT
+            echo "branch=${{ github.event.client_payload.branch || 'main' }}" >> $GITHUB_OUTPUT
+            echo "tsi_path=${{ github.event.client_payload.path || '.tsi.json' }}" >> $GITHUB_OUTPUT
+            echo "package_name=${{ github.event.client_payload.package_name || '' }}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Clone external repository
+        run: |
+          REPO_URL="${{ steps.repo-info.outputs.repo_url }}"
+          BRANCH="${{ steps.repo-info.outputs.branch }}"
+          TSI_PATH="${{ steps.repo-info.outputs.tsi_path }}"
+
+          # Extract repo name for directory
+          REPO_NAME=$(basename "$REPO_URL" .git)
+          REPO_NAME=$(echo "$REPO_NAME" | sed 's/.*\///')
+
+          echo "Cloning $REPO_URL (branch: $BRANCH)"
+          git clone --depth 1 --branch "$BRANCH" "$REPO_URL" "external-repo"
+
+          # Check if .tsi.json exists
+          if [ ! -f "external-repo/$TSI_PATH" ]; then
+            echo "Error: $TSI_PATH not found in repository"
+            exit 1
+          fi
+
+          # Extract package name if not provided
+          if [ -z "${{ steps.repo-info.outputs.package_name }}" ]; then
+            PACKAGE_NAME=$(python3 -c "import json; print(json.load(open('external-repo/$TSI_PATH')).get('name', ''))" 2>/dev/null || echo "")
+            if [ -z "$PACKAGE_NAME" ]; then
+              echo "Error: Could not extract package name from $TSI_PATH"
+              exit 1
+            fi
+            echo "package_name=$PACKAGE_NAME" >> $GITHUB_ENV
+          else
+            echo "package_name=${{ steps.repo-info.outputs.package_name }}" >> $GITHUB_ENV
+          fi
+
+          # Copy .tsi.json to a temporary location
+          cp "external-repo/$TSI_PATH" external-package.json
+          echo "Extracted package: $package_name"
+
+      - name: Merge package into repository
+        run: |
+          python3 scripts/merge-external-package.py \
+            external-package.json \
+            packages/ \
+            "$package_name"
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet packages/; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected:"
+            git diff packages/
+          fi
+
+      - name: Create Pull Request
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: update ${{ env.package_name }} from external repository"
+          title: "Update ${{ env.package_name }} package"
+          body: |
+            This PR updates the `${{ env.package_name }}` package definition from the external repository.
+
+            **Source Repository:** ${{ steps.repo-info.outputs.repo_url }}
+            **Branch:** ${{ steps.repo-info.outputs.branch }}
+            **Path:** ${{ steps.repo-info.outputs.tsi_path }}
+
+            This PR was automatically created by the Sync External Packages workflow.
+
+            **Note:** This update adds a new version to the `versions` array. All existing versions are preserved, allowing users to install any previously available version.
+
+            Please review the changes before merging.
+          branch: update-${{ env.package_name }}-package
+          delete-branch: true
+          labels: |
+            automated
+            package-update
+
+      - name: Comment on existing PR
+        if: steps.changes.outputs.changed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: prs } = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              head: `${{ github.repository_owner }}:update-${{ env.package_name }}-package`
+            });
+
+            if (prs.length > 0) {
+              const pr = prs[0];
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pr.number,
+                body: `🔄 Updated from external repository: ${{ steps.repo-info.outputs.repo_url }}`
+              });
+            }

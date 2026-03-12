@@ -1,0 +1,17 @@
+{
+  "name": "texinfo",
+  "version": "7.1",
+  "description": "GNU Texinfo - documentation system for producing info, HTML, and printed documentation",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/texinfo/texinfo-7.1.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

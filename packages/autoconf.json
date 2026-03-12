@@ -1,0 +1,22 @@
+{
+  "name": "autoconf",
+  "version": "2.72",
+  "description": "Automatic configure script builder",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/autoconf/autoconf-2.72.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "m4",
+    "make",
+    "coreutils",
+    "sed",
+    "grep",
+    "gawk",
+    "bash"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

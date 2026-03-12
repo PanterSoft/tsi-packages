@@ -1,0 +1,17 @@
+{
+  "name": "autotools",
+  "version": "2.72",
+  "description": "GNU Autoconf - Build system generator",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/autoconf/autoconf-2.72.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

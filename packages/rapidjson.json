@@ -1,0 +1,110 @@
+{
+  "name": "rapidjson",
+  "versions": [
+    {
+      "version": "1.0.2",
+      "description": "Fast JSON parser/generator for C++",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Tencent/rapidjson/archive/v1.0.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DRAPIDJSON_BUILD_DOC=Off",
+        "-DRAPIDJSON_BUILD_EXAMPLES=Off",
+        "-DRAPIDJSON_BUILD_TESTS=Off"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.1",
+      "description": "Fast JSON parser/generator for C++",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Tencent/rapidjson/archive/v1.0.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DRAPIDJSON_BUILD_DOC=Off",
+        "-DRAPIDJSON_BUILD_EXAMPLES=Off",
+        "-DRAPIDJSON_BUILD_TESTS=Off"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.0",
+      "description": "Fast JSON parser/generator for C++",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Tencent/rapidjson/archive/v1.0.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DRAPIDJSON_BUILD_DOC=Off",
+        "-DRAPIDJSON_BUILD_EXAMPLES=Off",
+        "-DRAPIDJSON_BUILD_TESTS=Off"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0-beta",
+      "description": "Fast JSON parser/generator for C++",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Tencent/rapidjson/archive/v1.0-beta.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DRAPIDJSON_BUILD_DOC=Off",
+        "-DRAPIDJSON_BUILD_EXAMPLES=Off",
+        "-DRAPIDJSON_BUILD_TESTS=Off"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.1.0",
+      "description": "Fast JSON parser/generator for C++",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Tencent/rapidjson/archive/v1.1.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DRAPIDJSON_BUILD_DOC=Off",
+        "-DRAPIDJSON_BUILD_EXAMPLES=Off",
+        "-DRAPIDJSON_BUILD_TESTS=Off"
+      ],
+      "env": {}
+    }
+  ]
+}

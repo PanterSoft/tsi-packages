@@ -1,0 +1,26 @@
+{
+  "name": "python",
+  "version": "3.12.2",
+  "description": "Python programming language",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tgz"
+  },
+  "dependencies": [
+    "openssl",
+    "zlib",
+    "sqlite",
+    "libffi"
+  ],
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--enable-optimizations",
+    "--with-openssl",
+    "--enable-shared"
+  ],
+  "env": {}
+}
