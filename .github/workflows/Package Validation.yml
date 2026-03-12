@@ -87,12 +87,12 @@ jobs:
 
                 # Validate source object (url for git/tarball/zip; path for type local)
                 if ! python3 -c "
-import json, sys
-data = json.load(open('$pkg'))
-s = data.get('source', {})
-ok = isinstance(s, dict) and 'type' in s and ('url' in s or (s.get('type') == 'local' and 'path' in s))
-sys.exit(0 if ok else 1)
-" 2>/dev/null; then
+          import json, sys
+          data = json.load(open('$pkg'))
+          s = data.get('source', {})
+          ok = isinstance(s, dict) and 'type' in s and ('url' in s or (s.get('type') == 'local' and 'path' in s))
+          sys.exit(0 if ok else 1)
+                " 2>/dev/null; then
                   echo "❌ Invalid or missing 'source' object in $pkg"
                   echo "  Source must have 'type' and either 'url' (git/tarball/zip) or 'path' (local)"
                   FAILED=1

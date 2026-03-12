@@ -1,6 +1,6 @@
 # TSI Package Repository
 
-This repository contains the official package definitions for [TSI](https://github.com/PanterSoft/tsi) (Toolchain Source Installer). Each package is defined as a JSON file in the `packages/` directory.
+This repository contains the official package definitions for [TSI](https://github.com/PanterSoft/tsi) (The Source Installer). Each package is defined as a JSON file in the `packages/` directory.
 
 ## For TSI Users
 
