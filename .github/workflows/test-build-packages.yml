@@ -20,7 +20,7 @@ permissions:
   contents: read
 
 env:
-  TSI_PREFIX: ${{ runner.temp }}/tsi-install
+  TSI_PREFIX: ${{ github.workspace }}/.tsi-install
   SLOW_PACKAGES: 'gcc|llvm|clang|rust|python|boost|mongodb|mysql|mariadb|postgresql|ros2|emacs'
 
 jobs:
