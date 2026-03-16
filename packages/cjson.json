@@ -18,7 +18,8 @@
       "cmake_args": [
         "-DENABLE_CJSON_UTILS=On",
         "-DENABLE_CJSON_TEST=Off",
-        "-DCMAKE_BUILD_TYPE=Release"
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
       ],
       "env": {}
     },
@@ -39,7 +40,8 @@
       "cmake_args": [
         "-DENABLE_CJSON_UTILS=On",
         "-DENABLE_CJSON_TEST=Off",
-        "-DCMAKE_BUILD_TYPE=Release"
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
       ],
       "env": {}
     },
@@ -60,7 +62,8 @@
       "cmake_args": [
         "-DENABLE_CJSON_UTILS=On",
         "-DENABLE_CJSON_TEST=Off",
-        "-DCMAKE_BUILD_TYPE=Release"
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
       ],
       "env": {}
     },
@@ -81,7 +84,8 @@
       "cmake_args": [
         "-DENABLE_CJSON_UTILS=On",
         "-DENABLE_CJSON_TEST=Off",
-        "-DCMAKE_BUILD_TYPE=Release"
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
       ],
       "env": {}
     },

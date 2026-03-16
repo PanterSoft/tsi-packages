@@ -568,14 +568,19 @@
       "build_dependencies": [
         "pkg-config",
         "make",
-        "coreutils"
+        "coreutils",
+        "libxml2"
       ],
-      "build_system": "autotools",
-      "configure_args": [
-        "--with-openssl",
-        "--with-libxml2"
+      "build_system": "custom",
+      "build_commands": [
+        "PKG_CONFIG_PATH=\"/Users/nicomattes/.tsi/install/libxml2-*/lib/pkgconfig:/Users/nicomattes/.tsi/install/openssl-*/lib/pkgconfig:/Users/nicomattes/.tsi/install/zlib-*/lib/pkgconfig:$PKG_CONFIG_PATH\" ./configure --prefix=$TSI_INSTALL_DIR --with-openssl --with-libxml2",
+        "make",
+        "make install"
       ],
-      "env": {}
+      "env": {
+        "CPPFLAGS": "-I/Users/nicomattes/.tsi/install/libxml2-*/include/libxml2 -I/Users/nicomattes/.tsi/install/openssl-*/include -I/Users/nicomattes/.tsi/install/zlib-*/include",
+        "LDFLAGS": "-L/Users/nicomattes/.tsi/install/libxml2-*/lib -L/Users/nicomattes/.tsi/install/openssl-*/lib -L/Users/nicomattes/.tsi/install/zlib-*/lib"
+      }
     }
   ]
 }

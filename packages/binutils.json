@@ -6,7 +6,7 @@
     "type": "tarball",
     "url": "https://ftp.gnu.org/gnu/binutils/binutils-2.41.tar.xz"
   },
-  "dependencies": [],
+  "dependencies": ["zlib"],
   "build_dependencies": [
     "m4",
     "bash",
@@ -19,7 +19,10 @@
     "--enable-gold",
     "--enable-ld=default",
     "--enable-plugins",
-    "--enable-shared"
+    "--enable-shared",
+    "--with-system-zlib"
   ],
-  "env": {}
+  "env": {
+    "ZLIB_NO_FDOPEN_WRAPPER": "1"
+  }
 }

@@ -8,12 +8,15 @@
   },
   "dependencies": [],
   "build_dependencies": ["make", "coreutils", "sed", "grep", "gawk", "bash"],
-  "build_system": "autotools",
-  "configure_args": [
-    "--static"
+  "build_system": "custom",
+  "build_commands": [
+    "python3 - << 'EOF'\nimport io\nimport os\n\npath = 'zutil.h'\nif os.path.exists(path):\n    data = open(path, 'r', encoding='utf-8', errors='ignore').read()\n    before = data\n    data = data.replace('#        define fdopen(fd,mode) NULL /* No fdopen() */', '/* fdopen is available on this platform; do not override */')\n    if data != before:\n        open(path, 'w', encoding='utf-8').write(data)\nEOF",
+    "./configure --static",
+    "make",
+    "make install"
   ],
   "env": {
-    "CFLAGS": "-O2 -g -Wno-error"
+    "CFLAGS": "-O3 -Wno-implicit-function-declaration -D_DARWIN_C_SOURCE -DHAVE_FDOPEN"
   }
 }
 

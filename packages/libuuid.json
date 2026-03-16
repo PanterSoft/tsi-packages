@@ -4,7 +4,7 @@
   "description": "UUID generation library",
   "source": {
     "type": "tarball",
-    "url": "https://sourceforge.net/projects/libuuid/files/libuuid-1.0.3.tar.gz/download"
+    "url": "https://downloads.sourceforge.net/project/libuuid/libuuid-1.0.3.tar.gz"
   },
   "dependencies": [],
   "build_dependencies": [

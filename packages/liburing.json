@@ -6,15 +6,19 @@
       "description": "Linux io_uring library",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/axboe/liburing/releases/download/liburing-2.13/liburing-2.13.tar.gz"
+        "url": "https://github.com/axboe/liburing/archive/refs/tags/liburing-2.13.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [
         "make",
         "coreutils"
       ],
-      "build_system": "autotools",
-      "configure_args": [],
+      "build_system": "custom",
+      "build_commands": [
+        "./configure",
+        "make",
+        "make install prefix=$TSI_INSTALL_DIR"
+      ],
       "env": {}
     },
     {

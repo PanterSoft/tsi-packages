@@ -9,6 +9,7 @@
   "dependencies": [],
   "build_dependencies": [],
   "build_system": "custom",
+  "source_dir": "boost_1_84_0",
   "build_commands": [
     "./bootstrap.sh --prefix=$TSI_INSTALL_DIR",
     "./b2 install"

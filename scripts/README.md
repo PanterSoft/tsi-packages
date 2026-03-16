@@ -31,6 +31,36 @@ Outputs package names (one per line) for `packages/*.json` files changed since a
 
 The Test Build workflow (`.github/workflows/test-build-packages.yml`) runs on push/PR when package JSONs change: it installs TSI from source, points it at this repo’s `packages/` directory, and runs a real build for each changed package (latest version only). Known slow packages (e.g. gcc, llvm) are excluded. TSI must be buildable from the [PanterSoft/tsi](https://github.com/PanterSoft/tsi) repository in CI.
 
+## build-all-packages.sh
+
+Builds all packages locally with TSI once to verify they are buildable. Requires TSI on your PATH (e.g. after `tsi update --local` or using this repo’s packages).
+
+### Usage
+
+```bash
+./build-all-packages.sh [--exclude-slow] [--packages-dir DIR]
+```
+
+### Arguments
+
+- `--exclude-slow`: Skip known slow packages (gcc, llvm, clang, rust, python, boost, mongodb, mysql, mariadb, postgresql, ros2, emacs)
+- `--packages-dir DIR`: Path to the packages directory (default: repo root `packages/`)
+
+### Examples
+
+```bash
+# Build all packages (from repo root or scripts/)
+./build-all-packages.sh
+
+# Build all except slow ones
+./build-all-packages.sh --exclude-slow
+
+# Use a custom packages directory
+./build-all-packages.sh --packages-dir /path/to/packages
+```
+
+Exit code is 0 if every build succeeded, 1 if any failed. At the end the script prints a summary (succeeded vs failed lists) and, for each failed package, the path to its build log (`.build-logs/<package>.log`) for debugging.
+
 ## merge-external-package.py
 
 Merges an external `.tsi.json` file (single-version format) into the TSI packages repository (multi-version format).

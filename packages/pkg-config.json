@@ -8,10 +8,14 @@
   },
   "dependencies": [],
   "build_dependencies": ["make", "coreutils", "sed", "grep", "gawk", "bash"],
-  "build_system": "autotools",
-  "configure_args": [
-    "--with-internal-glib"
+  "build_system": "custom",
+  "build_commands": [
+    "./configure --without-internal-glib --prefix=$TSI_INSTALL_DIR",
+    "make",
+    "make install"
   ],
-  "env": {}
+  "env": {
+    "CFLAGS": "-Wno-int-conversion -D_DARWIN_C_SOURCE -DHAVE_FDOPEN"
+  }
 }
 

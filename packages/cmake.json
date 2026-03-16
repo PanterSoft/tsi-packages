@@ -10,15 +10,16 @@
       },
       "dependencies": [],
       "build_dependencies": [
-        "cmake",
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DCMAKE_USE_OPENSSL=ON"
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
       ],
+      "bootstrapping": true,
       "env": {}
     },
     {
