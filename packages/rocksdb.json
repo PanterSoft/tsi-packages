@@ -2,6 +2,114 @@
   "name": "rocksdb",
   "versions": [
     {
+      "version": "10.10.1",
+      "description": "Persistent key-value store",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/facebook/rocksdb/archive/v10.10.1.tar.gz"
+      },
+      "dependencies": [
+        "snappy",
+        "zlib",
+        "lz4",
+        "zstd",
+        "bzip2"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_TESTS=OFF",
+        "-DWITH_TOOLS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.11.5",
+      "description": "Persistent key-value store",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/facebook/rocksdb/archive/v8.11.5.tar.gz"
+      },
+      "dependencies": [
+        "snappy",
+        "zlib",
+        "lz4",
+        "zstd",
+        "bzip2"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_TESTS=OFF",
+        "-DWITH_TOOLS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "10.9.1",
+      "description": "Persistent key-value store",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/facebook/rocksdb/archive/v10.9.1.tar.gz"
+      },
+      "dependencies": [
+        "snappy",
+        "zlib",
+        "lz4",
+        "zstd",
+        "bzip2"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_TESTS=OFF",
+        "-DWITH_TOOLS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "10.8.3",
+      "description": "Persistent key-value store",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/facebook/rocksdb/archive/v10.8.3.tar.gz"
+      },
+      "dependencies": [
+        "snappy",
+        "zlib",
+        "lz4",
+        "zstd",
+        "bzip2"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_TESTS=OFF",
+        "-DWITH_TOOLS=OFF"
+      ],
+      "env": {}
+    },
+    {
       "version": "10.7.5",
       "description": "Persistent key-value store",
       "source": {

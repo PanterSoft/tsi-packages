@@ -2,6 +2,81 @@
   "name": "lmdb",
   "versions": [
     {
+      "version": "0.9.35",
+      "description": "Lightning Memory-Mapped Database",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/LMDB/lmdb/archive/LMDB_0.9.35.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "0.9.34",
+      "description": "Lightning Memory-Mapped Database",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/LMDB/lmdb/archive/LMDB_0.9.34.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "0.9.33",
+      "description": "Lightning Memory-Mapped Database",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/LMDB/lmdb/archive/LMDB_0.9.33.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "0.9.32",
+      "description": "Lightning Memory-Mapped Database",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/LMDB/lmdb/archive/LMDB_0.9.32.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "0.9.30",
+      "description": "Lightning Memory-Mapped Database",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/LMDB/lmdb/archive/LMDB_0.9.30.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
       "version": "0.9.29",
       "description": "Lightning Memory-Mapped Database",
       "source": {
