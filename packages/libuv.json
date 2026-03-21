@@ -10,12 +10,14 @@
       },
       "dependencies": [],
       "build_dependencies": [
-        "autotools",
+        "cmake",
         "make",
         "coreutils"
       ],
-      "build_system": "autotools",
-      "configure_args": [],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
       "env": {}
     },
     {
@@ -27,12 +29,14 @@
       },
       "dependencies": [],
       "build_dependencies": [
-        "autotools",
+        "cmake",
         "make",
         "coreutils"
       ],
-      "build_system": "autotools",
-      "configure_args": [],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
       "env": {}
     },
     {
@@ -44,12 +48,14 @@
       },
       "dependencies": [],
       "build_dependencies": [
-        "autotools",
+        "cmake",
         "make",
         "coreutils"
       ],
-      "build_system": "autotools",
-      "configure_args": [],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
       "env": {}
     },
     {
@@ -61,12 +67,14 @@
       },
       "dependencies": [],
       "build_dependencies": [
-        "autotools",
+        "cmake",
         "make",
         "coreutils"
       ],
-      "build_system": "autotools",
-      "configure_args": [],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
       "env": {}
     },
     {
@@ -78,12 +86,14 @@
       },
       "dependencies": [],
       "build_dependencies": [
-        "autotools",
+        "cmake",
         "make",
         "coreutils"
       ],
-      "build_system": "autotools",
-      "configure_args": [],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
       "env": {}
     },
     {
@@ -95,12 +105,14 @@
       },
       "dependencies": [],
       "build_dependencies": [
-        "autotools",
+        "cmake",
         "make",
         "coreutils"
       ],
-      "build_system": "autotools",
-      "configure_args": [],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
       "env": {}
     },
     {
@@ -112,12 +124,14 @@
       },
       "dependencies": [],
       "build_dependencies": [
-        "autotools",
+        "cmake",
         "make",
         "coreutils"
       ],
-      "build_system": "autotools",
-      "configure_args": [],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
       "env": {}
     },
     {
@@ -129,12 +143,14 @@
       },
       "dependencies": [],
       "build_dependencies": [
-        "autotools",
+        "cmake",
         "make",
         "coreutils"
       ],
-      "build_system": "autotools",
-      "configure_args": [],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
       "env": {}
     },
     {
@@ -146,12 +162,14 @@
       },
       "dependencies": [],
       "build_dependencies": [
-        "autotools",
+        "cmake",
         "make",
         "coreutils"
       ],
-      "build_system": "autotools",
-      "configure_args": [],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
       "env": {}
     },
     {
@@ -163,12 +181,14 @@
       },
       "dependencies": [],
       "build_dependencies": [
-        "autotools",
+        "cmake",
         "make",
         "coreutils"
       ],
-      "build_system": "autotools",
-      "configure_args": [],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
       "env": {}
     },
     {
@@ -180,12 +200,14 @@
       },
       "dependencies": [],
       "build_dependencies": [
-        "autotools",
+        "cmake",
         "make",
         "coreutils"
       ],
-      "build_system": "autotools",
-      "configure_args": [],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
       "env": {}
     },
     {
@@ -197,12 +219,14 @@
       },
       "dependencies": [],
       "build_dependencies": [
-        "autotools",
+        "cmake",
         "make",
         "coreutils"
       ],
-      "build_system": "autotools",
-      "configure_args": [],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
       "env": {}
     },
     {
@@ -214,12 +238,14 @@
       },
       "dependencies": [],
       "build_dependencies": [
-        "autotools",
+        "cmake",
         "make",
         "coreutils"
       ],
-      "build_system": "autotools",
-      "configure_args": [],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
       "env": {}
     },
     {
@@ -231,12 +257,14 @@
       },
       "dependencies": [],
       "build_dependencies": [
-        "autotools",
+        "cmake",
         "make",
         "coreutils"
       ],
-      "build_system": "autotools",
-      "configure_args": [],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
       "env": {}
     }
   ]

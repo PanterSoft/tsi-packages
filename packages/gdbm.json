@@ -12,6 +12,9 @@
     "coreutils"
   ],
   "build_system": "autotools",
-  "configure_args": [],
+  "configure_args": [
+    "--without-readline",
+    "--disable-tools"
+  ],
   "env": {}
 }

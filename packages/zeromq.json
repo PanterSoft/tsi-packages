@@ -219,7 +219,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "CXXFLAGS=-Wno-missing-braces"
+      ],
       "env": {}
     }
   ]

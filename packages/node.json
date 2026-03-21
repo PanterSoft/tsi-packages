@@ -14,6 +14,9 @@
     "make",
     "make install"
   ],
-  "env": {}
+  "env": {},
+  "env_darwin": {
+    "LIBTOOL": "/usr/bin/libtool"
+  }
 }
 

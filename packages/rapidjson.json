@@ -16,6 +16,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DRAPIDJSON_BUILD_DOC=Off",
         "-DRAPIDJSON_BUILD_EXAMPLES=Off",
         "-DRAPIDJSON_BUILD_TESTS=Off"
@@ -37,6 +38,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DRAPIDJSON_BUILD_DOC=Off",
         "-DRAPIDJSON_BUILD_EXAMPLES=Off",
         "-DRAPIDJSON_BUILD_TESTS=Off"
@@ -58,6 +60,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DRAPIDJSON_BUILD_DOC=Off",
         "-DRAPIDJSON_BUILD_EXAMPLES=Off",
         "-DRAPIDJSON_BUILD_TESTS=Off"
@@ -79,6 +82,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DRAPIDJSON_BUILD_DOC=Off",
         "-DRAPIDJSON_BUILD_EXAMPLES=Off",
         "-DRAPIDJSON_BUILD_TESTS=Off"
@@ -100,6 +104,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DRAPIDJSON_BUILD_DOC=Off",
         "-DRAPIDJSON_BUILD_EXAMPLES=Off",
         "-DRAPIDJSON_BUILD_TESTS=Off"

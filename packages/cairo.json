@@ -12,14 +12,13 @@
     "pixman"
   ],
   "build_dependencies": [
+    "meson",
+    "ninja",
     "pkg-config",
     "make",
     "coreutils"
   ],
-  "build_system": "autotools",
-  "configure_args": [
-    "--enable-png",
-    "--enable-ft"
-  ],
+  "build_system": "meson",
+  "configure_args": [],
   "env": {}
 }

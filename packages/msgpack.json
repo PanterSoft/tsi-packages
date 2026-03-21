@@ -2,11 +2,11 @@
   "name": "msgpack",
   "versions": [
     {
-      "version": "7.0.0",
+      "version": "6.1.0",
       "description": "Efficient binary serialization format",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/msgpack/msgpack-c/releases/download/c-7.0.0/msgpack-7.0.0.tar.gz"
+        "url": "https://github.com/msgpack/msgpack-c/releases/download/c-6.1.0/msgpack-c-6.1.0.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -16,6 +16,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -36,26 +37,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DMSGPACK_BUILD_TESTS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "6.1.1",
-      "description": "Efficient binary serialization format",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/msgpack/msgpack-c/releases/download/c-6.1.1/msgpack-6.1.1.tar.gz"
-      },
-      "dependencies": [],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -76,6 +58,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -96,6 +79,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -116,6 +100,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -136,6 +121,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -156,6 +142,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -176,6 +163,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -196,6 +184,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -216,6 +205,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -236,6 +226,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -256,6 +247,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -276,6 +268,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -296,6 +289,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -316,6 +310,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -336,6 +331,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -356,6 +352,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -376,6 +373,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -396,6 +394,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -416,6 +415,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -436,6 +436,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -456,6 +457,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -476,6 +478,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -496,6 +499,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -516,6 +520,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -536,6 +541,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -556,6 +562,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -576,6 +583,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -596,6 +604,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -616,6 +625,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -636,6 +646,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -656,6 +667,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -676,6 +688,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -696,6 +709,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -716,6 +730,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -736,6 +751,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -756,6 +772,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -776,6 +793,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -796,6 +814,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],
@@ -816,6 +835,7 @@
       ],
       "build_system": "cmake",
       "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DMSGPACK_BUILD_TESTS=OFF"
       ],

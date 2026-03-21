@@ -4,7 +4,7 @@
   "description": "MySQL database server",
   "source": {
     "type": "tarball",
-    "url": "https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.36.tar.gz"
+    "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.36.tar.gz"
   },
   "dependencies": [
     "openssl",

@@ -4,7 +4,7 @@
   "description": "Z shell",
   "source": {
     "type": "tarball",
-    "url": "https://sourceforge.net/projects/zsh/files/zsh/5.9/zsh-5.9.tar.xz/download"
+    "url": "https://downloads.sourceforge.net/project/zsh/zsh/5.9/zsh-5.9.tar.xz"
   },
   "dependencies": [
     "ncurses"

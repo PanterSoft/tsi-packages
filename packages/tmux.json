@@ -17,7 +17,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -36,7 +38,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -55,7 +59,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -74,7 +80,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -93,7 +101,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -112,7 +122,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -131,7 +143,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -150,7 +164,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -169,7 +185,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -188,7 +206,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -207,7 +227,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -226,7 +248,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -245,7 +269,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -264,7 +290,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -283,7 +311,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -302,7 +332,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -321,7 +353,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -340,7 +374,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -359,7 +395,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -378,7 +416,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -397,7 +437,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -416,7 +458,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -435,7 +479,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -454,7 +500,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -473,7 +521,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -492,7 +542,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -511,7 +563,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -530,7 +584,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -549,7 +605,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -568,7 +626,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -587,7 +647,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -606,7 +668,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -625,7 +689,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -644,7 +710,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -663,7 +731,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -682,7 +752,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -701,7 +773,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -720,7 +794,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     },
     {
@@ -739,7 +815,9 @@
         "coreutils"
       ],
       "build_system": "autotools",
-      "configure_args": [],
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
       "env": {}
     }
   ]

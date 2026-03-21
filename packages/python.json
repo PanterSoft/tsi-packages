@@ -10,7 +10,8 @@
     "openssl",
     "zlib",
     "sqlite",
-    "libffi"
+    "libffi",
+    "libuuid"
   ],
   "build_dependencies": [
     "make",
@@ -19,7 +20,11 @@
   "build_system": "autotools",
   "configure_args": [
     "--enable-optimizations",
-    "--with-openssl",
+    "--with-openssl=$TSI_INSTALL_DIR",
+    "--enable-shared"
+  ],
+  "configure_args_darwin": [
+    "--with-openssl=$TSI_INSTALL_DIR",
     "--enable-shared"
   ],
   "env": {}

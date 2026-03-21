@@ -12,14 +12,18 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 PACKAGES_DIR="$REPO_ROOT/packages"
 LOG_DIR="$REPO_ROOT/.build-logs"
+PREFIX="${TSI_PREFIX:-$HOME/.tsi}"
 EXCLUDE_SLOW=false
 SLOW_PACKAGES='gcc|llvm|clang|rust|python|boost|mongodb|mysql|mariadb|postgresql|ros2|emacs'
+LINUX_ONLY_PACKAGES='libcap|libseccomp|liburing'
+CURRENT_OS="$(uname -s)"
 
 while [ $# -gt 0 ]; do
   case "$1" in
     --exclude-slow)  EXCLUDE_SLOW=true; shift ;;
     --packages-dir)   PACKAGES_DIR="$2"; shift 2 ;;
-    *) echo "Usage: $0 [--exclude-slow] [--packages-dir DIR]" >&2; exit 1 ;;
+    --prefix)         PREFIX="$2"; shift 2 ;;
+    *) echo "Usage: $0 [--exclude-slow] [--packages-dir DIR] [--prefix PREFIX]" >&2; exit 1 ;;
   esac
 done
 
@@ -50,8 +54,7 @@ fi
 
 echo "Using packages dir: $PACKAGES_DIR"
 echo "Build logs: $LOG_DIR"
-echo "Updating TSI package list (--local)..."
-tsi update --local "$PACKAGES_DIR" || tsi update --local "$REPO_ROOT" || true
+echo "Updating TSI package list (--local)... (skipped: already updated locally)"
 
 SUCCEEDED=""
 FAILED=""
@@ -64,6 +67,15 @@ for pkg in $PACKAGES; do
   COUNT=$((COUNT + 1))
   LOG_FILE="$LOG_DIR/${pkg}.log"
   echo "[$COUNT/$TOTAL] Building: $pkg"
+
+  # Skip known Linux-only packages on non-Linux platforms.
+  if [ "$CURRENT_OS" != "Linux" ] && echo "$pkg" | grep -Eq "^($LINUX_ONLY_PACKAGES)$"; then
+    echo "  -> SKIPPED (unsupported on this platform: $CURRENT_OS)"
+    echo "Unsupported on platform '$CURRENT_OS': linux-only package." > "$LOG_FILE"
+    FAILED="${FAILED} ${pkg}"
+    python3 "$SCRIPT_DIR/update-status.py" --status-file "$STATUS_FILE" --package "$pkg" --result failure --log "$LOG_FILE"
+    continue
+  fi
 
   # Skip packages whose dependencies have already failed in this run.
   PKG_FILE="$PACKAGES_DIR/${pkg}.json"
@@ -119,7 +131,7 @@ PY
   fi
 
   # Run build, save log to file and stdout.
-  if tsi install --verbose "$pkg" 2>&1 | tee "$LOG_FILE"; then
+  if tsi install --prefix "$PREFIX" --verbose "$pkg" 2>&1 | tee "$LOG_FILE"; then
     SUCCEEDED="${SUCCEEDED} ${pkg}"
     rm "$LOG_FILE"
     python3 "$SCRIPT_DIR/update-status.py" --status-file "$STATUS_FILE" --package "$pkg" --result success --log "$LOG_FILE"

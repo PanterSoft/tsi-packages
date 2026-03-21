@@ -14,9 +14,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -33,9 +36,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -52,9 +58,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -71,9 +80,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -90,9 +102,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -109,9 +124,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -128,9 +146,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -147,9 +168,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -166,9 +190,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -185,9 +212,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -204,9 +234,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -223,9 +256,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -242,9 +278,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -261,9 +300,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -280,9 +322,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -299,9 +344,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -318,9 +366,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -337,9 +388,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -356,9 +410,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     },
@@ -367,7 +424,7 @@
       "description": "Yet Another JSON Library",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/lloyd/yajl/archive/2.1.0.tar.gz"
+        "url": "https://github.com/lloyd/yajl/archive/refs/tags/2.1.0.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -375,9 +432,12 @@
         "make",
         "coreutils"
       ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
+      "build_system": "custom",
+      "build_commands": [
+        "sed -i.bak '/ADD_SUBDIRECTORY(reformatter)/d;/ADD_SUBDIRECTORY(verify)/d;/ADD_SUBDIRECTORY(example)/d;/ADD_SUBDIRECTORY(perf)/d;/ADD_SUBDIRECTORY(test)/d' CMakeLists.txt",
+        "cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR .",
+        "cmake --build .",
+        "cmake --install ."
       ],
       "env": {}
     }

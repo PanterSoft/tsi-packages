@@ -8,9 +8,10 @@
   },
   "dependencies": [],
   "build_dependencies": [],
-  "build_system": "make",
-  "make_args": [
-    "PREFIX=$TSI_INSTALL_DIR"
+  "build_system": "custom",
+  "build_commands": [
+    "make",
+    "make install PREFIX=$TSI_INSTALL_DIR"
   ],
   "env": {}
 }

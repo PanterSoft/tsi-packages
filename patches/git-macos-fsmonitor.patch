@@ -1,0 +1,12 @@
+--- a/compat/fsmonitor/fsm-listen-darwin.c
++++ b/compat/fsmonitor/fsm-listen-darwin.c
+@@ -1,8 +1,8 @@
+ #include "cache.h"
+ #include "fsmonitor.h"
+-#include <CoreServices/CoreServices.h>
+ #include <dispatch/dispatch.h>
+ #include <pthread.h>
++#include <CoreServices/CoreServices.h>
+
+ struct fsmonitor_daemon_state {
+ 	dispatch_queue_t queue;

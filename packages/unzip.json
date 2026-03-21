@@ -4,13 +4,17 @@
   "description": "Extraction utility for .zip archives",
   "source": {
     "type": "tarball",
-    "url": "https://sourceforge.net/projects/infozip/files/UnZip%206.0%20%28latest%29/unzip60.tar.gz/download"
+    "url": "https://downloads.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZip%206.0/unzip60.tar.gz"
   },
   "dependencies": [],
-  "build_dependencies": [],
-  "build_system": "make",
-  "make_args": [
-    "-f unix/Makefile generic"
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "custom",
+  "build_commands": [
+    "make -f unix/Makefile macosx",
+    "make -f unix/Makefile install prefix=$TSI_INSTALL_DIR"
   ],
   "env": {}
 }

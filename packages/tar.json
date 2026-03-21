@@ -10,5 +10,6 @@
   "build_dependencies": ["coreutils", "make"],
   "build_system": "autotools",
   "configure_args": [],
-  "env": {}
+  "env": {},
+  "env_darwin": {"LDFLAGS": "-liconv"}
 }

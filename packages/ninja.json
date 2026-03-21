@@ -6,13 +6,19 @@
       "description": "Small build system",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/ninja-build/ninja/releases/download/v1.13.2/ninja-1.13.2.tar.gz"
+        "url": "https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.2.tar.gz"
       },
       "dependencies": [],
-      "build_dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
-        "python3 configure.py --bootstrap"
+        "cmake -S . -B build-cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR",
+        "cmake --build build-cmake",
+        "cmake --install build-cmake"
       ],
       "env": {}
     },
@@ -21,13 +27,19 @@
       "description": "Small build system",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/ninja-build/ninja/releases/download/v1.13.1/ninja-1.13.1.tar.gz"
+        "url": "https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.1.tar.gz"
       },
       "dependencies": [],
-      "build_dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
-        "python3 configure.py --bootstrap"
+        "cmake -S . -B build-cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR",
+        "cmake --build build-cmake",
+        "cmake --install build-cmake"
       ],
       "env": {}
     },

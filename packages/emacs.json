@@ -16,7 +16,10 @@
   ],
   "build_system": "autotools",
   "configure_args": [
-    "--with-xml2"
+    "--with-xml2",
+    "--with-gnutls=ifavailable",
+    "--without-ns",
+    "--with-x=no"
   ],
   "env": {}
 }

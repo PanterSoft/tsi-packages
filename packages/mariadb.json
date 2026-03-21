@@ -4,7 +4,7 @@
   "description": "MariaDB database server",
   "source": {
     "type": "tarball",
-    "url": "https://downloads.mariadb.org/mariadb/11.3.2/source/mariadb-11.3.2.tar.gz"
+    "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.3.2.tar.gz"
   },
   "dependencies": [
     "openssl",

@@ -4,7 +4,7 @@
   "description": "GIF library",
   "source": {
     "type": "tarball",
-    "url": "https://sourceforge.net/projects/giflib/files/giflib-5.2.2.tar.gz/download"
+    "url": "https://downloads.sourceforge.net/project/giflib/giflib-5.x/giflib-5.2.2.tar.gz"
   },
   "dependencies": [],
   "build_dependencies": [],

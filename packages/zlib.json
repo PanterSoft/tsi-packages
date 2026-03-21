@@ -11,7 +11,7 @@
   "build_system": "custom",
   "build_commands": [
     "python3 - << 'EOF'\nimport io\nimport os\n\npath = 'zutil.h'\nif os.path.exists(path):\n    data = open(path, 'r', encoding='utf-8', errors='ignore').read()\n    before = data\n    data = data.replace('#        define fdopen(fd,mode) NULL /* No fdopen() */', '/* fdopen is available on this platform; do not override */')\n    if data != before:\n        open(path, 'w', encoding='utf-8').write(data)\nEOF",
-    "./configure --static",
+    "./configure --prefix=$TSI_INSTALL_DIR --static",
     "make",
     "make install"
   ],

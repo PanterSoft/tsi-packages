@@ -8,11 +8,13 @@
   },
   "dependencies": [],
   "build_dependencies": [
+    "meson",
+    "ninja",
     "pkg-config",
     "make",
     "coreutils"
   ],
-  "build_system": "autotools",
+  "build_system": "meson",
   "configure_args": [],
   "env": {}
 }

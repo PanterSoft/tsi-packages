@@ -22,5 +22,10 @@
     "--with-png",
     "--with-bzip2"
   ],
+  "configure_args_darwin": [
+    "--with-zlib",
+    "--without-png",
+    "--with-bzip2"
+  ],
   "env": {}
 }

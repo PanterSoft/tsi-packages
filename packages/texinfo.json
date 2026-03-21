@@ -12,6 +12,6 @@
     "coreutils"
   ],
   "build_system": "autotools",
-  "configure_args": [],
+  "configure_args": ["--disable-nls", "--enable-perl-xs=no"],
   "env": {}
 }

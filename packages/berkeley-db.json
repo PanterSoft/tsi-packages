@@ -13,9 +13,9 @@
   ],
   "build_system": "custom",
   "build_commands": [
-    "cd build_unix && ../dist/configure --prefix=$TSI_INSTALL_DIR --enable-cxx --enable-dbm",
+    "cd build_unix && ../dist/configure --prefix=$TSI_INSTALL_DIR --enable-cxx --enable-dbm --disable-sql",
     "cd build_unix && make",
-    "cd build_unix && make install"
+    "cd build_unix && make install_lib install_include install_utilities"
   ],
   "env": {}
 }

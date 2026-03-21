@@ -62,21 +62,31 @@ def main():
 
     table_data[args.package][os_arch] = "✅" if args.result == "success" else "❌"
 
-    # Derive an optional note from the log file (e.g. skipped due to failed dependency)
-    note = table_data[args.package].get("Notes", "")
+    # Derive an optional note from the log file.
+    # Keep status notes deterministic:
+    # - success: clear stale notes
+    # - failure with known skip/unsupported reason: set corresponding note
+    # - failure without known reason: clear stale skip/unsupported notes
+    note = ""
     if args.result == "failure" and log_file.exists():
         try:
             first_line = log_file.read_text(encoding="utf-8", errors="ignore").splitlines()[0].strip()
         except IndexError:
             first_line = ""
 
-        prefix = "Skipped because dependency '"
-        if first_line.startswith(prefix) and first_line.endswith(" earlier in this run."):
-            dep_name = first_line[len(prefix):].split("'", 1)[0]
+        dep_prefix = "Skipped because dependency '"
+        unsupported_prefix = "Unsupported on platform '"
+        if first_line.startswith(dep_prefix) and first_line.endswith(" earlier in this run."):
+            dep_name = first_line[len(dep_prefix):].split("'", 1)[0]
             note = f"skipped: {dep_name}"
+        elif first_line.startswith(unsupported_prefix):
+            platform_name = first_line[len(unsupported_prefix):].split("'", 1)[0]
+            note = f"unsupported: {platform_name}"
 
     if note:
         table_data[args.package]["Notes"] = note
+    elif "Notes" in table_data[args.package]:
+        del table_data[args.package]["Notes"]
 
     # Rebuild table
     widths = {c: len(c) for c in columns}
