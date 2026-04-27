@@ -2,6 +2,1056 @@
   "name": "vim",
   "versions": [
     {
+      "version": "9.2.0398",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0398.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0397",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0397.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0396",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0396.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0395",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0395.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0394",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0394.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0393",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0393.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0392",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0392.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0391",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0391.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0390",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0390.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0389",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0389.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0388",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0388.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0387",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0387.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0386",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0386.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0385",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0385.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0384",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0384.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0383",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0383.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0382",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0382.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0381",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0381.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0380",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0380.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0379",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0379.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0378",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0378.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0377",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0377.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0376",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0376.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0375",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0375.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0374",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0374.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0373",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0373.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0372",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0372.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0371",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0371.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0370",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0370.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0369",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0369.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0368",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0368.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0367",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0367.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0366",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0366.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0365",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0365.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0364",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0364.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0363",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0363.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0362",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0362.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0361",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0361.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0360",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0360.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0359",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0359.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0358",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0358.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0357",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0357.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0356",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0356.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0355",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0355.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0354",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0354.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0353",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0353.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0352",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0352.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0351",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0351.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0350",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0350.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0349",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0349.tar.gz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
       "version": "9.1.0999",
       "description": "Vi IMproved text editor",
       "source": {
