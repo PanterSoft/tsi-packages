@@ -1,28 +1,1355 @@
 {
   "name": "mysql",
-  "version": "8.0.36",
-  "description": "MySQL database server",
-  "source": {
-    "type": "tarball",
-    "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.36.tar.gz"
-  },
-  "dependencies": [
-    "openssl",
-    "zlib",
-    "zstd"
-  ],
-  "build_dependencies": [
-    "cmake",
-    "make",
-    "coreutils"
-  ],
-  "build_system": "cmake",
-  "cmake_args": [
-    "-DCMAKE_BUILD_TYPE=Release",
-    "-DWITH_SSL=system",
-    "-DWITH_ZLIB=system",
-    "-DWITH_ZSTD=system",
-    "-DDOWNLOAD_BOOST=0"
-  ],
-  "env": {}
+  "versions": [
+    {
+      "version": "9.7.0",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-9.7.0.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.6.0",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-9.6.0.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.5.0",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-9.5.0.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.4.0",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-9.4.0.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.3.0",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-9.3.0.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.2.0",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-9.2.0.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.1.0",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-9.1.0.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.0.1",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-9.0.1.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "9.0.0",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-9.0.0.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.4.9",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.4.9.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.4.8",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.4.8.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.4.7",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.4.7.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.4.6",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.4.6.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.4.5",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.4.5.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.4.4",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.4.4.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.4.3",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.4.3.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.4.2",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.4.2.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.4.1",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.4.1.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.4.0",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.4.0.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.3.0",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.3.0.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.2.0",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.2.0.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.1.0",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.1.0.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.46",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.46.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.45",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.45.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.44",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.44.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.43",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.43.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.42",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.42.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.41",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.41.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.40",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.40.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.39",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.39.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.38",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.38.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.37",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.37.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.35",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.35.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.34",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.34.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.33",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.33.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.32",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.32.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.31",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.31.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.30",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.30.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.29",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.29.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.28",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.28.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.27",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.27.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.26",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.26.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.25",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.25.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.24",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.24.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.23",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.23.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.22",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.22.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.21",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.21.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.20",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.20.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.19",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.19.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    },
+    {
+      "version": "8.0.36",
+      "description": "MySQL database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.36.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system",
+        "-DWITH_ZSTD=system",
+        "-DDOWNLOAD_BOOST=0"
+      ],
+      "env": {}
+    }
+  ]
 }
