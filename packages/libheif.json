@@ -2,6 +2,94 @@
   "name": "libheif",
   "versions": [
     {
+      "version": "1.22.0",
+      "description": "HEIF image format library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/strukturag/libheif/releases/download/v1.22.0/libheif-1.22.0.tar.gz"
+      },
+      "dependencies": [
+        "libpng",
+        "libjpeg-turbo"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.21.2",
+      "description": "HEIF image format library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/strukturag/libheif/releases/download/v1.21.2/libheif-1.21.2.tar.gz"
+      },
+      "dependencies": [
+        "libpng",
+        "libjpeg-turbo"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.21.1",
+      "description": "HEIF image format library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/strukturag/libheif/releases/download/v1.21.1/libheif-1.21.1.tar.gz"
+      },
+      "dependencies": [
+        "libpng",
+        "libjpeg-turbo"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.21.0",
+      "description": "HEIF image format library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/strukturag/libheif/releases/download/v1.21.0/libheif-1.21.0.tar.gz"
+      },
+      "dependencies": [
+        "libpng",
+        "libjpeg-turbo"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
       "version": "1.20.2",
       "description": "HEIF image format library",
       "source": {

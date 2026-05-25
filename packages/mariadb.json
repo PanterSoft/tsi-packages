@@ -1,26 +1,855 @@
 {
   "name": "mariadb",
-  "version": "11.3.2",
-  "description": "MariaDB database server",
-  "source": {
-    "type": "tarball",
-    "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.3.2.tar.gz"
-  },
-  "dependencies": [
-    "openssl",
-    "zlib",
-    "zstd"
-  ],
-  "build_dependencies": [
-    "cmake",
-    "make",
-    "coreutils"
-  ],
-  "build_system": "cmake",
-  "cmake_args": [
-    "-DCMAKE_BUILD_TYPE=Release",
-    "-DWITH_SSL=system",
-    "-DWITH_ZLIB=system"
-  ],
-  "env": {}
+  "versions": [
+    {
+      "version": "11.8.7b",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.8.7b.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "11.4.11b",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.4.11b.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "10.6.26",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-10.6.26.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "10.11.17",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-10.11.17.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "12.2.2",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-12.2.2.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "12.3.1",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-12.3.1.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "11.8.6",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.8.6.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "11.4.10",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.4.10.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "10.6.25",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-10.6.25.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "10.11.16",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-10.11.16.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "12.2.1",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-12.2.1.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "12.1.2",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-12.1.2.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "11.8.5",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.8.5.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "11.8.4",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.8.4.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "11.4.9",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.4.9.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "10.6.24",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-10.6.24.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "10.11.15",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-10.11.15.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "12.0.2",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-12.0.2.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "12.1.1",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-12.1.1.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "11.8.3",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.8.3.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "11.4.8",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.4.8.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "10.6.23",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-10.6.23.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "10.11.14",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-10.11.14.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "12.0.1",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-12.0.1.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "11.8.2",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.8.2.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "11.4.7",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.4.7.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "10.11.13",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-10.11.13.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "11.7.2",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.7.2.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "11.8.1",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.8.1.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "11.4.5",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.4.5.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "10.6.21",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-10.6.21.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "10.5.28",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-10.5.28.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "10.11.11",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-10.11.11.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    },
+    {
+      "version": "11.3.2",
+      "description": "MariaDB database server",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.3.2.tar.gz"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SSL=system",
+        "-DWITH_ZLIB=system"
+      ],
+      "env": {}
+    }
+  ]
 }
