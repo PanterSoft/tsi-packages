@@ -2,6 +2,111 @@
   "name": "meson",
   "versions": [
     {
+      "version": "1.11.1",
+      "description": "Build system",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mesonbuild/meson/releases/download/1.11.1/meson-1.11.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "custom",
+      "build_commands": [
+        "python3 setup.py install --prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.11.0",
+      "description": "Build system",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mesonbuild/meson/releases/download/1.11.0/meson-1.11.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "custom",
+      "build_commands": [
+        "python3 setup.py install --prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.11.0rc3",
+      "description": "Build system",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mesonbuild/meson/releases/download/1.11.0rc3/meson-1.11.0rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "custom",
+      "build_commands": [
+        "python3 setup.py install --prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.11.0rc2",
+      "description": "Build system",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mesonbuild/meson/releases/download/1.11.0rc2/meson-1.11.0rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "custom",
+      "build_commands": [
+        "python3 setup.py install --prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.11.0rc1",
+      "description": "Build system",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mesonbuild/meson/releases/download/1.11.0rc1/meson-1.11.0rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "custom",
+      "build_commands": [
+        "python3 setup.py install --prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.10.2",
+      "description": "Build system",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mesonbuild/meson/releases/download/1.10.2/meson-1.10.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "custom",
+      "build_commands": [
+        "python3 setup.py install --prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.10.1",
+      "description": "Build system",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mesonbuild/meson/releases/download/1.10.1/meson-1.10.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "custom",
+      "build_commands": [
+        "python3 setup.py install --prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
       "version": "1.10.0",
       "description": "Build system",
       "source": {
