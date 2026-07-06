@@ -2,6 +2,294 @@
   "name": "grpc",
   "versions": [
     {
+      "version": "1.82.0",
+      "description": "High performance RPC framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/grpc/grpc/archive/v1.82.0.tar.gz"
+      },
+      "dependencies": [
+        "protobuf",
+        "zlib",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DgRPC_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.82.0-pre2",
+      "description": "High performance RPC framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/grpc/grpc/archive/v1.82.0-pre2.tar.gz"
+      },
+      "dependencies": [
+        "protobuf",
+        "zlib",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DgRPC_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.82.0-pre1",
+      "description": "High performance RPC framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/grpc/grpc/archive/v1.82.0-pre1.tar.gz"
+      },
+      "dependencies": [
+        "protobuf",
+        "zlib",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DgRPC_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.81.1",
+      "description": "High performance RPC framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/grpc/grpc/archive/v1.81.1.tar.gz"
+      },
+      "dependencies": [
+        "protobuf",
+        "zlib",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DgRPC_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.81.0",
+      "description": "High performance RPC framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/grpc/grpc/archive/v1.81.0.tar.gz"
+      },
+      "dependencies": [
+        "protobuf",
+        "zlib",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DgRPC_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.81.0-pre1",
+      "description": "High performance RPC framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/grpc/grpc/archive/v1.81.0-pre1.tar.gz"
+      },
+      "dependencies": [
+        "protobuf",
+        "zlib",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DgRPC_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.80.0",
+      "description": "High performance RPC framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/grpc/grpc/archive/v1.80.0.tar.gz"
+      },
+      "dependencies": [
+        "protobuf",
+        "zlib",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DgRPC_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.80.0-pre1",
+      "description": "High performance RPC framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/grpc/grpc/archive/v1.80.0-pre1.tar.gz"
+      },
+      "dependencies": [
+        "protobuf",
+        "zlib",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DgRPC_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.78.1",
+      "description": "High performance RPC framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/grpc/grpc/archive/v1.78.1.tar.gz"
+      },
+      "dependencies": [
+        "protobuf",
+        "zlib",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DgRPC_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.78.0",
+      "description": "High performance RPC framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/grpc/grpc/archive/v1.78.0.tar.gz"
+      },
+      "dependencies": [
+        "protobuf",
+        "zlib",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DgRPC_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.78.0-pre2",
+      "description": "High performance RPC framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/grpc/grpc/archive/v1.78.0-pre2.tar.gz"
+      },
+      "dependencies": [
+        "protobuf",
+        "zlib",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DgRPC_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.78.0-pre1",
+      "description": "High performance RPC framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/grpc/grpc/archive/v1.78.0-pre1.tar.gz"
+      },
+      "dependencies": [
+        "protobuf",
+        "zlib",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DgRPC_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
       "version": "1.76.0",
       "description": "High performance RPC framework",
       "source": {

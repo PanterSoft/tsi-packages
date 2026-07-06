@@ -2,6 +2,489 @@
   "name": "cmake",
   "versions": [
     {
+      "version": "4.4.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.4.0-rc3/cmake-4.4.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.4.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.4.0-rc2/cmake-4.4.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.3.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.3.4/cmake-4.3.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.2.7",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.2.7/cmake-4.2.7.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.4.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.4.0-rc1/cmake-4.4.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.3.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.3.3/cmake-4.3.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.2.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.2.6/cmake-4.2.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.3.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.3.2/cmake-4.3.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.2.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.2.5/cmake-4.2.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.1.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.1.6/cmake-4.1.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.0.7",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.0.7/cmake-4.0.7.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "3.31.12",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.12/cmake-3.31.12.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.3.1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.3.1/cmake-4.3.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.2.4",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.2.4/cmake-4.2.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.3.0",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.3.0/cmake-4.3.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.3.0-rc3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.3.0-rc3/cmake-4.3.0-rc3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.3.0-rc2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.3.0-rc2/cmake-4.3.0-rc2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.3.0-rc1",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.3.0-rc1/cmake-4.3.0-rc1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.2.3",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.2.3/cmake-4.2.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.1.5",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.1.5/cmake-4.1.5.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.0.6",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.0.6/cmake-4.0.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "3.31.11",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v3.31.11/cmake-3.31.11.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
+      "version": "4.2.2",
+      "description": "Cross-platform build system generator",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.2.2/cmake-4.2.2.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./bootstrap --prefix=$TSI_INSTALL_DIR --parallel=$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make -j$(nproc 2>/dev/null || sysctl -n hw.ncpu || echo 1)",
+        "make install"
+      ],
+      "bootstrapping": true,
+      "env": {}
+    },
+    {
       "version": "4.2.1",
       "description": "Cross-platform build system generator",
       "source": {
