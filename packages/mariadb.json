@@ -4,7 +4,8 @@
   "description": "MariaDB database server",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/MariaDB/server/archive/refs/tags/mariadb-11.3.2.tar.gz"
+    "url": "https://archive.mariadb.org/mariadb-11.3.2/source/mariadb-11.3.2.tar.gz",
+    "sha256": "5570778f0a2c27af726c751cda1a943f3f8de96d11d107791be5b44a0ce3fb5c"
   },
   "dependencies": [
     "openssl",
@@ -20,7 +21,8 @@
   "cmake_args": [
     "-DCMAKE_BUILD_TYPE=Release",
     "-DWITH_SSL=system",
-    "-DWITH_ZLIB=system"
+    "-DWITH_ZLIB=system",
+    "-DWITH_ZSTD=system"
   ],
   "env": {}
 }

@@ -6,7 +6,6 @@
     "type": "tarball",
     "url": "https://www.sqlite.org/2024/sqlite-autoconf-3460000.tar.gz"
   },
-  "source_dir": "sqlite-autoconf-3460000",
   "dependencies": [],
   "build_dependencies": [
     "make",
