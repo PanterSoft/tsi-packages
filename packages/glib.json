@@ -18,5 +18,8 @@
   ],
   "build_system": "meson",
   "configure_args": [],
-  "env": {}
+  "env": {},
+  "env_darwin": {
+    "LDFLAGS": "-L$TSI_INSTALL_DIR/lib -Wl,-framework,Cocoa -Wl,-framework,Foundation"
+  }
 }

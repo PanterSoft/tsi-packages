@@ -19,6 +19,8 @@
     "coreutils"
   ],
   "build_system": "meson",
-  "configure_args": [],
+  "configure_args": [
+    "-Dwrap_mode=nodownload"
+  ],
   "env": {}
 }
