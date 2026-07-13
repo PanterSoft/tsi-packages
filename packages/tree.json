@@ -1,0 +1,17 @@
+{
+  "name": "tree",
+  "version": "2.2.1",
+  "description": "Recursive directory listing command",
+  "source": {
+    "type": "tarball",
+    "url": "https://gitlab.com/OldManProgrammer/unix-tree/-/archive/2.2.1/unix-tree-2.2.1.tar.gz",
+    "sha256": "70d9c6fc7c5f4cb1f7560b43e2785194594b9b8f6855ab53376f6bd88667ee04"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "make",
+  "make_args": [
+    "PREFIX=$TSI_INSTALL_DIR"
+  ],
+  "env": {}
+}

@@ -1,0 +1,17 @@
+{
+  "name": "xxhash",
+  "version": "0.8.3",
+  "description": "Extremely fast hash algorithm and xxhsum CLI",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.3.tar.gz",
+    "sha256": "aae608dfe8213dfd05d909a57718ef82f30722c392344583d3f39050c7f29a80"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "make",
+  "make_args": [
+    "PREFIX=$TSI_INSTALL_DIR"
+  ],
+  "env": {}
+}

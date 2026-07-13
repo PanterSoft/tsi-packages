@@ -1,0 +1,19 @@
+{
+  "name": "less",
+  "version": "668",
+  "description": "Terminal pager for viewing file contents",
+  "source": {
+    "type": "tarball",
+    "url": "https://greenwoodsoftware.com/less/less-668.tar.gz",
+    "sha256": "2819f55564d86d542abbecafd82ff61e819a3eec967faa36cd3e68f1596a44b8"
+  },
+  "dependencies": [
+    "ncurses"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {
+    "CFLAGS": "-I$TSI_INSTALL_DIR/include -I$TSI_INSTALL_DIR/include/ncursesw"
+  }
+}
