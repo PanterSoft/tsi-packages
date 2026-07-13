@@ -2,6 +2,358 @@
   "name": "protobuf",
   "versions": [
     {
+      "version": "36.0-rc1",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v36.0-rc1/protobuf-36.0-rc1.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "35.1",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v35.1/protobuf-35.1.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "35.0",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v35.0/protobuf-35.0.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "34.2",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v34.2/protobuf-34.2.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "35.0-rc2",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v35.0-rc2/protobuf-35.0-rc2.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "35.0-rc1",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v35.0-rc1/protobuf-35.0-rc1.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "25.9",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v25.9/protobuf-25.9.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "34.1",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v34.1/protobuf-34.1.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "33.6",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v33.6/protobuf-33.6.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "34.0",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v34.0/protobuf-34.0.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "34.0-rc2",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v34.0-rc2/protobuf-34.0-rc2.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "29.6",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v29.6/protobuf-29.6.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "33.5",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v33.5/protobuf-33.5.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "34.0-rc1.1",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v34.0-rc1.1/protobuf-34.0-rc1.1.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "33.4",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v33.4/protobuf-33.4.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "33.3",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v33.3/protobuf-33.3.tar.gz"
+      },
+      "dependencies": [
+        "zlib"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
       "version": "33.2",
       "description": "Protocol Buffers data serialization",
       "source": {
