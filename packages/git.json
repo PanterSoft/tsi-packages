@@ -27,7 +27,10 @@
         "--without-tcltk",
         "--with-zlib"
       ],
-      "env": {}
+      "env": {},
+      "env_darwin": {
+        "LDFLAGS": "-L$TSI_INSTALL_DIR/lib -lintl"
+      }
     }
   ]
 }
