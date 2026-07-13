@@ -27,5 +27,7 @@
     "--with-openssl=$TSI_INSTALL_DIR",
     "--enable-shared"
   ],
-  "env": {}
+  "env": {
+    "LDFLAGS": "-L$TSI_INSTALL_DIR/lib -lintl"
+  }
 }
