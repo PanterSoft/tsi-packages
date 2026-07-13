@@ -16,7 +16,6 @@
         "pkg-config",
         "meson",
         "ninja",
-        "python",
         "coreutils"
       ],
       "build_system": "meson",

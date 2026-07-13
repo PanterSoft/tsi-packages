@@ -25,7 +25,8 @@
         "-DCMAKE_BUILD_TYPE=Release",
         "-DWITH_TESTS=OFF",
         "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
+        "-DWITH_GFLAGS=OFF",
+        "-DROCKSDB_BUILD_SHARED=OFF"
       ],
       "env": {}
     },
