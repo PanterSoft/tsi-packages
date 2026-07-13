@@ -29,5 +29,9 @@
   ],
   "env": {
     "LDFLAGS": "-L$TSI_INSTALL_DIR/lib -lintl"
+  },
+  "env_darwin": {
+    "ac_cv_func_uuid_generate_time_safe": "no",
+    "ac_cv_lib_uuid_uuid_generate_time_safe": "no"
   }
 }
