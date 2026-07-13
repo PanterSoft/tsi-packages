@@ -1,0 +1,21 @@
+{
+  "name": "jq",
+  "version": "1.7.1",
+  "description": "Command-line JSON processor",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/jqlang/jq/releases/download/jq-1.7.1/jq-1.7.1.tar.gz",
+    "sha256": "478c9ca129fd2e3443fe27314b455e211e0d8c60bc8ff7df703873deeee580c2"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-maintainer-mode",
+    "--without-oniguruma",
+    "--disable-docs"
+  ],
+  "env": {
+    "CFLAGS": "-Wno-error=incompatible-pointer-types"
+  }
+}
