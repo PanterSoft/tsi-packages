@@ -2,6 +2,44 @@
   "name": "libuv",
   "versions": [
     {
+      "version": "1.52.1",
+      "description": "Cross-platform asynchronous I/O library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libuv/libuv/archive/v1.52.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.52.0",
+      "description": "Cross-platform asynchronous I/O library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libuv/libuv/archive/v1.52.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
       "version": "1.51.0",
       "description": "Cross-platform asynchronous I/O library",
       "source": {

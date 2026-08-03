@@ -2,6 +2,44 @@
   "name": "nanomsg",
   "versions": [
     {
+      "version": "1.2.4",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/1.2.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.2.3",
+      "description": "Socket library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nanomsg/nanomsg/archive/1.2.3.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
       "version": "1.2.2",
       "description": "Socket library",
       "source": {
