@@ -114,7 +114,11 @@ for pkg in $PACKAGES; do
     fi
   fi
 
-  if tsi install --prefix "$PREFIX" --verbose "$pkg" 2>&1 | tee "$LOG_FILE"; then
+  # Not --verbose: a full-catalogue run with verbose output writes tens of
+  # gigabytes of compiler chatter (it filled a 926G disk once). Compact mode
+  # still streams every step, and tsi dumps the failing command's full output
+  # on failure, which is the part anyone actually reads.
+  if tsi install --prefix "$PREFIX" "$pkg" 2>&1 | tee "$LOG_FILE"; then
     rm -f "$LOG_FILE"
     record "$pkg" ok
   else
