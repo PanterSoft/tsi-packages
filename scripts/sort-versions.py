@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
-"""Order each package's `versions` newest-first.
+"""Deduplicate and order each package's `versions`, newest-first.
 
-    python3 scripts/sort-versions.py --check   # report what would move
+    python3 scripts/sort-versions.py --check   # report what would change
     python3 scripts/sort-versions.py           # rewrite the files
 
-TSI installs `versions[0]` when no version is requested, so the order in the
-file *is* the default version. discover-versions.py appends, which is how
-`tsi install snappy` ended up defaulting to 1.1.10 (a dead URL) while 1.2.0
-sat at the bottom of the list.
+The dedupe is the part that matters. discover-versions.py appends without
+checking, so packages accumulate repeated version numbers -- rocksdb carried 28
+and msgpack 4. A repeat is unreachable: `name@version` resolves to one entry, so
+every copy after the first is dead weight that still gets read and validated.
+
+The ordering is tidiness, not semantics. TSI does *not* take `versions[0]`: the
+registry sorts every package's versions with its own comparator and picks the
+highest (src/core/registry.rs), so file order does not choose the default. A
+file ordered the same way it will be resolved is simply easier to read and to
+review a diff against.
 
 Ordering rule: split on dots and dashes, compare numeric segments numerically
 and everything else as text, and rank a prerelease (rc/alpha/beta/pre) below
@@ -60,13 +66,28 @@ def main():
         if not isinstance(versions, list) or len(versions) < 2:
             continue
 
-        ordered = sorted(versions, key=lambda v: version_key(v.get("version", "")), reverse=True)
+        # Drop duplicate version numbers first: `name@version` resolves to the
+        # first match, so a second entry with the same number is unreachable and
+        # only there because discover-versions.py appended it again. Keeping the
+        # first occurrence preserves what resolves today.
+        deduped, seen = [], set()
+        for v in versions:
+            key = str(v.get("version"))
+            if key in seen:
+                continue
+            seen.add(key)
+            deduped.append(v)
+
+        ordered = sorted(deduped, key=lambda v: version_key(v.get("version", "")), reverse=True)
         if ordered == versions:
             continue
 
         old_default = versions[0].get("version")
         new_default = ordered[0].get("version")
         moved += 1
+        dropped = len(versions) - len(ordered)
+        if dropped:
+            print(f"{data.get('name', path.stem)}: dropped {dropped} duplicate version entr(ies)")
         if old_default != new_default:
             print(f"{data.get('name', path.stem)}: default {old_default} -> {new_default}")
         else:

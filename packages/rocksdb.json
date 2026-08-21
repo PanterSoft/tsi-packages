@@ -2983,34 +2983,6 @@
       "env": {}
     },
     {
-      "version": "5.14.3",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.14.3.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
       "version": "5.14.2",
       "description": "Persistent key-value store",
       "source": {
@@ -3263,62 +3235,6 @@
       "env": {}
     },
     {
-      "version": "5.11.3",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.11.3.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.11.2",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.11.2.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
       "version": "5.11.2",
       "description": "Persistent key-value store",
       "source": {
@@ -3352,62 +3268,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/facebook/rocksdb/archive/v5.10.4.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.10.4",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.10.4.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.10.3",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.10.3.tar.gz"
       },
       "dependencies": [
         "snappy",
@@ -3515,62 +3375,6 @@
       "env": {}
     },
     {
-      "version": "5.9.2",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.9.2.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.8.8",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.8.8.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
       "version": "5.8.8",
       "description": "Persistent key-value store",
       "source": {
@@ -3604,62 +3408,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/facebook/rocksdb/archive/v5.8.7.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.8.7",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.8.7.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.8.6",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.8.6.tar.gz"
       },
       "dependencies": [
         "snappy",
@@ -3767,95 +3515,11 @@
       "env": {}
     },
     {
-      "version": "5.7.5",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.7.5.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
       "version": "5.7.3",
       "description": "Persistent key-value store",
       "source": {
         "type": "tarball",
         "url": "https://github.com/facebook/rocksdb/archive/v5.7.3.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.7.3",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.7.3.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.7.2",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.7.2.tar.gz"
       },
       "dependencies": [
         "snappy",
@@ -3935,62 +3599,6 @@
       "env": {}
     },
     {
-      "version": "5.7.1",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.7.1.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.6.2",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.6.2.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
       "version": "5.6.2",
       "description": "Persistent key-value store",
       "source": {
@@ -4024,62 +3632,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/facebook/rocksdb/archive/v5.6.1.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.6.1",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.6.1.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.5.6",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.5.6.tar.gz"
       },
       "dependencies": [
         "snappy",
@@ -4215,62 +3767,6 @@
       "env": {}
     },
     {
-      "version": "5.5.3",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.5.3.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.5.2",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.5.2.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
       "version": "5.5.2",
       "description": "Persistent key-value store",
       "source": {
@@ -4355,95 +3851,11 @@
       "env": {}
     },
     {
-      "version": "5.4.10",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.4.10.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
       "version": "5.4.7",
       "description": "Persistent key-value store",
       "source": {
         "type": "tarball",
         "url": "https://github.com/facebook/rocksdb/archive/v5.4.7.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.4.7",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.4.7.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.4.6",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.4.6.tar.gz"
       },
       "dependencies": [
         "snappy",
@@ -4523,95 +3935,11 @@
       "env": {}
     },
     {
-      "version": "5.4.5",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.4.5.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
       "version": "5.3.6",
       "description": "Persistent key-value store",
       "source": {
         "type": "tarball",
         "url": "https://github.com/facebook/rocksdb/archive/v5.3.6.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.3.6",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.3.6.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.3.5",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.3.5.tar.gz"
       },
       "dependencies": [
         "snappy",
@@ -4691,95 +4019,11 @@
       "env": {}
     },
     {
-      "version": "5.3.4",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.3.4.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
       "version": "5.3.3",
       "description": "Persistent key-value store",
       "source": {
         "type": "tarball",
         "url": "https://github.com/facebook/rocksdb/archive/v5.3.3.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.3.3",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.3.3.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "5.2.1",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v5.2.1.tar.gz"
       },
       "dependencies": [
         "snappy",
@@ -5172,34 +4416,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/facebook/rocksdb/archive/v4.2.tar.gz"
-      },
-      "dependencies": [
-        "snappy",
-        "zlib",
-        "lz4",
-        "zstd",
-        "bzip2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_TESTS=OFF",
-        "-DWITH_TOOLS=OFF",
-        "-DWITH_GFLAGS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "4.1",
-      "description": "Persistent key-value store",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/facebook/rocksdb/archive/v4.1.tar.gz"
       },
       "dependencies": [
         "snappy",

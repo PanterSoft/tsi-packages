@@ -10,18 +10,24 @@
   "dependencies": [
     "openssl",
     "zlib",
-    "readline"
+    "readline",
+    "icu"
   ],
   "build_dependencies": [
     "make",
-    "coreutils"
+    "coreutils",
+    "pkg-config"
   ],
   "build_system": "autotools",
   "configure_args": [
     "--with-openssl",
     "--with-readline",
+    "--with-icu",
     "--without-perl",
     "--without-python"
   ],
-  "env": {}
+  "env": {},
+  "env_darwin": {
+    "CPPFLAGS": "-I$TSI_INSTALL_DIR/include"
+  }
 }

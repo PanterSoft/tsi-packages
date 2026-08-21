@@ -12,7 +12,11 @@
     "zlib",
     "sqlite",
     "libffi",
-    "libuuid"
+    "libuuid",
+    "bzip2",
+    "xz",
+    "readline",
+    "ncurses"
   ],
   "build_dependencies": [
     "make",
@@ -28,9 +32,7 @@
     "--with-openssl=$TSI_INSTALL_DIR",
     "--enable-shared"
   ],
-  "env": {
-    "LDFLAGS": "-L$TSI_INSTALL_DIR/lib -lintl"
-  },
+  "env": {},
   "env_darwin": {
     "ac_cv_func_uuid_generate_time_safe": "no",
     "ac_cv_lib_uuid_uuid_generate_time_safe": "no"

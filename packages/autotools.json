@@ -2,20 +2,12 @@
   "name": "autotools",
   "version": "2.72",
   "description": "Meta-package for GNU Autoconf, Automake, and Libtool",
-  "source": {
-    "type": "tarball",
-    "url": "https://ftp.gnu.org/gnu/hello/hello-2.12.1.tar.gz",
-    "sha256": "8d99142afd92576f30b0cd7cb42a8dc6809998bc5d607d88761f512e26c7db20"
-  },
   "dependencies": [
     "autoconf",
     "automake",
     "libtool"
   ],
   "build_dependencies": [],
-  "build_system": "custom",
-  "build_commands": [
-    "true"
-  ],
+  "build_system": "meta",
   "env": {}
 }

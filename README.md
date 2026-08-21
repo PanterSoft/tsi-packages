@@ -30,7 +30,7 @@ Package format and fields are documented in the [TSI documentation](https://gith
 
 | Workflow | When | What it proves |
 |---|---|---|
-| `package-validation` | every push / PR | schema, `platforms` values, duplicate names, unresolvable deps, version ordering, script self-checks, shellcheck, and that **changed** packages' sources are pinned and reachable |
+| `package-validation` | every push / PR | schema, `platforms` values, duplicate package names, duplicate/misordered version entries, a version that appears nowhere in its own URL, unresolvable deps, script self-checks, shellcheck, actionlint, and that **changed** packages' sources are pinned and reachable |
 | `test-build-packages` | every push / PR touching packages | changed packages really build on Linux-x86_64, Linux-aarch64 and macOS-aarch64 |
 | `verify-sources` | weekly | every package's default source still downloads and still matches its recorded sha256 |
 | `validate-all-packages` | weekly + manual | the whole catalogue built on all three platforms, regenerating `PACKAGES_STATUS.md` |

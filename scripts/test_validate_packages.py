@@ -22,10 +22,13 @@ def write(d, name, data):
 
 
 def good(name, **over):
+    # The version has to appear in the URL: the validator checks that, because a
+    # bumped `version` with a stale URL is how icu came to fetch 74.2 while
+    # claiming 78.1.
     data = {
         "name": name,
-        "version": "1",
-        "source": {"type": "tarball", "url": "https://example.com/x.tar.gz"},
+        "version": "1.0",
+        "source": {"type": "tarball", "url": f"https://example.com/{name}-1.0.tar.gz"},
         "build_system": "make",
     }
     data.update(over)
@@ -77,9 +80,51 @@ def main():
         write(d, "lonely", good("lonely", dependencies=["nope"]))
         r = run(d / "lonely.json")
         assert r.returncode == 0, r.stdout
+        (d / "lonely.json").unlink()   # its bogus dep would fail later dir-wide runs
 
         r = run(d / "does-not-exist.json")
         assert r.returncode == 1, r.stdout
+
+        # A version number that appears nowhere in its own URL.
+        write(d, "drifted", good("drifted", version="9.9"))
+        r = run(d)
+        assert r.returncode == 1 and "appears nowhere in its URL" in r.stdout, r.stdout
+        (d / "drifted.json").unlink()
+
+        # Two entries with the same version number: the second is unreachable.
+        write(d, "dupe", {"name": "dupe", "versions": [good("dupe"), good("dupe")]})
+        r = run(d)
+        assert r.returncode == 1 and "declared 2 times" in r.stdout, r.stdout
+        (d / "dupe.json").unlink()
+
+        # Metapackages: no source, but they must pull in something.
+        write(d, "meta-ok", {
+            "name": "meta-ok", "version": "1.0",
+            "build_system": "meta", "dependencies": ["zlib"],
+        })
+        r = run(d)
+        assert r.returncode == 0, r.stdout
+
+        write(d, "meta-ok", {
+            "name": "meta-ok", "version": "1.0", "build_system": "meta",
+            "dependencies": ["zlib"],
+            "source": {"type": "tarball", "url": "https://example.com/x-1.0.tar.gz"},
+        })
+        r = run(d)
+        assert r.returncode == 1 and "must not declare a source" in r.stdout, r.stdout
+
+        write(d, "meta-ok", {"name": "meta-ok", "version": "1.0", "build_system": "meta"})
+        r = run(d)
+        assert r.returncode == 1 and "does nothing at all" in r.stdout, r.stdout
+
+        # Non-source checks still apply to metapackages.
+        write(d, "meta-ok", {
+            "name": "meta-ok", "version": "1.0", "build_system": "meta",
+            "dependencies": ["zlib"], "platforms": "linux",
+        })
+        r = run(d)
+        assert r.returncode == 1 and "must be an array" in r.stdout, r.stdout
+        (d / "meta-ok.json").unlink()
 
     print("validate-packages self-check passed")
 

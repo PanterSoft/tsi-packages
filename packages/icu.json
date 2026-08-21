@@ -2,7 +2,7 @@
   "name": "icu",
   "versions": [
     {
-      "version": "78.1",
+      "version": "74.2",
       "description": "International Components for Unicode",
       "source": {
         "type": "tarball",
@@ -13,41 +13,7 @@
       "build_dependencies": [],
       "build_system": "custom",
       "build_commands": [
-        "cd source && ./configure --prefix=$TSI_INSTALL_DIR",
-        "cd source && make",
-        "cd source && make install"
-      ],
-      "env": {}
-    },
-    {
-      "version": "78.1rc",
-      "description": "International Components for Unicode",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/unicode-org/icu/releases/download/release-74-2/icu4c-74_2-src.tgz"
-      },
-      "dependencies": [],
-      "build_dependencies": [],
-      "build_system": "custom",
-      "build_commands": [
-        "cd source && ./configure --prefix=$TSI_INSTALL_DIR",
-        "cd source && make",
-        "cd source && make install"
-      ],
-      "env": {}
-    },
-    {
-      "version": "74.2",
-      "description": "International Components for Unicode",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/unicode-org/icu/releases/download/release-74-2/icu4c-74_2-src.tgz"
-      },
-      "dependencies": [],
-      "build_dependencies": [],
-      "build_system": "custom",
-      "build_commands": [
-        "cd source && ./configure --prefix=$TSI_INSTALL_DIR",
+        "cd source && ./configure --prefix=$TSI_INSTALL_DIR --enable-rpath",
         "cd source && make",
         "cd source && make install"
       ],

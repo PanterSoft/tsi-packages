@@ -38,14 +38,16 @@ jobs:
       - name: Validate packages
         run: python3 scripts/validate-packages.py packages
 
-      # TSI installs versions[0], so file order *is* the default version.
-      # Left unchecked it drifts: snappy, libgit2 and libevent all ended up
-      # defaulting to a version whose URL had 404'd.
-      - name: Versions are ordered newest-first
+      # Mainly a dedupe gate: discover-versions.py appends without checking, and
+      # a repeated version number is unreachable (name@version resolves to one
+      # entry) while still being read and validated. rocksdb had 28 repeats.
+      # Ordering is tidiness -- the registry sorts versions itself and picks the
+      # highest, so file order does not choose the default.
+      - name: Versions are deduplicated and ordered
         run: |
           python3 scripts/sort-versions.py --check | tee /tmp/order.txt
           if ! grep -q '^0 package file' /tmp/order.txt; then
-            echo "::error::Version lists are out of order. Run: python3 scripts/sort-versions.py"
+            echo "::error::Version lists need cleanup. Run: python3 scripts/sort-versions.py"
             exit 1
           fi
 

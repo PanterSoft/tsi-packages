@@ -17,12 +17,14 @@ only one shape is how half the catalogue used to go unvalidated.
 Exit 0 if everything is valid, 1 otherwise.
 """
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
 
 VALID_SOURCE_TYPES = ["git", "tarball", "zip", "local"]
-VALID_BUILD_SYSTEMS = ["autotools", "cmake", "meson", "make", "custom"]
+# "meta" installs nothing of its own; it exists to pull in dependencies.
+VALID_BUILD_SYSTEMS = ["autotools", "cmake", "meson", "make", "custom", "meta"]
 ARRAY_FIELDS = [
     "dependencies", "build_dependencies", "configure_args",
     "cmake_args", "make_args", "patches", "platforms",
@@ -42,6 +44,12 @@ def iter_versions(data):
     return [data]
 
 
+def version_spellings(version):
+    """How a version may legitimately appear in a URL: 1.2.3, 1_2_3, 1-2-3, 123."""
+    parts = re.split(r"[._-]", version)
+    return {version, "_".join(parts), "-".join(parts), "".join(parts), ".".join(parts)}
+
+
 def validate_version(version, index, path):
     """Report problems with one version block. Returns True if it is valid."""
     label = f"{path} version {index + 1}"
@@ -51,24 +59,38 @@ def validate_version(version, index, path):
         print(f"❌ {label}: missing 'version'")
         ok = False
 
+    build_system = version.get("build_system", "")
+
     source = version.get("source")
-    if not isinstance(source, dict) or "type" not in source:
+    is_meta = build_system == "meta"
+    source_type = None
+
+    if is_meta:
+        # A metapackage installs nothing of its own, so a source would be dead
+        # weight -- autotools carried a GNU hello tarball only to satisfy the
+        # schema, and downloaded it on every install.
+        if source:
+            print(f"❌ {label}: build_system 'meta' installs nothing, so it must not declare a source")
+            ok = False
+        if not version.get("dependencies") and not version.get("build_dependencies"):
+            print(f"❌ {label}: build_system 'meta' with no dependencies does nothing at all")
+            ok = False
+    elif not isinstance(source, dict) or "type" not in source:
         print(f"❌ {label}: missing or malformed 'source' object")
         return False
-
-    source_type = source.get("type")
-    if source_type not in VALID_SOURCE_TYPES:
-        print(f"❌ {label}: invalid source type {source_type!r} (valid: {VALID_SOURCE_TYPES})")
-        ok = False
-    elif source_type == "local":
-        if "path" not in source:
-            print(f"❌ {label}: source type 'local' needs 'path'")
+    else:
+        source_type = source.get("type")
+        if source_type not in VALID_SOURCE_TYPES:
+            print(f"❌ {label}: invalid source type {source_type!r} (valid: {VALID_SOURCE_TYPES})")
             ok = False
-    elif "url" not in source:
-        print(f"❌ {label}: source type {source_type!r} needs 'url'")
-        ok = False
+        elif source_type == "local":
+            if "path" not in source:
+                print(f"❌ {label}: source type 'local' needs 'path'")
+                ok = False
+        elif "url" not in source:
+            print(f"❌ {label}: source type {source_type!r} needs 'url'")
+            ok = False
 
-    build_system = version.get("build_system", "")
     if build_system and build_system not in VALID_BUILD_SYSTEMS:
         print(f"❌ {label}: invalid build_system {build_system!r} (valid: {VALID_BUILD_SYSTEMS})")
         ok = False
@@ -81,6 +103,17 @@ def validate_version(version, index, path):
     if "env" in version and not isinstance(version["env"], dict):
         print(f"❌ {label}: field 'env' must be an object")
         ok = False
+
+    # A version whose number appears nowhere in its own URL is usually a bumped
+    # `version` field with the URL left behind: icu said 78.1 and fetched 74.2,
+    # so `tsi install icu@78.1` installed 74.2 and dependents linked against
+    # libicu*.74. autotools said 2.72 and fetched GNU hello.
+    url = (source or {}).get("url") or ""
+    ver = str(version.get("version", ""))
+    if url and ver and source_type != "git":
+        if not any(sp and sp in url for sp in version_spellings(ver)):
+            print(f"❌ {label}: version {ver!r} appears nowhere in its URL ({url})")
+            ok = False
 
     platforms = version.get("platforms", [])
     if isinstance(platforms, list):
@@ -128,6 +161,16 @@ def main(argv):
             failed = True
         for i, version in enumerate(iter_versions(data)):
             if not validate_version(version, i, path):
+                failed = True
+
+    # Two entries with the same version number: one of them is unreachable, since
+    # `name@version` resolves to the first match. icu carried 78.1, 78.1rc and
+    # 74.2, all fetching the same 74-2 tarball.
+    for path, data in loaded.items():
+        seen = Counter(str(v.get("version")) for v in iter_versions(data))
+        for ver, count in seen.items():
+            if count > 1:
+                print(f"❌ {path}: version {ver!r} is declared {count} times")
                 failed = True
 
     names = [(data["name"], path) for path, data in loaded.items() if data.get("name")]
