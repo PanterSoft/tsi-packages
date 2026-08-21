@@ -25,10 +25,19 @@
       "cmake_args": [
         "-DCMAKE_BUILD_TYPE=Release",
         "-DWITH_TESTS=OFF",
+        "-DWITH_ALL_TESTS=OFF",
         "-DWITH_TOOLS=OFF",
-        "-DWITH_BENCHMARK_TOOLS=OFF",
         "-DWITH_CORE_TOOLS=OFF",
+        "-DWITH_BENCHMARK_TOOLS=OFF",
+        "-DWITH_TRACE_TOOLS=OFF",
+        "-DWITH_EXAMPLES=OFF",
         "-DWITH_GFLAGS=OFF",
+        "-DWITH_LIBURING=OFF",
+        "-DWITH_SNAPPY=ON",
+        "-DWITH_LZ4=ON",
+        "-DWITH_ZLIB=ON",
+        "-DWITH_ZSTD=ON",
+        "-DWITH_BZ2=ON",
         "-DROCKSDB_BUILD_SHARED=OFF"
       ],
       "env": {}
