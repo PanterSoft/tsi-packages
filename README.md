@@ -26,6 +26,17 @@ Package format and fields are documented in the [TSI documentation](https://gith
 - **Platform-restricted packages:** a package that genuinely cannot build everywhere (Linux kernel APIs, say) declares `"platforms": ["linux"]`. Do not use it to paper over a build that is merely broken — it removes the package from the validation matrix on every other platform.
 - **Version discovery:** The discover-versions workflow can add new versions to existing packages; see `scripts/README.md` for the discovery script usage.
 
+## What CI checks
+
+| Workflow | When | What it proves |
+|---|---|---|
+| `package-validation` | every push / PR | schema, `platforms` values, duplicate names, unresolvable deps, version ordering, script self-checks, shellcheck, and that **changed** packages' sources are pinned and reachable |
+| `test-build-packages` | every push / PR touching packages | changed packages really build on Linux-x86_64, Linux-aarch64 and macOS-aarch64 |
+| `verify-sources` | weekly | every package's default source still downloads and still matches its recorded sha256 |
+| `validate-all-packages` | weekly + manual | the whole catalogue built on all three platforms, regenerating `PACKAGES_STATUS.md` |
+
+Nothing here needs a local run to be trusted, but `make validate PKGS="…"` from a TSI checkout gives you the cross-architecture answer before you push.
+
 ## Package status
 
 `PACKAGES_STATUS.md` holds one column per platform, regenerated from real build

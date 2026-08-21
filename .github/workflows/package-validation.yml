@@ -1,15 +1,24 @@
 name: Package Validation
 
+# Everything cheap and deterministic runs here, on every push and PR: schema,
+# catalogue invariants, the scripts' own self-checks, shellcheck, and a
+# checksum/URL check for the packages the change actually touches.
+#
+# The expensive things live elsewhere: test-build-packages.yml really builds
+# changed packages on three platforms, validate-all-packages.yml rebuilds the
+# catalogue weekly, and verify-sources.yml re-hashes every source weekly.
+
 on:
   push:
     paths:
       - 'packages/**/*.json'
       - 'scripts/**'
-      - '.github/workflows/Package Validation.yml'
+      - '.github/workflows/package-validation.yml'
   pull_request:
     paths:
       - 'packages/**/*.json'
       - 'scripts/**'
+      - '.github/workflows/package-validation.yml'
   workflow_dispatch:
 
 permissions:
@@ -21,13 +30,51 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5.0.1
+        with:
+          fetch-depth: 0   # changed-packages.sh diffs against a base ref
 
       # JSON syntax, per-version structure, `platforms` values, duplicate
-      # names and unresolvable dependencies -- all of it, both file shapes.
+      # names and unresolvable dependencies -- both file shapes.
       - name: Validate packages
         run: python3 scripts/validate-packages.py packages
 
-      - name: Self-check the validators
+      # TSI installs versions[0], so file order *is* the default version.
+      # Left unchecked it drifts: snappy, libgit2 and libevent all ended up
+      # defaulting to a version whose URL had 404'd.
+      - name: Versions are ordered newest-first
+        run: |
+          python3 scripts/sort-versions.py --check | tee /tmp/order.txt
+          if ! grep -q '^0 package file' /tmp/order.txt; then
+            echo "::error::Version lists are out of order. Run: python3 scripts/sort-versions.py"
+            exit 1
+          fi
+
+      - name: Self-check the scripts
         run: |
           python3 scripts/test_validate_packages.py
           python3 scripts/test_merge_status.py
+          python3 scripts/test_sort_versions.py
+
+      - name: Shellcheck
+        run: |
+          shellcheck -S warning scripts/*.sh
+          for f in scripts/*.sh; do bash -n "$f"; done
+
+      # Only the touched packages: re-hashing the whole catalogue on every PR
+      # would be minutes of downloads for no extra signal. verify-sources.yml
+      # covers the rest weekly.
+      - name: Sources of changed packages are pinned and reachable
+        run: |
+          if [ "${{ github.event_name }}" = 'pull_request' ]; then
+            BASE="origin/${{ github.base_ref }}"
+          else
+            BASE='HEAD^'
+          fi
+          CHANGED=$(bash scripts/changed-packages.sh "$BASE" packages/ || true)
+          if [ -z "$CHANGED" ]; then
+            echo "No package definitions changed."
+            exit 0
+          fi
+          echo "Checking: $CHANGED"
+          # shellcheck disable=SC2086
+          python3 scripts/add-checksums.py --check $CHANGED

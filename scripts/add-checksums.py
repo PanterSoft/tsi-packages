@@ -6,8 +6,11 @@
     python3 scripts/add-checksums.py --all --check   # verify, change nothing
 
 Downloads each source archive and records its SHA-256 so TSI verifies the
-download before extracting it. Existing checksums are left alone unless
---check is given, which re-downloads and reports mismatches instead of writing.
+download before extracting it. Existing checksums are left alone.
+
+--check writes nothing and fails on a mismatch, a missing checksum, or a URL
+that no longer resolves -- which is how CI catches a re-cut tarball or a dead
+download without building anything.
 
 Only the newest version of each package is processed by default; --all-versions
 walks every entry, which for a package with 100+ versions means 100+ downloads.
@@ -42,7 +45,12 @@ def main():
     ap.add_argument("packages", nargs="*", help="package names (default: --all)")
     ap.add_argument("--all", action="store_true", help="process every package")
     ap.add_argument("--all-versions", action="store_true", help="not just the newest version")
-    ap.add_argument("--check", action="store_true", help="verify existing checksums, write nothing")
+    ap.add_argument(
+        "--check",
+        action="store_true",
+        help="verify checksums and write nothing; fails on a mismatch, a missing "
+             "checksum, or an unreachable URL",
+    )
     ap.add_argument("--packages-dir", default=str(Path(__file__).resolve().parent.parent / "packages"))
     args = ap.parse_args()
 
@@ -90,6 +98,12 @@ def main():
                 else:
                     print(f"❌ {label}: checksum MISMATCH\n    recorded {existing}\n    actual   {digest}")
                     failed = True
+            elif args.check:
+                # --check means "every source is pinned and still matches".
+                # Silently passing an unpinned source would make the CI gate
+                # green for exactly the package that has no protection.
+                print(f"❌ {label}: no recorded sha256 (run add-checksums.py {data.get('name', path.stem)})")
+                failed = True
             else:
                 source["sha256"] = digest
                 changed = True

@@ -1,0 +1,55 @@
+name: Verify Sources
+
+# Re-downloads every package's default source and checks it against the
+# recorded sha256. Catches, without building anything:
+#   - a dead download (freetype's savannah host went 502 and stayed there)
+#   - an upstream tarball re-cut under the same URL
+#   - a package added without a checksum
+#
+# Much cheaper than the build matrix -- no compiler runs -- but it does download
+# every default source in full, including the large ones (llvm, gcc, boost), so
+# it is weekly rather than daily: re-pulling gigabytes from ftp.gnu.org and
+# kernel.org every night to re-learn what did not change is not neighbourly.
+
+on:
+  schedule:
+    - cron: '0 5 * * 3'   # Wednesdays 05:00 UTC
+  workflow_dispatch:
+    inputs:
+      all_versions:
+        description: 'Check every version, not just each default (slow)'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify recorded source checksums
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v5.0.1
+
+      - name: Check every source
+        run: |
+          ARGS='--all --check'
+          if [ '${{ inputs.all_versions }}' = 'true' ]; then
+            ARGS="$ARGS --all-versions"
+          fi
+          # shellcheck disable=SC2086
+          python3 scripts/add-checksums.py $ARGS | tee /tmp/sources.txt
+
+      - name: Summarise
+        if: always()
+        run: |
+          {
+            echo '### Source verification'
+            echo ''
+            echo "- matched: $(grep -c '^✓' /tmp/sources.txt || echo 0)"
+            echo "- problems: $(grep -c '^❌' /tmp/sources.txt || echo 0)"
+            echo ''
+            grep '^❌' /tmp/sources.txt || echo 'No problems.'
+          } >> "$GITHUB_STEP_SUMMARY"
