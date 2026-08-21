@@ -13,7 +13,9 @@
   "configure_args": [
     "--with-shared",
     "--with-termlib",
-    "--enable-widec"
+    "--enable-widec",
+    "--enable-overwrite",
+    "--enable-pc-files"
   ],
   "env": {}
 }
