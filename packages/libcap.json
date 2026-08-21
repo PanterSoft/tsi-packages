@@ -13,6 +13,8 @@
     "prefix=$TSI_INSTALL_DIR",
     "lib=lib"
   ],
-  "env": {}
+  "env": {},
+  "platforms": [
+    "linux"
+  ]
 }
-
