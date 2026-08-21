@@ -1,0 +1,21 @@
+{
+  "name": "gsl",
+  "versions": [
+    {
+      "version": "2.8",
+      "description": "GNU Scientific Library for numerical computing",
+      "source": {
+        "type": "tarball",
+        "url": "https://ftp.gnu.org/gnu/gsl/gsl-2.8.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    }
+  ]
+}

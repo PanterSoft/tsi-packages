@@ -1,0 +1,33 @@
+name: Package Validation
+
+on:
+  push:
+    paths:
+      - 'packages/**/*.json'
+      - 'scripts/**'
+      - '.github/workflows/Package Validation.yml'
+  pull_request:
+    paths:
+      - 'packages/**/*.json'
+      - 'scripts/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate package catalogue
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5.0.1
+
+      # JSON syntax, per-version structure, `platforms` values, duplicate
+      # names and unresolvable dependencies -- all of it, both file shapes.
+      - name: Validate packages
+        run: python3 scripts/validate-packages.py packages
+
+      - name: Self-check the validators
+        run: |
+          python3 scripts/test_validate_packages.py
+          python3 scripts/test_merge_status.py

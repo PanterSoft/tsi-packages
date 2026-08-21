@@ -1,0 +1,21 @@
+{
+  "name": "libsodium",
+  "versions": [
+    {
+      "version": "1.0.20",
+      "description": "Modern, easy-to-use software library for encryption, decryption, signatures and password hashing",
+      "source": {
+        "type": "tarball",
+        "url": "https://download.libsodium.org/libsodium/releases/libsodium-1.0.20.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    }
+  ]
+}

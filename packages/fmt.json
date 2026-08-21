@@ -1,0 +1,27 @@
+{
+  "name": "fmt",
+  "versions": [
+    {
+      "version": "11.1.4",
+      "description": "Modern formatting library for C++",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/fmtlib/fmt/archive/refs/tags/11.1.4.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DFMT_TEST=OFF",
+        "-DFMT_DOC=OFF"
+      ],
+      "env": {}
+    }
+  ]
+}

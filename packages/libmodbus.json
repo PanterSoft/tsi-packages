@@ -1,0 +1,21 @@
+{
+  "name": "libmodbus",
+  "versions": [
+    {
+      "version": "3.1.11",
+      "description": "Modbus protocol library for serial and TCP devices",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/stephane/libmodbus/releases/download/v3.1.11/libmodbus-3.1.11.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    }
+  ]
+}

@@ -7,8 +7,12 @@
     "url": "https://ftp.gnu.org/gnu/coreutils/coreutils-9.9.tar.xz"
   },
   "dependencies": [],
-  "build_dependencies": ["xz"],
+  "build_dependencies": [
+    "xz"
+  ],
   "build_system": "autotools",
   "configure_args": [],
-  "env": {}
+  "env": {
+    "FORCE_UNSAFE_CONFIGURE": "1"
+  }
 }

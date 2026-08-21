@@ -1,0 +1,29 @@
+{
+  "name": "rsync",
+  "versions": [
+    {
+      "version": "3.4.1",
+      "description": "Fast incremental file transfer utility",
+      "source": {
+        "type": "tarball",
+        "url": "https://download.samba.org/pub/rsync/src/rsync-3.4.1.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-md2man",
+        "--disable-xxhash",
+        "--disable-zstd",
+        "--disable-lz4"
+      ],
+      "env": {}
+    }
+  ]
+}

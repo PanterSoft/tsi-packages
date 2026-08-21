@@ -1,0 +1,23 @@
+{
+  "name": "nghttp2",
+  "versions": [
+    {
+      "version": "1.64.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.64.0/nghttp2-1.64.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    }
+  ]
+}

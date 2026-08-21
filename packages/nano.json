@@ -1,0 +1,25 @@
+{
+  "name": "nano",
+  "versions": [
+    {
+      "version": "8.2",
+      "description": "Small and friendly console text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://www.nano-editor.org/dist/v8/nano-8.2.tar.xz"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-nls"
+      ],
+      "env": {}
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "spdlog",
+  "versions": [
+    {
+      "version": "1.15.1",
+      "description": "Very fast header-only/compiled C++ logging library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/gabime/spdlog/archive/refs/tags/v1.15.1.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DSPDLOG_BUILD_EXAMPLE=OFF",
+        "-DSPDLOG_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    }
+  ]
+}
