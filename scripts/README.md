@@ -181,3 +181,56 @@ This script is integrated into a GitHub Actions workflow (`.github/workflows/dis
 - Rate limiting may apply when checking many packages
 - Version format must be consistent (semantic versioning recommended)
 
+## platform_id.py
+
+Host platform identity plus queries against a package JSON. Single python entry point for the shell drivers.
+
+```bash
+python3 scripts/platform_id.py                              # -> macOS-aarch64
+python3 scripts/platform_id.py --supports packages/libcap.json   # exit 0/1
+python3 scripts/platform_id.py --platforms packages/libcap.json  # -> linux
+python3 scripts/platform_id.py --deps packages/git.json          # deps + build deps
+```
+
+`--supports` reads the package's `platforms` field (see `docs/developer-guide/os-specific-config.md` in the TSI repo). An absent or empty field means "supported everywhere".
+
+## build-all-packages.sh
+
+Builds every package on the current host and writes `.build-logs/results.tsv`:
+
+```
+<package>\t<ok|fail|skipped|unsupported>\t<note>
+```
+
+One results.tsv per platform. Nothing in this script parses or edits `PACKAGES_STATUS.md` — that is `merge-status.py`'s job, so parallel CI legs never race on the same file.
+
+## merge-status.py
+
+Merges one results.tsv per platform into the multi-platform `PACKAGES_STATUS.md` table:
+
+```bash
+python3 scripts/merge-status.py PACKAGES_STATUS.md \
+  Linux-x86_64=results/Linux-x86_64/results.tsv \
+  Linux-aarch64=results/Linux-aarch64/results.tsv \
+  macOS-aarch64=results/macOS-aarch64/results.tsv
+```
+
+Markers: `✅` built, `❌` failed, `—` unsupported on that platform, `⏭️` skipped because a dependency was unavailable, blank means not tested there. The table is rebuilt from scratch every run.
+
+Self-check: `python3 scripts/test_merge_status.py`.
+
+## add-checksums.py
+
+Records `source.sha256` for tarball/zip sources so TSI verifies a download before extracting it.
+
+```bash
+python3 scripts/add-checksums.py brotli fmt   # named packages, newest version
+python3 scripts/add-checksums.py --all        # every package, newest version
+python3 scripts/add-checksums.py --all --check  # verify, write nothing
+python3 scripts/add-checksums.py fmt --all-versions
+```
+
+Existing checksums are left alone unless `--check` is given. Run it whenever a package or a version is added.
+
+This pins the artifact, it does not establish provenance: it guarantees later downloads are byte-identical to the one taken when the package was added. Cross-check the value against upstream's own published checksum when there is one.
+

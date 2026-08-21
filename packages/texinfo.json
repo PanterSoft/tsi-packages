@@ -4,7 +4,8 @@
   "description": "GNU Texinfo - documentation system for producing info, HTML, and printed documentation",
   "source": {
     "type": "tarball",
-    "url": "https://ftp.gnu.org/gnu/texinfo/texinfo-7.1.tar.xz"
+    "url": "https://ftp.gnu.org/gnu/texinfo/texinfo-7.1.tar.xz",
+    "sha256": "deeec9f19f159e046fdf8ad22231981806dac332cc372f1c763504ad82b30953"
   },
   "dependencies": [],
   "build_dependencies": [
@@ -12,6 +13,9 @@
     "coreutils"
   ],
   "build_system": "autotools",
-  "configure_args": ["--disable-nls", "--enable-perl-xs=no"],
+  "configure_args": [
+    "--disable-nls",
+    "--enable-perl-xs=no"
+  ],
   "env": {}
 }

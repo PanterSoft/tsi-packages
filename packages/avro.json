@@ -4,7 +4,8 @@
   "description": "Data serialization system",
   "source": {
     "type": "tarball",
-    "url": "https://archive.apache.org/dist/avro/avro-1.11.3/c/avro-c-1.11.3.tar.gz"
+    "url": "https://archive.apache.org/dist/avro/avro-1.11.3/c/avro-c-1.11.3.tar.gz",
+    "sha256": "7217caacfb7d5f34611766473a66c2e279bc7bfaf1ba298c7f04b3b2fba57365"
   },
   "dependencies": [
     "zlib",

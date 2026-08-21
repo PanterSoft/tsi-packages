@@ -4,10 +4,21 @@
   "description": "Cryptography and SSL/TLS toolkit",
   "source": {
     "type": "tarball",
-    "url": "https://www.openssl.org/source/openssl-3.2.1.tar.gz"
+    "url": "https://www.openssl.org/source/openssl-3.2.1.tar.gz",
+    "sha256": "83c7329fe52c850677d75e5d0b0ca245309b97e8ecbcfdc1dfdc4ab9fac35b39"
   },
-  "dependencies": ["zlib"],
-  "build_dependencies": ["coreutils", "make", "sed", "grep", "gawk", "bash", "perl"],
+  "dependencies": [
+    "zlib"
+  ],
+  "build_dependencies": [
+    "coreutils",
+    "make",
+    "sed",
+    "grep",
+    "gawk",
+    "bash",
+    "perl"
+  ],
   "build_system": "custom",
   "build_commands": [
     "./config --prefix=$TSI_INSTALL_DIR --openssldir=$TSI_INSTALL_DIR/ssl shared zlib",
@@ -16,4 +27,3 @@
   ],
   "env": {}
 }
-

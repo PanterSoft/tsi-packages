@@ -4,12 +4,18 @@
   "description": "GNU tar archiving utility",
   "source": {
     "type": "tarball",
-    "url": "https://ftp.gnu.org/gnu/tar/tar-1.35.tar.gz"
+    "url": "https://ftp.gnu.org/gnu/tar/tar-1.35.tar.gz",
+    "sha256": "14d55e32063ea9526e057fbf35fcabd53378e769787eff7919c3755b02d2b57e"
   },
   "dependencies": [],
-  "build_dependencies": ["coreutils", "make"],
+  "build_dependencies": [
+    "coreutils",
+    "make"
+  ],
   "build_system": "autotools",
   "configure_args": [],
   "env": {},
-  "env_darwin": {"LDFLAGS": "-liconv"}
+  "env_darwin": {
+    "LDFLAGS": "-liconv"
+  }
 }

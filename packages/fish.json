@@ -6,7 +6,8 @@
       "description": "Friendly interactive shell",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/fish-shell/fish-shell/releases/download/4.2.1/fish-4.2.1.tar.xz"
+        "url": "https://github.com/fish-shell/fish-shell/releases/download/4.2.1/fish-4.2.1.tar.xz",
+        "sha256": "0f99222a3063377c91fbf78d9850edab7a0b91bdbed201cf79da48ea3a41f393"
       },
       "dependencies": [
         "ncurses",
@@ -271,6 +272,28 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/fish-shell/fish-shell/releases/download/3.7.1/fish-3.7.1.tar.xz"
+      },
+      "dependencies": [
+        "ncurses",
+        "pcre2"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7.0",
+      "description": "Friendly interactive shell",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/fish-shell/fish-shell/releases/download/3.7.0/fish-3.7.0.tar.xz"
       },
       "dependencies": [
         "ncurses",
@@ -1151,28 +1174,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/fish-shell/fish-shell/releases/download/2.0.0/fish-2.0.0.tar.xz"
-      },
-      "dependencies": [
-        "ncurses",
-        "pcre2"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
-      ],
-      "env": {}
-    },
-    {
-      "version": "3.7.0",
-      "description": "Friendly interactive shell",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/fish-shell/fish-shell/releases/download/3.7.0/fish-3.7.0.tar.xz"
       },
       "dependencies": [
         "ncurses",

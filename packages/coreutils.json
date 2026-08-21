@@ -4,11 +4,16 @@
   "description": "GNU Core Utilities - basic file, shell and text manipulation utilities (cat, expr, ls, dirname, date, tee, rm, etc.)",
   "source": {
     "type": "tarball",
-    "url": "https://ftp.gnu.org/gnu/coreutils/coreutils-9.9.tar.xz"
+    "url": "https://ftp.gnu.org/gnu/coreutils/coreutils-9.9.tar.xz",
+    "sha256": "19bcb6ca867183c57d77155eae946c5eced88183143b45ca51ad7d26c628ca75"
   },
   "dependencies": [],
-  "build_dependencies": ["xz"],
+  "build_dependencies": [
+    "xz"
+  ],
   "build_system": "autotools",
   "configure_args": [],
-  "env": {}
+  "env": {
+    "FORCE_UNSAFE_CONFIGURE": "1"
+  }
 }

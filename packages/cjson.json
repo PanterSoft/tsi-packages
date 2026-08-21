@@ -6,7 +6,8 @@
       "description": "Ultralightweight JSON parser in ANSI C",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/DaveGamble/cJSON/archive/v1.7.19.tar.gz"
+        "url": "https://github.com/DaveGamble/cJSON/archive/v1.7.19.tar.gz",
+        "sha256": "7fa616e3046edfa7a28a32d5f9eacfd23f92900fe1f8ccd988c1662f30454562"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -20,6 +21,27 @@
         "-DENABLE_CJSON_TEST=Off",
         "-DCMAKE_BUILD_TYPE=Release",
         "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.7.18",
+      "description": "Ultralightweight JSON parser in ANSI C",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/DaveGamble/cJSON/archive/v1.7.18.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DENABLE_CJSON_UTILS=On",
+        "-DENABLE_CJSON_TEST=Off",
+        "-DCMAKE_BUILD_TYPE=Release"
       ],
       "env": {}
     },
@@ -998,27 +1020,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/DaveGamble/cJSON/archive/v0.0.0.tar.gz"
-      },
-      "dependencies": [],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DENABLE_CJSON_UTILS=On",
-        "-DENABLE_CJSON_TEST=Off",
-        "-DCMAKE_BUILD_TYPE=Release"
-      ],
-      "env": {}
-    },
-    {
-      "version": "1.7.18",
-      "description": "Ultralightweight JSON parser in ANSI C",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/DaveGamble/cJSON/archive/v1.7.18.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [

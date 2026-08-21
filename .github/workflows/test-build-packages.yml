@@ -1,13 +1,19 @@
 name: Test Build Packages
 
+# Every changed package is built on every supported platform. A package that
+# builds on Linux-x86_64 says nothing about aarch64 or macOS, so all three legs
+# run and all three must pass before a package change lands.
+
 on:
   push:
     paths:
       - 'packages/**/*.json'
+      - 'scripts/**'
       - '.github/workflows/test-build-packages.yml'
   pull_request:
     paths:
       - 'packages/**/*.json'
+      - 'scripts/**'
       - '.github/workflows/test-build-packages.yml'
   workflow_dispatch:
     inputs:
@@ -20,118 +26,96 @@ permissions:
   contents: read
 
 env:
-  TSI_PREFIX: ${{ github.workspace }}/.tsi-install
   SLOW_PACKAGES: 'gcc|llvm|clang|rust|python|boost|mongodb|mysql|mariadb|postgresql|ros2|emacs'
 
 jobs:
-  test-build:
-    name: Test build changed packages
+  changed:
+    name: Determine changed packages
     runs-on: ubuntu-latest
-    timeout-minutes: 90
-    defaults:
-      run:
-        shell: bash
-
+    outputs:
+      packages: ${{ steps.filter.outputs.packages }}
+      count: ${{ steps.filter.outputs.count }}
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v5.0.1
+      - uses: actions/checkout@v5.0.1
         with:
           fetch-depth: 0
 
-      - name: Determine base ref and changed packages
+      - name: List changed packages
         id: changed
         run: |
-          if [ "${{ github.event_name }}" = 'workflow_dispatch' ]; then
-            if [ -n '${{ github.event.inputs.package }}' ]; then
-              echo '${{ github.event.inputs.package }}'
-            else
-              BASE_REF="origin/${{ github.event.repository.default_branch }}"
-              bash scripts/changed-packages.sh "$BASE_REF" packages/
-            fi
+          if [ "${{ github.event_name }}" = 'workflow_dispatch' ] && [ -n '${{ github.event.inputs.package }}' ]; then
+            echo '${{ github.event.inputs.package }}'
           elif [ "${{ github.event_name }}" = 'pull_request' ]; then
-            BASE_REF="origin/${{ github.base_ref }}"
-            bash scripts/changed-packages.sh "$BASE_REF" packages/
+            bash scripts/changed-packages.sh "origin/${{ github.base_ref }}" packages/
           else
-            BASE_REF="HEAD^"
-            bash scripts/changed-packages.sh "$BASE_REF" packages/
-          fi | tee /tmp/changed-packages.txt
-          PACKAGES=$(cat /tmp/changed-packages.txt | tr '\n' ' ' | sed 's/ $//')
-          echo "packages<<EOF" >> $GITHUB_OUTPUT
-          echo "$PACKAGES" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-          COUNT=$(wc -w < /tmp/changed-packages.txt)
-          echo "count=$COUNT" >> $GITHUB_OUTPUT
+            bash scripts/changed-packages.sh HEAD^ packages/
+          fi | tee /tmp/changed.txt
 
-      - name: Filter out known slow packages
+      - name: Drop known-slow packages
         id: filter
         run: |
-          COUNT="${{ steps.changed.outputs.count }}"
-          if [ "$COUNT" = '0' ]; then
-            echo "packages<<EOF" >> $GITHUB_OUTPUT
-            echo "EOF" >> $GITHUB_OUTPUT
-            echo "count=0" >> $GITHUB_OUTPUT
-            echo "No package files changed; skipping test build."
-            exit 0
-          fi
-          EXCLUDED="${{ env.SLOW_PACKAGES }}"
           TO_BUILD=""
-          for pkg in ${{ steps.changed.outputs.packages }}; do
-            if echo "$pkg" | grep -qEx "$EXCLUDED"; then
+          while read -r pkg; do
+            [ -n "$pkg" ] || continue
+            if echo "$pkg" | grep -qEx "$SLOW_PACKAGES"; then
               echo "Skipping slow package (not test-built in CI): $pkg"
             else
               TO_BUILD="$TO_BUILD $pkg"
             fi
-          done
-          TO_BUILD=$(echo "$TO_BUILD" | sed 's/^ *//; s/ *$//')
-          echo "packages<<EOF" >> $GITHUB_OUTPUT
-          echo "$TO_BUILD" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-          echo "count=$(echo "$TO_BUILD" | wc -w | tr -d ' ')" >> $GITHUB_OUTPUT
+          done < /tmp/changed.txt
+          TO_BUILD=$(echo "$TO_BUILD" | xargs || true)
+          echo "packages=$TO_BUILD" >> "$GITHUB_OUTPUT"
+          echo "count=$(echo "$TO_BUILD" | wc -w | tr -d ' ')" >> "$GITHUB_OUTPUT"
 
-      - name: Install build essentials
-        if: steps.filter.outputs.count != '0'
+  build:
+    name: Build (${{ matrix.platform }})
+    needs: changed
+    if: needs.changed.outputs.count != '0'
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: ubuntu-latest
+            platform: Linux-x86_64
+          - runner: ubuntu-24.04-arm
+            platform: Linux-aarch64
+          - runner: macos-14
+            platform: macOS-aarch64
+    steps:
+      - uses: actions/checkout@v5.0.1
+
+      - name: Install build essentials (Linux)
+        if: runner.os == 'Linux'
         run: sudo apt-get update && sudo apt-get install -y build-essential curl git
 
-      - name: Set up Rust
-        if: steps.filter.outputs.count != '0'
-        uses: dtolnay/rust-toolchain@stable
+      - uses: dtolnay/rust-toolchain@stable
 
-      - name: Clone and build TSI
-        if: steps.filter.outputs.count != '0'
+      - name: Build TSI from source
         run: |
           git clone --depth 1 https://github.com/PanterSoft/tsi.git /tmp/tsi
-          cd /tmp/tsi
-          cargo build --release
-          echo "$(pwd)/target/release" >> $GITHUB_PATH
-          echo "TSI_BIN=$(pwd)/target/release/tsi" >> $GITHUB_ENV
-          "$(pwd)/target/release/tsi" --version || true
+          cargo build --release --manifest-path /tmp/tsi/Cargo.toml
+          echo "/tmp/tsi/target/release" >> "$GITHUB_PATH"
 
-      - name: Configure TSI to use local packages
-        if: steps.filter.outputs.count != '0'
-        working-directory: ${{ github.workspace }}
-        run: |
-          mkdir -p "$TSI_PREFIX"
-          export PATH="$(dirname $TSI_BIN):$PATH"
-          tsi update --local "${{ github.workspace }}/packages" || tsi update --local "${{ github.workspace }}" || true
-
-      - name: Test build packages
-        if: steps.filter.outputs.count != '0'
-        working-directory: ${{ github.workspace }}
+      - name: Build changed packages
         env:
-          PATH: "/tmp/tsi/target/release:$PATH"
-          TSI_PREFIX: ${{ env.TSI_PREFIX }}
+          TSI_PREFIX: ${{ github.workspace }}/.tsi-install
         run: |
-          mkdir -p "$TSI_PREFIX"
+          tsi update --local "$PWD/packages" --prefix "$TSI_PREFIX"
           FAILED=""
-          for pkg in ${{ steps.filter.outputs.packages }}; do
-            echo "Building package: $pkg"
-            if ! tsi install "$pkg"; then
-              echo "::error::Build failed for package: $pkg"
-              FAILED="${FAILED} ${pkg}"
+          for pkg in ${{ needs.changed.outputs.packages }}; do
+            PKG_FILE="packages/$pkg.json"
+            if [ -f "$PKG_FILE" ] && ! python3 scripts/platform_id.py --supports "$PKG_FILE"; then
+              echo "Skipping $pkg: not supported on ${{ matrix.platform }}"
+              continue
             fi
+            echo "::group::Building $pkg on ${{ matrix.platform }}"
+            tsi install --prefix "$TSI_PREFIX" "$pkg" || FAILED="$FAILED $pkg"
+            echo "::endgroup::"
           done
           if [ -n "$FAILED" ]; then
-            echo "::error::Failed packages:$FAILED"
+            echo "::error::Failed on ${{ matrix.platform }}:$FAILED"
             exit 1
           fi
-          echo "All packages built successfully."
+          echo "All changed packages built on ${{ matrix.platform }}."

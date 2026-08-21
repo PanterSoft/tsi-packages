@@ -1,0 +1,26 @@
+{
+  "name": "eigen",
+  "versions": [
+    {
+      "version": "3.4.0",
+      "description": "C++ template library for linear algebra (header-only)",
+      "source": {
+        "type": "tarball",
+        "url": "https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz",
+        "sha256": "8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_TESTING=OFF"
+      ],
+      "env": {}
+    }
+  ]
+}

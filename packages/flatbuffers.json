@@ -1,0 +1,26 @@
+{
+  "name": "flatbuffers",
+  "versions": [
+    {
+      "version": "24.3.25",
+      "description": "Memory-efficient cross-platform serialization library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/flatbuffers/archive/refs/tags/v24.3.25.tar.gz",
+        "sha256": "4157c5cacdb59737c5d627e47ac26b140e9ee28b1102f812b36068aab728c1ed"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DFLATBUFFERS_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    }
+  ]
+}

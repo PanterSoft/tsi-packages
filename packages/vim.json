@@ -6,7 +6,8 @@
       "description": "Vi IMproved text editor",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/vim/vim/archive/v9.1.0999.tar.gz"
+        "url": "https://github.com/vim/vim/archive/v9.1.0999.tar.gz",
+        "sha256": "486ee4e506b6304da7286b13e1c494acf69ea597f0db1c4002e020393b616c1f"
       },
       "dependencies": [
         "ncurses"

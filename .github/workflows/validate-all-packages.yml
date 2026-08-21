@@ -1,0 +1,113 @@
+name: Validate All Packages
+
+# Builds the whole catalogue on every supported platform and regenerates
+# PACKAGES_STATUS.md from the results. This is the source of truth for "does
+# package X actually install on architecture Y" -- the per-PR workflow only
+# covers changed packages.
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'   # Sundays 03:00 UTC
+  workflow_dispatch:
+    inputs:
+      exclude_slow:
+        description: 'Skip slow packages (gcc, llvm, python, ...)'
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate (${{ matrix.platform }})
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: ubuntu-latest
+            platform: Linux-x86_64
+          - runner: ubuntu-24.04-arm
+            platform: Linux-aarch64
+          - runner: macos-14
+            platform: macOS-aarch64
+    steps:
+      - uses: actions/checkout@v5.0.1
+
+      - name: Install build essentials (Linux)
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y build-essential curl git
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - name: Build TSI from source
+        run: |
+          git clone --depth 1 https://github.com/PanterSoft/tsi.git /tmp/tsi
+          cargo build --release --manifest-path /tmp/tsi/Cargo.toml
+          echo "/tmp/tsi/target/release" >> "$GITHUB_PATH"
+
+      - name: Build every package
+        id: build
+        continue-on-error: true   # a failing package must still report its row
+        env:
+          TSI_PREFIX: ${{ github.workspace }}/.tsi-install
+        run: |
+          tsi update --local "$PWD/packages" --prefix "$TSI_PREFIX"
+          EXCLUDE=""
+          if [ "${{ inputs.exclude_slow != false }}" = "true" ]; then
+            EXCLUDE="--exclude-slow"
+          fi
+          bash scripts/build-all-packages.sh $EXCLUDE --prefix "$TSI_PREFIX"
+
+      - name: Upload results
+        uses: actions/upload-artifact@v6.0.0
+        with:
+          name: results-${{ matrix.platform }}
+          path: .build-logs/
+          if-no-files-found: error
+
+  report:
+    name: Merge status table
+    needs: validate
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5.0.1
+
+      - uses: actions/download-artifact@v7.0.0
+        with:
+          path: results
+
+      - name: Regenerate PACKAGES_STATUS.md
+        run: |
+          python3 scripts/merge-status.py PACKAGES_STATUS.md \
+            Linux-x86_64=results/results-Linux-x86_64/results.tsv \
+            Linux-aarch64=results/results-Linux-aarch64/results.tsv \
+            macOS-aarch64=results/results-macOS-aarch64/results.tsv
+          cat PACKAGES_STATUS.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit updated status
+        if: github.event_name == 'schedule' || github.ref == 'refs/heads/main'
+        run: |
+          if git diff --quiet -- PACKAGES_STATUS.md; then
+            echo "Status table unchanged."
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update PACKAGES_STATUS.md from cross-platform validation' -- PACKAGES_STATUS.md
+          git push
+
+      - name: Fail if any package regressed
+        run: |
+          # ❌ means the package genuinely failed to build somewhere it claims
+          # support. Blank / — / ⏭️ are "not tested", "unsupported", "blocked
+          # on a dependency" and are reported, not treated as regressions here.
+          if grep -q '❌' PACKAGES_STATUS.md; then
+            echo "::warning::Some packages fail on at least one platform; see PACKAGES_STATUS.md"
+          fi

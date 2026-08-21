@@ -2,11 +2,37 @@
   "name": "aria2",
   "versions": [
     {
+      "version": "1.37.0",
+      "description": "Lightweight multi-protocol download utility",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-1.37.0.tar.xz",
+        "sha256": "60a420ad7085eb616cb6e2bdf0a7206d68ff3d37fb5a956dc44242eb2f79b66b"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "libxml2"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-openssl",
+        "--with-libxml2"
+      ],
+      "env": {}
+    },
+    {
       "version": "1.36.0",
       "description": "Lightweight multi-protocol download utility",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/aria2/aria2/releases/download/release-1.36.0/aria2-1.36.0.tar.xz"
+        "url": "https://github.com/aria2/aria2/releases/download/release-1.36.0/aria2-1.36.0.tar.xz",
+        "sha256": "58d1e7608c12404f0229a3d9a4953d0d00c18040504498b483305bcb3de907a5"
       },
       "dependencies": [
         "openssl",
@@ -535,30 +561,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/aria2/aria2/releases/download/release-1.19.1/aria2-1.19.1.tar.xz"
-      },
-      "dependencies": [
-        "openssl",
-        "zlib",
-        "libxml2"
-      ],
-      "build_dependencies": [
-        "pkg-config",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "autotools",
-      "configure_args": [
-        "--with-openssl",
-        "--with-libxml2"
-      ],
-      "env": {}
-    },
-    {
-      "version": "1.37.0",
-      "description": "Lightweight multi-protocol download utility",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-1.37.0.tar.xz"
       },
       "dependencies": [
         "openssl",

@@ -6,7 +6,8 @@
       "description": "AV1 Image File Format library",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.3.0.tar.gz"
+        "url": "https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.3.0.tar.gz",
+        "sha256": "0a545e953cc049bf5bcf4ee467306a2f113a75110edf59e61248873101cd26c1"
       },
       "dependencies": [
         "libpng",
@@ -100,6 +101,29 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/AOMediaCodec/libavif/releases/download/v1.1.0/libavif-1.1.0.tar.gz"
+      },
+      "dependencies": [
+        "libpng",
+        "libjpeg-turbo"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DAVIF_BUILD_APPS=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.0.4",
+      "description": "AV1 Image File Format library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/AOMediaCodec/libavif/releases/download/v1.0.4/libavif-1.0.4.tar.gz"
       },
       "dependencies": [
         "libpng",
@@ -629,29 +653,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/AOMediaCodec/libavif/releases/download/v0.6.3/libavif-0.6.3.tar.gz"
-      },
-      "dependencies": [
-        "libpng",
-        "libjpeg-turbo"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DAVIF_BUILD_APPS=OFF"
-      ],
-      "env": {}
-    },
-    {
-      "version": "1.0.4",
-      "description": "AV1 Image File Format library",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/AOMediaCodec/libavif/releases/download/v1.0.4/libavif-1.0.4.tar.gz"
       },
       "dependencies": [
         "libpng",

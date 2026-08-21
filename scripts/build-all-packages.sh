@@ -1,10 +1,18 @@
 #!/usr/bin/env bash
-# Build all packages locally with TSI to verify they are buildable.
-# Usage: build-all-packages.sh [--exclude-slow] [--packages-dir DIR]
-#   --exclude-slow  Skip known slow packages (gcc, llvm, python, etc.)
+# Build every package with TSI to verify it is buildable on THIS host.
+#
+# Usage: build-all-packages.sh [--exclude-slow] [--packages-dir DIR] [--prefix PREFIX]
+#   --exclude-slow  Skip known slow packages (gcc, llvm, python, ...)
 #   --packages-dir  Path to packages directory (default: repo root packages/)
-# Exit: 0 if all builds succeeded (Linux-only skips do not fail the run).
-# Logs for failed builds are written to .build-logs/<package>.log
+#   --prefix        TSI prefix to install into (default: $TSI_PREFIX or ~/.tsi)
+#
+# Emits .build-logs/results.tsv -- "<package>\t<ok|fail|unsupported>\t<note>" --
+# which merge-status.py turns into the multi-platform PACKAGES_STATUS.md table.
+# One results.tsv per platform; the merge is what makes cross-arch reporting work.
+#
+# Exit: 0 if every package either built or was legitimately unsupported here.
+#       Packages skipped because a *dependency* failed do not fail the run on
+#       their own -- the dependency's own `fail` row already does.
 
 set -euo pipefail
 
@@ -15,15 +23,12 @@ LOG_DIR="$REPO_ROOT/.build-logs"
 PREFIX="${TSI_PREFIX:-$HOME/.tsi}"
 EXCLUDE_SLOW=false
 SLOW_PACKAGES='gcc|llvm|clang|rust|python|boost|mongodb|mysql|mariadb|postgresql|ros2|emacs'
-# Kernel / syscall APIs not available on Darwin (or typical *BSD).
-LINUX_ONLY_PACKAGES='libcap|libseccomp|liburing'
-CURRENT_OS="$(uname -s)"
 
 while [ $# -gt 0 ]; do
   case "$1" in
     --exclude-slow)  EXCLUDE_SLOW=true; shift ;;
-    --packages-dir)   PACKAGES_DIR="$2"; shift 2 ;;
-    --prefix)         PREFIX="$2"; shift 2 ;;
+    --packages-dir)  PACKAGES_DIR="$2"; shift 2 ;;
+    --prefix)        PREFIX="$2"; shift 2 ;;
     *) echo "Usage: $0 [--exclude-slow] [--packages-dir DIR] [--prefix PREFIX]" >&2; exit 1 ;;
   esac
 done
@@ -39,15 +44,18 @@ if ! command -v tsi >/dev/null 2>&1; then
 fi
 
 mkdir -p "$LOG_DIR"
+RESULTS="$LOG_DIR/results.tsv"
+: > "$RESULTS"
+
+PLATFORM="$(python3 "$SCRIPT_DIR/platform_id.py")"
+echo "Platform: $PLATFORM"
 
 if ! PACKAGES=$(python3 "$SCRIPT_DIR/sort-packages.py" "$PACKAGES_DIR"); then
   echo "Error: Failed to sort packages. Ensure python3 is installed and valid." >&2
   exit 1
 fi
 
-# Save build order for verification
 echo "$PACKAGES" > "$LOG_DIR/build-order.txt"
-echo "Build order saved to: $LOG_DIR/build-order.txt"
 
 if [ "$EXCLUDE_SLOW" = true ]; then
   PACKAGES=$(echo "$PACKAGES" | grep -vEx "$SLOW_PACKAGES" || true)
@@ -55,111 +63,71 @@ fi
 
 echo "Using packages dir: $PACKAGES_DIR"
 echo "Build logs: $LOG_DIR"
-echo "Updating TSI package list (--local)... (skipped: already updated locally)"
 
-SUCCEEDED=""
-# FAILED_DEPS: any package that is unavailable for dependents (failed build, skipped linux-only, or skipped due to dep).
-FAILED_DEPS=""
-# LINUX_SKIPPED: subset of FAILED_DEPS that were skipped only because they are Linux-only on this OS.
-LINUX_SKIPPED=""
-# TSI_FAILED: packages where `tsi install` exited non-zero (real build failures).
-TSI_FAILED=""
+record() { printf '%s\t%s\t%s\n' "$1" "$2" "${3:-}" >> "$RESULTS"; }
+
+# UNAVAILABLE: every package a dependent cannot build against (failed, or
+# unsupported here). BLAMED_UNSUPPORTED: the subset that is merely unsupported,
+# so dependents get "unsupported" rather than a spurious "fail".
+UNAVAILABLE=""
+BLAMED_UNSUPPORTED=""
+ANY_FAILED=false
 COUNT=0
-STATUS_FILE="$REPO_ROOT/PACKAGES_STATUS.md"
-echo "Status file: $STATUS_FILE"
 TOTAL=$(echo "$PACKAGES" | grep -c . || echo 0)
 
 for pkg in $PACKAGES; do
   COUNT=$((COUNT + 1))
   LOG_FILE="$LOG_DIR/${pkg}.log"
+  PKG_FILE="$PACKAGES_DIR/${pkg}.json"
   echo "[$COUNT/$TOTAL] Building: $pkg"
 
-  # Skip known Linux-only packages on non-Linux platforms.
-  if [ "$CURRENT_OS" != "Linux" ] && echo "$pkg" | grep -Eq "^($LINUX_ONLY_PACKAGES)$"; then
-    echo "  -> SKIPPED (Linux-only; not supported on $CURRENT_OS)"
-    echo "Linux-only; not supported on ${CURRENT_OS}." > "$LOG_FILE"
-    FAILED_DEPS="${FAILED_DEPS} ${pkg}"
-    LINUX_SKIPPED="${LINUX_SKIPPED} ${pkg}"
-    python3 "$SCRIPT_DIR/update-status.py" --status-file "$STATUS_FILE" --package "$pkg" --result unsupported --log "$LOG_FILE"
+  # Declared platform support (schema `platforms` field) decides this, not a
+  # hardcoded package-name list.
+  if [ -f "$PKG_FILE" ] && ! python3 "$SCRIPT_DIR/platform_id.py" --supports "$PKG_FILE"; then
+    echo "  -> SKIPPED (not supported on $PLATFORM)"
+    UNAVAILABLE="${UNAVAILABLE} ${pkg}"
+    BLAMED_UNSUPPORTED="${BLAMED_UNSUPPORTED} ${pkg}"
+    record "$pkg" unsupported "$(python3 "$SCRIPT_DIR/platform_id.py" --platforms "$PKG_FILE")-only"
     continue
   fi
 
-  # Skip packages whose dependencies have already failed in this run.
-  PKG_FILE="$PACKAGES_DIR/${pkg}.json"
-  if [ -n "$FAILED_DEPS" ] && [ -f "$PKG_FILE" ]; then
-    DEPS=$(python3 - "$PKG_FILE" <<'PY'
-import json
-import sys
-
-path = sys.argv[1]
-try:
-    with open(path) as f:
-        data = json.load(f)
-except Exception:
-    sys.exit(0)
-
-deps = set()
-versions = data.get("versions")
-if isinstance(versions, list) and versions:
-    v = versions[0]
-    for key in ("dependencies", "build_dependencies"):
-        val = v.get(key, [])
-        if isinstance(val, list):
-            deps.update(str(x) for x in val)
-else:
-    for key in ("dependencies", "build_dependencies"):
-        val = data.get(key, [])
-        if isinstance(val, list):
-            deps.update(str(x) for x in val)
-
-print(" ".join(sorted(deps)))
-PY
-)
-
-    if [ -n "$DEPS" ]; then
-      SKIP=false
-      FAILED_DEP=""
-      for dep in $DEPS; do
-        if [[ " $FAILED_DEPS " == *" $dep "* ]]; then
-          SKIP=true
-          FAILED_DEP="$dep"
-          break
-        fi
-      done
-
-      if [ "$SKIP" = true ]; then
-        if [[ " $LINUX_SKIPPED " == *" $FAILED_DEP "* ]]; then
-          echo "  -> SKIPPED (dependency is Linux-only: $FAILED_DEP)"
-          echo "Skipped: dependency '${FAILED_DEP}' is Linux-only (not supported on this OS)." > "$LOG_FILE"
-          FAILED_DEPS="${FAILED_DEPS} ${pkg}"
-          LINUX_SKIPPED="${LINUX_SKIPPED} ${pkg}"
-          python3 "$SCRIPT_DIR/update-status.py" --status-file "$STATUS_FILE" --package "$pkg" --result unsupported --log "$LOG_FILE"
-        else
-          echo "  -> SKIPPED (dependency previously failed: $FAILED_DEP)"
-          echo "Skipped because dependency '$FAILED_DEP' failed earlier in this run." > "$LOG_FILE"
-          FAILED_DEPS="${FAILED_DEPS} ${pkg}"
-          python3 "$SCRIPT_DIR/update-status.py" --status-file "$STATUS_FILE" --package "$pkg" --result failure --log "$LOG_FILE"
-        fi
-        continue
-      fi
+  # Skip packages whose dependencies are already unavailable in this run.
+  if [ -n "$UNAVAILABLE" ] && [ -f "$PKG_FILE" ]; then
+    BLAME=""
+    for dep in $(python3 "$SCRIPT_DIR/platform_id.py" --deps "$PKG_FILE"); do
+      case " $UNAVAILABLE " in *" $dep "*) BLAME="$dep"; break ;; esac
+    done
+    if [ -n "$BLAME" ]; then
+      UNAVAILABLE="${UNAVAILABLE} ${pkg}"
+      case " $BLAMED_UNSUPPORTED " in
+        *" $BLAME "*)
+          echo "  -> SKIPPED (dependency unsupported here: $BLAME)"
+          BLAMED_UNSUPPORTED="${BLAMED_UNSUPPORTED} ${pkg}"
+          record "$pkg" unsupported "needs $BLAME"
+          ;;
+        *)
+          echo "  -> SKIPPED (dependency failed earlier: $BLAME)"
+          record "$pkg" skipped "needs $BLAME"
+          ;;
+      esac
+      continue
     fi
   fi
 
-  # Run build, save log to file and stdout.
   if tsi install --prefix "$PREFIX" --verbose "$pkg" 2>&1 | tee "$LOG_FILE"; then
-    SUCCEEDED="${SUCCEEDED} ${pkg}"
-    rm "$LOG_FILE"
-    python3 "$SCRIPT_DIR/update-status.py" --status-file "$STATUS_FILE" --package "$pkg" --result success --log "$LOG_FILE"
+    rm -f "$LOG_FILE"
+    record "$pkg" ok
   else
     echo "  -> FAILED (log: $LOG_FILE)" >&2
-    FAILED_DEPS="${FAILED_DEPS} ${pkg}"
-    TSI_FAILED="${TSI_FAILED} ${pkg}"
-    python3 "$SCRIPT_DIR/update-status.py" --status-file "$STATUS_FILE" --package "$pkg" --result failure --log "$LOG_FILE"
+    UNAVAILABLE="${UNAVAILABLE} ${pkg}"
+    ANY_FAILED=true
+    record "$pkg" fail
   fi
 done
 
-if [ -n "$TSI_FAILED" ]; then
+echo "Results: $RESULTS"
+if [ "$ANY_FAILED" = true ]; then
+  echo "Some packages failed to build on $PLATFORM." >&2
   exit 1
 fi
-
-echo "All $TOTAL packages built successfully (Linux-only / unsupported-on-this-OS packages were skipped)."
+echo "All $TOTAL packages built on $PLATFORM (unsupported packages skipped)."

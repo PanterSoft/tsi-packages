@@ -6,7 +6,8 @@
       "description": "Cross-platform asynchronous I/O library",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/libuv/libuv/archive/v1.51.0.tar.gz"
+        "url": "https://github.com/libuv/libuv/archive/v1.51.0.tar.gz",
+        "sha256": "27e55cf7083913bfb6826ca78cde9de7647cded648d35f24163f2d31bb9f51cd"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -83,6 +84,25 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/libuv/libuv/archive/v1.49.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.48.0",
+      "description": "Cross-platform asynchronous I/O library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libuv/libuv/archive/v1.48.0.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -235,25 +255,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/libuv/libuv/archive/v1.42.0.tar.gz"
-      },
-      "dependencies": [],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
-      ],
-      "env": {}
-    },
-    {
-      "version": "1.48.0",
-      "description": "Cross-platform asynchronous I/O library",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/libuv/libuv/archive/v1.48.0.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [

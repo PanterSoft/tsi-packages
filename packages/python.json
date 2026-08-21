@@ -4,7 +4,8 @@
   "description": "Python programming language",
   "source": {
     "type": "tarball",
-    "url": "https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tgz"
+    "url": "https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tgz",
+    "sha256": "a7c4f6a9dc423d8c328003254ab0c9338b83037bd787d680826a5bf84308116e"
   },
   "dependencies": [
     "openssl",

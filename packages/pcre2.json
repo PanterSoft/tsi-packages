@@ -6,7 +6,8 @@
       "description": "Perl Compatible Regular Expressions library (version 2)",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.47/pcre2-10.47.tar.gz"
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.47/pcre2-10.47.tar.gz",
+        "sha256": "c08ae2388ef333e8403e670ad70c0a11f1eed021fd88308d7e02f596fcd9dc16"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -82,6 +83,31 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.44/pcre2-10.44.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "sed",
+        "grep",
+        "gawk",
+        "bash"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-static",
+        "--enable-shared",
+        "--enable-unicode",
+        "--enable-pcre2-16",
+        "--enable-pcre2-32"
+      ]
+    },
+    {
+      "version": "10.43",
+      "description": "Perl Compatible Regular Expressions library (version 2)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.43/pcre2-10.43.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -557,31 +583,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.00/pcre2-10.00.tar.gz"
-      },
-      "dependencies": [],
-      "build_dependencies": [
-        "make",
-        "coreutils",
-        "sed",
-        "grep",
-        "gawk",
-        "bash"
-      ],
-      "build_system": "autotools",
-      "configure_args": [
-        "--enable-static",
-        "--enable-shared",
-        "--enable-unicode",
-        "--enable-pcre2-16",
-        "--enable-pcre2-32"
-      ]
-    },
-    {
-      "version": "10.43",
-      "description": "Perl Compatible Regular Expressions library (version 2)",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.43/pcre2-10.43.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [

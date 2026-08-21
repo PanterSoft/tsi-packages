@@ -1,0 +1,26 @@
+{
+  "name": "libpcap",
+  "versions": [
+    {
+      "version": "1.10.5",
+      "description": "Portable packet capture library",
+      "source": {
+        "type": "tarball",
+        "url": "https://www.tcpdump.org/release/libpcap-1.10.5.tar.gz",
+        "sha256": "37ced90a19a302a7f32e458224a00c365c117905c2cd35ac544b6880a81488f0"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "flex",
+        "bison"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-dbus"
+      ],
+      "env": {}
+    }
+  ]
+}
