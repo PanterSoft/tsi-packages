@@ -13,12 +13,12 @@ on:
     paths:
       - 'packages/**/*.json'
       - 'scripts/**'
-      - '.github/workflows/package-validation.yml'
+      - '.github/workflows/**'
   pull_request:
     paths:
       - 'packages/**/*.json'
       - 'scripts/**'
-      - '.github/workflows/package-validation.yml'
+      - '.github/workflows/**'
   workflow_dispatch:
 
 permissions:
@@ -59,6 +59,17 @@ jobs:
         run: |
           shellcheck -S warning scripts/*.sh
           for f in scripts/*.sh; do bash -n "$f"; done
+
+      # A workflow that parses as YAML can still be broken: an unknown context,
+      # a typo'd `needs`, a job reading an output that does not exist. Nothing
+      # checked that here, and every package gate in this repo is a workflow.
+      - name: Install actionlint
+        run: bash <(curl -fsSL https://raw.githubusercontent.com/rhysd/actionlint/v1.7.7/scripts/download-actionlint.bash) 1.7.7
+
+      - name: Lint workflows
+        env:
+          SHELLCHECK_OPTS: -S warning   # same severity as the shellcheck step
+        run: ./actionlint -color
 
       # Only the touched packages: re-hashing the whole catalogue on every PR
       # would be minutes of downloads for no extra signal. verify-sources.yml
