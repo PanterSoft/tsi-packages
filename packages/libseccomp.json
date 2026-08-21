@@ -6,7 +6,8 @@
       "description": "Linux seccomp library",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/seccomp/libseccomp/releases/download/v2.6.0/libseccomp-2.6.0.tar.gz"
+        "url": "https://github.com/seccomp/libseccomp/releases/download/v2.6.0/libseccomp-2.6.0.tar.gz",
+        "sha256": "83b6085232d1588c379dc9b9cae47bb37407cf262e6e74993c61ba72d2a784dc"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -26,6 +27,25 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/seccomp/libseccomp/releases/download/v2.5.6/libseccomp-2.5.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {},
+      "platforms": [
+        "linux"
+      ]
+    },
+    {
+      "version": "2.5.5",
+      "description": "Linux seccomp library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/seccomp/libseccomp/releases/download/v2.5.5/libseccomp-2.5.5.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -116,11 +136,11 @@
       ]
     },
     {
-      "version": "2.4.4",
+      "version": "2.5.0",
       "description": "Linux seccomp library",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/seccomp/libseccomp/releases/download/v2.4.4/libseccomp-2.4.4.tar.gz"
+        "url": "https://github.com/seccomp/libseccomp/releases/download/v2.5.0/libseccomp-2.5.0.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -135,11 +155,11 @@
       ]
     },
     {
-      "version": "2.5.0",
+      "version": "2.4.4",
       "description": "Linux seccomp library",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/seccomp/libseccomp/releases/download/v2.5.0/libseccomp-2.5.0.tar.gz"
+        "url": "https://github.com/seccomp/libseccomp/releases/download/v2.4.4/libseccomp-2.4.4.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -482,25 +502,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/seccomp/libseccomp/releases/download/v0.1.0/libseccomp-0.1.0.tar.gz"
-      },
-      "dependencies": [],
-      "build_dependencies": [
-        "make",
-        "coreutils"
-      ],
-      "build_system": "autotools",
-      "configure_args": [],
-      "env": {},
-      "platforms": [
-        "linux"
-      ]
-    },
-    {
-      "version": "2.5.5",
-      "description": "Linux seccomp library",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/seccomp/libseccomp/releases/download/v2.5.5/libseccomp-2.5.5.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [

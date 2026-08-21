@@ -6,7 +6,8 @@
       "description": "Terminal multiplexer",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/tmux/tmux/releases/download/3.6a/tmux-3.6a.tar.gz"
+        "url": "https://github.com/tmux/tmux/releases/download/3.6a/tmux-3.6a.tar.gz",
+        "sha256": "b6d8d9c76585db8ef5fa00d4931902fa4b8cbe8166f528f44fc403961a3f3759"
       },
       "dependencies": [
         "ncurses",
@@ -70,6 +71,27 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/tmux/tmux/releases/download/3.5/tmux-3.5.tar.gz"
+      },
+      "dependencies": [
+        "ncurses",
+        "libevent"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.4",
+      "description": "Terminal multiplexer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/tmux/tmux/releases/download/3.4/tmux-3.4.tar.gz"
       },
       "dependencies": [
         "ncurses",
@@ -784,27 +806,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/tmux/tmux/releases/download/0.8/tmux-0.8.tar.gz"
-      },
-      "dependencies": [
-        "ncurses",
-        "libevent"
-      ],
-      "build_dependencies": [
-        "make",
-        "coreutils"
-      ],
-      "build_system": "autotools",
-      "configure_args": [
-        "--disable-utf8proc"
-      ],
-      "env": {}
-    },
-    {
-      "version": "3.4",
-      "description": "Terminal multiplexer",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/tmux/tmux/releases/download/3.4/tmux-3.4.tar.gz"
       },
       "dependencies": [
         "ncurses",

@@ -4,7 +4,8 @@
   "description": "Core application building blocks",
   "source": {
     "type": "tarball",
-    "url": "https://download.gnome.org/sources/glib/2.80/glib-2.80.3.tar.xz"
+    "url": "https://download.gnome.org/sources/glib/2.80/glib-2.80.3.tar.xz",
+    "sha256": "3947a0eaddd0f3613d0230bb246d0c69e46142c19022f5c4b1b2e3cba236d417"
   },
   "dependencies": [
     "libffi",

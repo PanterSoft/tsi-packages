@@ -2,11 +2,32 @@
   "name": "zeromq",
   "versions": [
     {
+      "version": "4.3.5",
+      "description": "High-performance messaging library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/zeromq/libzmq/releases/download/v4.3.5/zeromq-4.3.5.tar.gz",
+        "sha256": "6653ef5910f17954861fe72332e68b03ca6e4d9c7160eb3a8de5a5a913bfab43"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "CXXFLAGS=-Wno-missing-braces"
+      ],
+      "env": {}
+    },
+    {
       "version": "4.3.4",
       "description": "High-performance messaging library",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/zeromq/libzmq/releases/download/v4.3.4/zeromq-4.3.4.tar.gz"
+        "url": "https://github.com/zeromq/libzmq/releases/download/v4.3.4/zeromq-4.3.4.tar.gz",
+        "sha256": "c593001a89f5a85dd2ddf564805deb860e02471171b3f204944857336295c3e5"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -203,25 +224,6 @@
       ],
       "build_system": "autotools",
       "configure_args": [],
-      "env": {}
-    },
-    {
-      "version": "4.3.5",
-      "description": "High-performance messaging library",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/zeromq/libzmq/releases/download/v4.3.5/zeromq-4.3.5.tar.gz"
-      },
-      "dependencies": [],
-      "build_dependencies": [
-        "pkg-config",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "autotools",
-      "configure_args": [
-        "CXXFLAGS=-Wno-missing-braces"
-      ],
       "env": {}
     }
   ]

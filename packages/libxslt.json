@@ -4,7 +4,8 @@
   "description": "XSLT library",
   "source": {
     "type": "tarball",
-    "url": "https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.40.tar.xz"
+    "url": "https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.40.tar.xz",
+    "sha256": "194715db023035f65fb566402f2ad2b5eab4c29d541f511305c40b29b1f48d13"
   },
   "dependencies": [
     "libxml2"

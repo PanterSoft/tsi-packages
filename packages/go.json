@@ -4,7 +4,8 @@
   "description": "Go programming language",
   "source": {
     "type": "tarball",
-    "url": "https://go.dev/dl/go1.22.1.src.tar.gz"
+    "url": "https://go.dev/dl/go1.22.1.src.tar.gz",
+    "sha256": "79c9b91d7f109515a25fc3ecdaad125d67e6bdb54f6d4d98580f46799caea321"
   },
   "dependencies": [],
   "build_dependencies": [],
@@ -16,4 +17,3 @@
     "GOROOT_FINAL": "$TSI_INSTALL_DIR"
   }
 }
-

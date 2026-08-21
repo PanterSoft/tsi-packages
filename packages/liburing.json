@@ -6,7 +6,8 @@
       "description": "Linux io_uring library",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/axboe/liburing/archive/refs/tags/liburing-2.13.tar.gz"
+        "url": "https://github.com/axboe/liburing/archive/refs/tags/liburing-2.13.tar.gz",
+        "sha256": "618e34dbea408fc9e33d7c4babd746036dbdedf7fce2496b1178ced0f9b5b357"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -139,6 +140,25 @@
       ]
     },
     {
+      "version": "2.6",
+      "description": "Linux io_uring library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/axboe/liburing/releases/download/liburing-2.6/liburing-2.6.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {},
+      "platforms": [
+        "linux"
+      ]
+    },
+    {
       "version": "2.5",
       "description": "Linux io_uring library",
       "source": {
@@ -163,25 +183,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/axboe/liburing/releases/download/liburing-2.4/liburing-2.4.tar.gz"
-      },
-      "dependencies": [],
-      "build_dependencies": [
-        "make",
-        "coreutils"
-      ],
-      "build_system": "autotools",
-      "configure_args": [],
-      "env": {},
-      "platforms": [
-        "linux"
-      ]
-    },
-    {
-      "version": "2.6",
-      "description": "Linux io_uring library",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/axboe/liburing/releases/download/liburing-2.6/liburing-2.6.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [

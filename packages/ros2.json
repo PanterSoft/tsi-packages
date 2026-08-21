@@ -2,12 +2,12 @@
   "name": "ros2",
   "versions": [
     {
-      "version": "humble",
-      "description": "ROS 2 Humble Hawksbill - Long-term support distribution (from source)",
+      "version": "jazzy",
+      "description": "ROS 2 Jazzy Jalisco - Latest distribution (from source)",
       "source": {
         "type": "git",
         "url": "https://github.com/ros2/ros2.git",
-        "branch": "humble"
+        "branch": "jazzy"
       },
       "dependencies": [
         "python",
@@ -34,7 +34,7 @@
       ],
       "env": {
         "ROS_DOMAIN_ID": "0",
-        "ROS_DISTRO": "humble"
+        "ROS_DISTRO": "jazzy"
       }
     },
     {
@@ -74,12 +74,12 @@
       }
     },
     {
-      "version": "jazzy",
-      "description": "ROS 2 Jazzy Jalisco - Latest distribution (from source)",
+      "version": "humble",
+      "description": "ROS 2 Humble Hawksbill - Long-term support distribution (from source)",
       "source": {
         "type": "git",
         "url": "https://github.com/ros2/ros2.git",
-        "branch": "jazzy"
+        "branch": "humble"
       },
       "dependencies": [
         "python",
@@ -106,9 +106,8 @@
       ],
       "env": {
         "ROS_DOMAIN_ID": "0",
-        "ROS_DISTRO": "jazzy"
+        "ROS_DISTRO": "humble"
       }
     }
   ]
 }
-

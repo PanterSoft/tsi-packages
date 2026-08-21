@@ -6,7 +6,8 @@
       "description": "Very fast header-only/compiled C++ logging library",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/gabime/spdlog/archive/refs/tags/v1.15.1.tar.gz"
+        "url": "https://github.com/gabime/spdlog/archive/refs/tags/v1.15.1.tar.gz",
+        "sha256": "25c843860f039a1600f232c6eb9e01e6627f7d030a2ae5e232bdd3c9205d26cc"
       },
       "dependencies": [],
       "build_dependencies": [

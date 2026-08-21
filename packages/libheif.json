@@ -6,7 +6,8 @@
       "description": "HEIF image format library",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/strukturag/libheif/releases/download/v1.20.2/libheif-1.20.2.tar.gz"
+        "url": "https://github.com/strukturag/libheif/releases/download/v1.20.2/libheif-1.20.2.tar.gz",
+        "sha256": "68ac9084243004e0ef3633f184eeae85d615fe7e4444373a0a21cebccae9d12a"
       },
       "dependencies": [
         "libpng",
@@ -315,6 +316,28 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/strukturag/libheif/releases/download/v1.18.0/libheif-1.18.0.tar.gz"
+      },
+      "dependencies": [
+        "libpng",
+        "libjpeg-turbo"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.17.6",
+      "description": "HEIF image format library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/strukturag/libheif/releases/download/v1.17.6/libheif-1.17.6.tar.gz"
       },
       "dependencies": [
         "libpng",
@@ -1085,28 +1108,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/strukturag/libheif/releases/download/v1.0.0/libheif-1.0.0.tar.gz"
-      },
-      "dependencies": [
-        "libpng",
-        "libjpeg-turbo"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release"
-      ],
-      "env": {}
-    },
-    {
-      "version": "1.17.6",
-      "description": "HEIF image format library",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/strukturag/libheif/releases/download/v1.17.6/libheif-1.17.6.tar.gz"
       },
       "dependencies": [
         "libpng",

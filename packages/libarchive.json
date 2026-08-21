@@ -6,7 +6,8 @@
       "description": "Multi-format archive and compression library",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/libarchive/libarchive/releases/download/v3.8.4/libarchive-3.8.4.tar.gz"
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.8.4/libarchive-3.8.4.tar.gz",
+        "sha256": "b2c75b132a0ec43274d2867221befcb425034cd038e465afbfad09911abb1abb"
       },
       "dependencies": [
         "zlib",
@@ -286,6 +287,37 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/libarchive/libarchive/releases/download/v3.7.5/libarchive-3.7.5.tar.gz"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7.4",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.7.4/libarchive-3.7.4.tar.gz"
       },
       "dependencies": [
         "zlib",
@@ -875,37 +907,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/libarchive/libarchive/releases/download/v3.3.0/libarchive-3.3.0.tar.gz"
-      },
-      "dependencies": [
-        "zlib",
-        "bzip2",
-        "xz",
-        "zstd",
-        "lz4",
-        "openssl"
-      ],
-      "build_dependencies": [
-        "pkg-config",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "autotools",
-      "configure_args": [
-        "--with-zlib",
-        "--with-bz2lib",
-        "--with-lzma",
-        "--with-zstd",
-        "--with-lz4",
-        "--with-openssl"
-      ],
-      "env": {}
-    },
-    {
-      "version": "3.7.4",
-      "description": "Multi-format archive and compression library",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/libarchive/libarchive/releases/download/v3.7.4/libarchive-3.7.4.tar.gz"
       },
       "dependencies": [
         "zlib",

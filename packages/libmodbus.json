@@ -6,7 +6,8 @@
       "description": "Modbus protocol library for serial and TCP devices",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/stephane/libmodbus/releases/download/v3.1.11/libmodbus-3.1.11.tar.gz"
+        "url": "https://github.com/stephane/libmodbus/releases/download/v3.1.11/libmodbus-3.1.11.tar.gz",
+        "sha256": "a7a2c4f6e7e3c9bd49a574e9f30f6f87b8f162a58c7a67cb1c75470991b7680a"
       },
       "dependencies": [],
       "build_dependencies": [

@@ -218,3 +218,19 @@ python3 scripts/merge-status.py PACKAGES_STATUS.md \
 Markers: `✅` built, `❌` failed, `—` unsupported on that platform, `⏭️` skipped because a dependency was unavailable, blank means not tested there. The table is rebuilt from scratch every run.
 
 Self-check: `python3 scripts/test_merge_status.py`.
+
+## add-checksums.py
+
+Records `source.sha256` for tarball/zip sources so TSI verifies a download before extracting it.
+
+```bash
+python3 scripts/add-checksums.py brotli fmt   # named packages, newest version
+python3 scripts/add-checksums.py --all        # every package, newest version
+python3 scripts/add-checksums.py --all --check  # verify, write nothing
+python3 scripts/add-checksums.py fmt --all-versions
+```
+
+Existing checksums are left alone unless `--check` is given. Run it whenever a package or a version is added.
+
+This pins the artifact, it does not establish provenance: it guarantees later downloads are byte-identical to the one taken when the package was added. Cross-check the value against upstream's own published checksum when there is one.
+

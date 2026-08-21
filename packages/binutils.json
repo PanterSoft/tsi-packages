@@ -4,9 +4,12 @@
   "description": "GNU Binary Utilities - linker, assembler, and other tools (ld, as, ar, objdump, etc.)",
   "source": {
     "type": "tarball",
-    "url": "https://ftp.gnu.org/gnu/binutils/binutils-2.41.tar.xz"
+    "url": "https://ftp.gnu.org/gnu/binutils/binutils-2.41.tar.xz",
+    "sha256": "ae9a5789e23459e59606e6714723f2d3ffc31c03174191ef0d015bdf06007450"
   },
-  "dependencies": ["zlib"],
+  "dependencies": [
+    "zlib"
+  ],
   "build_dependencies": [
     "m4",
     "bash",

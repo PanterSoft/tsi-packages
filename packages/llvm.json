@@ -6,7 +6,8 @@
       "description": "LLVM compiler infrastructure",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/llvm-project-21.1.8.src.tar.xz"
+        "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/llvm-project-21.1.8.src.tar.xz",
+        "sha256": "4633a23617fa31a3ea51242586ea7fb1da7140e426bd62fc164261fe036aa142"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -601,6 +602,28 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.7/llvm-project-18.1.7.src.tar.xz"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DLLVM_ENABLE_PROJECTS=clang",
+        "-DLLVM_TARGETS_TO_BUILD=Native"
+      ],
+      "env": {},
+      "source_dir": "llvm"
+    },
+    {
+      "version": "18.1.6",
+      "description": "LLVM compiler infrastructure",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.6/llvm-project-18.1.6.src.tar.xz"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -1622,28 +1645,6 @@
         "-DLLVM_TARGETS_TO_BUILD=Native"
       ],
       "env": {}
-    },
-    {
-      "version": "18.1.6",
-      "description": "LLVM compiler infrastructure",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.6/llvm-project-18.1.6.src.tar.xz"
-      },
-      "dependencies": [],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DLLVM_ENABLE_PROJECTS=clang",
-        "-DLLVM_TARGETS_TO_BUILD=Native"
-      ],
-      "env": {},
-      "source_dir": "llvm"
     }
   ]
 }

@@ -4,7 +4,8 @@
   "description": "GObject introspection framework",
   "source": {
     "type": "tarball",
-    "url": "https://download.gnome.org/sources/gobject-introspection/1.80/gobject-introspection-1.80.1.tar.xz"
+    "url": "https://download.gnome.org/sources/gobject-introspection/1.80/gobject-introspection-1.80.1.tar.xz",
+    "sha256": "a1df7c424e15bda1ab639c00e9051b9adf5cea1a9e512f8a603b53cd199bc6d8"
   },
   "dependencies": [
     "glib"

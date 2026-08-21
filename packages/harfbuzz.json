@@ -6,7 +6,8 @@
       "description": "Text shaping library",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/harfbuzz/harfbuzz/releases/download/12.2.0/harfbuzz-12.2.0.tar.xz"
+        "url": "https://github.com/harfbuzz/harfbuzz/releases/download/12.2.0/harfbuzz-12.2.0.tar.xz",
+        "sha256": "ecb603aa426a8b24665718667bda64a84c1504db7454ee4cadbd362eea64e545"
       },
       "dependencies": [
         "freetype",
@@ -644,6 +645,28 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/harfbuzz/harfbuzz/releases/download/8.3.1/harfbuzz-8.3.1.tar.xz"
+      },
+      "dependencies": [
+        "freetype",
+        "glib"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "meson",
+        "ninja",
+        "python",
+        "coreutils"
+      ],
+      "build_system": "meson",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "8.3.0",
+      "description": "Text shaping library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/harfbuzz/harfbuzz/releases/download/8.3.0/harfbuzz-8.3.0.tar.xz"
       },
       "dependencies": [
         "freetype",
@@ -3042,28 +3065,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/harfbuzz/harfbuzz/releases/download/0.9.34/harfbuzz-0.9.34.tar.xz"
-      },
-      "dependencies": [
-        "freetype",
-        "glib"
-      ],
-      "build_dependencies": [
-        "pkg-config",
-        "meson",
-        "ninja",
-        "python",
-        "coreutils"
-      ],
-      "build_system": "meson",
-      "configure_args": [],
-      "env": {}
-    },
-    {
-      "version": "8.3.0",
-      "description": "Text shaping library",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/harfbuzz/harfbuzz/releases/download/8.3.0/harfbuzz-8.3.0.tar.xz"
       },
       "dependencies": [
         "freetype",

@@ -4,9 +4,13 @@
   "description": "Node.js JavaScript runtime",
   "source": {
     "type": "tarball",
-    "url": "https://nodejs.org/dist/v20.11.1/node-v20.11.1.tar.gz"
+    "url": "https://nodejs.org/dist/v20.11.1/node-v20.11.1.tar.gz",
+    "sha256": "4af1ba6ea848cc05908b8a62b02fb27684dd52b2a7988ee82b0cfa72deb90b94"
   },
-  "dependencies": ["openssl", "zlib"],
+  "dependencies": [
+    "openssl",
+    "zlib"
+  ],
   "build_dependencies": [],
   "build_system": "custom",
   "build_commands": [
@@ -19,4 +23,3 @@
     "LIBTOOL": "/usr/bin/libtool"
   }
 }
-

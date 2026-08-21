@@ -6,7 +6,8 @@
       "description": "C language family frontend for LLVM",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/clang-21.1.8.src.tar.xz"
+        "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/clang-21.1.8.src.tar.xz",
+        "sha256": "6090e3f23720d003cdd84483a47d0eec6d01adbb5e0c714ac0c8b58de546aa62"
       },
       "dependencies": [
         "llvm"
@@ -601,6 +602,28 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.7/clang-18.1.7.src.tar.xz"
+      },
+      "dependencies": [
+        "llvm"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DLLVM_DIR=$TSI_INSTALL_DIR/lib/cmake/llvm"
+      ],
+      "env": {}
+    },
+    {
+      "version": "18.1.6",
+      "description": "C language family frontend for LLVM",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.6/clang-18.1.6.src.tar.xz"
       },
       "dependencies": [
         "llvm"
@@ -1613,28 +1636,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-7.1.0/clang-7.1.0.src.tar.xz"
-      },
-      "dependencies": [
-        "llvm"
-      ],
-      "build_dependencies": [
-        "cmake",
-        "make",
-        "coreutils"
-      ],
-      "build_system": "cmake",
-      "cmake_args": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DLLVM_DIR=$TSI_INSTALL_DIR/lib/cmake/llvm"
-      ],
-      "env": {}
-    },
-    {
-      "version": "18.1.6",
-      "description": "C language family frontend for LLVM",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.6/clang-18.1.6.src.tar.xz"
       },
       "dependencies": [
         "llvm"

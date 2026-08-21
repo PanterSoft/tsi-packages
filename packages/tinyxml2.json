@@ -6,7 +6,8 @@
       "description": "Simple, small, efficient C++ XML parser",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/leethomason/tinyxml2/archive/refs/tags/10.0.0.tar.gz"
+        "url": "https://github.com/leethomason/tinyxml2/archive/refs/tags/10.0.0.tar.gz",
+        "sha256": "3bdf15128ba16686e69bce256cc468e76c7b94ff2c7f391cc5ec09e40bff3839"
       },
       "dependencies": [],
       "build_dependencies": [

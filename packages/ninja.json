@@ -6,7 +6,8 @@
       "description": "Small build system",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.2.tar.gz"
+        "url": "https://github.com/ninja-build/ninja/archive/refs/tags/v1.13.2.tar.gz",
+        "sha256": "974d6b2f4eeefa25625d34da3cb36bdcebe7fbce40f4c16ac0835fd1c0cbae17"
       },
       "dependencies": [],
       "build_dependencies": [
@@ -49,6 +50,21 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/ninja-build/ninja/releases/download/v1.13.0/ninja-1.13.0.tar.gz"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "custom",
+      "build_commands": [
+        "python3 configure.py --bootstrap"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.12.1",
+      "description": "Small build system",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/ninja-build/ninja/releases/download/v1.12.1/ninja-1.12.1.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [],
@@ -379,21 +395,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/ninja-build/ninja/releases/download/v1.0.0/ninja-1.0.0.tar.gz"
-      },
-      "dependencies": [],
-      "build_dependencies": [],
-      "build_system": "custom",
-      "build_commands": [
-        "python3 configure.py --bootstrap"
-      ],
-      "env": {}
-    },
-    {
-      "version": "1.12.1",
-      "description": "Small build system",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/ninja-build/ninja/releases/download/v1.12.1/ninja-1.12.1.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [],

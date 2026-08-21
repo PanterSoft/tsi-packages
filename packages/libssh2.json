@@ -6,7 +6,8 @@
       "description": "Client-side C library implementing the SSH2 protocol",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/libssh2/libssh2/releases/download/libssh2-1.11.1/libssh2-1.11.1.tar.gz"
+        "url": "https://github.com/libssh2/libssh2/releases/download/libssh2-1.11.1/libssh2-1.11.1.tar.gz",
+        "sha256": "d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7"
       },
       "dependencies": [
         "openssl",

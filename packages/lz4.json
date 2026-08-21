@@ -6,7 +6,23 @@
       "description": "Extremely fast compression algorithm",
       "source": {
         "type": "tarball",
-        "url": "https://github.com/lz4/lz4/archive/v1.10.0.tar.gz"
+        "url": "https://github.com/lz4/lz4/archive/v1.10.0.tar.gz",
+        "sha256": "537512904744b35e232912055ccf8ec66d768639ff3abe5788d90d792ec5f48b"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.9.4",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.9.4.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [],
@@ -202,21 +218,6 @@
       "source": {
         "type": "tarball",
         "url": "https://github.com/lz4/lz4/archive/v1.7.3.tar.gz"
-      },
-      "dependencies": [],
-      "build_dependencies": [],
-      "build_system": "make",
-      "make_args": [
-        "PREFIX=$TSI_INSTALL_DIR"
-      ],
-      "env": {}
-    },
-    {
-      "version": "1.9.4",
-      "description": "Extremely fast compression algorithm",
-      "source": {
-        "type": "tarball",
-        "url": "https://github.com/lz4/lz4/archive/v1.9.4.tar.gz"
       },
       "dependencies": [],
       "build_dependencies": [],

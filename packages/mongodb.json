@@ -4,7 +4,8 @@
   "description": "MongoDB database server",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/mongodb/mongo/archive/refs/tags/r7.0.11.tar.gz"
+    "url": "https://github.com/mongodb/mongo/archive/refs/tags/r7.0.11.tar.gz",
+    "sha256": "3138a4cfae5efdf5f36daeeb51c54d988f3e633834fcbf1f672803896203640b"
   },
   "dependencies": [
     "openssl",

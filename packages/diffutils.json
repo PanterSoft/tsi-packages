@@ -4,10 +4,13 @@
   "description": "GNU diffutils - file comparison utilities (diff, cmp, sdiff)",
   "source": {
     "type": "tarball",
-    "url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.10.tar.xz"
+    "url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.10.tar.xz",
+    "sha256": "90e5e93cc724e4ebe12ede80df1634063c7a855692685919bfe60b556c9bd09e"
   },
   "dependencies": [],
-  "build_dependencies": ["coreutils"],
+  "build_dependencies": [
+    "coreutils"
+  ],
   "build_system": "autotools",
   "configure_args": [],
   "env": {}
