@@ -110,9 +110,9 @@
 | perl                  | ✅             |              |              |
 | pixman                | ✅             |              |              |
 | pkg-config            | ✅             |              |              |
-| postgresql            | ❌             |              |              |
+| postgresql            | ✅             |              |              |
 | protobuf              | ✅             |              |              |
-| python                | ❌             |              |              |
+| python                | ✅             |              |              |
 | rapidjson             | ✅             |              |              |
 | re2                   | ✅             |              |              |
 | readline              | ✅             |              |              |

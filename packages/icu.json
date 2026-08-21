@@ -15,7 +15,8 @@
       "build_commands": [
         "cd source && ./configure --prefix=$TSI_INSTALL_DIR --enable-rpath",
         "cd source && make",
-        "cd source && make install"
+        "cd source && make install",
+        "if command -v install_name_tool >/dev/null 2>&1; then for f in \"$TSI_INSTALL_DIR\"/lib/libicu*.dylib; do [ -f \"$f\" ] || continue; for dep in $(otool -L \"$f\" | awk 'NR>1 && $1 !~ /^[\\/@]/ {print $1}'); do [ -f \"$TSI_INSTALL_DIR/lib/$dep\" ] && install_name_tool -change \"$dep\" \"$TSI_INSTALL_DIR/lib/$dep\" \"$f\" 2>/dev/null || true; done; done; fi"
       ],
       "env": {}
     }
