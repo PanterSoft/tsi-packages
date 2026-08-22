@@ -9,10 +9,10 @@
   },
   "dependencies": [],
   "build_dependencies": [],
-  "build_system": "custom",
+  "build_system": "make",
   "env": {},
-  "build_commands": [
-    "make libgif.so libgif.a libutil.so libutil.a gif2rgb gifbuild giffix giftext giftool gifclrmp PREFIX=$TSI_INSTALL_DIR",
-    "make install-bin install-include install-lib install-man PREFIX=$TSI_INSTALL_DIR"
+  "make_args": [
+    "MAKE=true",
+    "PREFIX=$TSI_INSTALL_DIR"
   ]
 }
