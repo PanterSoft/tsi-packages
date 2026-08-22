@@ -78,6 +78,10 @@ jobs:
           name: results-${{ matrix.platform }}
           path: .build-logs/
           if-no-files-found: error
+          # .build-logs is a dotted directory and upload-artifact skips hidden
+          # files by default, so a full catalogue build across three platforms
+          # ran for an hour and three quarters and then uploaded nothing.
+          include-hidden-files: true
 
   report:
     name: Merge status table
