@@ -45,7 +45,7 @@ jobs:
 
       - name: Build TSI from source
         run: |
-          git clone --depth 1 https://github.com/PanterSoft/tsi.git /tmp/tsi
+          git clone --depth 1 https://github.com/PanterSoft/TheSourceInstaller.git /tmp/tsi
           cargo build --release --manifest-path /tmp/tsi/Cargo.toml
           echo "/tmp/tsi/target/release" >> "$GITHUB_PATH"
 

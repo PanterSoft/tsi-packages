@@ -1,6 +1,6 @@
 # TSI Package Repository
 
-This repository contains the official package definitions for [TSI](https://github.com/PanterSoft/tsi) (The Source Installer). Each package is defined as a JSON file in the `packages/` directory.
+This repository contains the official package definitions for [TSI](https://github.com/PanterSoft/TheSourceInstaller) (The Source Installer). Each package is defined as a JSON file in the `packages/` directory.
 
 ## For TSI Users
 
@@ -15,7 +15,7 @@ tsi update --local /path/to/packages
 
 ## Package Format
 
-Package format and fields are documented in the [TSI documentation](https://github.com/PanterSoft/tsi/blob/main/docs/user-guide/package-format.md). Each file in `packages/` should be valid JSON and follow the single-version or multi-version format.
+Package format and fields are documented in the [TSI documentation](https://github.com/PanterSoft/TheSourceInstaller/blob/main/docs/user-guide/package-format.md). Each file in `packages/` should be valid JSON and follow the single-version or multi-version format.
 
 ## Contributing
 

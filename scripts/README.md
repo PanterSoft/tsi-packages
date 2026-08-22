@@ -29,7 +29,7 @@ Outputs package names (one per line) for `packages/*.json` files changed since a
 
 ### Integration
 
-The Test Build workflow (`.github/workflows/test-build-packages.yml`) runs on push/PR when package JSONs change: it installs TSI from source, points it at this repo’s `packages/` directory, and runs a real build for each changed package (latest version only). Known slow packages (e.g. gcc, llvm) are excluded. TSI must be buildable from the [PanterSoft/tsi](https://github.com/PanterSoft/tsi) repository in CI.
+The Test Build workflow (`.github/workflows/test-build-packages.yml`) runs on push/PR when package JSONs change: it installs TSI from source, points it at this repo’s `packages/` directory, and runs a real build for each changed package (latest version only). Known slow packages (e.g. gcc, llvm) are excluded. TSI must be buildable from the [PanterSoft/TheSourceInstaller](https://github.com/PanterSoft/TheSourceInstaller) repository in CI.
 
 ## slow-packages.txt
 
