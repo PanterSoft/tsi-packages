@@ -12,7 +12,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -31,7 +32,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -50,7 +52,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -69,7 +72,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -88,7 +92,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -107,7 +112,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -126,7 +132,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -145,7 +152,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -164,7 +172,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -183,7 +192,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -202,7 +212,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -221,7 +232,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -240,7 +252,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -259,7 +272,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -278,7 +292,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -297,7 +312,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -316,7 +332,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -335,7 +352,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -354,7 +372,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -373,7 +392,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -392,7 +412,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -411,7 +432,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -430,7 +452,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -449,7 +472,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -468,7 +492,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -487,7 +512,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],
@@ -506,7 +532,8 @@
       "dependencies": [],
       "build_dependencies": [
         "make",
-        "coreutils"
+        "coreutils",
+        "gperf"
       ],
       "build_system": "autotools",
       "configure_args": [],

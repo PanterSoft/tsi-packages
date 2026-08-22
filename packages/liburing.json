@@ -16,9 +16,9 @@
       ],
       "build_system": "custom",
       "build_commands": [
-        "./configure",
+        "./configure --prefix=$TSI_INSTALL_DIR",
         "make",
-        "make install prefix=$TSI_INSTALL_DIR"
+        "make install"
       ],
       "env": {},
       "platforms": [
@@ -42,6 +42,11 @@
       "env": {},
       "platforms": [
         "linux"
+      ],
+      "build_commands": [
+        "./configure --prefix=$TSI_INSTALL_DIR",
+        "make",
+        "make install"
       ]
     },
     {
@@ -61,6 +66,11 @@
       "env": {},
       "platforms": [
         "linux"
+      ],
+      "build_commands": [
+        "./configure --prefix=$TSI_INSTALL_DIR",
+        "make",
+        "make install"
       ]
     },
     {
@@ -80,6 +90,11 @@
       "env": {},
       "platforms": [
         "linux"
+      ],
+      "build_commands": [
+        "./configure --prefix=$TSI_INSTALL_DIR",
+        "make",
+        "make install"
       ]
     },
     {
@@ -99,6 +114,11 @@
       "env": {},
       "platforms": [
         "linux"
+      ],
+      "build_commands": [
+        "./configure --prefix=$TSI_INSTALL_DIR",
+        "make",
+        "make install"
       ]
     },
     {
@@ -118,6 +138,11 @@
       "env": {},
       "platforms": [
         "linux"
+      ],
+      "build_commands": [
+        "./configure --prefix=$TSI_INSTALL_DIR",
+        "make",
+        "make install"
       ]
     },
     {
@@ -137,6 +162,11 @@
       "env": {},
       "platforms": [
         "linux"
+      ],
+      "build_commands": [
+        "./configure --prefix=$TSI_INSTALL_DIR",
+        "make",
+        "make install"
       ]
     },
     {
@@ -156,6 +186,11 @@
       "env": {},
       "platforms": [
         "linux"
+      ],
+      "build_commands": [
+        "./configure --prefix=$TSI_INSTALL_DIR",
+        "make",
+        "make install"
       ]
     },
     {
@@ -175,6 +210,11 @@
       "env": {},
       "platforms": [
         "linux"
+      ],
+      "build_commands": [
+        "./configure --prefix=$TSI_INSTALL_DIR",
+        "make",
+        "make install"
       ]
     },
     {
@@ -194,6 +234,11 @@
       "env": {},
       "platforms": [
         "linux"
+      ],
+      "build_commands": [
+        "./configure --prefix=$TSI_INSTALL_DIR",
+        "make",
+        "make install"
       ]
     }
   ]
