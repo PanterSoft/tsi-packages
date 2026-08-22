@@ -20,3 +20,4 @@ mysql
 mariadb
 ros2
 emacs
+node

@@ -14,8 +14,8 @@
     "libbz2.a",
     "bzip2",
     "bzip2recover",
+    "CFLAGS=-Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64 -fPIC",
     "PREFIX=$TSI_INSTALL_DIR"
   ],
   "env": {}
 }
-
