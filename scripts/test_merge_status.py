@@ -36,6 +36,21 @@ def main():
         header = [c.strip() for c in text.splitlines()[0].split("|")[1:-1]]
         assert header == ["Package", "Linux-x86_64", "macOS-aarch64", "Notes"], header
 
+        # A package excluded from a run keeps its row, with a blank cell and the
+        # reason. Without this, --exclude-slow would delete all twelve slow
+        # packages from the table the first time the weekly job ran.
+        (td / "excl.tsv").write_text("zlib\tok\t\ngcc\t\tnot built here (slow)\n")
+        out2 = td / "EXCL.md"
+        subprocess.run(
+            [sys.executable, str(HERE / "merge-status.py"), str(out2),
+             f"Linux-x86_64={td/'excl.tsv'}"],
+            check=True, capture_output=True,
+        )
+        rows2 = {l.split("|")[1].strip(): [c.strip() for c in l.split("|")[1:-1]]
+                 for l in out2.read_text().splitlines()[2:]}
+        assert rows2["gcc"] == ["gcc", "", "not built here (slow)"], rows2["gcc"]
+        assert rows2["zlib"] == ["zlib", "✅", ""], rows2["zlib"]
+
         # A missing results file is a warning, not a crash: the leg is dropped.
         r = subprocess.run(
             [sys.executable, str(HERE / "merge-status.py"), str(out),

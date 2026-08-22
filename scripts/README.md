@@ -31,6 +31,15 @@ Outputs package names (one per line) for `packages/*.json` files changed since a
 
 The Test Build workflow (`.github/workflows/test-build-packages.yml`) runs on push/PR when package JSONs change: it installs TSI from source, points it at this repo’s `packages/` directory, and runs a real build for each changed package (latest version only). Known slow packages (e.g. gcc, llvm) are excluded. TSI must be buildable from the [PanterSoft/tsi](https://github.com/PanterSoft/tsi) repository in CI.
 
+## slow-packages.txt
+
+Packages too slow to build on every CI run, one per line. Read by
+`build-all-packages.sh` and by the test-build-packages workflow, so the list
+lives in one place instead of drifting between them.
+
+Excluded packages still get a row in `PACKAGES_STATUS.md` — blank cell, with a
+note. Dropping them from the results would delete them from the table entirely.
+
 ## build-all-packages.sh
 
 Builds all packages locally with TSI once to verify they are buildable. Requires TSI on your PATH (e.g. after `tsi update --local` or using this repo’s packages).

@@ -1,0 +1,22 @@
+# Packages too slow to build on every CI run, one per line.
+#
+# Read by scripts/build-all-packages.sh and by the test-build-packages and
+# validate-all-packages workflows, so the list lives here once rather than
+# drifting between them.
+#
+# Excluded packages still get a row in PACKAGES_STATUS.md, with a blank cell and
+# a note: they exist, they were not tested in that run. Dropping them entirely
+# would delete them from the table.
+#
+# A package that becomes affordable should come off this list -- python and
+# postgresql did, once builds ran in parallel.
+gcc
+llvm
+clang
+rust
+boost
+mongodb
+mysql
+mariadb
+ros2
+emacs

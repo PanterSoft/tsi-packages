@@ -25,9 +25,6 @@ on:
 permissions:
   contents: read
 
-env:
-  SLOW_PACKAGES: 'gcc|llvm|clang|rust|python|boost|mongodb|mysql|mariadb|postgresql|ros2|emacs'
-
 jobs:
   changed:
     name: Determine changed packages
@@ -54,6 +51,8 @@ jobs:
       - name: Drop known-slow packages
         id: filter
         run: |
+          # One source of truth, shared with scripts/build-all-packages.sh.
+          SLOW_PACKAGES=$(grep -vE '^\s*(#|$)' scripts/slow-packages.txt | paste -sd'|' -)
           TO_BUILD=""
           while read -r pkg; do
             [ -n "$pkg" ] || continue

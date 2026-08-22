@@ -22,7 +22,9 @@ PACKAGES_DIR="$REPO_ROOT/packages"
 LOG_DIR="$REPO_ROOT/.build-logs"
 PREFIX="${TSI_PREFIX:-$HOME/.tsi}"
 EXCLUDE_SLOW=false
-SLOW_PACKAGES='gcc|llvm|clang|rust|python|boost|mongodb|mysql|mariadb|postgresql|ros2|emacs'
+# Single source of truth, shared with the workflows (see scripts/slow-packages.txt).
+SLOW_LIST="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/slow-packages.txt"
+SLOW_PACKAGES="$(grep -vE '^\s*(#|$)' "$SLOW_LIST" | paste -sd'|' -)"
 
 while [ $# -gt 0 ]; do
   case "$1" in
@@ -57,7 +59,9 @@ fi
 
 echo "$PACKAGES" > "$LOG_DIR/build-order.txt"
 
+EXCLUDED_PACKAGES=""
 if [ "$EXCLUDE_SLOW" = true ]; then
+  EXCLUDED_PACKAGES=$(echo "$PACKAGES" | grep -Ex "$SLOW_PACKAGES" || true)
   PACKAGES=$(echo "$PACKAGES" | grep -vEx "$SLOW_PACKAGES" || true)
 fi
 
@@ -65,6 +69,15 @@ echo "Using packages dir: $PACKAGES_DIR"
 echo "Build logs: $LOG_DIR"
 
 record() { printf '%s\t%s\t%s\n' "$1" "$2" "${3:-}" >> "$RESULTS"; }
+
+# Excluded packages still get a row. merge-status.py rebuilds the table from
+# these files, so a package missing from every results.tsv disappears from
+# PACKAGES_STATUS.md altogether -- the weekly run would have quietly deleted all
+# twelve slow packages the first time it fired. An empty status renders as a
+# blank cell, which is exactly right: it exists, it was not tested here.
+for pkg in $EXCLUDED_PACKAGES; do
+  record "$pkg" "" "not built here (slow)"
+done
 
 # UNAVAILABLE: every package a dependent cannot build against (failed, or
 # unsupported here). BLAMED_UNSUPPORTED: the subset that is merely unsupported,
