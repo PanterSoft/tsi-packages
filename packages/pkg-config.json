@@ -18,7 +18,7 @@
   ],
   "build_system": "custom",
   "build_commands": [
-    "./configure --without-internal-glib --prefix=$TSI_INSTALL_DIR",
+    "./configure --with-internal-glib --prefix=$TSI_INSTALL_DIR",
     "make",
     "make install"
   ],
