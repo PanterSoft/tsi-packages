@@ -14,5 +14,10 @@
   "make_args": [
     "MAKE=true",
     "PREFIX=$TSI_INSTALL_DIR"
+  ],
+  "make_args_darwin": [
+    "MAKE=true",
+    "PREFIX=$TSI_INSTALL_DIR",
+    "CFLAGS=-std=gnu99 -fPIC -Wall -O2 -Wl,-install_name,$TSI_INSTALL_DIR/lib/libgif.7.dylib"
   ]
 }
