@@ -89,9 +89,17 @@ for root in "${ROOTS[@]}"; do
   done < <(find "$root" \( -path '*/bin/*' -o -name '*.so' -o -name '*.so.*' -o -name '*.dylib' \) -type f -perm -u+r 2>/dev/null)
 done
 
-echo "Checked $checked installed file(s)."
 if [ "$problems" -gt 0 ]; then
+  echo "Checked $checked installed file(s)."
   echo "::error::$problems unresolved dynamic dependency/ies -- these packages install but will not load." >&2
   exit 1
 fi
-echo "All dynamic dependencies resolve."
+
+if [ "$checked" -eq 0 ]; then
+  # Distinct from a pass: a package that installs only static archives and
+  # headers (zlib, built without shared libraries) has nothing to inspect, and
+  # saying "all dependencies resolve" would imply a check that never ran.
+  echo "Nothing to check: no executables or shared libraries installed."
+  exit 0
+fi
+echo "Checked $checked installed file(s); all dynamic dependencies resolve."
