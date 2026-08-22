@@ -11,7 +11,11 @@
     "openssl",
     "zlib"
   ],
-  "build_dependencies": [],
+  "build_dependencies": [
+    "python",
+    "make",
+    "coreutils"
+  ],
   "build_system": "custom",
   "build_commands": [
     "./configure --prefix=$TSI_INSTALL_DIR --openssl-use-def-ca-store",

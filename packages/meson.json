@@ -9,8 +9,12 @@
         "url": "https://github.com/mesonbuild/meson/releases/download/1.10.0/meson-1.10.0.tar.gz",
         "sha256": "8071860c1f46a75ea34801490fd1c445c9d75147a65508cd3a10366a7006cc1c"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -27,8 +31,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.10.0rc2/meson-1.10.0rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -45,8 +53,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.10.0rc1/meson-1.10.0rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -63,8 +75,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.9.2/meson-1.9.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -81,8 +97,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.9.1/meson-1.9.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -99,8 +119,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.9.0/meson-1.9.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -117,8 +141,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.9.0rc3/meson-1.9.0rc3.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -135,8 +163,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.9.0rc2/meson-1.9.0rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -153,8 +185,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.9.0rc1/meson-1.9.0rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -171,8 +207,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.8.5/meson-1.8.5.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -189,8 +229,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.8.4/meson-1.8.4.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -207,8 +251,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.8.3/meson-1.8.3.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -225,8 +273,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.8.2/meson-1.8.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -243,8 +295,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.8.1/meson-1.8.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -261,8 +317,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.8.0/meson-1.8.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -279,8 +339,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.8.0rc2/meson-1.8.0rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -297,8 +361,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.8.0rc1/meson-1.8.0rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -315,8 +383,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.7.2/meson-1.7.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -333,8 +405,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.7.1/meson-1.7.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -351,8 +427,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.7.0/meson-1.7.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -369,8 +449,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.7.0rc2/meson-1.7.0rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -387,8 +471,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.7.0rc1/meson-1.7.0rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -405,8 +493,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.6.1/meson-1.6.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -423,8 +515,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.6.0/meson-1.6.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -441,8 +537,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.6.0rc2/meson-1.6.0rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -459,8 +559,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.6.0rc1/meson-1.6.0rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -477,8 +581,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.5.2/meson-1.5.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -495,8 +603,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.5.1/meson-1.5.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -513,8 +625,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.5.0/meson-1.5.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -531,8 +647,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.5.0rc3/meson-1.5.0rc3.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -549,8 +669,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.5.0rc2/meson-1.5.0rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -567,8 +691,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.5.0rc1/meson-1.5.0rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -585,8 +713,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.4.2/meson-1.4.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -603,8 +735,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.4.1/meson-1.4.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -621,8 +757,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.4.0/meson-1.4.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -639,8 +779,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.4.0rc2/meson-1.4.0rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -657,8 +801,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.4.0rc1/meson-1.4.0rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -675,8 +823,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.3.2/meson-1.3.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -693,8 +845,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.3.1/meson-1.3.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -711,8 +867,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.3.0/meson-1.3.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -729,8 +889,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.3.0rc3/meson-1.3.0rc3.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -747,8 +911,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.3.0rc2/meson-1.3.0rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -765,8 +933,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.3.0rc1/meson-1.3.0rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -783,8 +955,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.2.3/meson-1.2.3.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -801,8 +977,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.2.2/meson-1.2.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -819,8 +999,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.2.1/meson-1.2.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -837,8 +1021,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.2.0/meson-1.2.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -855,8 +1043,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.2.0rc3/meson-1.2.0rc3.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -873,8 +1065,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.2.0rc2/meson-1.2.0rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -891,8 +1087,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.2.0rc1/meson-1.2.0rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -909,8 +1109,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.1.1/meson-1.1.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -927,8 +1131,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.1.0/meson-1.1.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -945,8 +1153,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.1.0rc2/meson-1.1.0rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -963,8 +1175,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.1.0rc1/meson-1.1.0rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -981,8 +1197,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.0.2/meson-1.0.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -999,8 +1219,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.0.1/meson-1.0.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1017,8 +1241,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.0.0/meson-1.0.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1035,8 +1263,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.0.0rc2/meson-1.0.0rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1053,8 +1285,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/1.0.0rc1/meson-1.0.0rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1071,8 +1307,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.64.1/meson-0.64.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1089,8 +1329,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.64.0/meson-0.64.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1107,8 +1351,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.64.0rc2/meson-0.64.0rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1125,8 +1373,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.64.0rc1/meson-0.64.0rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1143,8 +1395,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.63.3/meson-0.63.3.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1161,8 +1417,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.63.2/meson-0.63.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1179,8 +1439,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.63.1/meson-0.63.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1197,8 +1461,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.63.0/meson-0.63.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1215,8 +1483,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.63.0.rc2/meson-0.63.0.rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1233,8 +1505,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.63.0rc1/meson-0.63.0rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1251,8 +1527,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.62.2/meson-0.62.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1269,8 +1549,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.62.1/meson-0.62.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1287,8 +1571,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.62.0/meson-0.62.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1305,8 +1593,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.62.0rc2/meson-0.62.0rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1323,8 +1615,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.62.0rc1/meson-0.62.0rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1341,8 +1637,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.61.5/meson-0.61.5.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1359,8 +1659,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.61.4/meson-0.61.4.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1377,8 +1681,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.61.3/meson-0.61.3.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1395,8 +1703,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.61.2/meson-0.61.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1413,8 +1725,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.61.1/meson-0.61.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1431,8 +1747,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.61.0/meson-0.61.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1449,8 +1769,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.61.0rc1/meson-0.61.0rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1467,8 +1791,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.60.3/meson-0.60.3.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1485,8 +1813,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.60.2/meson-0.60.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1503,8 +1835,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.60.1/meson-0.60.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1521,8 +1857,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.60.0/meson-0.60.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1539,8 +1879,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.60.0rc2/meson-0.60.0rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1557,8 +1901,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.60.0.rc1/meson-0.60.0.rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1575,8 +1923,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.59.4/meson-0.59.4.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1593,8 +1945,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.59.3/meson-0.59.3.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1611,8 +1967,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.59.2/meson-0.59.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1629,8 +1989,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.59.1/meson-0.59.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1647,8 +2011,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.59.0/meson-0.59.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1665,8 +2033,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.59.0.rc2/meson-0.59.0.rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1683,8 +2055,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.59.0.rc1/meson-0.59.0.rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1701,8 +2077,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.58.2/meson-0.58.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1719,8 +2099,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.58.1/meson-0.58.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1737,8 +2121,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.58.0/meson-0.58.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1755,8 +2143,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.58.0.rc1/meson-0.58.0.rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1773,8 +2165,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.57.2/meson-0.57.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1791,8 +2187,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.57.1/meson-0.57.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1809,8 +2209,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.57.0/meson-0.57.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1827,8 +2231,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.57.0.rc1/meson-0.57.0.rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1845,8 +2253,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.56.2/meson-0.56.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1863,8 +2275,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.56.1/meson-0.56.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1881,8 +2297,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.56.0/meson-0.56.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1899,8 +2319,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.56.0.rc2/meson-0.56.0.rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1917,8 +2341,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.56.0.rc1/meson-0.56.0.rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1935,8 +2363,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.55.3/meson-0.55.3.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1953,8 +2385,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.55.2/meson-0.55.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1971,8 +2407,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.55.1/meson-0.55.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -1989,8 +2429,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.55.0/meson-0.55.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2007,8 +2451,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.55.0.rc2/meson-0.55.0.rc2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2025,8 +2473,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.55.0.rc1/meson-0.55.0.rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2043,8 +2495,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.54.3/meson-0.54.3.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2061,8 +2517,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.54.2/meson-0.54.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2079,8 +2539,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.54.1/meson-0.54.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2097,8 +2561,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.54.0/meson-0.54.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2115,8 +2583,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.54.0.rc1/meson-0.54.0.rc1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2133,8 +2605,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.53.2/meson-0.53.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2151,8 +2627,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.53.1/meson-0.53.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2169,8 +2649,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.53.0/meson-0.53.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2187,8 +2671,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.52.1/meson-0.52.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2205,8 +2693,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.52.0/meson-0.52.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2223,8 +2715,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.51.2/meson-0.51.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2241,8 +2737,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.51.1/meson-0.51.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2259,8 +2759,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.51.0/meson-0.51.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2277,8 +2781,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.50.1/meson-0.50.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2295,8 +2803,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.50.0/meson-0.50.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2313,8 +2825,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.49.2/meson-0.49.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2331,8 +2847,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.49.1/meson-0.49.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2349,8 +2869,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.49.0/meson-0.49.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2367,8 +2891,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.48.2/meson-0.48.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2385,8 +2913,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.48.1/meson-0.48.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2403,8 +2935,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.48.0/meson-0.48.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2421,8 +2957,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.47.2/meson-0.47.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2439,8 +2979,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.47.1/meson-0.47.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2457,8 +3001,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.47.0/meson-0.47.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2475,8 +3023,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.46.1/meson-0.46.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2493,8 +3045,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.46.0/meson-0.46.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2511,8 +3067,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.45.1/meson-0.45.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2529,8 +3089,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.45.0/meson-0.45.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2547,8 +3111,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.44.1/meson-0.44.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2565,8 +3133,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.44.0/meson-0.44.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2583,8 +3155,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.43.0/meson-0.43.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2601,8 +3177,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.42.1/meson-0.42.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2619,8 +3199,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.42.0/meson-0.42.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2637,8 +3221,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.41.2/meson-0.41.2.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2655,8 +3243,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.41.1/meson-0.41.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2673,8 +3265,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.41.0/meson-0.41.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2691,8 +3287,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.40.1/meson-0.40.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2709,8 +3309,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.40.0/meson-0.40.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2727,8 +3331,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.39.1/meson-0.39.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2745,8 +3353,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.39.0/meson-0.39.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2763,8 +3375,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.38.1/meson-0.38.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2781,8 +3397,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.38.0/meson-0.38.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2799,8 +3419,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.37.1/meson-0.37.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2817,8 +3441,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.37.0/meson-0.37.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2835,8 +3463,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.36.0/meson-0.36.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2853,8 +3485,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.35.1/meson-0.35.1.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2871,8 +3507,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.35.0/meson-0.35.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2889,8 +3529,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.34.0/meson-0.34.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2907,8 +3551,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.33.0/meson-0.33.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2925,8 +3573,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.32.0/meson-0.32.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2943,8 +3595,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.31.0/meson-0.31.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2961,8 +3617,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.30.0/meson-0.30.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2979,8 +3639,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.29.0/meson-0.29.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -2997,8 +3661,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.28.0/meson-0.28.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -3015,8 +3683,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.27.0/meson-0.27.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -3033,8 +3705,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.26.0/meson-0.26.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -3051,8 +3727,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.25.0/meson-0.25.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -3069,8 +3749,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.24.0/meson-0.24.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -3087,8 +3771,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.23.0/meson-0.23.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -3105,8 +3793,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.22.0/meson-0.22.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -3123,8 +3815,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.21.0/meson-0.21.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -3141,8 +3837,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.20.0/meson-0.20.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -3159,8 +3859,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.19.0/meson-0.19.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -3177,8 +3881,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.18.0/meson-0.18.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
@@ -3195,8 +3903,12 @@
         "type": "tarball",
         "url": "https://github.com/mesonbuild/meson/releases/download/0.17.0/meson-0.17.0.tar.gz"
       },
-      "dependencies": [],
-      "build_dependencies": [],
+      "dependencies": [
+        "python"
+      ],
+      "build_dependencies": [
+        "coreutils"
+      ],
       "build_system": "custom",
       "build_commands": [
         "mkdir -p $TSI_INSTALL_DIR/share/meson $TSI_INSTALL_DIR/bin",
