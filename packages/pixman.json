@@ -4,7 +4,7 @@
   "description": "Pixel manipulation library",
   "source": {
     "type": "tarball",
-    "url": "https://cairographics.org/releases/pixman-0.43.4.tar.gz",
+    "url": "https://ftp.osuosl.org/pub/blfs/conglomeration/pixman/pixman-0.43.4.tar.gz",
     "sha256": "a0624db90180c7ddb79fc7a9151093dc37c646d8c38d3f232f767cf64b85a226"
   },
   "dependencies": [],
