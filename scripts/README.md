@@ -234,3 +234,18 @@ Existing checksums are left alone unless `--check` is given. Run it whenever a p
 
 This pins the artifact, it does not establish provenance: it guarantees later downloads are byte-identical to the one taken when the package was added. Cross-check the value against upstream's own published checksum when there is one.
 
+## check-linkage.sh
+
+Reports installed binaries whose dynamic dependencies cannot be resolved.
+
+```bash
+bash scripts/check-linkage.sh ~/.tsi              # everything installed
+bash scripts/check-linkage.sh ~/.tsi postgresql   # named packages only
+```
+
+A package that compiles, links and installs can still produce libraries that will not load. icu recorded a bare `install_name`, so `postgres` died at startup with "Library not loaded: libicui18n.74.dylib" while its package showed ✅. This is what stops that shipping green again.
+
+Inspection only — `ldd` on Linux, `otool -L` on macOS — so it never executes an installed binary and cannot hang on a program that ignores `--version`. A file whose *own* install_name is relative is not flagged unless something actually depends on it (coreutils ships `libstdbuf.so` that way, and nothing links it).
+
+Self-check: `bash scripts/test_check_linkage.sh`.
+

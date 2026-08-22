@@ -119,3 +119,11 @@ jobs:
             exit 1
           fi
           echo "All changed packages built on ${{ matrix.platform }}."
+
+      # Installing is not the same as working. icu installed cleanly and
+      # produced libraries nothing could load, so postgres died at startup while
+      # its package showed green. Inspection only -- no installed binary is run.
+      - name: Installed binaries can actually load
+        env:
+          TSI_PREFIX: ${{ github.workspace }}/.tsi-install
+        run: bash scripts/check-linkage.sh "$TSI_PREFIX" ${{ needs.changed.outputs.packages }}

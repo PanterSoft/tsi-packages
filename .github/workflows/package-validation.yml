@@ -56,6 +56,7 @@ jobs:
           python3 scripts/test_validate_packages.py
           python3 scripts/test_merge_status.py
           python3 scripts/test_sort_versions.py
+          bash scripts/test_check_linkage.sh
 
       - name: Shellcheck
         run: |

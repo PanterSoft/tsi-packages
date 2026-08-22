@@ -62,6 +62,16 @@ jobs:
           fi
           bash scripts/build-all-packages.sh $EXCLUDE --prefix "$TSI_PREFIX"
 
+      # Catches the "installs green, will not load" class across the whole
+      # catalogue. Reported, not fatal: the build results are the point of this
+      # job, and a linkage problem should not discard them.
+      - name: Installed binaries can actually load
+        if: always()
+        continue-on-error: true
+        env:
+          TSI_PREFIX: ${{ github.workspace }}/.tsi-install
+        run: bash scripts/check-linkage.sh "$TSI_PREFIX" | tee -a "$GITHUB_STEP_SUMMARY"
+
       - name: Upload results
         uses: actions/upload-artifact@v6.0.0
         with:
