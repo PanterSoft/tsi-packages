@@ -67,4 +67,36 @@ if [ "$EXT" = dylib ]; then
     || { echo "FAIL: flagged a self-contained library for its own relative id"; exit 1; }
 fi
 
+# The gawk/readline shape: a library that resolves but is missing a symbol its
+# dependents need. Linux only -- this is what `ldd -r` catches and plain ldd
+# does not.
+if [ "$EXT" = so ]; then
+  T2="$TMP/sym"
+  BIN2="$T2/install/demo-1.0/bin"
+  LIB2="$T2/install/demo-1.0/lib"
+  mkdir -p "$BIN2" "$LIB2"
+
+  # libhalf.so calls missing(), which nothing defines -- the shape of readline
+  # built without a termcap library. --allow-shlib-undefined lets it link.
+  echo 'int missing(void); int half(void){return missing();}' > "$T2/half.c"
+  echo 'int half(void); int main(void){return half();}' > "$T2/main.c"
+  cc -shared -fPIC -Wl,-soname,libhalf.so -o "$LIB2/libhalf.so" "$T2/half.c"
+  cc -o "$BIN2/prog" "$T2/main.c" -L"$LIB2" -lhalf -Wl,-rpath,"$LIB2" \
+     -Wl,--allow-shlib-undefined
+
+  if bash "$CHECKER" "$T2" >"$T2/out" 2>&1; then
+    echo "FAIL: checker passed an executable with an undefined symbol"
+    cat "$T2/out"
+    exit 1
+  fi
+  grep -q 'undefined symbol' "$T2/out" \
+    || { echo "FAIL: did not report the undefined symbol"; cat "$T2/out"; exit 1; }
+
+  # The same undefined symbol in a shared library alone must NOT fail: a plugin
+  # is meant to get symbols from whatever loads it.
+  rm -f "$BIN2/prog"
+  bash "$CHECKER" "$T2" >"$T2/out2" 2>&1 \
+    || { echo "FAIL: flagged a shared library for an undefined symbol"; cat "$T2/out2"; exit 1; }
+fi
+
 echo "check-linkage self-check passed"

@@ -10,6 +10,8 @@
 #     "Library not loaded: libicui18n.74.dylib" while its install said ✅
 #   - ncurses installed headers where nothing looked, so nano compiled against
 #     Apple's curses and linked against TSI's
+#   - readline built with no termcap library linked in, so gawk loaded it and
+#     died on "undefined symbol: UP"
 #
 # Inspection only -- nothing here executes an installed binary, so it cannot
 # hang on a program that ignores --version and waits for input.
@@ -55,6 +57,24 @@ check_linux() {
       *"not found"*) report "$f" "$(echo "$line" | xargs)" ;;
     esac
   done <<< "$out"
+
+  # Every library resolving is not the same as the program running: TSI built a
+  # libreadline.so.8 with no termcap library linked in, so gawk found the
+  # library, loaded it, and died on "undefined symbol: UP". Plain ldd cannot see
+  # that; ldd -r resolves the relocations too.
+  #
+  # Only for executables. A plugin -- a python extension module, say -- is
+  # *meant* to have symbols its host supplies, and flagging those would be
+  # noise, so shared libraries are left to the check above.
+  case "$f" in
+    */bin/*) ;;
+    *) return 0 ;;
+  esac
+  while IFS= read -r line; do
+    case "$line" in
+      *"undefined symbol"*) report "$f" "$(echo "$line" | xargs)" ;;
+    esac
+  done < <(ldd -r "$f" 2>&1)
 }
 
 check_macos() {
