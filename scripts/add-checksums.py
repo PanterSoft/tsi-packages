@@ -25,19 +25,57 @@ import argparse
 import hashlib
 import json
 import sys
+import time
 import urllib.request
 from pathlib import Path
 
 CHUNK = 1 << 20
 
 
+ATTEMPTS = 3
+
+
+class Unreachable(Exception):
+    """The source could not be fetched in full -- says nothing about its content."""
+
+
 def sha256_url(url):
-    h = hashlib.sha256()
-    req = urllib.request.Request(url, headers={"User-Agent": "tsi-packages/add-checksums"})
-    with urllib.request.urlopen(req, timeout=120) as r:
-        while chunk := r.read(CHUNK):
-            h.update(chunk)
-    return h.hexdigest()
+    """sha256 of what `url` serves, or Unreachable.
+
+    Retries, because a single attempt makes a transient failure look permanent:
+    a whole CI run reported every ftp.gnu.org package as broken when the runner
+    had no route to their IPv6 addresses, while TSI itself downloaded from them
+    fine on the same day.
+
+    Checks the length too. A connection dropped mid-download ends the read loop
+    normally and yields the hash of a partial file, which then gets reported as
+    a checksum MISMATCH -- the one message that should mean "this file is not
+    what we pinned". gmp was reported that way while serving exactly its
+    recorded bytes.
+    """
+    last = None
+    for attempt in range(1, ATTEMPTS + 1):
+        h = hashlib.sha256()
+        read = 0
+        try:
+            req = urllib.request.Request(
+                url, headers={"User-Agent": "tsi-packages/add-checksums"}
+            )
+            with urllib.request.urlopen(req, timeout=120) as r:
+                expected = r.headers.get("Content-Length")
+                while chunk := r.read(CHUNK):
+                    h.update(chunk)
+                    read += len(chunk)
+            if expected is not None and read != int(expected):
+                raise Unreachable(
+                    f"truncated: got {read} of {expected} bytes"
+                )
+            return h.hexdigest()
+        except Exception as e:
+            last = e
+            if attempt < ATTEMPTS:
+                time.sleep(2 ** attempt)
+    raise Unreachable(f"{last} (after {ATTEMPTS} attempts)")
 
 
 def main():
@@ -48,8 +86,8 @@ def main():
     ap.add_argument(
         "--check",
         action="store_true",
-        help="verify checksums and write nothing; fails on a mismatch, a missing "
-             "checksum, or an unreachable URL",
+        help="verify checksums and write nothing; fails on a mismatch or a "
+             "missing checksum. An unreachable URL is reported, not fatal.",
     )
     ap.add_argument("--packages-dir", default=str(Path(__file__).resolve().parent.parent / "packages"))
     args = ap.parse_args()
@@ -63,6 +101,7 @@ def main():
         ap.error("name packages, or pass --all")
 
     failed = False
+    unreachable = 0
     for path in files:
         if not path.exists():
             print(f"❌ no such package file: {path}")
@@ -87,9 +126,13 @@ def main():
             label = f"{data.get('name', path.stem)}@{v.get('version')}"
             try:
                 digest = sha256_url(source["url"])
-            except Exception as e:  # network/HTTP/anything: report, keep going
-                print(f"❌ {label}: {e}")
-                failed = True
+            except Exception as e:
+                # Kept distinct from a checksum mismatch on purpose: "we could
+                # not fetch this" and "this is not the file we pinned" call for
+                # completely different reactions, and merging them taught
+                # readers to skim past both.
+                print(f"⚠ {label}: unreachable: {e}")
+                unreachable += 1
                 continue
 
             if existing:
@@ -112,6 +155,15 @@ def main():
         if changed and not args.check:
             path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
 
+    if unreachable:
+        print(f"\n{unreachable} source(s) could not be fetched; see the ⚠ lines above.")
+
+    # A source we could not fetch does not fail the run. This checker cannot
+    # tell "upstream is gone" from "the runner had a bad minute", and it once
+    # called 16 live ftp.gnu.org packages broken in a single run -- a gate that
+    # wrong gets skimmed past, taking the real findings with it. A URL that is
+    # genuinely dead breaks an actual build, which is the signal worth acting
+    # on. A checksum that does not match still fails, always.
     return 1 if failed else 0
 
 

@@ -50,6 +50,11 @@ jobs:
             echo ''
             echo "- matched: $(grep -c '^✓' /tmp/sources.txt || echo 0)"
             echo "- problems: $(grep -c '^❌' /tmp/sources.txt || echo 0)"
+            echo "- unreachable: $(grep -c '^⚠' /tmp/sources.txt || echo 0)"
             echo ''
-            grep '^❌' /tmp/sources.txt || echo 'No problems.'
+            grep '^❌' /tmp/sources.txt || echo 'No checksum problems.'
+            echo ''
+            # Reported separately and not fatal: could not fetch is not the same
+            # finding as does not match what we pinned.
+            grep '^⚠' /tmp/sources.txt || true
           } >> "$GITHUB_STEP_SUMMARY"
