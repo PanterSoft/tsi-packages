@@ -16,6 +16,11 @@
     "make"
   ],
   "build_system": "autotools",
-  "configure_args": [],
-  "env": {}
+  "configure_args": [
+    "--with-curses"
+  ],
+  "env": {},
+  "make_args": [
+    "SHLIB_LIBS=-L$TSI_INSTALL_DIR/lib -ltinfow"
+  ]
 }
