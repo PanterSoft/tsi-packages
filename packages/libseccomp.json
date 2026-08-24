@@ -2,6 +2,27 @@
   "name": "libseccomp",
   "versions": [
     {
+      "version": "2.6.1",
+      "description": "Linux seccomp library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/seccomp/libseccomp/releases/download/v2.6.1/libseccomp-2.6.1.tar.gz",
+        "sha256": "83b6085232d1588c379dc9b9cae47bb37407cf262e6e74993c61ba72d2a784dc"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils",
+        "gperf"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {},
+      "platforms": [
+        "linux"
+      ]
+    },
+    {
       "version": "2.6.0",
       "description": "Linux seccomp library",
       "source": {
