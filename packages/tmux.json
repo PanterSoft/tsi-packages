@@ -2,6 +2,116 @@
   "name": "tmux",
   "versions": [
     {
+      "version": "3.7c",
+      "description": "Terminal multiplexer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/tmux/tmux/releases/download/3.7c/tmux-3.7c.tar.gz",
+        "sha256": "b6d8d9c76585db8ef5fa00d4931902fa4b8cbe8166f528f44fc403961a3f3759"
+      },
+      "dependencies": [
+        "ncurses",
+        "libevent"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7b",
+      "description": "Terminal multiplexer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/tmux/tmux/releases/download/3.7b/tmux-3.7b.tar.gz",
+        "sha256": "b6d8d9c76585db8ef5fa00d4931902fa4b8cbe8166f528f44fc403961a3f3759"
+      },
+      "dependencies": [
+        "ncurses",
+        "libevent"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7a",
+      "description": "Terminal multiplexer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/tmux/tmux/releases/download/3.7a/tmux-3.7a.tar.gz",
+        "sha256": "b6d8d9c76585db8ef5fa00d4931902fa4b8cbe8166f528f44fc403961a3f3759"
+      },
+      "dependencies": [
+        "ncurses",
+        "libevent"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.7",
+      "description": "Terminal multiplexer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/tmux/tmux/releases/download/3.7/tmux-3.7.tar.gz",
+        "sha256": "b6d8d9c76585db8ef5fa00d4931902fa4b8cbe8166f528f44fc403961a3f3759"
+      },
+      "dependencies": [
+        "ncurses",
+        "libevent"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.6b",
+      "description": "Terminal multiplexer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/tmux/tmux/releases/download/3.6b/tmux-3.6b.tar.gz",
+        "sha256": "b6d8d9c76585db8ef5fa00d4931902fa4b8cbe8166f528f44fc403961a3f3759"
+      },
+      "dependencies": [
+        "ncurses",
+        "libevent"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
+      "env": {}
+    },
+    {
       "version": "3.6a",
       "description": "Terminal multiplexer",
       "source": {
