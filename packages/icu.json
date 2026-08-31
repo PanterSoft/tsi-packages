@@ -2,6 +2,82 @@
   "name": "icu",
   "versions": [
     {
+      "version": "78.3",
+      "description": "International Components for Unicode",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/unicode-org/icu/releases/download/release-74-2/icu4c-74_2-src.tgz",
+        "sha256": "68db082212a96d6f53e35d60f47d38b962e9f9d207a74cfac78029ae8ff5e08c"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "custom",
+      "build_commands": [
+        "cd source && ./configure --prefix=$TSI_INSTALL_DIR --enable-rpath",
+        "cd source && make",
+        "cd source && make install",
+        "if command -v install_name_tool >/dev/null 2>&1; then for f in \"$TSI_INSTALL_DIR\"/lib/libicu*.dylib; do [ -f \"$f\" ] || continue; for dep in $(otool -L \"$f\" | awk 'NR>1 && $1 !~ /^[\\/@]/ {print $1}'); do [ -f \"$TSI_INSTALL_DIR/lib/$dep\" ] && install_name_tool -change \"$dep\" \"$TSI_INSTALL_DIR/lib/$dep\" \"$f\" 2>/dev/null || true; done; done; fi"
+      ],
+      "env": {}
+    },
+    {
+      "version": "78.2",
+      "description": "International Components for Unicode",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/unicode-org/icu/releases/download/release-74-2/icu4c-74_2-src.tgz",
+        "sha256": "68db082212a96d6f53e35d60f47d38b962e9f9d207a74cfac78029ae8ff5e08c"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "custom",
+      "build_commands": [
+        "cd source && ./configure --prefix=$TSI_INSTALL_DIR --enable-rpath",
+        "cd source && make",
+        "cd source && make install",
+        "if command -v install_name_tool >/dev/null 2>&1; then for f in \"$TSI_INSTALL_DIR\"/lib/libicu*.dylib; do [ -f \"$f\" ] || continue; for dep in $(otool -L \"$f\" | awk 'NR>1 && $1 !~ /^[\\/@]/ {print $1}'); do [ -f \"$TSI_INSTALL_DIR/lib/$dep\" ] && install_name_tool -change \"$dep\" \"$TSI_INSTALL_DIR/lib/$dep\" \"$f\" 2>/dev/null || true; done; done; fi"
+      ],
+      "env": {}
+    },
+    {
+      "version": "78.1",
+      "description": "International Components for Unicode",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/unicode-org/icu/releases/download/release-74-2/icu4c-74_2-src.tgz",
+        "sha256": "68db082212a96d6f53e35d60f47d38b962e9f9d207a74cfac78029ae8ff5e08c"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "custom",
+      "build_commands": [
+        "cd source && ./configure --prefix=$TSI_INSTALL_DIR --enable-rpath",
+        "cd source && make",
+        "cd source && make install",
+        "if command -v install_name_tool >/dev/null 2>&1; then for f in \"$TSI_INSTALL_DIR\"/lib/libicu*.dylib; do [ -f \"$f\" ] || continue; for dep in $(otool -L \"$f\" | awk 'NR>1 && $1 !~ /^[\\/@]/ {print $1}'); do [ -f \"$TSI_INSTALL_DIR/lib/$dep\" ] && install_name_tool -change \"$dep\" \"$TSI_INSTALL_DIR/lib/$dep\" \"$f\" 2>/dev/null || true; done; done; fi"
+      ],
+      "env": {}
+    },
+    {
+      "version": "78.1rc",
+      "description": "International Components for Unicode",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/unicode-org/icu/releases/download/release-74-2/icu4c-74_2-src.tgz",
+        "sha256": "68db082212a96d6f53e35d60f47d38b962e9f9d207a74cfac78029ae8ff5e08c"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "custom",
+      "build_commands": [
+        "cd source && ./configure --prefix=$TSI_INSTALL_DIR --enable-rpath",
+        "cd source && make",
+        "cd source && make install",
+        "if command -v install_name_tool >/dev/null 2>&1; then for f in \"$TSI_INSTALL_DIR\"/lib/libicu*.dylib; do [ -f \"$f\" ] || continue; for dep in $(otool -L \"$f\" | awk 'NR>1 && $1 !~ /^[\\/@]/ {print $1}'); do [ -f \"$TSI_INSTALL_DIR/lib/$dep\" ] && install_name_tool -change \"$dep\" \"$TSI_INSTALL_DIR/lib/$dep\" \"$f\" 2>/dev/null || true; done; done; fi"
+      ],
+      "env": {}
+    },
+    {
       "version": "74.2",
       "description": "International Components for Unicode",
       "source": {
