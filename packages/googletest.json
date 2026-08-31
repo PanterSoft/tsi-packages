@@ -2,6 +2,248 @@
   "name": "googletest",
   "versions": [
     {
+      "version": "1.18.0",
+      "description": "Google's C++ testing and mocking framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/googletest/releases/download/v1.18.0/googletest-1.18.0.tar.gz",
+        "sha256": "7b42b4d6ed48810c5362c265a17faebe90dc2373c885e5216439d37927f02926"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DBUILD_GMOCK=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.17.0",
+      "description": "Google's C++ testing and mocking framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/googletest/releases/download/v1.17.0/googletest-1.17.0.tar.gz",
+        "sha256": "7b42b4d6ed48810c5362c265a17faebe90dc2373c885e5216439d37927f02926"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DBUILD_GMOCK=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.16.0",
+      "description": "Google's C++ testing and mocking framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/googletest/releases/download/v1.16.0/googletest-1.16.0.tar.gz",
+        "sha256": "7b42b4d6ed48810c5362c265a17faebe90dc2373c885e5216439d37927f02926"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DBUILD_GMOCK=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.15.0",
+      "description": "Google's C++ testing and mocking framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/googletest/releases/download/v1.15.0/googletest-1.15.0.tar.gz",
+        "sha256": "7b42b4d6ed48810c5362c265a17faebe90dc2373c885e5216439d37927f02926"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DBUILD_GMOCK=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.14.0",
+      "description": "Google's C++ testing and mocking framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/googletest/releases/download/v1.14.0/googletest-1.14.0.tar.gz",
+        "sha256": "7b42b4d6ed48810c5362c265a17faebe90dc2373c885e5216439d37927f02926"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DBUILD_GMOCK=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.13.0",
+      "description": "Google's C++ testing and mocking framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/googletest/releases/download/v1.13.0/googletest-1.13.0.tar.gz",
+        "sha256": "7b42b4d6ed48810c5362c265a17faebe90dc2373c885e5216439d37927f02926"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DBUILD_GMOCK=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.12.1",
+      "description": "Google's C++ testing and mocking framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/googletest/releases/download/v1.12.1/googletest-1.12.1.tar.gz",
+        "sha256": "7b42b4d6ed48810c5362c265a17faebe90dc2373c885e5216439d37927f02926"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DBUILD_GMOCK=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.12.0",
+      "description": "Google's C++ testing and mocking framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/googletest/releases/download/v1.12.0/googletest-1.12.0.tar.gz",
+        "sha256": "7b42b4d6ed48810c5362c265a17faebe90dc2373c885e5216439d37927f02926"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DBUILD_GMOCK=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.11.0",
+      "description": "Google's C++ testing and mocking framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/googletest/releases/download/v1.11.0/googletest-1.11.0.tar.gz",
+        "sha256": "7b42b4d6ed48810c5362c265a17faebe90dc2373c885e5216439d37927f02926"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DBUILD_GMOCK=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.10.0",
+      "description": "Google's C++ testing and mocking framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/googletest/releases/download/v1.10.0/googletest-1.10.0.tar.gz",
+        "sha256": "7b42b4d6ed48810c5362c265a17faebe90dc2373c885e5216439d37927f02926"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DBUILD_GMOCK=ON"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.8.1",
+      "description": "Google's C++ testing and mocking framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/googletest/releases/download/v1.8.1/googletest-1.8.1.tar.gz",
+        "sha256": "7b42b4d6ed48810c5362c265a17faebe90dc2373c885e5216439d37927f02926"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DBUILD_GMOCK=ON"
+      ],
+      "env": {}
+    },
+    {
       "version": "1.15.2",
       "description": "Google's C++ testing and mocking framework",
       "source": {
