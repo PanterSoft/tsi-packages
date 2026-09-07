@@ -2,6 +2,54 @@
   "name": "liburing",
   "versions": [
     {
+      "version": "2.15",
+      "description": "Linux io_uring library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/axboe/liburing/archive/refs/tags/liburing-2.15.tar.gz",
+        "sha256": "618e34dbea408fc9e33d7c4babd746036dbdedf7fce2496b1178ced0f9b5b357"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./configure --prefix=$TSI_INSTALL_DIR",
+        "make",
+        "make install"
+      ],
+      "env": {},
+      "platforms": [
+        "linux"
+      ]
+    },
+    {
+      "version": "2.14",
+      "description": "Linux io_uring library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/axboe/liburing/archive/refs/tags/liburing-2.14.tar.gz",
+        "sha256": "618e34dbea408fc9e33d7c4babd746036dbdedf7fce2496b1178ced0f9b5b357"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "custom",
+      "build_commands": [
+        "./configure --prefix=$TSI_INSTALL_DIR",
+        "make",
+        "make install"
+      ],
+      "env": {},
+      "platforms": [
+        "linux"
+      ]
+    },
+    {
       "version": "2.13",
       "description": "Linux io_uring library",
       "source": {

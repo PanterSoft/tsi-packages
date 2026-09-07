@@ -2,6 +2,40 @@
   "name": "jansson",
   "versions": [
     {
+      "version": "2.15.1",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.15.1/jansson-2.15.1.tar.gz",
+        "sha256": "2521cd51a9641d7a4e457f7215a4cd5bb176f690bc11715ddeec483e85d9e2b3"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.15.0",
+      "description": "C library for encoding, decoding and manipulating JSON data",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/akheron/jansson/releases/download/v2.15.0/jansson-2.15.0.tar.gz",
+        "sha256": "2521cd51a9641d7a4e457f7215a4cd5bb176f690bc11715ddeec483e85d9e2b3"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
       "version": "2.14.1",
       "description": "C library for encoding, decoding and manipulating JSON data",
       "source": {

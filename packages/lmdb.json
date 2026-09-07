@@ -2,6 +2,142 @@
   "name": "lmdb",
   "versions": [
     {
+      "version": "1.0.1",
+      "description": "Lightning Memory-Mapped Database",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/LMDB/lmdb/archive/LMDB_1.0.1.tar.gz",
+        "sha256": "dd70a8c67807b3b8532b3e987b0a4e998962ecc28643e1af5ec77696b081c9b0"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {},
+      "source_dir": "libraries/liblmdb"
+    },
+    {
+      "version": "1.0.0",
+      "description": "Lightning Memory-Mapped Database",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/LMDB/lmdb/archive/LMDB_1.0.0.tar.gz",
+        "sha256": "dd70a8c67807b3b8532b3e987b0a4e998962ecc28643e1af5ec77696b081c9b0"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {},
+      "source_dir": "libraries/liblmdb"
+    },
+    {
+      "version": "0.9.36",
+      "description": "Lightning Memory-Mapped Database",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/LMDB/lmdb/archive/LMDB_0.9.36.tar.gz",
+        "sha256": "dd70a8c67807b3b8532b3e987b0a4e998962ecc28643e1af5ec77696b081c9b0"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {},
+      "source_dir": "libraries/liblmdb"
+    },
+    {
+      "version": "0.9.35",
+      "description": "Lightning Memory-Mapped Database",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/LMDB/lmdb/archive/LMDB_0.9.35.tar.gz",
+        "sha256": "dd70a8c67807b3b8532b3e987b0a4e998962ecc28643e1af5ec77696b081c9b0"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {},
+      "source_dir": "libraries/liblmdb"
+    },
+    {
+      "version": "0.9.34",
+      "description": "Lightning Memory-Mapped Database",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/LMDB/lmdb/archive/LMDB_0.9.34.tar.gz",
+        "sha256": "dd70a8c67807b3b8532b3e987b0a4e998962ecc28643e1af5ec77696b081c9b0"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {},
+      "source_dir": "libraries/liblmdb"
+    },
+    {
+      "version": "0.9.33",
+      "description": "Lightning Memory-Mapped Database",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/LMDB/lmdb/archive/LMDB_0.9.33.tar.gz",
+        "sha256": "dd70a8c67807b3b8532b3e987b0a4e998962ecc28643e1af5ec77696b081c9b0"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {},
+      "source_dir": "libraries/liblmdb"
+    },
+    {
+      "version": "0.9.32",
+      "description": "Lightning Memory-Mapped Database",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/LMDB/lmdb/archive/LMDB_0.9.32.tar.gz",
+        "sha256": "dd70a8c67807b3b8532b3e987b0a4e998962ecc28643e1af5ec77696b081c9b0"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {},
+      "source_dir": "libraries/liblmdb"
+    },
+    {
+      "version": "0.9.30",
+      "description": "Lightning Memory-Mapped Database",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/LMDB/lmdb/archive/LMDB_0.9.30.tar.gz",
+        "sha256": "dd70a8c67807b3b8532b3e987b0a4e998962ecc28643e1af5ec77696b081c9b0"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "prefix=$TSI_INSTALL_DIR"
+      ],
+      "env": {},
+      "source_dir": "libraries/liblmdb"
+    },
+    {
       "version": "0.9.31",
       "description": "Lightning Memory-Mapped Database",
       "source": {

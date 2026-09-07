@@ -2,6 +2,54 @@
   "name": "snappy",
   "versions": [
     {
+      "version": "1.2.2",
+      "description": "Fast compression/decompression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/snappy/archive/refs/tags/1.2.2.tar.gz",
+        "sha256": "9b8f10fbb5e3bc112f2e5e64f813cb73faea42ec9c533a5023b5ae08aedef42e"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DSNAPPY_BUILD_TESTS=OFF",
+        "-DSNAPPY_BUILD_BENCHMARKS=OFF",
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.2.1",
+      "description": "Fast compression/decompression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/snappy/archive/refs/tags/1.2.1.tar.gz",
+        "sha256": "9b8f10fbb5e3bc112f2e5e64f813cb73faea42ec9c533a5023b5ae08aedef42e"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DSNAPPY_BUILD_TESTS=OFF",
+        "-DSNAPPY_BUILD_BENCHMARKS=OFF",
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+      ],
+      "env": {}
+    },
+    {
       "version": "1.2.0",
       "description": "Fast compression/decompression library",
       "source": {
