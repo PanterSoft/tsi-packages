@@ -2,6 +2,937 @@
   "name": "nghttp2",
   "versions": [
     {
+      "version": "1.70.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.70.0/nghttp2-1.70.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.69.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.69.0/nghttp2-1.69.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.68.1",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.68.1/nghttp2-1.68.1.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.68.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.68.0/nghttp2-1.68.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.67.1",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.67.1/nghttp2-1.67.1.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.67.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.67.0/nghttp2-1.67.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.66.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.66.0/nghttp2-1.66.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.65.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.65.0/nghttp2-1.65.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.63.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.63.0/nghttp2-1.63.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.62.1",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.62.1/nghttp2-1.62.1.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.62.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.62.0/nghttp2-1.62.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.61.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.61.0/nghttp2-1.61.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.60.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.60.0/nghttp2-1.60.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.59.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.59.0/nghttp2-1.59.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.58.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.58.0/nghttp2-1.58.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.57.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.57.0/nghttp2-1.57.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.56.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.56.0/nghttp2-1.56.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.55.1",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.55.1/nghttp2-1.55.1.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.55.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.55.0/nghttp2-1.55.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.54.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.54.0/nghttp2-1.54.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.53.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.53.0/nghttp2-1.53.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.52.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.52.0/nghttp2-1.52.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.51.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.51.0/nghttp2-1.51.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.50.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.50.0/nghttp2-1.50.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.49.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.49.0/nghttp2-1.49.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.48.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.48.0/nghttp2-1.48.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.47.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.47.0/nghttp2-1.47.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.46.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.46.0/nghttp2-1.46.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.45.1",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.45.1/nghttp2-1.45.1.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.45.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.45.0/nghttp2-1.45.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.44.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.44.0/nghttp2-1.44.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.43.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.43.0/nghttp2-1.43.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.42.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.42.0/nghttp2-1.42.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.41.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.41.0/nghttp2-1.41.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.40.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.40.0/nghttp2-1.40.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.39.2",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.39.2/nghttp2-1.39.2.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.39.1",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.39.1/nghttp2-1.39.1.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.39.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.39.0/nghttp2-1.39.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.38.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.38.0/nghttp2-1.38.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.37.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.37.0/nghttp2-1.37.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.36.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.36.0/nghttp2-1.36.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.35.1",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.35.1/nghttp2-1.35.1.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.35.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.35.0/nghttp2-1.35.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.34.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.34.0/nghttp2-1.34.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.33.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.33.0/nghttp2-1.33.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.32.1",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.32.1/nghttp2-1.32.1.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.32.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.32.0/nghttp2-1.32.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.31.1",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.31.1/nghttp2-1.31.1.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.31.0",
+      "description": "HTTP/2 C library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.31.0/nghttp2-1.31.0.tar.gz",
+        "sha256": "20e73f3cf9db3f05988996ac8b3a99ed529f4565ca91a49eb0550498e10621e8"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
       "version": "1.64.0",
       "description": "HTTP/2 C library",
       "source": {
