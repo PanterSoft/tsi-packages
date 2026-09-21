@@ -2,6 +2,159 @@
   "name": "hiredis",
   "versions": [
     {
+      "version": "1.4.1",
+      "description": "Minimalistic C client library for Redis",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/redis/hiredis/archive/refs/tags/v1.4.1.tar.gz",
+        "sha256": "82ad632d31ee05da13b537c124f819eb88e18851d9cb0c30ae0552084811588c"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "make",
+      "make_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.3.1",
+      "description": "Minimalistic C client library for Redis",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/redis/hiredis/archive/refs/tags/v1.3.1.tar.gz",
+        "sha256": "82ad632d31ee05da13b537c124f819eb88e18851d9cb0c30ae0552084811588c"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "make",
+      "make_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.2.1",
+      "description": "Minimalistic C client library for Redis",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/redis/hiredis/archive/refs/tags/v1.2.1.tar.gz",
+        "sha256": "82ad632d31ee05da13b537c124f819eb88e18851d9cb0c30ae0552084811588c"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "make",
+      "make_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.1.1",
+      "description": "Minimalistic C client library for Redis",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/redis/hiredis/archive/refs/tags/v1.1.1.tar.gz",
+        "sha256": "82ad632d31ee05da13b537c124f819eb88e18851d9cb0c30ae0552084811588c"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "make",
+      "make_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.4.0",
+      "description": "Minimalistic C client library for Redis",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/redis/hiredis/archive/refs/tags/v1.4.0.tar.gz",
+        "sha256": "82ad632d31ee05da13b537c124f819eb88e18851d9cb0c30ae0552084811588c"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "make",
+      "make_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.3.0",
+      "description": "Minimalistic C client library for Redis",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/redis/hiredis/archive/refs/tags/v1.3.0.tar.gz",
+        "sha256": "82ad632d31ee05da13b537c124f819eb88e18851d9cb0c30ae0552084811588c"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "make",
+      "make_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.1.0",
+      "description": "Minimalistic C client library for Redis",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/redis/hiredis/archive/refs/tags/v1.1.0.tar.gz",
+        "sha256": "82ad632d31ee05da13b537c124f819eb88e18851d9cb0c30ae0552084811588c"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "make",
+      "make_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.1.0-rc1",
+      "description": "Minimalistic C client library for Redis",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/redis/hiredis/archive/refs/tags/v1.1.0-rc1.tar.gz",
+        "sha256": "82ad632d31ee05da13b537c124f819eb88e18851d9cb0c30ae0552084811588c"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "make",
+      "make_args": [],
+      "env": {}
+    },
+    {
+      "version": "1.0.2",
+      "description": "Minimalistic C client library for Redis",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/redis/hiredis/archive/refs/tags/v1.0.2.tar.gz",
+        "sha256": "82ad632d31ee05da13b537c124f819eb88e18851d9cb0c30ae0552084811588c"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "make",
+      "make_args": [],
+      "env": {}
+    },
+    {
       "version": "1.2.0",
       "description": "Minimalistic C client library for Redis",
       "source": {

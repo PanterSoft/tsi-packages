@@ -2,6 +2,405 @@
   "name": "htop",
   "versions": [
     {
+      "version": "3.5.3",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.5.3/htop-3.5.3.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.5.2",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.5.2/htop-3.5.2.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.5.1",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.5.1/htop-3.5.1.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.5.0",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.5.0/htop-3.5.0.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.4.1",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.4.1/htop-3.4.1.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.4.0",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.4.0/htop-3.4.0.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.2.2",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.2.2/htop-3.2.2.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.2.1",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.2.1/htop-3.2.1.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.2.0",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.2.0/htop-3.2.0.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.1.2",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.1.2/htop-3.1.2.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.1.1",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.1.1/htop-3.1.1.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.1.0",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.1.0/htop-3.1.0.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.1.0rc2",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.1.0rc2/htop-3.1.0rc2.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.1.0rc1",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.1.0rc1/htop-3.1.0rc1.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.0.5",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.0.5/htop-3.0.5.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.0.4",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.0.4/htop-3.0.4.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.0.3",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.0.3/htop-3.0.3.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.0.2",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.0.2/htop-3.0.2.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.0.1",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.0.1/htop-3.0.1.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "3.0.0",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.0.0/htop-3.0.0.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
+      "version": "2.2.0",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/2.2.0/htop-2.2.0.tar.xz",
+        "sha256": "a69acf9b42ff592c4861010fce7d8006805f0d6ef0e8ee647a6ee6e59b743d5c"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
       "version": "3.3.0",
       "description": "Interactive process viewer",
       "source": {
