@@ -40,8 +40,11 @@ Nothing here needs a local run to be trusted, but `make validate PKGS="…"` fro
 
 ## Package status
 
-`PACKAGES_STATUS.md` holds one column per platform, regenerated from real build
-results by the weekly **Validate All Packages** workflow:
+`PACKAGES_STATUS.md` holds one column for every platform TSI supports (Linux,
+macOS, Windows, FreeBSD, OpenBSD and NetBSD across their architectures), plus a
+per-platform summary, regenerated from real build results by the weekly
+**Validate All Packages** workflow. Platforms without a CI runner yet stay
+blank apart from packages whose `platforms` field rules them out:
 
 | Marker | Meaning |
 |--------|---------|

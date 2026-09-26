@@ -179,6 +179,8 @@ python3 scripts/merge-status.py PACKAGES_STATUS.md \
   macOS-aarch64=results/macOS-aarch64/results.tsv
 ```
 
+Every platform TSI knows about gets a column (the `PLATFORMS` list in the script), in OS order, whether or not CI builds there; a platform with no results only shows `—` for packages whose `platforms` field excludes it. Every package in `packages/` gets a row (`--packages-dir` overrides the location), and a per-platform summary table sits above the package table. A leg whose name is not in `PLATFORMS` is appended as an extra column rather than dropped.
+
 Markers: `✅` built, `❌` failed, `—` unsupported on that platform, `⏭️` skipped because a dependency was unavailable, blank means not tested there. The table is rebuilt from scratch every run.
 
 Self-check: `python3 scripts/test_merge_status.py`.
