@@ -156,7 +156,11 @@ python3 scripts/platform_id.py --platforms packages/libcap.json  # -> linux
 python3 scripts/platform_id.py --deps packages/git.json          # deps + build deps
 ```
 
-`--supports` reads the package's `platforms` field (see `docs/developer-guide/os-specific-config.md` in the TSI repo). An absent or empty field means "supported everywhere".
+The id is `<OS>-<arch>`, spelled the way the `platforms` field spells things: `Darwin`/`arm64` → `macOS-aarch64`, `i686` → `x86`, `armv7l` → `arm`, `SunOS` → `illumos`. Nothing is limited to a known list: an OS or CPU it does not recognise keeps its own lower-cased name (`haiku-x86_64`, `myos-loongarch64`) rather than becoming "unknown", so results from any system land in their own column.
+
+`--supports` reads the package's `platforms` field (see `docs/developer-guide/os-specific-config.md` in the TSI repo). An absent or empty field means "supported everywhere". `validate-packages.py` uses the same spellings to reject aliases (`macos`, `arm64`) while accepting any other OS or arch name.
+
+Self-check: `python3 scripts/test_platform_id.py`.
 
 ## build-all-packages.sh
 
@@ -173,13 +177,14 @@ One results.tsv per platform. Nothing in this script parses or edits `PACKAGES_S
 Merges one results.tsv per platform into the multi-platform `PACKAGES_STATUS.md` table:
 
 ```bash
+python3 scripts/merge-status.py PACKAGES_STATUS.md                   # everything in status-results/
 python3 scripts/merge-status.py PACKAGES_STATUS.md \
-  Linux-x86_64=results/Linux-x86_64/results.tsv \
-  Linux-aarch64=results/Linux-aarch64/results.tsv \
-  macOS-aarch64=results/macOS-aarch64/results.tsv
+  Linux-x86_64=.build-logs/results.tsv                               # plus/overriding one platform
 ```
 
-Every platform TSI knows about gets a column (the `PLATFORMS` list in the script), in OS order, whether or not CI builds there; a platform with no results only shows `—` for packages whose `platforms` field excludes it. Every package in `packages/` gets a row (`--packages-dir` overrides the location), and a per-platform summary table sits above the package table. A leg whose name is not in `PLATFORMS` is appended as an extra column rather than dropped.
+Results are read from `status-results/<platform-id>.tsv` (`--results-dir` overrides it; see `status-results/README.md`) and from any `<platform>=<file>` arguments, which win on a clash. Platform names are normalised through `platform_id.py`, so `linux-x86_64.tsv` and `Linux-x86_64` are one column.
+
+The columns are open-ended: a baseline of common targets (`BASELINE` in the script) is always shown, and every platform with results, plus every `<os>-<arch>` a package's `platforms` field names, is added — grouped by OS, unknown OSes after the known ones. A platform with no results only shows `—` for packages whose `platforms` field excludes it. Every package in `packages/` gets a row (`--packages-dir` overrides the location), and a per-platform summary (where the results came from, and counts per marker) sits above the package table.
 
 Markers: `✅` built, `❌` failed, `—` unsupported on that platform, `⏭️` skipped because a dependency was unavailable, blank means not tested there. The table is rebuilt from scratch every run.
 
