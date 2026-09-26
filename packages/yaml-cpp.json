@@ -1,0 +1,23 @@
+{
+  "name": "yaml-cpp",
+  "version": "0.9.0",
+  "description": "YAML parser and emitter for C++",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/jbeder/yaml-cpp/archive/refs/tags/yaml-cpp-0.9.0.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DYAML_BUILD_SHARED_LIBS=ON",
+    "-DYAML_CPP_BUILD_TESTS=OFF",
+    "-DYAML_CPP_BUILD_TOOLS=OFF"
+  ],
+  "env": {}
+}

@@ -1,8 +1,8 @@
 name: Test Build Packages
 
 # Every changed package is built on every supported platform. A package that
-# builds on Linux-x86_64 says nothing about aarch64 or macOS, so all three legs
-# run and all three must pass before a package change lands.
+# builds on Linux-x86_64 says nothing about aarch64 or macOS, so all four legs
+# run and all four must pass before a package change lands.
 
 on:
   push:
@@ -82,6 +82,8 @@ jobs:
             platform: Linux-aarch64
           - runner: macos-14
             platform: macOS-aarch64
+          - runner: macos-15-intel
+            platform: macOS-x86_64
     steps:
       - uses: actions/checkout@v5.0.1
 

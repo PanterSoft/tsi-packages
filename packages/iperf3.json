@@ -1,0 +1,19 @@
+{
+  "name": "iperf3",
+  "version": "3.21",
+  "description": "Network bandwidth measurement tool",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/esnet/iperf/archive/refs/tags/3.21.tar.gz"
+  },
+  "dependencies": [
+    "openssl"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-profiling"
+  ],
+  "env": {}
+}

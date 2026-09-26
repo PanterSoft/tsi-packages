@@ -1,0 +1,22 @@
+{
+  "name": "double-conversion",
+  "version": "3.4.0",
+  "description": "Efficient binary-decimal and decimal-binary conversion routines for IEEE doubles",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/google/double-conversion/archive/refs/tags/v3.4.0.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DBUILD_TESTING=OFF"
+  ],
+  "env": {}
+}
