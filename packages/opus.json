@@ -1,0 +1,23 @@
+{
+  "name": "opus",
+  "version": "1.6.1",
+  "description": "Opus interactive speech and audio codec",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/xiph/opus/archive/refs/tags/v1.6.1.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DOPUS_BUILD_TESTING=OFF",
+    "-DOPUS_BUILD_PROGRAMS=OFF"
+  ],
+  "env": {}
+}

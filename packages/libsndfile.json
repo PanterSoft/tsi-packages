@@ -1,0 +1,32 @@
+{
+  "name": "libsndfile",
+  "version": "1.2.2",
+  "description": "Library for reading and writing sampled audio files",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz",
+    "sha256": "3799ca9924d3125038880367bf1468e53a1b7e3686a934f098b7e1d286cdb80e"
+  },
+  "dependencies": [
+    "libogg",
+    "libvorbis",
+    "flac",
+    "opus"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DBUILD_TESTING=OFF",
+    "-DBUILD_EXAMPLES=OFF",
+    "-DENABLE_EXTERNAL_LIBS=ON",
+    "-DENABLE_MPEG=OFF",
+    "-DINSTALL_MANPAGES=OFF"
+  ],
+  "env": {}
+}

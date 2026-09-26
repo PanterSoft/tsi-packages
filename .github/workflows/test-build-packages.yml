@@ -71,7 +71,10 @@ jobs:
     needs: changed
     if: needs.changed.outputs.count != '0'
     runs-on: ${{ matrix.runner }}
-    timeout-minutes: 90
+    # The Intel macOS runner is several times slower than the others; with a
+    # handful of new packages plus their build dependencies (perl, cmake, ...)
+    # it ran out of 90 minutes while the other three legs had long finished.
+    timeout-minutes: 300
     strategy:
       fail-fast: false
       matrix:

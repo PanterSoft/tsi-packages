@@ -4,7 +4,8 @@
   "description": "Modern C++ unit testing framework",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/catchorg/Catch2/archive/refs/tags/v3.16.0.tar.gz"
+    "url": "https://github.com/catchorg/Catch2/archive/refs/tags/v3.16.0.tar.gz",
+    "sha256": "0957cae5821b17ce07f0833aaa52b5137643a8382203221f363a8303c109af34"
   },
   "dependencies": [],
   "build_dependencies": [

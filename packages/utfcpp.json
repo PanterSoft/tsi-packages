@@ -1,0 +1,21 @@
+{
+  "name": "utfcpp",
+  "version": "4.2.1",
+  "description": "UTF-8 with C++ in a portable way (header-only)",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.2.1.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DUTF8CPP_BUILD_TESTS=OFF"
+  ],
+  "env": {}
+}

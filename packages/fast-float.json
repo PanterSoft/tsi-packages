@@ -1,0 +1,21 @@
+{
+  "name": "fast-float",
+  "version": "8.3.0",
+  "description": "Fast and exact number parsing for C++ (header-only)",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/fastfloat/fast_float/archive/refs/tags/v8.3.0.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DFASTFLOAT_TEST=OFF"
+  ],
+  "env": {}
+}

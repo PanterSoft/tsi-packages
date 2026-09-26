@@ -1,0 +1,17 @@
+{
+  "name": "lua",
+  "version": "5.4.8",
+  "description": "Powerful, lightweight embeddable scripting language",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.lua.org/ftp/lua-5.4.8.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "custom",
+  "build_commands": [
+    "make all",
+    "make install INSTALL_TOP=$TSI_INSTALL_DIR"
+  ],
+  "env": {}
+}

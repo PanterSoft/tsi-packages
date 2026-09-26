@@ -1,11 +1,10 @@
 {
-  "name": "json-c",
-  "version": "0.19",
-  "description": "JSON implementation in C",
+  "name": "highway",
+  "version": "1.4.0",
+  "description": "Performance-portable SIMD library for C++",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/json-c/json-c/archive/refs/tags/json-c-0.19-20260627.tar.gz",
-    "sha256": "f17a6d7d265cf840dfd8f0f46a606d98c6b5b26dc7cfe27275d1546a213086c8"
+    "url": "https://github.com/google/highway/archive/refs/tags/1.4.0.tar.gz"
   },
   "dependencies": [],
   "build_dependencies": [
@@ -18,7 +17,9 @@
     "-DCMAKE_BUILD_TYPE=Release",
     "-DBUILD_SHARED_LIBS=ON",
     "-DBUILD_TESTING=OFF",
-    "-DDISABLE_WERROR=ON"
+    "-DHWY_ENABLE_TESTS=OFF",
+    "-DHWY_ENABLE_EXAMPLES=OFF",
+    "-DHWY_ENABLE_CONTRIB=OFF"
   ],
   "env": {}
 }
