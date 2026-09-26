@@ -51,6 +51,28 @@ def main():
         assert rows2["gcc"] == ["gcc", "", "not built here (slow)"], rows2["gcc"]
         assert rows2["zlib"] == ["zlib", "✅", ""], rows2["zlib"]
 
+        # Curated reasons show only where the package is not green.
+        (td / "notes.tsv").write_text(
+            "# comment\n"
+            "git\tLinux-x86_64\tneeds a newer compiler\n"
+            "git\tmacOS-aarch64\tshown: skipped there too\n"
+            "zlib\t*\tstale: zlib is green everywhere\n"
+            "libcap\t*\tkernel API\n"
+        )
+        out3 = td / "NOTES.md"
+        subprocess.run(
+            [sys.executable, str(HERE / "merge-status.py"), "--notes", str(td / "notes.tsv"),
+             str(out3), f"Linux-x86_64={td/'linux.tsv'}", f"macOS-aarch64={td/'mac.tsv'}"],
+            check=True, capture_output=True,
+        )
+        rows3 = {l.split("|")[1].strip(): [c.strip() for c in l.split("|")[1:-1]]
+                 for l in out3.read_text().splitlines()[2:]}
+        assert rows3["zlib"][-1] == "", rows3["zlib"]
+        assert rows3["git"][-1] == (
+            "needs libcap; Linux-x86_64: needs a newer compiler; "
+            "macOS-aarch64: shown: skipped there too"), rows3["git"]
+        assert rows3["libcap"][-1] == "linux-only; kernel API", rows3["libcap"]
+
         # A missing results file is a warning, not a crash: the leg is dropped.
         r = subprocess.run(
             [sys.executable, str(HERE / "merge-status.py"), str(out),

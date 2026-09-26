@@ -1,0 +1,4 @@
+# Why a package does not build on a platform, shown in PACKAGES_STATUS.md.
+# <package>\t<platform, or * for all>\t<reason>
+# A reason only appears while the package is not green there, so fixing a
+# package retires its note automatically.

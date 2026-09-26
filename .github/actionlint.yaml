@@ -1,0 +1,6 @@
+# actionlint's built-in runner-label list lags GitHub's actual offering.
+# macos-15-intel is a real GitHub-hosted runner (the Intel macOS image);
+# without this it is reported as an unknown label.
+self-hosted-runner:
+  labels:
+    - macos-15-intel

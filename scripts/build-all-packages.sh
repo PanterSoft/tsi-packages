@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 # Build every package with TSI to verify it is buildable on THIS host.
 #
-# Usage: build-all-packages.sh [--exclude-slow] [--packages-dir DIR] [--prefix PREFIX]
+# Usage: build-all-packages.sh [--exclude-slow] [--packages-dir DIR] [--prefix PREFIX] [PKG...]
 #   --exclude-slow  Skip known slow packages (gcc, llvm, python, ...)
+#   PKG...          Build only these packages (tsi still builds their deps).
+#                   This is how CI gives each slow package a job of its own.
 #   --packages-dir  Path to packages directory (default: repo root packages/)
 #   --prefix        TSI prefix to install into (default: $TSI_PREFIX or ~/.tsi)
 #
@@ -22,6 +24,7 @@ PACKAGES_DIR="$REPO_ROOT/packages"
 LOG_DIR="$REPO_ROOT/.build-logs"
 PREFIX="${TSI_PREFIX:-$HOME/.tsi}"
 EXCLUDE_SLOW=false
+ONLY=""
 # Single source of truth, shared with the workflows (see scripts/slow-packages.txt).
 SLOW_LIST="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/slow-packages.txt"
 SLOW_PACKAGES="$(grep -vE '^\s*(#|$)' "$SLOW_LIST" | paste -sd'|' -)"
@@ -31,7 +34,8 @@ while [ $# -gt 0 ]; do
     --exclude-slow)  EXCLUDE_SLOW=true; shift ;;
     --packages-dir)  PACKAGES_DIR="$2"; shift 2 ;;
     --prefix)        PREFIX="$2"; shift 2 ;;
-    *) echo "Usage: $0 [--exclude-slow] [--packages-dir DIR] [--prefix PREFIX]" >&2; exit 1 ;;
+    -*) echo "Usage: $0 [--exclude-slow] [--packages-dir DIR] [--prefix PREFIX] [PKG...]" >&2; exit 1 ;;
+    *) ONLY="${ONLY} $1"; shift ;;
   esac
 done
 
@@ -55,6 +59,17 @@ echo "Platform: $PLATFORM"
 if ! PACKAGES=$(python3 "$SCRIPT_DIR/sort-packages.py" "$PACKAGES_DIR"); then
   echo "Error: Failed to sort packages. Ensure python3 is installed and valid." >&2
   exit 1
+fi
+
+if [ -n "$ONLY" ]; then
+  for pkg in $ONLY; do
+    if ! echo "$PACKAGES" | grep -qx "$pkg"; then
+      echo "Error: no such package: $pkg" >&2
+      exit 1
+    fi
+  done
+  # Keep dependency order, restricted to what was asked for.
+  PACKAGES=$(echo "$PACKAGES" | grep -xF -f <(printf '%s\n' $ONLY))
 fi
 
 echo "$PACKAGES" > "$LOG_DIR/build-order.txt"
