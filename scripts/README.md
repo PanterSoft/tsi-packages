@@ -112,83 +112,38 @@ python3 merge-external-package.py /tmp/example.json packages/ my-package
 
 ## discover-versions.py
 
-Automatically discovers available versions for packages and adds them to package definitions.
+Finds new upstream releases for packages and adds them to package definitions.
 
 ### Usage
 
 ```bash
-# Discover versions for a specific package
-python3 discover-versions.py <package-name> [--max-versions N] [--dry-run]
-
-# Discover versions for all packages
-python3 discover-versions.py --all [--max-versions N] [--dry-run]
+python3 discover-versions.py <package-name> [--dry-run]
+python3 discover-versions.py --all [--skip gcc,llvm] [--dry-run]
 ```
 
 ### Arguments
 
-- `package-name`: Name of the package to update (or use `--all` for all packages)
-- `--all`: Update all packages in the repository
-- `--max-versions N`: Maximum number of versions to discover per package (default: 10)
-- `--dry-run`: Show what would be added without modifying files
-- `--packages-dir PATH`: Path to packages directory (default: `packages`)
-
-### Examples
-
-```bash
-# Discover versions for curl
-python3 discover-versions.py curl
-
-# Discover versions for curl (dry run)
-python3 discover-versions.py curl --dry-run
-
-# Discover versions for all packages
-python3 discover-versions.py --all --max-versions 5
-
-# Discover versions with custom packages directory
-python3 discover-versions.py git --packages-dir /path/to/packages
-```
-
-### Supported Discovery Methods
-
-1. **GitHub Releases/Tags**: Automatically discovers versions from GitHub repositories using the GitHub API
-2. **Git Tags**: For git-based sources, discovers versions from repository tags
-3. **Website-specific**: Special handlers for specific websites (e.g., curl.se)
+- `package-name` / `--all`: one package, or every package
+- `--skip a,b`: with `--all`, leave these packages alone
+- `--max-versions N`: how many upstream tags/releases to look at (default: all)
+- `--backfill`: add every missing stable version instead of just a newer latest release
+- `--dry-run`: show what would be added without modifying files
+- `--packages-dir PATH`: packages directory (default: `packages`)
+- `--check-version V`: add exactly version V if upstream has it
 
 ### Behavior
 
-- Discovers available versions from package sources (GitHub, git repos, etc.)
-- Generates version definitions based on the latest existing version
-- Automatically updates source URLs with new version numbers
-- Adds new versions to the `versions` array (preserving all existing versions)
-- Skips versions that already exist
-- Converts single-version packages to multi-version format automatically
+- Adds **one** version per package: the newest stable upstream release, and only if it is newer than every version already recorded. Prereleases (rc/alpha/beta/pre) are never picked. Older missing releases are not backfilled unless `--backfill` is given.
+- The new entry is copied from the newest existing version with the version replaced in the source URL / git tag. The template's `sha256` is **not** copied; run `add-checksums.py` to record the real one.
+- Versions stay deduplicated and newest-first, the order `sort-versions.py` enforces.
 
-### How It Works
+Discovery sources: GitHub releases/tags (most packages) and curl.se. Others are skipped.
 
-1. Reads the package definition file
-2. Extracts source information (URL, type, etc.)
-3. Discovers available versions using appropriate method:
-   - For GitHub: Uses GitHub API to fetch releases/tags
-   - For git repos: Fetches tags from the repository
-   - For specific sites: Uses custom discovery logic
-4. Generates new version definitions by:
-   - Copying the latest version as a template
-   - Replacing version numbers in URLs and metadata
-5. Adds new versions to the package file (if not already present)
+Self-check: `python3 scripts/test_discover_versions.py`.
 
 ### Integration
 
-This script is integrated into a GitHub Actions workflow (`.github/workflows/discover-versions.yml`) that:
-- Runs weekly to discover new versions
-- Can be triggered manually for specific packages
-- Creates pull requests automatically when new versions are found
-
-### Limitations
-
-- Currently works best with GitHub-hosted projects
-- Some websites require custom discovery logic
-- Rate limiting may apply when checking many packages
-- Version format must be consistent (semantic versioning recommended)
+`.github/workflows/discover-versions.yml` runs this weekly, then for each updated package records the checksum (dropping it if the guessed URL does not download), builds it on Linux-x86_64, Linux-aarch64 and macOS-aarch64 with a linkage check, and commits the packages that pass everywhere directly to `main`. Failures go on one tracking issue that is rewritten each run and closed once empty. No PRs or branches are created.
 
 ## platform_id.py
 

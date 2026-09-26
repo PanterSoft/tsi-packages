@@ -30,6 +30,52 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from lib_json import load_json, save_json
 
 
+def _load_version_key():
+    """version_key from sort-versions.py -- one ordering rule for the repo."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        "sort_versions", Path(__file__).resolve().parent / "sort-versions.py"
+    )
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod.version_key
+
+
+version_key = _load_version_key()
+
+
+def is_stable(version: str) -> bool:
+    """False for rc/alpha/beta/pre releases (version_key's is-release flag)."""
+    return version_key(version)[1] == 1
+
+
+def select_new_versions(existing: List[str], discovered: List[str], backfill: bool = False) -> List[str]:
+    """Pick which discovered versions are worth adding.
+
+    Default: the single newest stable release, and only if it is newer than
+    everything already recorded. That is what an update is. The old behaviour
+    -- append every missing tag up to --max-versions -- backfilled dozens of
+    historical releases per package per run (vim alone grew 1100 lines), none
+    of them checksummed or built, which is why those PRs could never merge.
+
+    backfill=True restores "every missing stable version", still newest-first.
+    """
+    have = set(existing)
+    candidates = sorted(
+        {v for v in discovered if v not in have and is_stable(v)},
+        key=version_key,
+        reverse=True,
+    )
+    if backfill:
+        return candidates
+    if not candidates:
+        return []
+    newest_existing = max(existing, key=version_key) if existing else None
+    if newest_existing is not None and version_key(candidates[0]) <= version_key(newest_existing):
+        return []
+    return candidates[:1]
+
+
 def get_latest_version_def(pkg: dict) -> Optional[dict]:
     """Return the latest version definition (first in versions array or single-version pkg)."""
     if "versions" in pkg and pkg["versions"]:
@@ -235,6 +281,10 @@ def generate_version_definition(base_version: Dict, new_version: str) -> Dict:
     import copy
     new_def = copy.deepcopy(base_version)
     new_def['version'] = new_version
+    # The template's checksum belongs to the template's tarball. Copying it
+    # guarantees a mismatch; add-checksums.py records the real one.
+    if isinstance(new_def.get('source'), dict):
+        new_def['source'].pop('sha256', None)
 
     # Update source URL if it contains version
     if 'source' in new_def and 'url' in new_def['source']:
@@ -343,7 +393,8 @@ def discover_package_versions(package_file: Path, max_versions: Optional[int] = 
     return discovered
 
 
-def add_versions_to_package(package_file: Path, new_versions: List[str], dry_run: bool = False) -> Tuple[int, int]:
+def add_versions_to_package(package_file: Path, new_versions: List[str], dry_run: bool = False,
+                            select: bool = False, backfill: bool = False) -> Tuple[int, int]:
     """
     Add new versions to a package file.
 
@@ -351,6 +402,8 @@ def add_versions_to_package(package_file: Path, new_versions: List[str], dry_run
         package_file: Path to package JSON file
         new_versions: List of version strings to add
         dry_run: If True, don't actually modify files
+        select: If True, filter new_versions through select_new_versions()
+        backfill: Passed to select_new_versions()
 
     Returns:
         Tuple of (added_count, skipped_count)
@@ -376,8 +429,11 @@ def add_versions_to_package(package_file: Path, new_versions: List[str], dry_run
     # Get existing versions
     existing_versions = {v.get('version') for v in pkg.get('versions', [])}
 
-    # Get base version template (use latest)
-    base_version = pkg['versions'][0] if pkg['versions'] else {}
+    if select:
+        new_versions = select_new_versions([v for v in existing_versions if v], new_versions, backfill)
+
+    # Template: the newest recorded version (not versions[0] blindly)
+    base_version = max(pkg['versions'], key=lambda v: version_key(v.get('version', ''))) if pkg['versions'] else {}
 
     added_count = 0
     skipped_count = 0
@@ -394,8 +450,9 @@ def add_versions_to_package(package_file: Path, new_versions: List[str], dry_run
         added_count += 1
 
     if new_version_defs:
-        # Insert new versions at the beginning (latest first)
-        pkg['versions'] = new_version_defs + pkg['versions']
+        # Newest-first, the order sort-versions.py enforces
+        pkg['versions'] = sorted(new_version_defs + pkg['versions'],
+                                 key=lambda v: version_key(v.get('version', '')), reverse=True)
 
         if not dry_run:
             save_json(package_file, pkg)
@@ -484,7 +541,17 @@ def main():
         '--max-versions',
         type=int,
         default=None,
-        help='Maximum number of versions to discover per package (default: all versions)'
+        help='Maximum number of upstream versions to look at per package (default: all)'
+    )
+    parser.add_argument(
+        '--backfill',
+        action='store_true',
+        help='Add every missing stable version, not just a newer latest release'
+    )
+    parser.add_argument(
+        '--skip',
+        default='',
+        help='Comma-separated package names to leave alone'
     )
     parser.add_argument(
         '--check-version',
@@ -537,7 +604,8 @@ def main():
 
     if args.all:
         # Process all packages
-        package_files = list(packages_dir.glob('*.json'))
+        skip = {n.strip() for n in args.skip.split(',') if n.strip()}
+        package_files = sorted(p for p in packages_dir.glob('*.json') if p.stem not in skip)
         total_added = 0
         total_skipped = 0
         failed_packages = []
@@ -552,7 +620,8 @@ def main():
                 versions = discover_package_versions(pkg_file, args.max_versions, github_token)
 
                 if versions:
-                    added, skipped = add_versions_to_package(pkg_file, versions, args.dry_run)
+                    added, skipped = add_versions_to_package(pkg_file, versions, args.dry_run,
+                                                             select=True, backfill=args.backfill)
                     total_added += added
                     total_skipped += skipped
                 else:
@@ -567,7 +636,7 @@ def main():
         if failed_packages:
             print(f"⚠️  Failed to process {len(failed_packages)} package(s): {', '.join(failed_packages)}", file=sys.stderr)
             # Exit with error code if all packages failed, but continue if some succeeded
-            if total_added == 0 and total_skipped == 0:
+            if len(failed_packages) == len(package_files):
                 print("❌ All packages failed to process", file=sys.stderr)
                 sys.exit(1)
             else:
@@ -586,7 +655,8 @@ def main():
 
         if versions:
             print(f"Discovered {len(versions)} version(s): {', '.join(versions[:5])}{'...' if len(versions) > 5 else ''}")
-            added, skipped = add_versions_to_package(pkg_file, versions, args.dry_run)
+            added, skipped = add_versions_to_package(pkg_file, versions, args.dry_run,
+                                                     select=True, backfill=args.backfill)
             print(f"Added {added}, skipped {skipped}")
         else:
             print("No new versions discovered")

@@ -57,6 +57,7 @@ jobs:
           python3 scripts/test_merge_status.py
           python3 scripts/test_sort_versions.py
           python3 scripts/test_add_checksums.py
+          python3 scripts/test_discover_versions.py
           bash scripts/test_check_linkage.sh
 
       - name: Shellcheck
