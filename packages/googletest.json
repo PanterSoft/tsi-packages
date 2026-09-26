@@ -2,6 +2,28 @@
   "name": "googletest",
   "versions": [
     {
+      "version": "1.18.0",
+      "description": "Google's C++ testing and mocking framework",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/google/googletest/releases/download/v1.18.0/googletest-1.18.0.tar.gz",
+        "sha256": "6e3191c1455468b3fc35a417fb565c1c5071aee1b7e7f85e30cf48a98d37d8b5"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DBUILD_GMOCK=ON"
+      ],
+      "env": {}
+    },
+    {
       "version": "1.15.2",
       "description": "Google's C++ testing and mocking framework",
       "source": {

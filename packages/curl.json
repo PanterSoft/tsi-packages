@@ -2,6 +2,34 @@
   "name": "curl",
   "versions": [
     {
+      "version": "8.22.0",
+      "description": "Command line tool and library for transferring data with URLs",
+      "source": {
+        "type": "tarball",
+        "url": "https://curl.se/download/curl-8.22.0.tar.gz",
+        "sha256": "d54dd598bf05927a726deb38df31c6a255ba83ff1de57c5d1464dac3ed8f44a1"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-openssl",
+        "--without-libpsl",
+        "--enable-http",
+        "--enable-https",
+        "--enable-ftp",
+        "--enable-file"
+      ],
+      "env": {}
+    },
+    {
       "version": "8.17.0",
       "description": "Command line tool and library for transferring data with URLs",
       "source": {

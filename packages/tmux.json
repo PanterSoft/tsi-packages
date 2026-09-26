@@ -2,6 +2,28 @@
   "name": "tmux",
   "versions": [
     {
+      "version": "3.7c",
+      "description": "Terminal multiplexer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/tmux/tmux/releases/download/3.7c/tmux-3.7c.tar.gz",
+        "sha256": "7c60cae9a0e25288e2e24750aafc9e8800fc7fd4555e447e1b29ee4201cfb3bf"
+      },
+      "dependencies": [
+        "ncurses",
+        "libevent"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-utf8proc"
+      ],
+      "env": {}
+    },
+    {
       "version": "3.6a",
       "description": "Terminal multiplexer",
       "source": {

@@ -2,6 +2,28 @@
   "name": "tinyxml2",
   "versions": [
     {
+      "version": "11.0.0",
+      "description": "Simple, small, efficient C++ XML parser",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/leethomason/tinyxml2/archive/refs/tags/11.0.0.tar.gz",
+        "sha256": "5556deb5081fb246ee92afae73efd943c889cef0cafea92b0b82422d6a18f289"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-Dtinyxml2_BUILD_TESTING=OFF"
+      ],
+      "env": {}
+    },
+    {
       "version": "10.0.0",
       "description": "Simple, small, efficient C++ XML parser",
       "source": {

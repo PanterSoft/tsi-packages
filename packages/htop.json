@@ -2,6 +2,25 @@
   "name": "htop",
   "versions": [
     {
+      "version": "3.5.3",
+      "description": "Interactive process viewer",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/htop-dev/htop/releases/download/3.5.3/htop-3.5.3.tar.xz",
+        "sha256": "a8b164386494cb85bb255a415a3f5f80afe7a0c4491da5d113b3a0f951087e65"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
       "version": "3.3.0",
       "description": "Interactive process viewer",
       "source": {
