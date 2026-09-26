@@ -97,24 +97,34 @@ jobs:
         with:
           path: results
 
+      # Each leg's results are committed to status-results/ next to any that
+      # people contributed from platforms CI has no runner for, and the table
+      # is rebuilt from that directory alone -- so anyone can regenerate it
+      # locally without losing the CI columns. A leg that produced nothing
+      # keeps last week's file, dated by its source line.
       - name: Regenerate PACKAGES_STATUS.md
         run: |
-          python3 scripts/merge-status.py PACKAGES_STATUS.md \
-            Linux-x86_64=results/results-Linux-x86_64/results.tsv \
-            Linux-aarch64=results/results-Linux-aarch64/results.tsv \
-            macOS-aarch64=results/results-macOS-aarch64/results.tsv
+          mkdir -p status-results
+          for f in results/results-*/results.tsv; do
+            [ -f "$f" ] || continue
+            platform="$(basename "$(dirname "$f")")"
+            platform="${platform#results-}"
+            { echo "# source: CI $(date -u +%F)"; cat "$f"; } > "status-results/$platform.tsv"
+          done
+          python3 scripts/merge-status.py PACKAGES_STATUS.md
           cat PACKAGES_STATUS.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit updated status
         if: github.event_name == 'schedule' || github.ref == 'refs/heads/main'
         run: |
-          if git diff --quiet -- PACKAGES_STATUS.md; then
+          git add PACKAGES_STATUS.md status-results
+          if git diff --cached --quiet; then
             echo "Status table unchanged."
             exit 0
           fi
           git config user.name  'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Update PACKAGES_STATUS.md from cross-platform validation' -- PACKAGES_STATUS.md
+          git commit -m 'Update PACKAGES_STATUS.md from cross-platform validation'
           git push
 
       - name: Fail if any package regressed
@@ -122,6 +132,7 @@ jobs:
           # ❌ means the package genuinely failed to build somewhere it claims
           # support. Blank / — / ⏭️ are "not tested", "unsupported", "blocked
           # on a dependency" and are reported, not treated as regressions here.
-          if grep -q '❌' PACKAGES_STATUS.md; then
+          # Only the package table: the legend and summary headers carry ❌ too.
+          if sed -n '/^## Packages/,$p' PACKAGES_STATUS.md | grep -q '❌'; then
             echo "::warning::Some packages fail on at least one platform; see PACKAGES_STATUS.md"
           fi

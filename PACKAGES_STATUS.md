@@ -1,145 +1,194 @@
-| Package               | Linux-x86_64 | macOS-aarch64 | Notes          |
-| --------------------- | ------------ | ------------- | -------------- |
-| aria2                 | ✅            | ✅             |                |
-| autoconf              | ✅            | ✅             |                |
-| automake              | ✅            | ✅             |                |
-| autotools             | ✅            | ✅             |                |
-| avro                  | ✅            | ✅             |                |
-| bash                  | ✅            | ✅             |                |
-| berkeley-db           | ✅            | ✅             |                |
-| binutils              | ✅            | ✅             |                |
-| bison                 | ✅            | ✅             |                |
-| boost                 | ✅            | ✅             |                |
-| brotli                | ✅            | ✅             |                |
-| bzip2                 | ✅            | ✅             |                |
-| c-ares                | ✅            | ✅             |                |
-| cairo                 | ✅            | ✅             |                |
-| capnproto             | ✅            | ✅             |                |
-| cjson                 | ✅            | ✅             |                |
-| clang                 | ❌            | ❌             |                |
-| cmake                 | ✅            | ✅             |                |
-| coreutils             | ✅            | ✅             |                |
-| curl                  | ✅            | ✅             |                |
-| diffutils             | ✅            | ✅             |                |
-| eigen                 | ✅            | ✅             |                |
-| emacs                 | ✅            | ❌             |                |
-| expat                 | ✅            | ✅             |                |
-| fftw                  | ✅            | ✅             |                |
-| findutils             | ✅            | ✅             |                |
-| fish                  | ✅            | ✅             |                |
-| flatbuffers           | ✅            | ✅             |                |
-| flex                  | ✅            | ✅             |                |
-| fmt                   | ✅            | ✅             |                |
-| freetype              | ✅            | ✅             |                |
-| fribidi               | ✅            | ✅             |                |
-| gawk                  | ✅            | ✅             |                |
-| gcc                   | ❌            | ❌             |                |
-| gdbm                  | ✅            | ✅             |                |
-| gdk-pixbuf            | ❌            | ❌             |                |
-| gettext               | ✅            | ✅             |                |
-| git                   | ✅            | ✅             |                |
-| glib                  | ❌            | ❌             |                |
-| gmp                   | ❌            | ❌             |                |
-| go                    | ❌            | ❌             |                |
-| gobject-introspection | ⏭️           | ⏭️            | needs glib     |
-| googletest            | ✅            | ✅             |                |
-| gperf                 | ✅            | ✅             |                |
-| grep                  | ✅            | ✅             |                |
-| grpc                  | ✅            | ⏭️            | needs protobuf |
-| gsl                   | ✅            | ✅             |                |
-| gzip                  | ✅            | ✅             |                |
-| harfbuzz              | ⏭️           | ⏭️            | needs glib     |
-| help2man              | ✅            | ✅             |                |
-| hiredis               | ✅            | ✅             |                |
-| htop                  | ✅            | ✅             |                |
-| icu                   | ✅            | ✅             |                |
-| jansson               | ✅            | ✅             |                |
-| jq                    | ✅            | ✅             |                |
-| less                  | ✅            | ✅             |                |
-| leveldb               | ✅            | ✅             |                |
-| libarchive            | ✅            | ✅             |                |
-| libavif               | ✅            | ✅             |                |
-| libcap                | ✅            | —             | linux-only     |
-| libedit               | ✅            | ✅             |                |
-| libev                 | ✅            | ✅             |                |
-| libevent              | ✅            | ✅             |                |
-| libffi                | ✅            | ✅             |                |
-| libgif                | ✅            | ✅             |                |
-| libgit2               | ❌            | ✅             |                |
-| libheif               | ✅            | ✅             |                |
-| libjpeg-turbo         | ✅            | ✅             |                |
-| libmagic              | ✅            | ✅             |                |
-| libmodbus             | ✅            | ✅             |                |
-| libpcap               | ✅            | ✅             |                |
-| libpng                | ✅            | ✅             |                |
-| libseccomp            | ✅            | —             | linux-only     |
-| libsodium             | ✅            | ✅             |                |
-| libssh                | ✅            | ✅             |                |
-| libssh2               | ✅            | ✅             |                |
-| libtiff               | ✅            | ✅             |                |
-| libtool               | ✅            | ✅             |                |
-| liburing              | ✅            | —             | linux-only     |
-| libuuid               | ✅            | ✅             |                |
-| libuv                 | ✅            | ✅             |                |
-| libwebp               | ✅            | ✅             |                |
-| libxml2               | ✅            | ✅             |                |
-| libxslt               | ✅            | ✅             |                |
-| libyaml               | ✅            | ✅             |                |
-| llvm                  | ✅            | ✅             |                |
-| lmdb                  | ✅            | ✅             |                |
-| lz4                   | ✅            | ✅             |                |
-| m4                    | ✅            | ✅             |                |
-| make                  | ✅            | ✅             |                |
-| mariadb               | ✅            | ❌             |                |
-| meson                 | ✅            | ✅             |                |
-| mongodb               | ❌            | ❌             |                |
-| mpc                   | ⏭️           | ⏭️            | needs gmp      |
-| mpfr                  | ⏭️           | ⏭️            | needs gmp      |
-| msgpack               | ✅            | ✅             |                |
-| mysql                 | ❌            | ❌             |                |
-| nano                  | ✅            | ✅             |                |
-| nanomsg               | ✅            | ✅             |                |
-| ncurses               | ✅            | ✅             |                |
-| nghttp2               | ✅            | ✅             |                |
-| ninja                 | ✅            | ✅             |                |
-| nlohmann-json         | ✅            | ✅             |                |
-| node                  | ✅            | ❌             |                |
-| oniguruma             | ✅            | ✅             |                |
-| openssl               | ✅            | ✅             |                |
-| pango                 | ⏭️           | ⏭️            | needs glib     |
-| patch                 | ✅            | ✅             |                |
-| pcre2                 | ✅            | ✅             |                |
-| perl                  | ✅            | ✅             |                |
-| pixman                | ✅            | ✅             |                |
-| pkg-config            | ✅            | ✅             |                |
-| postgresql            | ✅            | ✅             |                |
-| protobuf              | ✅            | ❌             |                |
-| python                | ✅            | ✅             |                |
-| rapidjson             | ✅            | ✅             |                |
-| re2                   | ✅            | ❌             |                |
-| readline              | ✅            | ✅             |                |
-| redis                 | ✅            | ❌             |                |
-| rocksdb               | ✅            | ✅             |                |
-| ros2                  | ❌            | ❌             |                |
-| rsync                 | ✅            | ✅             |                |
-| ruby                  | ✅            | ✅             |                |
-| rust                  | ❌            | ❌             |                |
-| sed                   | ✅            | ✅             |                |
-| snappy                | ✅            | ✅             |                |
-| spdlog                | ✅            | ✅             |                |
-| sqlite                | ✅            | ✅             |                |
-| tar                   | ✅            | ✅             |                |
-| texinfo               | ✅            | ✅             |                |
-| tinyxml2              | ✅            | ✅             |                |
-| tmux                  | ✅            | ✅             |                |
-| tree                  | ✅            | ✅             |                |
-| unzip                 | ✅            | ✅             |                |
-| vim                   | ✅            | ✅             |                |
-| wget                  | ✅            | ✅             |                |
-| xxhash                | ✅            | ✅             |                |
-| xz                    | ✅            | ✅             |                |
-| yajl                  | ✅            | ✅             |                |
-| zeromq                | ✅            | ✅             |                |
-| zlib                  | ✅            | ✅             |                |
-| zsh                   | ✅            | ✅             |                |
-| zstd                  | ✅            | ✅             |                |
+# Package Status
+
+<!-- Generated by scripts/merge-status.py from the Validate All Packages workflow and status-results/. Do not edit by hand. -->
+
+One column per platform, and the set is open-ended: TSI is meant to run on any
+OS and architecture, including custom Unix-likes. Common targets are always
+listed; any other platform gets a column as soon as it has results. A platform
+missing from this table is **untested, not unsupported** -- a package without a
+`platforms` field is expected to build wherever TSI runs.
+
+To add yours, build the catalogue there, commit the results file, and
+regenerate this table (see `status-results/README.md`):
+
+```sh
+bash scripts/build-all-packages.sh
+f="status-results/$(python3 scripts/platform_id.py).tsv"
+{ echo "# source: <who/what>, $(date -u +%F)"; cat .build-logs/results.tsv; } > "$f"
+python3 scripts/merge-status.py PACKAGES_STATUS.md
+```
+
+| Marker | Meaning |
+| ------ | ------- |
+| ✅ | built and installed on that platform |
+| ❌ | failed to build there |
+| — | declares it does not support that platform (`platforms`) |
+| ⏭️ | skipped: a dependency was unavailable in that run |
+| *(blank)* | not tested on that platform |
+
+## Summary
+
+| Platform        | Results from   | ✅   | ❌  | ⏭️ | — | Untested |
+| --------------- | -------------- | --- | -- | -- | - | -------- |
+| Linux-x86_64    | CI 2026-09-06  | 127 | 11 | 5  | 0 | 0        |
+| Linux-aarch64   | not tested yet | 0   | 0  | 0  | 0 | 143      |
+| Linux-x86       | not tested yet | 0   | 0  | 0  | 0 | 143      |
+| Linux-arm       | not tested yet | 0   | 0  | 0  | 0 | 143      |
+| Linux-riscv64   | not tested yet | 0   | 0  | 0  | 0 | 143      |
+| Linux-ppc64le   | not tested yet | 0   | 0  | 0  | 0 | 143      |
+| macOS-x86_64    | not tested yet | 0   | 0  | 0  | 3 | 140      |
+| macOS-aarch64   | CI 2026-09-06  | 118 | 16 | 6  | 3 | 0        |
+| Windows-x86_64  | not tested yet | 0   | 0  | 0  | 3 | 140      |
+| Windows-aarch64 | not tested yet | 0   | 0  | 0  | 3 | 140      |
+| FreeBSD-x86_64  | not tested yet | 0   | 0  | 0  | 3 | 140      |
+| FreeBSD-aarch64 | not tested yet | 0   | 0  | 0  | 3 | 140      |
+| OpenBSD-x86_64  | not tested yet | 0   | 0  | 0  | 3 | 140      |
+| NetBSD-x86_64   | not tested yet | 0   | 0  | 0  | 3 | 140      |
+
+## Packages
+
+| Package               | Linux-x86_64 | Linux-aarch64 | Linux-x86 | Linux-arm | Linux-riscv64 | Linux-ppc64le | macOS-x86_64 | macOS-aarch64 | Windows-x86_64 | Windows-aarch64 | FreeBSD-x86_64 | FreeBSD-aarch64 | OpenBSD-x86_64 | NetBSD-x86_64 | Notes          |
+| --------------------- | ------------ | ------------- | --------- | --------- | ------------- | ------------- | ------------ | ------------- | -------------- | --------------- | -------------- | --------------- | -------------- | ------------- | -------------- |
+| aria2                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| autoconf              | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| automake              | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| autotools             | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| avro                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| bash                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| berkeley-db           | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| binutils              | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| bison                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| boost                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| brotli                | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| bzip2                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| c-ares                | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| cairo                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| capnproto             | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| cjson                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| clang                 | ❌            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| cmake                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| coreutils             | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| curl                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| diffutils             | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| eigen                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| emacs                 | ✅            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| expat                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| fftw                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| findutils             | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| fish                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| flatbuffers           | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| flex                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| fmt                   | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| freetype              | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| fribidi               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| gawk                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| gcc                   | ❌            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| gdbm                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| gdk-pixbuf            | ❌            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| gettext               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| git                   | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| glib                  | ❌            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| gmp                   | ❌            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| go                    | ❌            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| gobject-introspection | ⏭️           |               |           |           |               |               |              | ⏭️            |                |                 |                |                 |                |               | needs glib     |
+| googletest            | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| gperf                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| grep                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| grpc                  | ✅            |               |           |           |               |               |              | ⏭️            |                |                 |                |                 |                |               | needs protobuf |
+| gsl                   | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| gzip                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| harfbuzz              | ⏭️           |               |           |           |               |               |              | ⏭️            |                |                 |                |                 |                |               | needs glib     |
+| help2man              | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| hiredis               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| htop                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| icu                   | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| jansson               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| jq                    | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| less                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| leveldb               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libarchive            | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libavif               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libcap                | ✅            |               |           |           |               |               | —            | —             | —              | —               | —              | —               | —              | —             | linux-only     |
+| libedit               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libev                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libevent              | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libffi                | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libgif                | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libgit2               | ❌            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libheif               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libjpeg-turbo         | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libmagic              | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libmodbus             | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libpcap               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libpng                | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libseccomp            | ✅            |               |           |           |               |               | —            | —             | —              | —               | —              | —               | —              | —             | linux-only     |
+| libsodium             | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libssh                | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libssh2               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libtiff               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libtool               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| liburing              | ✅            |               |           |           |               |               | —            | —             | —              | —               | —              | —               | —              | —             | linux-only     |
+| libuuid               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libuv                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libwebp               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libxml2               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libxslt               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| libyaml               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| llvm                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| lmdb                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| lz4                   | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| m4                    | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| make                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| mariadb               | ✅            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| meson                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| mongodb               | ❌            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| mpc                   | ⏭️           |               |           |           |               |               |              | ⏭️            |                |                 |                |                 |                |               | needs gmp      |
+| mpfr                  | ⏭️           |               |           |           |               |               |              | ⏭️            |                |                 |                |                 |                |               | needs gmp      |
+| msgpack               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| mysql                 | ❌            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| nano                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| nanomsg               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| ncurses               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| nghttp2               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| ninja                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| nlohmann-json         | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| node                  | ✅            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| oniguruma             | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| openssl               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| pango                 | ⏭️           |               |           |           |               |               |              | ⏭️            |                |                 |                |                 |                |               | needs glib     |
+| patch                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| pcre2                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| perl                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| pixman                | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| pkg-config            | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| postgresql            | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| protobuf              | ✅            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| python                | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| rapidjson             | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| re2                   | ✅            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| readline              | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| redis                 | ✅            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| rocksdb               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| ros2                  | ❌            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| rsync                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| ruby                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| rust                  | ❌            |               |           |           |               |               |              | ❌             |                |                 |                |                 |                |               |                |
+| sed                   | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| snappy                | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| spdlog                | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| sqlite                | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| tar                   | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| texinfo               | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| tinyxml2              | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| tmux                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| tree                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| unzip                 | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| vim                   | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| wget                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| xxhash                | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| xz                    | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| yajl                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| zeromq                | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| zlib                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| zsh                   | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |
+| zstd                  | ✅            |               |           |           |               |               |              | ✅             |                |                 |                |                 |                |               |                |

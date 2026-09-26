@@ -61,7 +61,20 @@ def main():
         r = run(d)
         assert r.returncode == 1 and "invalid platform" in r.stdout, r.stdout
 
+        write(d, "bad", good("bad", platforms=["darwin-arm64"]))
+        r = run(d)
+        assert r.returncode == 1 and "'darwin-aarch64'" in r.stdout, r.stdout
+
+        write(d, "bad", good("bad", platforms=["Linux"]))
+        r = run(d)
+        assert r.returncode == 1 and "invalid platform" in r.stdout, r.stdout
+
         write(d, "bad", good("bad", platforms=["linux", "darwin-aarch64"]))
+        r = run(d)
+        assert r.returncode == 0, r.stdout
+
+        # The platform set is open: custom OSes and new arches are valid.
+        write(d, "bad", good("bad", platforms=["haiku", "linux-riscv64", "myos-x86_64"]))
         r = run(d)
         assert r.returncode == 0, r.stdout
 
