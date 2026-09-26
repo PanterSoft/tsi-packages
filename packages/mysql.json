@@ -4,7 +4,8 @@
   "description": "MySQL database server",
   "source": {
     "type": "tarball",
-    "url": "https://cdn.mysql.com/archives/mysql-8.0/mysql-boost-8.0.36.tar.gz"
+    "url": "https://cdn.mysql.com/archives/mysql-8.0/mysql-boost-8.0.36.tar.gz",
+    "sha256": "429c5f69f3722e31807e74119d157a023277af210bfee513443cae60ebd2a86d"
   },
   "dependencies": [
     "openssl",
