@@ -30,7 +30,10 @@
       ],
       "env": {
         "NO_GETTEXT": "YesPlease"
-      }
+      },
+      "make_args": [
+        "NO_GETTEXT=YesPlease"
+      ]
     },
     {
       "version": "2.50.1",

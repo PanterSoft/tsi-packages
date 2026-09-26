@@ -15,11 +15,14 @@
     "pkg-config",
     "meson",
     "ninja",
-    "coreutils"
+    "coreutils",
+    "python-packaging"
   ],
   "build_system": "meson",
   "configure_args": [],
-  "env": {},
+  "env": {
+    "PYTHONPATH": "$TSI_INSTALL_DIR/lib/python-packaging"
+  },
   "env_darwin": {
     "LDFLAGS": "-L$TSI_INSTALL_DIR/lib -Wl,-framework,Cocoa -Wl,-framework,Foundation"
   }

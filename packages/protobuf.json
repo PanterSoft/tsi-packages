@@ -10,7 +10,8 @@
         "sha256": "6b6599b54c88d75904b7471f5ca34a725fa0af92e134dd1a32d5b395aa4b4ca8"
       },
       "dependencies": [
-        "zlib"
+        "zlib",
+        "abseil-cpp"
       ],
       "build_dependencies": [
         "cmake",
@@ -20,7 +21,8 @@
       "build_system": "cmake",
       "cmake_args": [
         "-DCMAKE_BUILD_TYPE=Release",
-        "-Dprotobuf_BUILD_TESTS=OFF"
+        "-Dprotobuf_BUILD_TESTS=OFF",
+        "-Dprotobuf_ABSL_PROVIDER=package"
       ],
       "env": {}
     },

@@ -11,9 +11,11 @@
   "build_dependencies": [],
   "build_system": "custom",
   "build_commands": [
-    "cd src && ./make.bash"
+    "cd src && ./make.bash",
+    "mkdir -p $TSI_INSTALL_DIR/lib/go $TSI_INSTALL_DIR/bin",
+    "cp -R . $TSI_INSTALL_DIR/lib/go/",
+    "ln -sf ../lib/go/bin/go $TSI_INSTALL_DIR/bin/go",
+    "ln -sf ../lib/go/bin/gofmt $TSI_INSTALL_DIR/bin/gofmt"
   ],
-  "env": {
-    "GOROOT_FINAL": "$TSI_INSTALL_DIR"
-  }
+  "env": {}
 }

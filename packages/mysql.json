@@ -4,8 +4,7 @@
   "description": "MySQL database server",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.36.tar.gz",
-    "sha256": "9d885e51fbff48c7a2dd22c038c84286cca57f1e8b56846ee46df7998c44dac3"
+    "url": "https://cdn.mysql.com/archives/mysql-8.0/mysql-boost-8.0.36.tar.gz"
   },
   "dependencies": [
     "openssl",
@@ -23,6 +22,7 @@
     "-DWITH_SSL=system",
     "-DWITH_ZLIB=system",
     "-DWITH_ZSTD=system",
+    "-DWITH_BOOST=boost",
     "-DDOWNLOAD_BOOST=0"
   ],
   "env": {}

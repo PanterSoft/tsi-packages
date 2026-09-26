@@ -14,7 +14,7 @@
   "build_dependencies": [],
   "build_system": "custom",
   "build_commands": [
-    "./configure --prefix=$TSI_INSTALL_DIR",
+    "./configure --prefix=$TSI_INSTALL_DIR --sysconfdir=$TSI_INSTALL_DIR/etc --disable-docs",
     "./x.py build",
     "./x.py install"
   ],

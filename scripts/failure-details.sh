@@ -35,7 +35,7 @@ for pkg in $FAILED; do
   # Backtrace frames look like "  12: tsi::..." or "      at ./src/...".
   CLEAN=$(grep -vE '^[[:space:]]+([0-9]+: |at )' "$LOG" || true)
   echo "--- first errors ---"
-  echo "$CLEAN" | grep -iE 'error|fatal|undefined (reference|symbol)|not found|No such file|cannot|unsupported|failed' | head -n 12 || true
+  echo "$CLEAN" | grep -iE 'error|fatal|undefined (reference|symbol)|not found|No such file|cannot|unsupported|failed' | awk 'NR <= 12' || true
   echo "--- end of log ---"
   echo "$CLEAN" | tail -n 12
 done
