@@ -1,275 +1,320 @@
 name: Discover Package Versions
 
+# Finds new upstream releases and lands the ones that work -- no pull requests,
+# no branches left behind.
+#
+#   discover  adds the newest stable release per package (only if newer than
+#             what we have), records its sha256, and drops any package whose
+#             new source cannot be fetched or does not validate
+#   build     builds every updated package on all three platforms, exactly
+#             like test-build-packages.yml does for a PR
+#   land      commits the packages that built everywhere straight to main;
+#             anything that failed is listed on one tracking issue, updated
+#             in place, and simply rediscovered next week
+#
+# This used to open a PR from a fresh `auto-update-versions-<run_id>` branch
+# every week. PRs created with GITHUB_TOKEN do not trigger other workflows, so
+# none of them was ever validated or built, none could be merged with
+# confidence, and they piled up alongside their branches. The gates now run
+# inside this workflow instead, so there is nothing for a human to merge.
+
 on:
   schedule:
-    # Run weekly on Monday at 00:00 UTC
-    - cron: '0 0 * * 1'
+    - cron: '0 0 * * 1'   # Mondays 00:00 UTC
   workflow_dispatch:
     inputs:
       package:
         description: 'Package name to update (leave empty for all)'
         required: false
         type: string
-      max_versions:
-        description: 'Maximum versions per package (leave empty to discover all versions)'
+      backfill:
+        description: 'Add every missing stable version, not just a newer latest release'
         required: false
-        type: string
-  pull_request:
-    types: [closed]
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+# Two runs landing on main at once would race; queue instead.
+concurrency:
+  group: discover-versions
+  cancel-in-progress: false
 
 jobs:
-  discover-versions:
-    if: github.event_name != 'pull_request'
+  # Idempotent sweep of what the old workflow left behind: close its PRs and
+  # delete its branches. A no-op once they are gone.
+  cleanup-legacy:
+    name: Remove legacy auto-update branches
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
-      issues: write
-    defaults:
-      run:
-        shell: bash
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v5.0.1
+      - uses: actions/github-script@v7
         with:
-          fetch-depth: 0
+          script: |
+            const { owner, repo } = context.repo;
+            const prefix = 'auto-update-versions-';
+            const prs = await github.paginate(github.rest.pulls.list, { owner, repo, state: 'open', per_page: 100 });
+            for (const pr of prs.filter(p => p.head.ref.startsWith(prefix))) {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: pr.number,
+                body: 'Superseded: version updates are now built on every platform and landed on `main` directly by the Discover Package Versions workflow. Closing.',
+              });
+              await github.rest.pulls.update({ owner, repo, pull_number: pr.number, state: 'closed' });
+              core.info(`Closed #${pr.number}`);
+            }
+            const refs = await github.paginate(github.rest.git.listMatchingRefs, { owner, repo, ref: `heads/${prefix}` });
+            for (const r of refs) {
+              await github.rest.git.deleteRef({ owner, repo, ref: r.ref.replace(/^refs\//, '') });
+              core.info(`Deleted ${r.ref}`);
+            }
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
+  discover:
+    name: Discover new versions
+    runs-on: ubuntu-latest
+    outputs:
+      packages: ${{ steps.verify.outputs.packages }}
+      count: ${{ steps.verify.outputs.count }}
+    steps:
+      - uses: actions/checkout@v5.0.1
 
-      - name: Discover and update versions
-        id: discover
+      - name: Discover
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PACKAGE: ${{ inputs.package }}
+          BACKFILL: ${{ inputs.backfill }}
         run: |
-          set +e  # Don't fail on individual package errors
-          set +o pipefail  # Don't fail on pipe errors (SIGPIPE)
-
-          PACKAGE="${{ github.event.inputs.package }}"
-          MAX_VERSIONS="${{ github.event.inputs.max_versions }}"
-
-          echo "Starting version discovery..."
-          echo "Package: ${PACKAGE:-all packages}"
-
-          # Build command arguments
-          CMD_ARGS=()
-
-          if [ -n "${PACKAGE}" ]; then
-            CMD_ARGS+=("${PACKAGE}")
+          ARGS=(--packages-dir packages --max-versions 100)
+          [ "$BACKFILL" = 'true' ] && ARGS+=(--backfill)
+          if [ -n "$PACKAGE" ]; then
+            ARGS+=("$PACKAGE")
           else
-            CMD_ARGS+=("--all")
+            # Slow packages are never test-built in CI, so they are never
+            # landed unbuilt either -- update those by hand.
+            SLOW=$(grep -vE '^\s*(#|$)' scripts/slow-packages.txt | paste -sd, -)
+            ARGS+=(--all --skip "$SLOW")
           fi
+          # Individual lookups fail (rate limits, odd tags); what matters is
+          # the files that changed.
+          python3 scripts/discover-versions.py "${ARGS[@]}" || echo "::warning::discovery reported errors"
 
-          if [ -n "${MAX_VERSIONS}" ]; then
-            echo "Max versions per package: ${MAX_VERSIONS}"
-            CMD_ARGS+=("--max-versions" "${MAX_VERSIONS}")
-          else
-            # Default to 50 versions per package to avoid excessive files
-            echo "Using default max versions: 50 per package"
-            CMD_ARGS+=("--max-versions" "50")
-          fi
-
-          CMD_ARGS+=("--packages-dir" "packages")
-
-          # Run the discovery script with GitHub token
-          # Allow script to continue even if some packages fail
-          python3 scripts/discover-versions.py "${CMD_ARGS[@]}" || SCRIPT_EXIT=$?
-          SCRIPT_EXIT=${SCRIPT_EXIT:-0}
-
-          # Count changed files (even if script had some errors)
-          # Use set +o pipefail to avoid SIGPIPE errors with wc
-          set +o pipefail
-          CHANGED_FILES=$(git diff --name-only packages/ 2>/dev/null | wc -l || echo "0")
-          set -o pipefail
-          echo "changed_files=${CHANGED_FILES}" >> $GITHUB_OUTPUT
-
-          # Log summary
-          if [ $SCRIPT_EXIT -ne 0 ]; then
-            echo "⚠️  Script completed with some errors (exit code: $SCRIPT_EXIT)"
-            echo "   This is normal when processing many packages - some may fail"
-          fi
-
-          if [ "${CHANGED_FILES}" -gt 0 ]; then
-            echo "✅ Successfully updated ${CHANGED_FILES} package file(s)"
-          else
-            echo "ℹ️  No package files were updated"
-            # For single package mode, exit with error if nothing changed and script failed
-            if [ -n "${PACKAGE}" ] && [ $SCRIPT_EXIT -ne 0 ]; then
-              echo "❌ Failed to discover versions for ${PACKAGE}"
-              exit $SCRIPT_EXIT
+      # A guessed URL for a new version is only a guess. Keep a package only if
+      # its new source downloads, gets a checksum and validates; otherwise put
+      # the file back and move on.
+      - name: Record checksums and drop what does not verify
+        id: verify
+        run: |
+          KEPT=""
+          DROPPED=""
+          for pkg in $(git diff --name-only -- packages/ | sed -n 's|^packages/||; s|\.json$||p'); do
+            if python3 scripts/add-checksums.py "$pkg" \
+               && python3 scripts/add-checksums.py --check "$pkg" \
+               && python3 scripts/validate-packages.py "packages/$pkg.json"; then
+              KEPT="$KEPT $pkg"
+            else
+              git checkout -- "packages/$pkg.json"
+              DROPPED="$DROPPED $pkg"
             fi
-          fi
+          done
+          KEPT=$(echo "$KEPT" | xargs || true)
+          DROPPED=$(echo "$DROPPED" | xargs || true)
+          echo "packages=$KEPT" >> "$GITHUB_OUTPUT"
+          echo "count=$(echo "$KEPT" | wc -w | tr -d ' ')" >> "$GITHUB_OUTPUT"
+          echo "$DROPPED" > dropped.txt
+          {
+            echo '### Discovery'
+            echo "- updated: ${KEPT:-none}"
+            echo "- dropped (source unreachable or invalid): ${DROPPED:-none}"
+          } >> "$GITHUB_STEP_SUMMARY"
 
-          # Always succeed if we're processing all packages (some failures are expected)
-          # Only fail for single package mode if there was an actual error
-          if [ -z "${PACKAGE}" ]; then
-            echo "✅ Completed processing all packages (some may have failed, but workflow continues)"
-          fi
-
-          set -e  # Re-enable strict error checking for rest of workflow
-          set -o pipefail  # Re-enable pipefail for rest of workflow
-
-      - name: Check for changes
-        id: changes
+      - name: Catalogue still validates
         run: |
-          if git diff --quiet packages/; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-            echo "✅ No new versions discovered - all packages are up to date"
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-            echo "📦 New versions discovered and package files updated!"
-            echo ""
-            echo "Changed files:"
-            git diff --name-only packages/
-            echo ""
-            echo "Summary of changes:"
-            git diff --stat packages/
-            echo ""
-            echo "Sample changes (first 100 lines):"
-            git diff packages/ | head -100 || true
-          fi
+          python3 scripts/validate-packages.py packages
+          python3 scripts/sort-versions.py --check | tee /tmp/order.txt
+          grep -q '^0 package file' /tmp/order.txt
 
-      - name: Create summary
-        if: steps.changes.outputs.changed == 'true'
-        id: summary
-        run: |
-          # Disable pipefail to avoid SIGPIPE errors
-          set +o pipefail
-          CHANGED_FILES=$(git diff --name-only packages/ | wc -l || echo "0")
-          echo "changed_files_count=${CHANGED_FILES}" >> $GITHUB_OUTPUT
-
-          # Create a summary of updated packages
-          UPDATED_PACKAGES=$(git diff --name-only packages/ | sed 's|packages/||' | sed 's|\.json||' | tr '\n' ',' | sed 's/,$//' || echo "")
-          echo "updated_packages=${UPDATED_PACKAGES}" >> $GITHUB_OUTPUT
-
-          # Count total versions added (approximate)
-          VERSIONS_ADDED=$(git diff packages/ | grep -c '^+.*"version"' || echo "0")
-          set -o pipefail
-          echo "versions_added=${VERSIONS_ADDED}" >> $GITHUB_OUTPUT
-
-      - name: Create Pull Request
-        if: steps.changes.outputs.changed == 'true'
-        uses: peter-evans/create-pull-request@v6
+      - uses: actions/upload-artifact@v6.0.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
-          committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
-          commit-message: |
-            chore: update package versions (auto-discovered)
+          name: discovered
+          path: |
+            packages/
+            dropped.txt
 
-            Discovered and added new versions to ${{ steps.summary.outputs.changed_files_count }} package(s).
+  build:
+    name: Build (${{ matrix.platform }})
+    needs: discover
+    if: needs.discover.outputs.count != '0'
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: ubuntu-latest
+            platform: Linux-x86_64
+          - runner: ubuntu-24.04-arm
+            platform: Linux-aarch64
+          - runner: macos-14
+            platform: macOS-aarch64
+    steps:
+      - uses: actions/checkout@v5.0.1
 
-            Updated packages: ${{ steps.summary.outputs.updated_packages }}
-            Versions added: ~${{ steps.summary.outputs.versions_added }}
-          title: "📦 Update package versions (auto-discovered)"
-          body: |
-            ## 🔄 Automatic Version Update
+      - uses: actions/download-artifact@v7.0.0
+        with:
+          name: discovered
+          path: .
 
-            This PR updates package versions that were automatically discovered and added to package configuration files.
+      - name: Install build essentials (Linux)
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y build-essential curl git
 
-            ### Summary
+      - uses: dtolnay/rust-toolchain@stable
 
-            - **Updated packages:** ${{ steps.summary.outputs.changed_files_count }}
-            - **Versions added:** ~${{ steps.summary.outputs.versions_added }}
-            - **Triggered by:** `${{ github.event_name }}`
-            - **Workflow run:** [#${{ github.run_number }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+      - name: Build TSI from source
+        run: |
+          git clone --depth 1 https://github.com/PanterSoft/TheSourceInstaller.git /tmp/tsi
+          cargo build --release --manifest-path /tmp/tsi/Cargo.toml
+          echo "/tmp/tsi/target/release" >> "$GITHUB_PATH"
 
-            ### Updated Packages
+      # Per package, not all-or-nothing: one broken release must not hold
+      # back every other update. Results go to a TSV that `land` merges.
+      - name: Build updated packages
+        env:
+          TSI_PREFIX: ${{ github.workspace }}/.tsi-install
+          PACKAGES: ${{ needs.discover.outputs.packages }}
+          PLATFORM: ${{ matrix.platform }}
+        run: |
+          mkdir -p results
+          OUT="results/$PLATFORM.tsv"
+          : > "$OUT"
+          tsi update --local "$PWD/packages" --prefix "$TSI_PREFIX"
+          for pkg in $PACKAGES; do
+            if ! python3 scripts/platform_id.py --supports "packages/$pkg.json"; then
+              printf '%s\tunsupported\n' "$pkg" >> "$OUT"
+              continue
+            fi
+            echo "::group::Building $pkg on $PLATFORM"
+            # Installing is not the same as working: check the result loads.
+            if tsi install --prefix "$TSI_PREFIX" "$pkg" \
+               && bash scripts/check-linkage.sh "$TSI_PREFIX" "$pkg"; then
+              printf '%s\tok\n' "$pkg" >> "$OUT"
+            else
+              printf '%s\tfail\n' "$pkg" >> "$OUT"
+              echo "::warning::$pkg failed on $PLATFORM"
+            fi
+            echo "::endgroup::"
+          done
+          cat "$OUT"
 
-            ${{ steps.summary.outputs.updated_packages }}
+      - uses: actions/upload-artifact@v6.0.0
+        if: always()
+        with:
+          name: build-${{ matrix.platform }}
+          path: results/
 
-            ### What Changed
-
-            The version discovery system:
-            1. ✅ Discovered new versions from package sources (GitHub, git repos, etc.)
-            2. ✅ Generated version definitions based on existing templates
-            3. ✅ Updated package configuration files with new versions
-            4. ✅ Preserved all existing versions
-
-            ### Review Checklist
-
-            - [ ] Verify new versions are correct
-            - [ ] Check that source URLs are valid
-            - [ ] Ensure dependencies are still accurate
-            - [ ] Test that packages can be built with new versions
-
-            ---
-
-            *This PR was automatically created by the [Discover Package Versions](../.github/workflows/discover-versions.yml) workflow.*
-          branch: auto-update-versions-${{ github.run_id }}
-          delete-branch: true
-          labels: |
-            automated
-            version-update
-            dependencies
-
-  cleanup-branch:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+  land:
+    name: Land passing updates on main
+    needs: [discover, build]
+    # Runs even if a build leg died, so partial results are still reported;
+    # a missing leg means none of its packages count as passing.
+    if: always() && needs.discover.result == 'success'
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
+      issues: write
     steps:
-      - name: Check if PR is from auto-discovery workflow
-        id: check-pr
-        uses: actions/github-script@v7
+      - uses: actions/checkout@v5.0.1
         with:
-          script: |
-            const pr = context.payload.pull_request;
-            const labels = pr.labels.map(l => l.name);
-            const branchName = pr.head.ref;
+          ref: main
+          fetch-depth: 0
 
-            // Check if this is an auto-discovery PR
-            const isAutoDiscovery =
-              labels.includes('automated') &&
-              labels.includes('version-update') &&
-              branchName.startsWith('auto-update-versions-');
-
-            console.log(`PR #${pr.number}: ${pr.title}`);
-            console.log(`Branch: ${branchName}`);
-            console.log(`Labels: ${labels.join(', ')}`);
-            console.log(`Is auto-discovery: ${isAutoDiscovery}`);
-
-            core.setOutput('should_cleanup', isAutoDiscovery);
-            core.setOutput('branch_name', branchName);
-            core.setOutput('pr_number', pr.number);
-
-      - name: Delete branch
-        if: steps.check-pr.outputs.should_cleanup == 'true'
-        uses: actions/github-script@v7
+      - uses: actions/download-artifact@v7.0.0
         with:
-          script: |
-            const branchName = '${{ steps.check-pr.outputs.branch_name }}';
-            const prNumber = ${{ steps.check-pr.outputs.pr_number }};
+          path: artifacts
 
-            try {
-              // Check if branch still exists
-              const { data: refs } = await github.rest.git.listMatchingRefs({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                ref: `heads/${branchName}`
-              });
+      - name: Apply packages that built everywhere
+        id: apply
+        env:
+          PACKAGES: ${{ needs.discover.outputs.packages }}
+          BASE_SHA: ${{ github.sha }}
+        run: |
+          PASSED=""
+          FAILED=""
+          for pkg in $PACKAGES; do
+            ok=true
+            for platform in Linux-x86_64 Linux-aarch64 macOS-aarch64; do
+              status=$(awk -F'\t' -v p="$pkg" '$1 == p { print $2 }' \
+                "artifacts/build-$platform/$platform.tsv" 2>/dev/null || true)
+              case "$status" in
+                ok|unsupported) ;;
+                *) ok=false; FAILED="$FAILED $pkg@$platform(${status:-no result})" ;;
+              esac
+            done
+            $ok || continue
+            # Someone changed this package on main since discovery started:
+            # theirs wins, next week's run will rediscover on top of it.
+            if ! git diff --quiet "$BASE_SHA" HEAD -- "packages/$pkg.json"; then
+              echo "::notice::$pkg changed on main during the run; skipping"
+              continue
+            fi
+            cp "artifacts/discovered/packages/$pkg.json" "packages/$pkg.json"
+            PASSED="$PASSED $pkg"
+          done
+          PASSED=$(echo "$PASSED" | xargs || true)
+          FAILED=$(echo "$FAILED" | xargs || true)
+          echo "passed=$PASSED" >> "$GITHUB_OUTPUT"
+          echo "failed=$FAILED" >> "$GITHUB_OUTPUT"
+          {
+            echo '### Landed'
+            echo "${PASSED:-nothing}"
+            echo '### Failed to build (not landed)'
+            echo "${FAILED:-nothing}"
+          } >> "$GITHUB_STEP_SUMMARY"
 
-              if (refs.length > 0) {
-                // Branch exists, delete it
-                await github.rest.git.deleteRef({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  ref: `heads/${branchName}`
-                });
-                console.log(`✅ Deleted branch: ${branchName}`);
-              } else {
-                console.log(`ℹ️  Branch ${branchName} already deleted`);
-              }
-            } catch (error) {
-              // Branch might already be deleted or not exist
-              if (error.status === 422 || error.status === 404) {
-                console.log(`ℹ️  Branch ${branchName} does not exist (may have been already deleted)`);
-              } else {
-                console.error(`⚠️  Error deleting branch ${branchName}:`, error.message);
-                // Don't fail the workflow if branch deletion fails
-              }
-            }
+      - name: Commit to main
+        if: steps.apply.outputs.passed != ''
+        env:
+          PASSED: ${{ steps.apply.outputs.passed }}
+        run: |
+          python3 scripts/validate-packages.py packages
+          SUMMARY=$(for pkg in $PASSED; do
+            python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); v=d.get("versions") or [d]; print("-", d["name"], v[0]["version"])' "packages/$pkg.json"
+          done)
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add packages/
+          git commit -m "chore: update package versions" -m "Built and linkage-checked on Linux-x86_64, Linux-aarch64 and macOS-aarch64:" -m "$SUMMARY"
+          for attempt in 1 2 3; do
+            git push origin HEAD:main && exit 0
+            sleep $((attempt * 5))
+            git pull --rebase origin main
+          done
+          exit 1
+
+      # One issue, rewritten each run and closed when there is nothing left
+      # to report -- the opposite of one PR per week.
+      - name: Update tracking issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FAILED: ${{ steps.apply.outputs.failed }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          TITLE='Automatic package updates that need attention'
+          DROPPED=$(cat artifacts/discovered/dropped.txt 2>/dev/null | xargs || true)
+          NUM=$(gh issue list --state open --search "\"$TITLE\" in:title" --json number --jq '.[0].number // empty')
+          if [ -z "$FAILED$DROPPED" ]; then
+            [ -n "$NUM" ] && gh issue close "$NUM" --comment "All discovered updates landed in $RUN_URL."
+            exit 0
+          fi
+          BODY=$(printf '%s\n\n' \
+            "Updated by the Discover Package Versions workflow ([latest run]($RUN_URL)). These were **not** landed; everything else was." \
+            "**Failed to build:** ${FAILED:-none}" \
+            "**New source unreachable or invalid:** ${DROPPED:-none}" \
+            "Fix the package definition by hand, or leave it: next week's run tries again.")
+          if [ -n "$NUM" ]; then
+            gh issue edit "$NUM" --body "$BODY"
+          else
+            gh issue create --title "$TITLE" --body "$BODY"
+          fi
