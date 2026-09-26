@@ -4,7 +4,8 @@
   "description": "Connects C/C++ programs with scripting languages",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/swig/swig/archive/refs/tags/v4.5.1.tar.gz"
+    "url": "https://github.com/swig/swig/archive/refs/tags/v4.5.1.tar.gz",
+    "sha256": "dd219a0c8947afe63b818892304390427c2ee7f6edfa1a37853d4efd891982be"
   },
   "dependencies": [
     "pcre2"

@@ -105,6 +105,15 @@ jobs:
           # ran for an hour and three quarters and then uploaded nothing.
           include-hidden-files: true
 
+      # Last, so it sits at the end of the job log where it can be read
+      # without paging through a whole catalogue's build output: the reason
+      # each failed package failed.
+      - name: Failure details
+        if: always()
+        env:
+          PLATFORM: ${{ matrix.platform }}
+        run: bash scripts/failure-details.sh .build-logs "$PLATFORM"
+
   slow:
     name: Slow (${{ matrix.package }}, ${{ matrix.platform }})
     needs: slow-list
@@ -166,6 +175,15 @@ jobs:
           if-no-files-found: error
           include-hidden-files: true
 
+      # Last, so it sits at the end of the job log where it can be read
+      # without paging through a whole catalogue's build output: the reason
+      # each failed package failed.
+      - name: Failure details
+        if: always()
+        env:
+          PLATFORM: ${{ matrix.platform }}
+        run: bash scripts/failure-details.sh .build-logs "$PLATFORM"
+
   report:
     name: Merge status table
     needs: [validate, slow]
@@ -194,6 +212,8 @@ jobs:
           done
           python3 scripts/merge-status.py --notes scripts/status-notes.tsv PACKAGES_STATUS.md "${ARGS[@]}"
           cat PACKAGES_STATUS.md >> "$GITHUB_STEP_SUMMARY"
+          # And to the log: a step summary cannot be read through the API.
+          cat PACKAGES_STATUS.md
 
       - name: Commit updated status
         if: github.event_name == 'schedule' || github.ref == 'refs/heads/main'
