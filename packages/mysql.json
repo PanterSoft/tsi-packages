@@ -17,14 +17,11 @@
     "make",
     "coreutils"
   ],
-  "build_system": "cmake",
-  "cmake_args": [
-    "-DCMAKE_BUILD_TYPE=Release",
-    "-DWITH_SSL=system",
-    "-DWITH_ZLIB=system",
-    "-DWITH_ZSTD=system",
-    "-DWITH_BOOST=boost",
-    "-DDOWNLOAD_BOOST=0"
+  "build_system": "custom",
+  "build_commands": [
+    "cmake -S . -B tsi-build -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR -DCMAKE_BUILD_TYPE=Release -DWITH_SSL=system -DWITH_ZLIB=system -DWITH_ZSTD=system -DDOWNLOAD_BOOST=0 -DWITH_BOOST=\"$PWD/boost\" -DWITH_UNIT_TESTS=OFF",
+    "cmake --build tsi-build -j \"$(getconf _NPROCESSORS_ONLN 2>/dev/null || echo 2)\"",
+    "cmake --install tsi-build"
   ],
   "env": {}
 }
