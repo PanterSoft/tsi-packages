@@ -42,21 +42,40 @@ jobs:
           echo "packages=$(grep -vE '^\s*(#|$)' scripts/slow-packages.txt | jq -R . | jq -sc .)" >> "$GITHUB_OUTPUT"
 
   validate:
-    name: Validate (${{ matrix.platform }})
+    name: Validate (${{ matrix.platform }}, part ${{ matrix.part }})
     runs-on: ${{ matrix.runner }}
     timeout-minutes: 360
     strategy:
       fail-fast: false
       matrix:
+        # shard K/N builds every Nth package from K. The Intel macOS runner is
+        # several times slower than the rest and ran out of six hours on the
+        # whole catalogue, so it gets three parts; the others need one.
         include:
           - runner: ubuntu-latest
             platform: Linux-x86_64
+            shard: 0/1
+            part: 1of1
           - runner: ubuntu-24.04-arm
             platform: Linux-aarch64
+            shard: 0/1
+            part: 1of1
           - runner: macos-14
             platform: macOS-aarch64
+            shard: 0/1
+            part: 1of1
           - runner: macos-15-intel
             platform: macOS-x86_64
+            shard: 0/3
+            part: 1of3
+          - runner: macos-15-intel
+            platform: macOS-x86_64
+            shard: 1/3
+            part: 2of3
+          - runner: macos-15-intel
+            platform: macOS-x86_64
+            shard: 2/3
+            part: 3of3
     steps:
       - uses: actions/checkout@v5.0.1
 
@@ -79,9 +98,10 @@ jobs:
         continue-on-error: true   # a failing package must still report its row
         env:
           TSI_PREFIX: ${{ github.workspace }}/.tsi-install
+          SHARD: ${{ matrix.shard }}
         run: |
           tsi update --local "$PWD/packages" --prefix "$TSI_PREFIX"
-          bash scripts/build-all-packages.sh --exclude-slow --prefix "$TSI_PREFIX"
+          bash scripts/build-all-packages.sh --exclude-slow --shard "$SHARD" --prefix "$TSI_PREFIX"
 
       # Catches the "installs green, will not load" class across the whole
       # catalogue. Reported, not fatal: the build results are the point of this
@@ -97,7 +117,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v6.0.0
         with:
-          name: results-${{ matrix.platform }}
+          name: results-${{ matrix.platform }}-${{ matrix.part }}
           path: .build-logs/
           if-no-files-found: error
           # .build-logs is a dotted directory and upload-artifact skips hidden
@@ -198,7 +218,7 @@ jobs:
         with:
           path: results
 
-      # Per platform: the catalogue job's rows first, then each slow job's row,
+      # Per platform: the catalogue job's rows (all its parts) first, then each slow job's row,
       # which replaces the catalogue's "not built here (slow)" placeholder. A
       # platform whose catalogue job uploaded nothing is left out rather than
       # shown as all-blank.
@@ -206,8 +226,8 @@ jobs:
         run: |
           ARGS=()
           for plat in Linux-x86_64 Linux-aarch64 macOS-aarch64 macOS-x86_64; do
-            [ -f "results/results-$plat/results.tsv" ] || continue
-            cat "results/results-$plat/results.tsv" results/slow-"$plat"-*/results.tsv 2>/dev/null > "merged-$plat.tsv" || true
+            ls results/results-"$plat"-*/results.tsv >/dev/null 2>&1 || continue
+            cat results/results-"$plat"-*/results.tsv results/slow-"$plat"-*/results.tsv 2>/dev/null > "merged-$plat.tsv" || true
             ARGS+=("$plat=merged-$plat.tsv")
           done
           python3 scripts/merge-status.py --notes scripts/status-notes.tsv PACKAGES_STATUS.md "${ARGS[@]}"

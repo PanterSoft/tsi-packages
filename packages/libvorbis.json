@@ -10,12 +10,16 @@
   "dependencies": [
     "libogg"
   ],
-  "build_dependencies": [],
-  "build_system": "autotools",
-  "configure_args": [
-    "--disable-static",
-    "--disable-docs",
-    "--disable-examples"
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "pkg-config",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON"
   ],
   "env": {}
 }

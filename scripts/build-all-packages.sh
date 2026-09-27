@@ -3,6 +3,10 @@
 #
 # Usage: build-all-packages.sh [--exclude-slow] [--packages-dir DIR] [--prefix PREFIX] [PKG...]
 #   --exclude-slow  Skip known slow packages (gcc, llvm, python, ...)
+#   --shard K/N     Build every Nth package starting at K (0-based), for
+#                   hosts too slow to build the catalogue in one CI job.
+#                   tsi still builds each package's deps; rows are written
+#                   only for this shard's own packages.
 #   PKG...          Build only these packages (tsi still builds their deps).
 #                   This is how CI gives each slow package a job of its own.
 #   --packages-dir  Path to packages directory (default: repo root packages/)
@@ -25,6 +29,7 @@ LOG_DIR="$REPO_ROOT/.build-logs"
 PREFIX="${TSI_PREFIX:-$HOME/.tsi}"
 EXCLUDE_SLOW=false
 ONLY=""
+SHARD=""
 # Single source of truth, shared with the workflows (see scripts/slow-packages.txt).
 SLOW_LIST="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/slow-packages.txt"
 SLOW_PACKAGES="$(grep -vE '^\s*(#|$)' "$SLOW_LIST" | paste -sd'|' -)"
@@ -34,6 +39,7 @@ while [ $# -gt 0 ]; do
     --exclude-slow)  EXCLUDE_SLOW=true; shift ;;
     --packages-dir)  PACKAGES_DIR="$2"; shift 2 ;;
     --prefix)        PREFIX="$2"; shift 2 ;;
+    --shard)         SHARD="$2"; shift 2 ;;
     -*) echo "Usage: $0 [--exclude-slow] [--packages-dir DIR] [--prefix PREFIX] [PKG...]" >&2; exit 1 ;;
     *) ONLY="${ONLY} $1"; shift ;;
   esac
@@ -70,6 +76,15 @@ if [ -n "$ONLY" ]; then
   done
   # Keep dependency order, restricted to what was asked for.
   PACKAGES=$(echo "$PACKAGES" | grep -xF -f <(printf '%s\n' $ONLY))
+fi
+
+if [ -n "$SHARD" ]; then
+  K="${SHARD%/*}"; N="${SHARD#*/}"
+  if ! [[ "$K" =~ ^[0-9]+$ && "$N" =~ ^[1-9][0-9]*$ ]] || [ "$K" -ge "$N" ]; then
+    echo "Error: --shard wants K/N with 0 <= K < N, got: $SHARD" >&2
+    exit 1
+  fi
+  PACKAGES=$(echo "$PACKAGES" | awk -v k="$K" -v n="$N" 'NF && (NR - 1) % n == k')
 fi
 
 echo "$PACKAGES" > "$LOG_DIR/build-order.txt"

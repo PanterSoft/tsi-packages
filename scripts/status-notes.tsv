@@ -3,3 +3,5 @@
 # A reason only appears while the package is not green there, so fixing a
 # package retires its note automatically.
 mongodb	*	MongoDB 7 builds with SCons and a pip-installed Python toolchain; TSI has no SCons build system, so it cannot be built from source with TSI
+go	macOS-aarch64	make.bash needs an installed Go >= 1.20.6 to bootstrap from (go on PATH or GOROOT_BOOTSTRAP); the macOS runner image has none on PATH
+go	macOS-x86_64	make.bash needs an installed Go >= 1.20.6 to bootstrap from (go on PATH or GOROOT_BOOTSTRAP); the macOS runner image has none on PATH
