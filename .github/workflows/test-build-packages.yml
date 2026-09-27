@@ -102,27 +102,28 @@ jobs:
           cargo build --release --manifest-path /tmp/tsi/Cargo.toml
           echo "/tmp/tsi/target/release" >> "$GITHUB_PATH"
 
+      # build-all-packages.sh with an explicit list: it skips packages that do
+      # not support this platform, keeps each failure's log, and writes the
+      # results the failure-details step below reads.
       - name: Build changed packages
         env:
           TSI_PREFIX: ${{ github.workspace }}/.tsi-install
+          PKGS: ${{ needs.changed.outputs.packages }}
         run: |
           tsi update --local "$PWD/packages" --prefix "$TSI_PREFIX"
-          FAILED=""
-          for pkg in ${{ needs.changed.outputs.packages }}; do
-            PKG_FILE="packages/$pkg.json"
-            if [ -f "$PKG_FILE" ] && ! python3 scripts/platform_id.py --supports "$PKG_FILE"; then
-              echo "Skipping $pkg: not supported on ${{ matrix.platform }}"
-              continue
-            fi
-            echo "::group::Building $pkg on ${{ matrix.platform }}"
-            tsi install --prefix "$TSI_PREFIX" "$pkg" || FAILED="$FAILED $pkg"
-            echo "::endgroup::"
+          EXISTING=""
+          for pkg in $PKGS; do
+            if [ -f "packages/$pkg.json" ]; then EXISTING="$EXISTING $pkg"; else echo "Skipping $pkg: deleted"; fi
           done
-          if [ -n "$FAILED" ]; then
-            echo "::error::Failed on ${{ matrix.platform }}:$FAILED"
-            exit 1
-          fi
-          echo "All changed packages built on ${{ matrix.platform }}."
+          [ -n "$EXISTING" ] || { echo "Nothing left to build."; exit 0; }
+          # shellcheck disable=SC2086 # one word per package
+          bash scripts/build-all-packages.sh --prefix "$TSI_PREFIX" $EXISTING
+
+      - name: Failure details
+        if: failure()
+        env:
+          PLATFORM: ${{ matrix.platform }}
+        run: bash scripts/failure-details.sh .build-logs "$PLATFORM"
 
       # Installing is not the same as working. icu installed cleanly and
       # produced libraries nothing could load, so postgres died at startup while
