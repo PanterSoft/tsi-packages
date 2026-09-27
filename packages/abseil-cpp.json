@@ -1,11 +1,10 @@
 {
   "name": "abseil-cpp",
-  "version": "20260817.0",
-  "description": "Abseil common libraries for C++",
+  "version": "20250512.1",
+  "description": "Abseil common libraries for C++ (the LTS that protobuf and grpc are built against)",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/abseil/abseil-cpp/archive/refs/tags/20260817.0.tar.gz",
-    "sha256": "f7e05179df39c45434cad433f5783840bb3788ef322976f9138bc6b72b3a107d"
+    "url": "https://github.com/abseil/abseil-cpp/archive/refs/tags/20250512.1.tar.gz"
   },
   "dependencies": [],
   "build_dependencies": [

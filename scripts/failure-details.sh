@@ -35,7 +35,13 @@ for pkg in $FAILED; do
   # Backtrace frames look like "  12: tsi::..." or "      at ./src/...".
   CLEAN=$(grep -vE '^[[:space:]]+([0-9]+: |at )' "$LOG" || true)
   echo "--- first errors ---"
-  echo "$CLEAN" | grep -iE 'error|fatal|undefined (reference|symbol)|not found|No such file|cannot|unsupported|failed' | awk 'NR <= 12' || true
+  # Real errors first: compiler and linker "error:" lines, CMake/configure
+  # errors, missing files. Lines make marks "(ignored)" and warnings are noise.
+  {
+    echo "$CLEAN" | grep -E '(^|[^a-z])(error|Error|ERROR)(:| at )|fatal error|undefined (reference|symbol)|No such file|not found' \
+      | grep -vE '\(ignored\)|WARNING|warning:' || true
+    echo "$CLEAN" | grep -iE 'failed|cannot|unsupported' | grep -vE '\(ignored\)|WARNING|warning:' || true
+  } | awk '!seen[$0]++' | awk 'NR <= 12' || true
   echo "--- end of log ---"
   echo "$CLEAN" | tail -n 12
 done
