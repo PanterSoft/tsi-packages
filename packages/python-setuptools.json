@@ -1,0 +1,18 @@
+{
+  "name": "python-setuptools",
+  "version": "80.9.0",
+  "description": "Python setuptools (and its distutils); needed by gobject-introspection's build",
+  "source": {
+    "type": "tarball",
+    "url": "https://files.pythonhosted.org/packages/source/s/setuptools/setuptools-80.9.0.tar.gz",
+    "sha256": "f36b47402ecde768dbfafc46e8e4207b4360c654f1f3bb84475f0a28628fb19c"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "custom",
+  "build_commands": [
+    "mkdir -p $TSI_INSTALL_DIR/lib/python-setuptools",
+    "cp -R setuptools pkg_resources _distutils_hack $TSI_INSTALL_DIR/lib/python-setuptools/"
+  ],
+  "env": {}
+}

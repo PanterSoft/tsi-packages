@@ -10,6 +10,7 @@
   "dependencies": [
     "libpng",
     "freetype",
+    "fontconfig",
     "pixman"
   ],
   "build_dependencies": [
@@ -22,7 +23,9 @@
   "build_system": "meson",
   "configure_args": [
     "-Dwrap_mode=nodownload",
-    "-Dtests=disabled"
+    "-Dtests=disabled",
+    "-Dfreetype=enabled",
+    "-Dfontconfig=enabled"
   ],
   "env": {}
 }

@@ -1,0 +1,26 @@
+{
+  "name": "fontconfig",
+  "version": "2.16.0",
+  "description": "Library for configuring and customizing font access",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.16.0.tar.xz"
+  },
+  "dependencies": [
+    "freetype",
+    "expat"
+  ],
+  "build_dependencies": [
+    "pkg-config",
+    "gperf",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-docs",
+    "--disable-cache-build"
+  ],
+  "env": {}
+}
