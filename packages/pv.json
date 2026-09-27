@@ -13,5 +13,8 @@
   "configure_args": [
     "--disable-nls"
   ],
-  "env": {}
+  "env": {},
+  "env_darwin": {
+    "CFLAGS": "-O2 -include sys/ioctl.h"
+  }
 }

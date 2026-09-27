@@ -17,5 +17,11 @@
     "--disable-doc",
     "--with-libgpg-error-prefix=$TSI_INSTALL_DIR"
   ],
-  "env": {}
+  "env": {},
+  "configure_args_darwin": [
+    "--disable-static",
+    "--disable-doc",
+    "--with-libgpg-error-prefix=$TSI_INSTALL_DIR",
+    "--disable-asm"
+  ]
 }

@@ -58,6 +58,7 @@ fi
 mkdir -p "$LOG_DIR"
 RESULTS="$LOG_DIR/results.tsv"
 : > "$RESULTS"
+: > "$LOG_DIR/timings.tsv"
 
 PLATFORM="$(python3 "$SCRIPT_DIR/platform_id.py")"
 echo "Platform: $PLATFORM"
@@ -161,6 +162,7 @@ for pkg in $PACKAGES; do
   # gigabytes of compiler chatter (it filled a 926G disk once). Compact mode
   # still streams every step, and tsi dumps the failing command's full output
   # on failure, which is the part anyone actually reads.
+  START=$(date +%s)
   if tsi install --prefix "$PREFIX" "$pkg" 2>&1 | tee "$LOG_FILE"; then
     rm -f "$LOG_FILE"
     record "$pkg" ok
@@ -170,6 +172,9 @@ for pkg in $PACKAGES; do
     ANY_FAILED=true
     record "$pkg" fail
   fi
+  # Wall time per package, dependencies included: which builds eat a CI job's
+  # time limit is otherwise invisible until the job is cancelled.
+  printf '%s\t%s\n' "$pkg" "$(( $(date +%s) - START ))" >> "$LOG_DIR/timings.tsv"
 done
 
 echo "Results: $RESULTS"

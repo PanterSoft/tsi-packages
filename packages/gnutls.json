@@ -29,5 +29,8 @@
     "--without-brotli",
     "--without-zstd"
   ],
-  "env": {}
+  "env": {},
+  "env_darwin": {
+    "CPPFLAGS": "-idirafter $TSI_INSTALL_DIR/include -DCRAU_MAYBE_UNUSED="
+  }
 }

@@ -20,5 +20,9 @@
     "--disable-gtk-doc",
     "--disable-man"
   ],
-  "env": {}
+  "env": {},
+  "env_darwin": {
+    "am_cv_func_iconv": "yes",
+    "am_cv_lib_iconv": "yes"
+  }
 }

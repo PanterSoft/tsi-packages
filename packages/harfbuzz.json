@@ -21,7 +21,10 @@
       ],
       "build_system": "meson",
       "configure_args": [],
-      "env": {}
+      "env": {},
+      "configure_args_darwin": [
+        "-Dcoretext=enabled"
+      ]
     },
     {
       "version": "12.1.0",

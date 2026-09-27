@@ -13,6 +13,13 @@ set -euo pipefail
 LOG_DIR="${1:?usage: failure-details.sh LOG_DIR [PLATFORM]}"
 PLATFORM="${2:-}"
 RESULTS="$LOG_DIR/results.tsv"
+TIMINGS="$LOG_DIR/timings.tsv"
+
+if [ -s "$TIMINGS" ]; then
+  echo "Slowest builds${PLATFORM:+ on $PLATFORM} (seconds, dependencies included):"
+  sort -t "$(printf '\t')" -k2,2nr "$TIMINGS" | awk -F'\t' 'NR <= 15 { printf "  %6d  %s\n", $2, $1 }'
+  echo
+fi
 
 if [ ! -f "$RESULTS" ]; then
   echo "No $RESULTS: the build never got far enough to record results."

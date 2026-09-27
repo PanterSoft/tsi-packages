@@ -26,7 +26,8 @@
     "-DWITH_SRV=OFF",
     "-DWITH_STATIC_LIBRARIES=OFF",
     "-DWITH_TESTS=OFF",
-    "-DWITH_SYSTEMD=OFF"
+    "-DWITH_SYSTEMD=OFF",
+    "-DWITH_CTRL_SHELL=OFF"
   ],
   "env": {}
 }

@@ -15,5 +15,8 @@
   "configure_args": [
     "--without-libptytty"
   ],
-  "env": {}
+  "env": {},
+  "env_darwin": {
+    "CPPFLAGS": "-I$TSI_INSTALL_DIR/include"
+  }
 }
