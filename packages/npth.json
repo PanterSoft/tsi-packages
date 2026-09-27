@@ -1,0 +1,16 @@
+{
+  "name": "npth",
+  "version": "1.8",
+  "description": "New portable threads library used by GnuPG",
+  "source": {
+    "type": "tarball",
+    "url": "https://gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static"
+  ],
+  "env": {}
+}

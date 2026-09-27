@@ -1,0 +1,21 @@
+{
+  "name": "ffmpeg",
+  "version": "8.1.3",
+  "description": "Complete solution to record, convert and stream audio and video",
+  "source": {
+    "type": "tarball",
+    "url": "https://ffmpeg.org/releases/ffmpeg-8.1.3.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "nasm",
+    "pkg-config"
+  ],
+  "build_system": "custom",
+  "build_commands": [
+    "./configure --prefix=$TSI_INSTALL_DIR --enable-shared --disable-static --disable-doc --extra-cflags=\"$CPPFLAGS\" --extra-ldflags=\"$LDFLAGS\"",
+    "make -j$(getconf _NPROCESSORS_ONLN 2>/dev/null || echo 2)",
+    "make install"
+  ],
+  "env": {}
+}

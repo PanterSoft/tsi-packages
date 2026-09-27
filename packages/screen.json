@@ -1,0 +1,19 @@
+{
+  "name": "screen",
+  "version": "5.0.1",
+  "description": "Terminal multiplexer with VT100/ANSI terminal emulation",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/screen/screen-5.0.1.tar.gz"
+  },
+  "dependencies": [
+    "ncurses"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-pam",
+    "--enable-socket-dir=no"
+  ],
+  "env": {}
+}

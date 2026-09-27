@@ -1,0 +1,18 @@
+{
+  "name": "libgpg-error",
+  "version": "1.61",
+  "description": "Common error values for all GnuPG components",
+  "source": {
+    "type": "tarball",
+    "url": "https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.61.tar.bz2"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-doc",
+    "--disable-tests"
+  ],
+  "env": {}
+}

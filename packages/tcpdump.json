@@ -1,0 +1,18 @@
+{
+  "name": "tcpdump",
+  "version": "4.99.7",
+  "description": "Command-line network packet analyzer",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.tcpdump.org/release/tcpdump-4.99.7.tar.gz"
+  },
+  "dependencies": [
+    "libpcap"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--without-crypto"
+  ],
+  "env": {}
+}

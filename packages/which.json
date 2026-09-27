@@ -1,0 +1,14 @@
+{
+  "name": "which",
+  "version": "2.21",
+  "description": "Shows the full path of shell commands",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/which/which-2.21.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}
