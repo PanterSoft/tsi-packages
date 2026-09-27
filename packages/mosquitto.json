@@ -9,7 +9,8 @@
   },
   "dependencies": [
     "openssl",
-    "cjson"
+    "cjson",
+    "sqlite"
   ],
   "build_dependencies": [
     "cmake",
@@ -19,11 +20,13 @@
   "build_system": "cmake",
   "cmake_args": [
     "-DCMAKE_BUILD_TYPE=Release",
-    "-DDOCUMENTATION=OFF",
+    "-DWITH_DOCS=OFF",
     "-DWITH_WEBSOCKETS=OFF",
+    "-DWITH_HTTP_API=OFF",
     "-DWITH_SRV=OFF",
     "-DWITH_STATIC_LIBRARIES=OFF",
-    "-DWITH_TESTS=OFF"
+    "-DWITH_TESTS=OFF",
+    "-DWITH_SYSTEMD=OFF"
   ],
   "env": {}
 }
