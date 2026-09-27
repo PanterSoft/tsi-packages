@@ -9,7 +9,8 @@
   },
   "dependencies": [
     "libffi",
-    "pcre2"
+    "pcre2",
+    "gettext"
   ],
   "build_dependencies": [
     "pkg-config",

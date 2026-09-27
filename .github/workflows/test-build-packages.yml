@@ -21,6 +21,11 @@ on:
         description: 'Package name to build (leave empty to build all changed packages)'
         required: false
         type: string
+      tsi_ref:
+        description: 'TheSourceInstaller branch or tag to build TSI from'
+        required: false
+        default: main
+        type: string
 
 permissions:
   contents: read
@@ -96,9 +101,13 @@ jobs:
 
       - uses: dtolnay/rust-toolchain@stable
 
+      # tsi_ref lets a package change be validated against a TSI change that has
+      # not reached TheSourceInstaller's main yet.
       - name: Build TSI from source
+        env:
+          TSI_REF: ${{ inputs.tsi_ref || 'main' }}
         run: |
-          git clone --depth 1 https://github.com/PanterSoft/TheSourceInstaller.git /tmp/tsi
+          git clone --depth 1 --branch "$TSI_REF" https://github.com/PanterSoft/TheSourceInstaller.git /tmp/tsi
           cargo build --release --manifest-path /tmp/tsi/Cargo.toml
           echo "/tmp/tsi/target/release" >> "$GITHUB_PATH"
 

@@ -22,7 +22,6 @@
   ],
   "env": {},
   "env_darwin": {
-    "am_cv_func_iconv": "yes",
-    "am_cv_lib_iconv": "yes"
+    "LDFLAGS": "-L$TSI_INSTALL_DIR/lib -Wl,-rpath,$TSI_INSTALL_DIR/lib -liconv"
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "python-setuptools",
   "version": "80.9.0",
-  "description": "Python setuptools (and its distutils); needed by gobject-introspection's build",
+  "description": "Python setuptools, with 'import distutils' routed to its copy; needed by gobject-introspection's build",
   "source": {
     "type": "tarball",
     "url": "https://files.pythonhosted.org/packages/source/s/setuptools/setuptools-80.9.0.tar.gz",
@@ -12,7 +12,8 @@
   "build_system": "custom",
   "build_commands": [
     "mkdir -p $TSI_INSTALL_DIR/lib/python-setuptools",
-    "cp -R setuptools pkg_resources _distutils_hack $TSI_INSTALL_DIR/lib/python-setuptools/"
+    "cp -R setuptools pkg_resources _distutils_hack $TSI_INSTALL_DIR/lib/python-setuptools/",
+    "printf '%s\\n' \"# setuptools' .pth file does this in a site dir; on PYTHONPATH only sitecustomize runs.\" \"import os\" \"if os.environ.get('SETUPTOOLS_USE_DISTUTILS', 'local') == 'local':\" \"    __import__('_distutils_hack').add_shim()\" > $TSI_INSTALL_DIR/lib/python-setuptools/sitecustomize.py"
   ],
   "env": {}
 }
