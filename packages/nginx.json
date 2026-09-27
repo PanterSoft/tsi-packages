@@ -4,7 +4,8 @@
   "description": "HTTP and reverse proxy server",
   "source": {
     "type": "tarball",
-    "url": "https://nginx.org/download/nginx-1.30.5.tar.gz"
+    "url": "https://nginx.org/download/nginx-1.30.5.tar.gz",
+    "sha256": "6c20565aa2325cb82216ae804f4a4ff1875179014759a381c42ddc8e11c4906d"
   },
   "dependencies": [
     "pcre2",

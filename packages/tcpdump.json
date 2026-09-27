@@ -4,7 +4,8 @@
   "description": "Command-line network packet analyzer",
   "source": {
     "type": "tarball",
-    "url": "https://www.tcpdump.org/release/tcpdump-4.99.7.tar.gz"
+    "url": "https://www.tcpdump.org/release/tcpdump-4.99.7.tar.gz",
+    "sha256": "8be364e28d3b745ef1459b385cd2f4bc0e1ebad7a5d2ebdf70071d6c9b5b9a54"
   },
   "dependencies": [
     "libpcap"
