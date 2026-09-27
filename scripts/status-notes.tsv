@@ -6,3 +6,4 @@ mongodb	*	MongoDB 7 builds with SCons and a pip-installed Python toolchain; TSI 
 go	macOS-aarch64	make.bash needs an installed Go >= 1.20.6 to bootstrap from (go on PATH or GOROOT_BOOTSTRAP); the macOS runner image has none on PATH
 go	macOS-x86_64	make.bash needs an installed Go >= 1.20.6 to bootstrap from (go on PATH or GOROOT_BOOTSTRAP); the macOS runner image has none on PATH
 ros2	*	building ROS 2 from source needs rosdep to install its system dependencies with the OS package manager (as root), which a TSI package cannot do; without them ament_cmake fails at its first package
+openblas	macOS-x86_64	its own post-build tests die with a bus error on the Intel runner; the linker reports it had to reduce the alignment of OpenBLAS's x86 assembly (__TEXT,__text 0x10000 -> 0x1000), which the kernels assume
