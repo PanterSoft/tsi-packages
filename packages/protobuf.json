@@ -24,7 +24,13 @@
         "-Dprotobuf_BUILD_TESTS=OFF",
         "-Dprotobuf_ABSL_PROVIDER=package"
       ],
-      "env": {}
+      "env": {},
+      "cmake_args_darwin": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF",
+        "-Dprotobuf_ABSL_PROVIDER=package",
+        "-Dprotobuf_HAVE_BUILTIN_ATOMICS=ON"
+      ]
     },
     {
       "version": "33.1",

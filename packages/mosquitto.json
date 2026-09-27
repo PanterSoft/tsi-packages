@@ -4,7 +4,8 @@
   "description": "Eclipse Mosquitto MQTT broker and client library",
   "source": {
     "type": "tarball",
-    "url": "https://mosquitto.org/files/source/mosquitto-2.1.2.tar.gz"
+    "url": "https://mosquitto.org/files/source/mosquitto-2.1.2.tar.gz",
+    "sha256": "fd905380691ac65ea5a93779e8214941829e3d6e038d5edff9eac5fd74cbed02"
   },
   "dependencies": [
     "openssl",
