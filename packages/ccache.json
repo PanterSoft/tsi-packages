@@ -1,0 +1,26 @@
+{
+  "name": "ccache",
+  "version": "4.14",
+  "description": "Compiler cache that speeds up recompilation",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/ccache/ccache/releases/download/v4.14/ccache-4.14.tar.xz",
+    "sha256": "b093ac5d38204cb4d9f29b0bbd570675aa5a592a78e6675b2c506dbe045234e7"
+  },
+  "dependencies": [
+    "zstd"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DENABLE_TESTING=OFF",
+    "-DENABLE_DOCUMENTATION=OFF",
+    "-DREDIS_STORAGE_BACKEND=OFF"
+  ],
+  "env": {}
+}

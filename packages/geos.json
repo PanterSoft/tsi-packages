@@ -1,0 +1,23 @@
+{
+  "name": "geos",
+  "version": "3.15.0",
+  "description": "Geometry engine for GIS (C++ port of JTS)",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/libgeos/geos/releases/download/3.15.0/geos-3.15.0.tar.bz2",
+    "sha256": "d5e5192a686d065eaed082de14dd26244c5c8e02bff16b2c6cce3265f648e00e"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_TESTING=OFF",
+    "-DBUILD_DOCUMENTATION=OFF"
+  ],
+  "env": {}
+}

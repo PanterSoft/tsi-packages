@@ -1,0 +1,24 @@
+{
+  "name": "libpsl",
+  "version": "0.23.3",
+  "description": "Public Suffix List library",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/rockdaboot/libpsl/releases/download/0.23.3/libpsl-0.23.3.tar.gz",
+    "sha256": "93941f85a1e7bd593fa94f299233cb5dfc91cd144fd9a78a6ceb75001c5b03be"
+  },
+  "dependencies": [
+    "libidn2",
+    "libunistring"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--enable-runtime=libidn2",
+    "--enable-builtin",
+    "--disable-gtk-doc",
+    "--disable-man"
+  ],
+  "env": {}
+}

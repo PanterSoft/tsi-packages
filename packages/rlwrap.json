@@ -1,0 +1,17 @@
+{
+  "name": "rlwrap",
+  "version": "0.48",
+  "description": "Readline wrapper: adds line editing and history to any command",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/hanslub42/rlwrap/releases/download/v0.48/rlwrap-0.48.tar.gz",
+    "sha256": "cdf69074a216a8284574dddd145dd046c904ad5330a616e0eed53c9043f2ecbc"
+  },
+  "dependencies": [
+    "readline"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

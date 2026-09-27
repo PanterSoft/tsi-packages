@@ -1,0 +1,32 @@
+{
+  "name": "gnutls",
+  "version": "3.8.13",
+  "description": "GNU Transport Layer Security library",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.13.tar.xz"
+  },
+  "dependencies": [
+    "nettle",
+    "gmp",
+    "zlib"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-doc",
+    "--disable-manpages",
+    "--disable-tests",
+    "--with-included-libtasn1",
+    "--with-included-unistring",
+    "--without-p11-kit",
+    "--without-idn",
+    "--without-tpm2",
+    "--without-brotli",
+    "--without-zstd"
+  ],
+  "env": {}
+}

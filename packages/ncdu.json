@@ -1,0 +1,16 @@
+{
+  "name": "ncdu",
+  "version": "1.22",
+  "description": "Disk usage analyzer with an ncurses interface",
+  "source": {
+    "type": "tarball",
+    "url": "https://dev.yorhel.nl/download/ncdu-1.22.tar.gz"
+  },
+  "dependencies": [
+    "ncurses"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

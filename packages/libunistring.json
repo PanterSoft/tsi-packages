@@ -1,0 +1,16 @@
+{
+  "name": "libunistring",
+  "version": "1.3",
+  "description": "Unicode string handling library",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/libunistring/libunistring-1.3.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static"
+  ],
+  "env": {}
+}
