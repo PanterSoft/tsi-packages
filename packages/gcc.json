@@ -1,11 +1,10 @@
 {
   "name": "gcc",
-  "version": "13.2.0",
+  "version": "14.3.0",
   "description": "GNU Compiler Collection - C and C++ compiler",
   "source": {
     "type": "tarball",
-    "url": "https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz",
-    "sha256": "e275e76442a6067341a27f04c5c6b83d8613144004c0413528863dc6b5c743da"
+    "url": "https://ftp.gnu.org/gnu/gcc/gcc-14.3.0/gcc-14.3.0.tar.xz"
   },
   "dependencies": [
     "gmp",

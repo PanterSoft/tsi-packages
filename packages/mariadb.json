@@ -1,11 +1,10 @@
 {
   "name": "mariadb",
-  "version": "11.3.2",
+  "version": "11.4.13",
   "description": "MariaDB database server",
   "source": {
     "type": "tarball",
-    "url": "https://archive.mariadb.org/mariadb-11.3.2/source/mariadb-11.3.2.tar.gz",
-    "sha256": "5570778f0a2c27af726c751cda1a943f3f8de96d11d107791be5b44a0ce3fb5c"
+    "url": "https://archive.mariadb.org/mariadb-11.4.13/source/mariadb-11.4.13.tar.gz"
   },
   "dependencies": [
     "openssl",
@@ -15,7 +14,8 @@
   "build_dependencies": [
     "cmake",
     "make",
-    "coreutils"
+    "coreutils",
+    "bison"
   ],
   "build_system": "cmake",
   "cmake_args": [

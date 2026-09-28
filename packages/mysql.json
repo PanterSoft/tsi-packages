@@ -15,7 +15,8 @@
   "build_dependencies": [
     "cmake",
     "make",
-    "coreutils"
+    "coreutils",
+    "bison"
   ],
   "build_system": "custom",
   "build_commands": [
