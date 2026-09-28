@@ -10,6 +10,8 @@
   "dependencies": [],
   "build_dependencies": [],
   "build_system": "autotools",
-  "configure_args": [],
+  "configure_args": [
+    "LDXXFLAGS=-L$TSI_INSTALL_DIR/lib -Wl,-rpath,$TSI_INSTALL_DIR/lib"
+  ],
   "env": {}
 }
