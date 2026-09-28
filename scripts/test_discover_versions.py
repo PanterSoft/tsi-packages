@@ -45,6 +45,12 @@ def main():
     new = dv.generate_version_definition(icu, "77.1")
     assert new["source"]["url"] == (
         "https://github.com/unicode-org/icu/releases/download/release-77-1/icu4c-77_1-src.tgz"), new
+    # ...also next to the dotted spelling, which alone used to end the search.
+    expat = {"version": "2.6.2", "source": {"type": "tarball", "url":
+             "https://github.com/libexpat/libexpat/releases/download/R_2_6_2/expat-2.6.2.tar.xz"}}
+    new = dv.generate_version_definition(expat, "2.8.5")
+    assert new["source"]["url"] == (
+        "https://github.com/libexpat/libexpat/releases/download/R_2_8_5/expat-2.8.5.tar.xz"), new
 
     # End to end on a file: one version added, file stays newest-first.
     with tempfile.TemporaryDirectory() as d:
