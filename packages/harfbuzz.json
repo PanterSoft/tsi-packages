@@ -20,10 +20,13 @@
         "coreutils"
       ],
       "build_system": "meson",
-      "configure_args": [],
+      "configure_args": [
+        "-Dintrospection=disabled"
+      ],
       "env": {},
       "configure_args_darwin": [
-        "-Dcoretext=enabled"
+        "-Dcoretext=enabled",
+        "-Dintrospection=disabled"
       ]
     },
     {

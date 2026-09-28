@@ -26,15 +26,11 @@
     "patch",
     "texinfo"
   ],
-  "build_system": "autotools",
-  "configure_args": [
-    "--enable-languages=c,c++",
-    "--disable-multilib",
-    "--disable-bootstrap",
-    "--with-system-zlib",
-    "--with-gmp",
-    "--with-mpfr",
-    "--with-mpc"
+  "build_system": "custom",
+  "build_commands": [
+    "./configure --prefix=$TSI_INSTALL_DIR --enable-languages=c,c++ --disable-multilib --disable-bootstrap --with-system-zlib $(if [ \"$(uname)\" = Darwin ]; then echo --with-sysroot=\"$(xcrun --show-sdk-path)\"; fi)",
+    "make -j$(getconf _NPROCESSORS_ONLN 2>/dev/null || echo 2)",
+    "make install"
   ],
   "env": {}
 }
