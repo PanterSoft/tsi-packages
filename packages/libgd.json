@@ -1,0 +1,32 @@
+{
+  "name": "libgd",
+  "version": "2.3.3",
+  "description": "Library for the dynamic creation of images",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/libgd/libgd/releases/download/gd-2.3.3/libgd-2.3.3.tar.xz"
+  },
+  "dependencies": [
+    "libpng",
+    "libjpeg-turbo",
+    "freetype",
+    "libwebp",
+    "libtiff",
+    "zlib"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--without-x",
+    "--without-xpm",
+    "--without-avif",
+    "--without-heif",
+    "--without-raqm",
+    "--without-fontconfig",
+    "--without-liq"
+  ],
+  "env": {}
+}

@@ -1,0 +1,14 @@
+{
+  "name": "units",
+  "version": "2.24",
+  "description": "Unit conversion and calculation program",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/units/units-2.24.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

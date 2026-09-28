@@ -1,0 +1,24 @@
+{
+  "name": "libass",
+  "version": "0.17.3",
+  "description": "Portable subtitle renderer for the ASS/SSA subtitle format",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/libass/libass/releases/download/0.17.3/libass-0.17.3.tar.xz"
+  },
+  "dependencies": [
+    "freetype",
+    "fribidi",
+    "harfbuzz",
+    "fontconfig"
+  ],
+  "build_dependencies": [
+    "pkg-config",
+    "nasm"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static"
+  ],
+  "env": {}
+}

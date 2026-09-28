@@ -1,0 +1,16 @@
+{
+  "name": "parallel",
+  "version": "20240722",
+  "description": "Shell tool for executing jobs in parallel",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/parallel/parallel-20240722.tar.bz2"
+  },
+  "dependencies": [
+    "perl"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

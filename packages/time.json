@@ -1,0 +1,14 @@
+{
+  "name": "time",
+  "version": "1.9",
+  "description": "Run programs and summarize the system resources they use",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/time/time-1.9.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

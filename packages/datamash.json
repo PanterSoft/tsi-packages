@@ -1,0 +1,16 @@
+{
+  "name": "datamash",
+  "version": "1.9",
+  "description": "Command-line program for basic numeric, textual and statistical operations",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/datamash/datamash-1.9.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-nls"
+  ],
+  "env": {}
+}

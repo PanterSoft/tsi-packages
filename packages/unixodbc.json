@@ -1,0 +1,17 @@
+{
+  "name": "unixodbc",
+  "version": "2.3.12",
+  "description": "ODBC driver manager and API for Unix",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.unixodbc.org/unixODBC-2.3.12.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--enable-gui=no"
+  ],
+  "env": {}
+}

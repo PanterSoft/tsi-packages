@@ -1,0 +1,16 @@
+{
+  "name": "indent",
+  "version": "2.2.13",
+  "description": "Change the appearance of a C program by inserting or deleting whitespace",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/indent/indent-2.2.13.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-nls"
+  ],
+  "env": {}
+}

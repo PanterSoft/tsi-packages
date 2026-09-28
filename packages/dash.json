@@ -1,0 +1,14 @@
+{
+  "name": "dash",
+  "version": "0.5.12",
+  "description": "Debian Almquist shell, a small POSIX-compliant shell",
+  "source": {
+    "type": "tarball",
+    "url": "http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}
