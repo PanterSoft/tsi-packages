@@ -4,7 +4,8 @@
   "description": "VP8 and VP9 video codec library",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/webmproject/libvpx/archive/refs/tags/v1.15.0.tar.gz"
+    "url": "https://github.com/webmproject/libvpx/archive/refs/tags/v1.15.0.tar.gz",
+    "sha256": "e935eded7d81631a538bfae703fd1e293aad1c7fd3407ba00440c95105d2011e"
   },
   "dependencies": [],
   "build_dependencies": [

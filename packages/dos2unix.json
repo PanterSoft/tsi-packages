@@ -4,7 +4,8 @@
   "description": "Convert text files between DOS, Mac and Unix line endings",
   "source": {
     "type": "tarball",
-    "url": "https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.2.tar.gz"
+    "url": "https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.2.tar.gz",
+    "sha256": "b900ed9a92ef9b2548a6ac708ec81f724c59f2c089ed90f8e39a4e1287b28c1f"
   },
   "dependencies": [],
   "build_dependencies": [],

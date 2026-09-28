@@ -4,7 +4,7 @@
   "description": "Library for processing structured configuration files",
   "source": {
     "type": "tarball",
-    "url": "https://hyperrealm.github.io/libconfig/dist/libconfig-1.7.3.tar.gz"
+    "url": "https://github.com/hyperrealm/libconfig/releases/download/v1.7.3/libconfig-1.7.3.tar.gz"
   },
   "dependencies": [],
   "build_dependencies": [],

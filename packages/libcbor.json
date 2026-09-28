@@ -4,7 +4,8 @@
   "description": "CBOR protocol implementation for C",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/PJK/libcbor/archive/refs/tags/v0.12.0.tar.gz"
+    "url": "https://github.com/PJK/libcbor/archive/refs/tags/v0.12.0.tar.gz",
+    "sha256": "5368add109db559f546d7ed10f440f39a273b073daa8da4abffc83815069fa7f"
   },
   "dependencies": [],
   "build_dependencies": [

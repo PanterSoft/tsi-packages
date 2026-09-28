@@ -4,7 +4,8 @@
   "description": "Very good, but slow, deflate/zlib/gzip compressor",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/google/zopfli/archive/refs/tags/zopfli-1.0.3.tar.gz"
+    "url": "https://github.com/google/zopfli/archive/refs/tags/zopfli-1.0.3.tar.gz",
+    "sha256": "e955a7739f71af37ef3349c4fa141c648e8775bceb2195be07e86f8e638814bd"
   },
   "dependencies": [],
   "build_dependencies": [

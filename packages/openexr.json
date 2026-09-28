@@ -4,7 +4,8 @@
   "description": "High dynamic-range (HDR) image file format library and tools",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.2.tar.gz"
+    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.2.tar.gz",
+    "sha256": "5013e964de7399bff1dd328cbf65d239a989a7be53255092fa10b85a8715744d"
   },
   "dependencies": [
     "imath",

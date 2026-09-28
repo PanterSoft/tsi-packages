@@ -4,7 +4,8 @@
   "description": "Unit testing framework for C with support for mock objects",
   "source": {
     "type": "tarball",
-    "url": "https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz"
+    "url": "https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz",
+    "sha256": "810570eb0b8d64804331f82b29ff47c790ce9cd6b163e98d47a4807047ecad82"
   },
   "dependencies": [],
   "build_dependencies": [
