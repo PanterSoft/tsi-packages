@@ -298,6 +298,12 @@ def generate_version_definition(base_version: Dict, new_version: str) -> Dict:
         elif f"v{old_version}" in url:
             # Version with 'v' prefix
             new_def['source']['url'] = url.replace(f"v{old_version}", f"v{new_version}")
+        elif '.' in old_version and any(old_version.replace('.', sep) in url for sep in '-_'):
+            # Dotted version spelled with '-' or '_', possibly both in one URL:
+            # icu's release-74-2/icu4c-74_2-src.tgz
+            for sep in '-_':
+                url = url.replace(old_version.replace('.', sep), new_version.replace('.', sep))
+            new_def['source']['url'] = url
         else:
             # Try to find and replace version pattern in URL
             # Handle cases like: package-1.2.3, package_1.2.3, pcre2-10.43, etc.

@@ -38,6 +38,14 @@ def main():
     assert "sha256" not in new["source"], new
     assert base["source"]["sha256"] == "ab" * 32  # template untouched
 
+    # A version spelled with '-' and '_' in the URL is replaced in both
+    # spellings; left alone, icu's "new" version pointed at the old tarball.
+    icu = {"version": "74.2", "source": {"type": "tarball", "url":
+           "https://github.com/unicode-org/icu/releases/download/release-74-2/icu4c-74_2-src.tgz"}}
+    new = dv.generate_version_definition(icu, "77.1")
+    assert new["source"]["url"] == (
+        "https://github.com/unicode-org/icu/releases/download/release-77-1/icu4c-77_1-src.tgz"), new
+
     # End to end on a file: one version added, file stays newest-first.
     with tempfile.TemporaryDirectory() as d:
         f = Path(d) / "pkg.json"
