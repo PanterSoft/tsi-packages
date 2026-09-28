@@ -1,0 +1,17 @@
+{
+  "name": "dos2unix",
+  "version": "7.5.2",
+  "description": "Convert text files between DOS, Mac and Unix line endings",
+  "source": {
+    "type": "tarball",
+    "url": "https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.2.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "custom",
+  "build_commands": [
+    "make ENABLE_NLS= prefix=$TSI_INSTALL_DIR",
+    "make install ENABLE_NLS= prefix=$TSI_INSTALL_DIR"
+  ],
+  "env": {}
+}

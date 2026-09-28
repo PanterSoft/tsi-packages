@@ -1,0 +1,17 @@
+{
+  "name": "libtasn1",
+  "version": "4.20.0",
+  "description": "ASN.1 structure parser library",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.20.0.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-doc"
+  ],
+  "env": {}
+}

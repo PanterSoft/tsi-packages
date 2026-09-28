@@ -1,0 +1,21 @@
+{
+  "name": "inih",
+  "version": "r58",
+  "description": "Simple .INI file parser in C",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/benhoyt/inih/archive/refs/tags/r58.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "meson",
+    "ninja",
+    "pkg-config"
+  ],
+  "build_system": "meson",
+  "configure_args": [
+    "-Ddefault_library=shared",
+    "-Ddistro_install=true"
+  ],
+  "env": {}
+}

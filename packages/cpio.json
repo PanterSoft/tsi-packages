@@ -1,0 +1,14 @@
+{
+  "name": "cpio",
+  "version": "2.15",
+  "description": "Copy files into or out of cpio and tar archives",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/cpio/cpio-2.15.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

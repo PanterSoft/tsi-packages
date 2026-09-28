@@ -1,0 +1,20 @@
+{
+  "name": "libvpx",
+  "version": "1.15.0",
+  "description": "VP8 and VP9 video codec library",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/webmproject/libvpx/archive/refs/tags/v1.15.0.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "nasm"
+  ],
+  "build_system": "custom",
+  "build_commands": [
+    "./configure --prefix=$TSI_INSTALL_DIR --enable-shared --disable-static --enable-pic --disable-examples --disable-unit-tests --disable-docs --disable-tools",
+    "make",
+    "make install"
+  ],
+  "env": {}
+}

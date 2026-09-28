@@ -1,0 +1,30 @@
+{
+  "name": "qpdf",
+  "version": "11.9.1",
+  "description": "Content-preserving PDF transformation tool and library",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/qpdf/qpdf/releases/download/v11.9.1/qpdf-11.9.1.tar.gz"
+  },
+  "dependencies": [
+    "zlib",
+    "libjpeg-turbo",
+    "openssl"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils",
+    "pkg-config"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DREQUIRE_CRYPTO_OPENSSL=1",
+    "-DUSE_IMPLICIT_CRYPTO=0",
+    "-DBUILD_STATIC_LIBS=OFF",
+    "-DINSTALL_EXAMPLES=OFF",
+    "-DBUILD_DOC=OFF"
+  ],
+  "env": {}
+}

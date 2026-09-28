@@ -1,0 +1,24 @@
+{
+  "name": "libcbor",
+  "version": "0.12.0",
+  "description": "CBOR protocol implementation for C",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/PJK/libcbor/archive/refs/tags/v0.12.0.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DWITH_TESTS=OFF",
+    "-DWITH_EXAMPLES=OFF",
+    "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+  ],
+  "env": {}
+}

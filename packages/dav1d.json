@@ -1,0 +1,22 @@
+{
+  "name": "dav1d",
+  "version": "1.5.1",
+  "description": "Small and fast AV1 video decoder",
+  "source": {
+    "type": "tarball",
+    "url": "https://code.videolan.org/videolan/dav1d/-/archive/1.5.1/dav1d-1.5.1.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "meson",
+    "ninja",
+    "pkg-config",
+    "nasm"
+  ],
+  "build_system": "meson",
+  "configure_args": [
+    "-Denable_tests=false",
+    "-Denable_tools=true"
+  ],
+  "env": {}
+}

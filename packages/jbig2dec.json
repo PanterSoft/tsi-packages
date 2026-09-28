@@ -1,0 +1,20 @@
+{
+  "name": "jbig2dec",
+  "version": "0.20",
+  "description": "Decoder for JBIG2 monochrome image data",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/ArtifexSoftware/jbig2dec/releases/download/0.20/jbig2dec-0.20.tar.gz"
+  },
+  "dependencies": [
+    "libpng"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static"
+  ],
+  "env": {}
+}
