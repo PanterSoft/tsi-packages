@@ -26,6 +26,7 @@ import hashlib
 import json
 import sys
 import time
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -39,8 +40,45 @@ class Unreachable(Exception):
     """The source could not be fetched in full -- says nothing about its content."""
 
 
+# Leading bytes of each archive format a source URL may name.
+MAGIC = {
+    ".gz": b"\x1f\x8b",
+    ".tgz": b"\x1f\x8b",
+    ".xz": b"\xfd7zXZ\x00",
+    ".txz": b"\xfd7zXZ\x00",
+    ".bz2": b"BZh",
+    ".tbz2": b"BZh",
+    ".zip": b"PK",
+    ".zst": b"\x28\xb5\x2f\xfd",
+    ".lz": b"LZIP",
+}
+
+
+def not_an_archive(url, head):
+    """Why `head` cannot be the start of the archive `url` names, or None.
+
+    A host that answers with an HTML page and status 200 -- a bot check, a
+    download landing page -- hands over a perfectly hashable file. Pinned, that
+    page's checksum then "matches" on every check while TSI fails to extract
+    it: dos2unix's source was pinned that way and failed with 'invalid gzip
+    header' on every platform. Only the file's first bytes tell the two apart.
+    """
+    path = urllib.parse.urlparse(url).path.lower()
+    for ext, magic in MAGIC.items():
+        if path.endswith(ext):
+            if head.startswith(magic):
+                return None
+            return f"not a {ext} archive: it starts with {head[:16]!r}"
+    return None
+
+
 def sha256_url(url):
-    """sha256 of what `url` serves, or Unreachable.
+    """sha256 of what `url` serves, or Unreachable."""
+    return fetch_digest(url)[0]
+
+
+def fetch_digest(url):
+    """(sha256, first bytes) of what `url` serves, or Unreachable.
 
     Retries, because a single attempt makes a transient failure look permanent:
     a whole CI run reported every ftp.gnu.org package as broken when the runner
@@ -57,6 +95,7 @@ def sha256_url(url):
     for attempt in range(1, ATTEMPTS + 1):
         h = hashlib.sha256()
         read = 0
+        head = b""
         try:
             req = urllib.request.Request(
                 url, headers={"User-Agent": "tsi-packages/add-checksums"}
@@ -64,13 +103,15 @@ def sha256_url(url):
             with urllib.request.urlopen(req, timeout=120) as r:
                 expected = r.headers.get("Content-Length")
                 while chunk := r.read(CHUNK):
+                    if not head:
+                        head = chunk[:64]
                     h.update(chunk)
                     read += len(chunk)
             if expected is not None and read != int(expected):
                 raise Unreachable(
                     f"truncated: got {read} of {expected} bytes"
                 )
-            return h.hexdigest()
+            return h.hexdigest(), head
         except Exception as e:
             last = e
             if attempt < ATTEMPTS:
@@ -125,7 +166,7 @@ def main():
 
             label = f"{data.get('name', path.stem)}@{v.get('version')}"
             try:
-                digest = sha256_url(source["url"])
+                digest, head = fetch_digest(source["url"])
             except Exception as e:
                 # Kept distinct from a checksum mismatch on purpose: "we could
                 # not fetch this" and "this is not the file we pinned" call for
@@ -133,6 +174,14 @@ def main():
                 # readers to skim past both.
                 print(f"⚠ {label}: unreachable: {e}")
                 unreachable += 1
+                continue
+
+            # Checked before the digest, and never written: a checksum of
+            # something that is not the archive protects nothing.
+            bogus = not_an_archive(source["url"], head)
+            if bogus:
+                print(f"❌ {label}: {source['url']} is {bogus}")
+                failed = True
                 continue
 
             if existing:

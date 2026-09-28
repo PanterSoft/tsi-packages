@@ -76,6 +76,17 @@ def main():
     assert addsums.sha256_url(url) == FULL_SHA, "must retry past a transient failure"
 
     srv.shutdown()
+
+    # A page served in place of the archive must be refused, not pinned.
+    page = b"<!DOCTYPE html><html><body>Please wait...</body></html>"
+    msg = addsums.not_an_archive("https://example.org/dl/x-1.0.tar.gz?y=1", page)
+    assert msg and "not a .gz archive" in msg and "DOCTYPE" in msg, msg
+    assert addsums.not_an_archive("https://example.org/x-1.0.tar.gz", b"\x1f\x8b\x08") is None
+    assert addsums.not_an_archive("https://example.org/x-1.0.tar.xz", b"\xfd7zXZ\x00\x00") is None
+    assert addsums.not_an_archive("https://example.org/x-1.0.tar.bz2", b"\x1f\x8b") is not None
+    # No archive extension to go by: nothing to check against.
+    assert addsums.not_an_archive("https://example.org/download?id=3", page) is None
+
     print("add-checksums self-check passed")
     return 0
 
