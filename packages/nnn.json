@@ -4,7 +4,8 @@
   "description": "Tiny, lightning fast, feature-packed terminal file manager",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/jarun/nnn/archive/refs/tags/v5.3.tar.gz"
+    "url": "https://github.com/jarun/nnn/archive/refs/tags/v5.3.tar.gz",
+    "sha256": "79ee69f3ced7c0778d207df76b4d4d680636975ccda002eeb19d0917fcba3d36"
   },
   "dependencies": [
     "ncurses",

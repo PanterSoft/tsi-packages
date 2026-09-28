@@ -4,7 +4,8 @@
   "description": "Image metadata (Exif, IPTC, XMP) library and tool",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.9.tar.gz"
+    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.9.tar.gz",
+    "sha256": "700b76b97695b2fab4ef8c79619c68ae57d09e0c130724791cafbd39e0eb4aef"
   },
   "dependencies": [
     "expat",
