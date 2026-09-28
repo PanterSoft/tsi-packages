@@ -15,6 +15,11 @@
       "make_args": [
         "prefix=$TSI_INSTALL_DIR"
       ],
+      "make_args_darwin": [
+        "prefix=$TSI_INSTALL_DIR",
+        "SOEXT=.dylib",
+        "VERSION_OPT=-Wl,-install_name,$TSI_INSTALL_DIR/lib/liblmdb.dylib.1 -Wl,-current_version,1.0"
+      ],
       "env": {},
       "source_dir": "libraries/liblmdb"
     },
