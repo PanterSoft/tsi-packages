@@ -1,0 +1,26 @@
+{
+  "name": "highway",
+  "version": "1.4.0",
+  "description": "Performance-portable SIMD library for C++",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/google/highway/archive/refs/tags/1.4.0.tar.gz",
+    "sha256": "e72241ac9524bb653ae52ced768b508045d4438726a303f10181a38f764a453c"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DBUILD_TESTING=OFF",
+    "-DHWY_ENABLE_TESTS=OFF",
+    "-DHWY_ENABLE_EXAMPLES=OFF",
+    "-DHWY_ENABLE_CONTRIB=OFF"
+  ],
+  "env": {}
+}

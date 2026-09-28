@@ -1,0 +1,24 @@
+{
+  "name": "openssh",
+  "version": "10.5p1",
+  "description": "OpenSSH portable: SSH client, server and key tools",
+  "source": {
+    "type": "tarball",
+    "url": "https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.5p1.tar.gz",
+    "sha256": "d44d28a839ea9daf969cc69150fde59910b2b39361dad81a3bd6cbd19218db11"
+  },
+  "dependencies": [
+    "openssl",
+    "zlib"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--with-ssl-dir=$TSI_INSTALL_DIR",
+    "--with-zlib=$TSI_INSTALL_DIR",
+    "--without-pam",
+    "--with-privsep-path=$TSI_INSTALL_DIR/var/empty",
+    "--with-pid-dir=$TSI_INSTALL_DIR/var/run"
+  ],
+  "env": {}
+}

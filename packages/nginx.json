@@ -1,0 +1,23 @@
+{
+  "name": "nginx",
+  "version": "1.30.5",
+  "description": "HTTP and reverse proxy server",
+  "source": {
+    "type": "tarball",
+    "url": "https://nginx.org/download/nginx-1.30.5.tar.gz",
+    "sha256": "6c20565aa2325cb82216ae804f4a4ff1875179014759a381c42ddc8e11c4906d"
+  },
+  "dependencies": [
+    "pcre2",
+    "zlib",
+    "openssl"
+  ],
+  "build_dependencies": [],
+  "build_system": "custom",
+  "build_commands": [
+    "./configure --prefix=$TSI_INSTALL_DIR --with-http_ssl_module --with-http_v2_module --with-http_realip_module --with-http_gzip_static_module --with-http_stub_status_module --with-stream --with-stream_ssl_module --with-pcre-jit --with-cc-opt=\"$CFLAGS $CPPFLAGS\" --with-ld-opt=\"$LDFLAGS\"",
+    "make -j$(getconf _NPROCESSORS_ONLN 2>/dev/null || echo 2)",
+    "make install"
+  ],
+  "env": {}
+}

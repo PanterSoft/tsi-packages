@@ -1,0 +1,19 @@
+{
+  "name": "python-setuptools",
+  "version": "73.0.1",
+  "description": "Python setuptools, with 'import distutils' routed to its copy; needed by gobject-introspection's build (73.x: the last with distutils.msvccompiler, which giscanner imports)",
+  "source": {
+    "type": "tarball",
+    "url": "https://files.pythonhosted.org/packages/source/s/setuptools/setuptools-73.0.1.tar.gz",
+    "sha256": "d59a3e788ab7e012ab2c4baed1b376da6366883ee20d7a5fc426816e3d7b1193"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "custom",
+  "build_commands": [
+    "mkdir -p $TSI_INSTALL_DIR/lib/python-setuptools",
+    "cp -R setuptools pkg_resources _distutils_hack $TSI_INSTALL_DIR/lib/python-setuptools/",
+    "printf '%s\\n' \"# setuptools' .pth file does this in a site dir; on PYTHONPATH only sitecustomize runs.\" \"import os\" \"if os.environ.get('SETUPTOOLS_USE_DISTUTILS', 'local') == 'local':\" \"    __import__('_distutils_hack').add_shim()\" > $TSI_INSTALL_DIR/lib/python-setuptools/sitecustomize.py"
+  ],
+  "env": {}
+}

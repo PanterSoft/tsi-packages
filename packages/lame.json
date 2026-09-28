@@ -1,0 +1,20 @@
+{
+  "name": "lame",
+  "version": "3.100",
+  "description": "High quality MPEG Audio Layer III (MP3) encoder",
+  "source": {
+    "type": "tarball",
+    "url": "https://downloads.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz",
+    "sha256": "ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "custom",
+  "build_commands": [
+    "sed -i.orig '/lame_init_old/d' include/libmp3lame.sym",
+    "./configure --prefix=$TSI_INSTALL_DIR --disable-static --enable-nasm=no",
+    "make -j$(getconf _NPROCESSORS_ONLN 2>/dev/null || echo 2)",
+    "make install"
+  ],
+  "env": {}
+}

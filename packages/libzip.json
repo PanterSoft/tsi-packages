@@ -1,0 +1,35 @@
+{
+  "name": "libzip",
+  "version": "1.11.4",
+  "description": "C library for reading, creating and modifying zip archives",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/nih-at/libzip/releases/download/v1.11.4/libzip-1.11.4.tar.xz",
+    "sha256": "8a247f57d1e3e6f6d11413b12a6f28a9d388de110adc0ec608d893180ed7097b"
+  },
+  "dependencies": [
+    "zlib",
+    "bzip2",
+    "xz",
+    "zstd"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DENABLE_GNUTLS=OFF",
+    "-DENABLE_MBEDTLS=OFF",
+    "-DENABLE_OPENSSL=OFF",
+    "-DENABLE_COMMONCRYPTO=OFF",
+    "-DBUILD_REGRESS=OFF",
+    "-DBUILD_OSSFUZZ=OFF",
+    "-DBUILD_EXAMPLES=OFF",
+    "-DBUILD_DOC=OFF"
+  ],
+  "env": {}
+}

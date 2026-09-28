@@ -1,0 +1,20 @@
+{
+  "name": "tig",
+  "version": "2.6.1",
+  "description": "Text-mode interface for Git",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/jonas/tig/releases/download/tig-2.6.1/tig-2.6.1.tar.gz",
+    "sha256": "5adeabdcd93aa0423d618da8b878b53482bef6e0e9e1fe224acc0f18031fe91e"
+  },
+  "dependencies": [
+    "ncurses"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env_darwin": {
+    "CPPFLAGS": "-I$TSI_INSTALL_DIR/include"
+  },
+  "env": {}
+}

@@ -1,0 +1,23 @@
+{
+  "name": "utf8proc",
+  "version": "2.12.0",
+  "description": "Small library for processing UTF-8 Unicode data",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.12.0.tar.gz",
+    "sha256": "f564011d38b2888d583d510b08e69ffa15aa117155db1b9b49ef1dfe1fa25111"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DUTF8PROC_ENABLE_TESTING=OFF"
+  ],
+  "env": {}
+}

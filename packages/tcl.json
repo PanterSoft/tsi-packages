@@ -1,0 +1,22 @@
+{
+  "name": "tcl",
+  "version": "8.6.18",
+  "description": "Tool Command Language interpreter and library",
+  "source": {
+    "type": "tarball",
+    "url": "https://downloads.sourceforge.net/project/tcl/Tcl/8.6.18/tcl8.6.18-src.tar.gz",
+    "sha256": "14f9af32b1767ff718477a8f974ad03c34341097e6b43f4ce54644ee974e268e"
+  },
+  "dependencies": [
+    "zlib"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--enable-shared",
+    "--enable-threads",
+    "--enable-64bit"
+  ],
+  "source_dir": "unix",
+  "env": {}
+}

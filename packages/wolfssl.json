@@ -1,0 +1,24 @@
+{
+  "name": "wolfssl",
+  "version": "5.9.4",
+  "description": "wolfSSL: lightweight TLS library for embedded and cloud",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.9.4-stable.tar.gz",
+    "sha256": "7256bfc89b183a75183806c7debfa203443873b0b4a562e1b80d68e01b45ac57"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DWOLFSSL_EXAMPLES=no",
+    "-DWOLFSSL_CRYPT_TESTS=no"
+  ],
+  "env": {}
+}

@@ -1,0 +1,33 @@
+{
+  "name": "mosquitto",
+  "version": "2.1.2",
+  "description": "Eclipse Mosquitto MQTT broker and client library",
+  "source": {
+    "type": "tarball",
+    "url": "https://mosquitto.org/files/source/mosquitto-2.1.2.tar.gz",
+    "sha256": "fd905380691ac65ea5a93779e8214941829e3d6e038d5edff9eac5fd74cbed02"
+  },
+  "dependencies": [
+    "openssl",
+    "cjson",
+    "sqlite"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DWITH_DOCS=OFF",
+    "-DWITH_WEBSOCKETS=OFF",
+    "-DWITH_HTTP_API=OFF",
+    "-DWITH_SRV=OFF",
+    "-DWITH_STATIC_LIBRARIES=OFF",
+    "-DWITH_TESTS=OFF",
+    "-DWITH_SYSTEMD=OFF",
+    "-DWITH_CTRL_SHELL=OFF"
+  ],
+  "env": {}
+}

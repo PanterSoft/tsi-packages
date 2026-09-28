@@ -21,7 +21,12 @@
   ],
   "build_system": "meson",
   "configure_args": [
-    "-Dwrap_mode=nodownload"
+    "-Dwrap_mode=nodownload",
+    "-Dgio_sniffing=false",
+    "-Dintrospection=disabled",
+    "-Dman=false",
+    "-Dtests=false",
+    "-Dinstalled_tests=false"
   ],
   "env": {}
 }

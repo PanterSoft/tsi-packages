@@ -1,11 +1,11 @@
 {
   "name": "postgresql",
-  "version": "16.2",
+  "version": "16.15",
   "description": "PostgreSQL database server",
   "source": {
     "type": "tarball",
-    "url": "https://ftp.postgresql.org/pub/source/v16.2/postgresql-16.2.tar.gz",
-    "sha256": "2b8201047ec81acd1bad29dba278d788e7891b9c3e8232eda16bb29dec8131c7"
+    "url": "https://ftp.postgresql.org/pub/source/v16.15/postgresql-16.15.tar.gz",
+    "sha256": "4f200ca23dfb120ff9838f13ce06014aad1d3c432d16ee9f93ab2000c0eeef7b"
   },
   "dependencies": [
     "openssl",

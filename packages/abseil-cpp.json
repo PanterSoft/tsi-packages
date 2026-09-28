@@ -1,0 +1,26 @@
+{
+  "name": "abseil-cpp",
+  "version": "20250512.1",
+  "description": "Abseil common libraries for C++ (the LTS that protobuf and grpc are built against)",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/abseil/abseil-cpp/archive/refs/tags/20250512.1.tar.gz",
+    "sha256": "9b7a064305e9fd94d124ffa6cc358592eb42b5da588fb4e07d09254aa40086db"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DCMAKE_CXX_STANDARD=17",
+    "-DABSL_PROPAGATE_CXX_STD=ON",
+    "-DABSL_BUILD_TESTING=OFF",
+    "-DBUILD_TESTING=OFF"
+  ],
+  "env": {}
+}

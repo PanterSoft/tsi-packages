@@ -1,0 +1,10 @@
+# Why a package does not build on a platform, shown in PACKAGES_STATUS.md.
+# <package>\t<platform, or * for all>\t<reason>
+# A reason only appears while the package is not green there, so fixing a
+# package retires its note automatically.
+mongodb	*	MongoDB 7 builds with SCons and a pip-installed Python toolchain; TSI has no SCons build system, so it cannot be built from source with TSI
+go	macOS-aarch64	make.bash needs an installed Go >= 1.20.6 to bootstrap from (go on PATH or GOROOT_BOOTSTRAP); the macOS runner image has none on PATH
+go	macOS-x86_64	make.bash needs an installed Go >= 1.20.6 to bootstrap from (go on PATH or GOROOT_BOOTSTRAP); the macOS runner image has none on PATH
+ros2	*	building ROS 2 from source needs rosdep to install its system dependencies with the OS package manager (as root), which a TSI package cannot do; without them ament_cmake fails at its first package
+openblas	macOS-x86_64	its own post-build tests die with a bus error on the Intel runner; the linker reports it had to reduce the alignment of OpenBLAS's x86 assembly (__TEXT,__text 0x10000 -> 0x1000), which the kernels assume
+gcc	macOS-aarch64	upstream GCC has no aarch64-darwin (Apple Silicon) port -- configure stops with "Configuration aarch64-apple-darwin not supported"; macOS arm64 GCC builds come from the separate gcc-darwin-arm64 branch

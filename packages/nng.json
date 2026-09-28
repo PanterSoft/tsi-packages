@@ -1,0 +1,24 @@
+{
+  "name": "nng",
+  "version": "1.12.4",
+  "description": "nanomsg-next-gen: lightweight messaging library",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/nanomsg/nng/archive/refs/tags/v1.12.4.tar.gz",
+    "sha256": "93b177727ec5ea38af5c88ab297f732ef71ddc4700d2407c4f9c999b3a7310a0"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DNNG_TESTS=OFF",
+    "-DNNG_TOOLS=ON"
+  ],
+  "env": {}
+}

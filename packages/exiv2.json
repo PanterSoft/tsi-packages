@@ -1,0 +1,30 @@
+{
+  "name": "exiv2",
+  "version": "0.28.9",
+  "description": "Image metadata (Exif, IPTC, XMP) library and tool",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.9.tar.gz",
+    "sha256": "700b76b97695b2fab4ef8c79619c68ae57d09e0c130724791cafbd39e0eb4aef"
+  },
+  "dependencies": [
+    "expat",
+    "zlib"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DEXIV2_ENABLE_INIH=OFF",
+    "-DEXIV2_ENABLE_BROTLI=OFF",
+    "-DEXIV2_ENABLE_NLS=OFF",
+    "-DEXIV2_BUILD_SAMPLES=OFF",
+    "-DEXIV2_BUILD_UNIT_TESTS=OFF"
+  ],
+  "env": {}
+}

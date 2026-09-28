@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Build PACKAGES_STATUS.md from one results.tsv per platform.
 
-    merge-status.py [--packages-dir DIR] [--results-dir DIR] PACKAGES_STATUS.md \
-        [Linux-x86_64=a.tsv macOS-aarch64=b.tsv ...]
+    merge-status.py [--packages-dir DIR] [--results-dir DIR] [--notes NOTES.tsv] \
+        PACKAGES_STATUS.md [Linux-x86_64=a.tsv macOS-aarch64=b.tsv ...]
 
 Each results.tsv (written by build-all-packages.sh) holds
 "<package>\t<ok|fail|skipped|unsupported>\t<note>" rows. Lines starting with
@@ -27,6 +27,11 @@ column. A platform with no results still shows "—" for a package whose
 
 A package absent from a leg's TSV renders blank -- "not tested there", which is
 honestly different from "failed there".
+
+--notes names a hand-written "<package>\t<platform or *>\t<reason>" file saying
+*why* a package does not build somewhere. A reason is shown only while that
+package is not green on that platform, so a fixed package sheds its stale note
+without anyone having to remember to delete it.
 """
 import sys
 from pathlib import Path
@@ -125,15 +130,30 @@ def ordered(platform_ids):
     return sorted(set(platform_ids), key=key)
 
 
+def read_notes(path):
+    notes = []
+    for line in Path(path).read_text(encoding="utf-8").splitlines():
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        parts = line.split("\t")
+        if len(parts) != 3:
+            raise SystemExit(f"{path}: expected <package>\\t<platform|*>\\t<reason>: {line!r}")
+        notes.append(tuple(p.strip() for p in parts))
+    return notes
+
+
 def main(argv):
     args = argv[1:]
     packages_dir = REPO / "packages"
     results_dir = REPO / "status-results"
-    while len(args) >= 2 and args[0] in ("--packages-dir", "--results-dir"):
+    curated = []
+    while len(args) >= 2 and args[0] in ("--packages-dir", "--results-dir", "--notes"):
         if args[0] == "--packages-dir":
             packages_dir = Path(args[1])
-        else:
+        elif args[0] == "--results-dir":
             results_dir = Path(args[1])
+        else:
+            curated = read_notes(args[1])
         args = args[2:]
     if not args:
         print(__doc__, file=sys.stderr)
@@ -192,6 +212,17 @@ def main(argv):
             counts[pid][key] = counts[pid].get(key, 0) + 1
         if plats and not any(n.endswith("-only") for n in notes):
             notes.append("/".join(plats) + "-only")
+        # Curated reasons (--notes) show only where the package is not green,
+        # and only on platforms that were tested: an untested column says
+        # nothing about whether the reason still holds.
+        for cpkg, plat, reason in curated:
+            if cpkg != pkg:
+                continue
+            here = list(legs) if plat == "*" else [canonical(plat)]
+            if any(pid in legs and legs[pid].get(pkg, ("", ""))[0] != "ok" for pid in here):
+                text = reason if plat == "*" else f"{plat}: {reason}"
+                if text not in notes:
+                    notes.append(text)
         cells["Notes"] = "; ".join(notes)
         table.append(cells)
 

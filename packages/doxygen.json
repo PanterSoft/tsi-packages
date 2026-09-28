@@ -1,0 +1,26 @@
+{
+  "name": "doxygen",
+  "version": "1.18.0",
+  "description": "Documentation generator from annotated sources",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/doxygen/doxygen/releases/download/Release_1_18_0/doxygen-1.18.0.src.tar.gz",
+    "sha256": "a1deed70a6785bbec95a2b2a9e419dc7f7b223a9d74a8644ae611c8e2dcdd354"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils",
+    "flex",
+    "bison",
+    "python"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-Dbuild_wizard=OFF",
+    "-Dbuild_doc=OFF"
+  ],
+  "env": {}
+}

@@ -12,7 +12,8 @@
     "glib",
     "harfbuzz",
     "cairo",
-    "freetype"
+    "freetype",
+    "fontconfig"
   ],
   "build_dependencies": [
     "pkg-config",
@@ -22,6 +23,9 @@
     "coreutils"
   ],
   "build_system": "meson",
-  "configure_args": [],
+  "configure_args": [
+    "-Dwrap_mode=nodownload",
+    "-Dintrospection=disabled"
+  ],
   "env": {}
 }

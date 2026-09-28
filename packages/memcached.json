@@ -1,0 +1,20 @@
+{
+  "name": "memcached",
+  "version": "1.6.45",
+  "description": "High-performance distributed memory object caching system",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.memcached.org/files/memcached-1.6.45.tar.gz",
+    "sha256": "d362c64e6d8d5287153501eabf7c85b4a761432fbf53f5d7b085d0bb1653c1dd"
+  },
+  "dependencies": [
+    "libevent"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--with-libevent=$TSI_INSTALL_DIR",
+    "--disable-docs"
+  ],
+  "env": {}
+}

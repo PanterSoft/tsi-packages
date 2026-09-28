@@ -1,0 +1,25 @@
+{
+  "name": "swig",
+  "version": "4.5.1",
+  "description": "Connects C/C++ programs with scripting languages",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/swig/swig/archive/refs/tags/v4.5.1.tar.gz",
+    "sha256": "dd219a0c8947afe63b818892304390427c2ee7f6edfa1a37853d4efd891982be"
+  },
+  "dependencies": [
+    "pcre2"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils",
+    "bison"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DWITH_PCRE=ON"
+  ],
+  "env": {}
+}

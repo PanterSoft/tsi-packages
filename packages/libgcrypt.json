@@ -1,0 +1,27 @@
+{
+  "name": "libgcrypt",
+  "version": "1.12.4",
+  "description": "General purpose cryptographic library based on GnuPG code",
+  "source": {
+    "type": "tarball",
+    "url": "https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.12.4.tar.bz2",
+    "sha256": "d77f68f48879510e79a2f65977ccc68981781ea0923e5bdffac2a193ea3d660e"
+  },
+  "dependencies": [
+    "libgpg-error"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-doc",
+    "--with-libgpg-error-prefix=$TSI_INSTALL_DIR"
+  ],
+  "env": {},
+  "configure_args_darwin": [
+    "--disable-static",
+    "--disable-doc",
+    "--with-libgpg-error-prefix=$TSI_INSTALL_DIR",
+    "--disable-asm"
+  ]
+}

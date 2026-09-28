@@ -1,0 +1,23 @@
+{
+  "name": "magic-enum",
+  "version": "0.9.8",
+  "description": "Static reflection for C++ enums (header-only)",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/Neargye/magic_enum/archive/refs/tags/v0.9.8.tar.gz",
+    "sha256": "1e54959a3f3cb675938d858603ad69d0f3f7c82439fc2bf86d7232daec2bd10e"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DMAGIC_ENUM_OPT_BUILD_EXAMPLES=OFF",
+    "-DMAGIC_ENUM_OPT_BUILD_TESTS=OFF"
+  ],
+  "env": {}
+}

@@ -145,7 +145,10 @@ def main():
                 # --check means "every source is pinned and still matches".
                 # Silently passing an unpinned source would make the CI gate
                 # green for exactly the package that has no protection.
-                print(f"❌ {label}: no recorded sha256 (run add-checksums.py {data.get('name', path.stem)})")
+                # The digest is printed so a checksum can be recorded from the
+                # CI log when the source cannot be fetched where the package
+                # is being written.
+                print(f"❌ {label}: no recorded sha256 (run add-checksums.py {data.get('name', path.stem)})\n    actual   {digest}")
                 failed = True
             else:
                 source["sha256"] = digest
