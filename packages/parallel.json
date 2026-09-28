@@ -4,7 +4,8 @@
   "description": "Shell tool for executing jobs in parallel",
   "source": {
     "type": "tarball",
-    "url": "https://ftp.gnu.org/gnu/parallel/parallel-20240722.tar.bz2"
+    "url": "https://ftp.gnu.org/gnu/parallel/parallel-20240722.tar.bz2",
+    "sha256": "c7335471f776af28bea9464ad85a50f2ed120f78fbf75ead6647aeea8e0e53f0"
   },
   "dependencies": [
     "perl"

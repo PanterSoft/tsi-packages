@@ -4,7 +4,8 @@
   "description": "ODBC driver manager and API for Unix",
   "source": {
     "type": "tarball",
-    "url": "https://www.unixodbc.org/unixODBC-2.3.12.tar.gz"
+    "url": "https://www.unixodbc.org/unixODBC-2.3.12.tar.gz",
+    "sha256": "f210501445ce21bf607ba51ef8c125e10e22dffdffec377646462df5f01915ec"
   },
   "dependencies": [],
   "build_dependencies": [],

@@ -4,7 +4,8 @@
   "description": "AV1 video codec reference library",
   "source": {
     "type": "tarball",
-    "url": "https://storage.googleapis.com/aom-releases/libaom-3.12.1.tar.gz"
+    "url": "https://storage.googleapis.com/aom-releases/libaom-3.12.1.tar.gz",
+    "sha256": "9e9775180dec7dfd61a79e00bda3809d43891aee6b2e331ff7f26986207ea22e"
   },
   "dependencies": [],
   "build_dependencies": [

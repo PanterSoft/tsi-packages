@@ -4,7 +4,8 @@
   "description": "Symlink farm manager for installing packages into a single tree",
   "source": {
     "type": "tarball",
-    "url": "https://ftp.gnu.org/gnu/stow/stow-2.4.1.tar.gz"
+    "url": "https://ftp.gnu.org/gnu/stow/stow-2.4.1.tar.gz",
+    "sha256": "2a671e75fc207303bfe86a9a7223169c7669df0a8108ebdf1a7fe8cd2b88780b"
   },
   "dependencies": [
     "perl"

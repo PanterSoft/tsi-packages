@@ -4,7 +4,8 @@
   "description": "Change the appearance of a C program by inserting or deleting whitespace",
   "source": {
     "type": "tarball",
-    "url": "https://ftp.gnu.org/gnu/indent/indent-2.2.13.tar.gz"
+    "url": "https://ftp.gnu.org/gnu/indent/indent-2.2.13.tar.gz",
+    "sha256": "9e64634fc4ce6797b204bcb8897ce14fdd0ab48ca57696f78767c59cae578095"
   },
   "dependencies": [],
   "build_dependencies": [],
