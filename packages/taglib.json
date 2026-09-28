@@ -1,0 +1,26 @@
+{
+  "name": "taglib",
+  "version": "2.0.2",
+  "description": "Library for reading and editing audio file metadata",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/taglib/taglib/archive/refs/tags/v2.0.2.tar.gz"
+  },
+  "dependencies": [
+    "zlib"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils",
+    "utfcpp"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DBUILD_TESTING=OFF",
+    "-DBUILD_EXAMPLES=OFF"
+  ],
+  "env": {}
+}

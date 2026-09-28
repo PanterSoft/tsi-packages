@@ -1,0 +1,19 @@
+{
+  "name": "libmicrohttpd",
+  "version": "1.0.1",
+  "description": "Small C library for embedding an HTTP server in an application",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-1.0.1.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-doc",
+    "--disable-examples",
+    "--without-gnutls"
+  ],
+  "env": {}
+}

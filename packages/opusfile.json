@@ -1,0 +1,24 @@
+{
+  "name": "opusfile",
+  "version": "0.12",
+  "description": "Library for decoding and seeking in .opus files",
+  "source": {
+    "type": "tarball",
+    "url": "https://downloads.xiph.org/releases/opus/opusfile-0.12.tar.gz"
+  },
+  "dependencies": [
+    "libogg",
+    "opus"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-http",
+    "--disable-examples",
+    "--disable-doc"
+  ],
+  "env": {}
+}

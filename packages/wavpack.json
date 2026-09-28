@@ -1,0 +1,16 @@
+{
+  "name": "wavpack",
+  "version": "5.7.0",
+  "description": "Hybrid lossless audio compression format and tools",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/dbry/WavPack/releases/download/5.7.0/wavpack-5.7.0.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static"
+  ],
+  "env": {}
+}

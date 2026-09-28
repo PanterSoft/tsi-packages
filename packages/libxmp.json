@@ -1,0 +1,16 @@
+{
+  "name": "libxmp",
+  "version": "4.6.2",
+  "description": "Library that renders module music files (MOD, S3M, XM, IT)",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/libxmp/libxmp/releases/download/libxmp-4.6.2/libxmp-4.6.2.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static"
+  ],
+  "env": {}
+}

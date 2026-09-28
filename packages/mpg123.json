@@ -1,0 +1,20 @@
+{
+  "name": "mpg123",
+  "version": "1.32.10",
+  "description": "Fast MPEG audio layer 1, 2 and 3 decoder and player",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.mpg123.de/download/mpg123-1.32.10.tar.bz2"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--with-default-audio=dummy",
+    "--with-audio=dummy"
+  ],
+  "env": {}
+}
