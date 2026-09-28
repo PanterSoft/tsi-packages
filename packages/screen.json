@@ -1,0 +1,17 @@
+{
+  "name": "screen",
+  "version": "4.9.1",
+  "description": "Terminal multiplexer with VT100/ANSI terminal emulation",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz",
+    "sha256": "26cef3e3c42571c0d484ad6faf110c5c15091fbf872b06fa7aa4766c7405ac69"
+  },
+  "dependencies": [
+    "ncurses"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

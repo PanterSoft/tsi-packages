@@ -1,0 +1,26 @@
+{
+  "name": "jsoncpp",
+  "version": "1.9.8",
+  "description": "C++ library for interacting with JSON",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.8.tar.gz",
+    "sha256": "51828cf3574281d2b79ec2a1c56a9e4c20cc1103711321ea96384cffb8d2d904"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DBUILD_STATIC_LIBS=OFF",
+    "-DBUILD_OBJECT_LIBS=OFF",
+    "-DJSONCPP_WITH_TESTS=OFF",
+    "-DJSONCPP_WITH_POST_BUILD_UNITTEST=OFF"
+  ],
+  "env": {}
+}

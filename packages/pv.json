@@ -1,0 +1,20 @@
+{
+  "name": "pv",
+  "version": "1.7.24",
+  "description": "Pipe viewer: monitor the progress of data through a pipeline",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz",
+    "sha256": "3bf43c5809c8d50066eaeaea5a115f6503c57a38c151975b710aa2bee857b65e"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-nls"
+  ],
+  "env": {},
+  "env_darwin": {
+    "CFLAGS": "-O2 -include sys/ioctl.h"
+  }
+}

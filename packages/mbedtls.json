@@ -1,0 +1,25 @@
+{
+  "name": "mbedtls",
+  "version": "3.6.7",
+  "description": "Mbed TLS: portable TLS and cryptography library",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-3.6.7/mbedtls-3.6.7.tar.bz2",
+    "sha256": "a7e8bcbec0e6f761b4af24f25677626b35f762f68eef79c08677a363212d11f6"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DENABLE_TESTING=OFF",
+    "-DENABLE_PROGRAMS=OFF",
+    "-DUSE_SHARED_MBEDTLS_LIBRARY=ON",
+    "-DUSE_STATIC_MBEDTLS_LIBRARY=OFF"
+  ],
+  "env": {}
+}

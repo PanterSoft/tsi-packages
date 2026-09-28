@@ -1,0 +1,36 @@
+{
+  "name": "gnutls",
+  "version": "3.8.13",
+  "description": "GNU Transport Layer Security library",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.13.tar.xz",
+    "sha256": "ffed8ec1bf09c2426d4f14aae377de4753b53e537d685e604e99a8b16ca9c97e"
+  },
+  "dependencies": [
+    "nettle",
+    "gmp",
+    "zlib"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-doc",
+    "--disable-manpages",
+    "--disable-tests",
+    "--with-included-libtasn1",
+    "--with-included-unistring",
+    "--without-p11-kit",
+    "--without-idn",
+    "--without-tpm2",
+    "--without-brotli",
+    "--without-zstd"
+  ],
+  "env": {},
+  "env_darwin": {
+    "CPPFLAGS": "-idirafter $TSI_INSTALL_DIR/include -DCRAU_MAYBE_UNUSED="
+  }
+}

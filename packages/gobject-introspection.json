@@ -15,9 +15,13 @@
     "meson",
     "ninja",
     "python",
-    "coreutils"
+    "coreutils",
+    "python-setuptools",
+    "python-packaging"
   ],
   "build_system": "meson",
   "configure_args": [],
-  "env": {}
+  "env": {
+    "PYTHONPATH": "$TSI_INSTALL_DIR/lib/python-setuptools:$TSI_INSTALL_DIR/lib/python-packaging"
+  }
 }

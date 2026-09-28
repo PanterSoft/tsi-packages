@@ -1,0 +1,25 @@
+{
+  "name": "box2d",
+  "version": "3.1.1",
+  "description": "2D physics engine for games",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/erincatto/box2d/archive/refs/tags/v3.1.1.tar.gz",
+    "sha256": "fb6ef914b50f4312d7d921a600eabc12318bb3c55a0b8c0b90608fa4488ef2e4"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DBOX2D_SAMPLES=OFF",
+    "-DBOX2D_UNIT_TESTS=OFF",
+    "-DBOX2D_BENCHMARKS=OFF"
+  ],
+  "env": {}
+}

@@ -27,5 +27,14 @@
   ],
   "env": {
     "ZLIB_NO_FDOPEN_WRAPPER": "1"
-  }
+  },
+  "configure_args_darwin": [
+    "--disable-werror",
+    "--enable-shared",
+    "--with-system-zlib",
+    "--program-prefix=g",
+    "--disable-gold",
+    "--disable-ld",
+    "--disable-gprofng"
+  ]
 }

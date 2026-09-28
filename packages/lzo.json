@@ -1,0 +1,18 @@
+{
+  "name": "lzo",
+  "version": "2.10",
+  "description": "Real-time data compression library",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz",
+    "sha256": "c0f892943208266f9b6543b3ae308fab6284c5c90e627931446fb49b4221a072"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--enable-shared",
+    "--disable-static"
+  ],
+  "env": {}
+}

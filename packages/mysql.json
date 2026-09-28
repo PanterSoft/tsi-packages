@@ -4,8 +4,8 @@
   "description": "MySQL database server",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.36.tar.gz",
-    "sha256": "9d885e51fbff48c7a2dd22c038c84286cca57f1e8b56846ee46df7998c44dac3"
+    "url": "https://cdn.mysql.com/archives/mysql-8.0/mysql-boost-8.0.36.tar.gz",
+    "sha256": "429c5f69f3722e31807e74119d157a023277af210bfee513443cae60ebd2a86d"
   },
   "dependencies": [
     "openssl",
@@ -15,15 +15,14 @@
   "build_dependencies": [
     "cmake",
     "make",
-    "coreutils"
+    "coreutils",
+    "bison"
   ],
-  "build_system": "cmake",
-  "cmake_args": [
-    "-DCMAKE_BUILD_TYPE=Release",
-    "-DWITH_SSL=system",
-    "-DWITH_ZLIB=system",
-    "-DWITH_ZSTD=system",
-    "-DDOWNLOAD_BOOST=0"
+  "build_system": "custom",
+  "build_commands": [
+    "cmake -S . -B tsi-build -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR -DCMAKE_BUILD_TYPE=Release -DWITH_SSL=system -DWITH_ZLIB=system -DWITH_ZSTD=system -DDOWNLOAD_BOOST=0 -DWITH_BOOST=\"$PWD/boost\" -DWITH_UNIT_TESTS=OFF -DWITHOUT_GROUP_REPLICATION=1",
+    "cmake --build tsi-build -j \"$(getconf _NPROCESSORS_ONLN 2>/dev/null || echo 2)\"",
+    "cmake --install tsi-build"
   ],
   "env": {}
 }

@@ -1,0 +1,22 @@
+{
+  "name": "doctest",
+  "version": "2.5.3",
+  "description": "Fast single-header C++ testing framework",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/doctest/doctest/archive/refs/tags/v2.5.3.tar.gz",
+    "sha256": "174ebc4e769928959614789c5b4e9c3d0a0f81a62bb608756b127bfebfb21331"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DDOCTEST_WITH_TESTS=OFF"
+  ],
+  "env": {}
+}

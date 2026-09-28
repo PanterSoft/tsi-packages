@@ -12,7 +12,7 @@
       "dependencies": [
         "openssl",
         "zlib",
-        "libssh"
+        "libssh2"
       ],
       "build_dependencies": [
         "pkg-config",
@@ -24,7 +24,7 @@
       "cmake_args": [
         "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DCMAKE_BUILD_TYPE=Release",
-        "-DUSE_SSH=ON"
+        "-DUSE_SSH=libssh2"
       ],
       "env": {}
     },

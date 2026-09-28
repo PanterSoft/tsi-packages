@@ -1,0 +1,29 @@
+{
+  "name": "libwebsockets",
+  "version": "4.5.8",
+  "description": "Lightweight C library for WebSocket clients and servers",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/warmcat/libwebsockets/archive/refs/tags/v4.5.8.tar.gz",
+    "sha256": "b6ade658f4af3a823d0dc806ae5ef0623f0f4f5e2aeb895a0f77c4783840c30e"
+  },
+  "dependencies": [
+    "openssl"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DLWS_WITH_SSL=ON",
+    "-DLWS_WITH_SHARED=ON",
+    "-DLWS_WITH_STATIC=OFF",
+    "-DLWS_WITHOUT_TESTAPPS=ON",
+    "-DLWS_WITH_MINIMAL_EXAMPLES=OFF",
+    "-DDISABLE_WERROR=ON"
+  ],
+  "env": {}
+}

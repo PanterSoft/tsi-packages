@@ -1,0 +1,18 @@
+{
+  "name": "btop",
+  "version": "1.4.5",
+  "description": "Resource monitor showing usage and stats for processor, memory, disks, network and processes",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/aristocratos/btop/archive/refs/tags/v1.4.5.tar.gz",
+    "sha256": "0ffe03d3e26a3e9bbfd5375adf34934137757994f297d6b699a46edd43c3fc02"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "custom",
+  "build_commands": [
+    "make",
+    "make install PREFIX=$TSI_INSTALL_DIR"
+  ],
+  "env": {}
+}
