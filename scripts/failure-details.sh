@@ -6,7 +6,7 @@
 # A full catalogue run writes tens of thousands of log lines; the reasons for
 # its failures are a few lines each, buried among them. This prints just
 # those: the first error-looking lines and the tail of each failed package's
-# log, without the Rust backtrace tsi appends to every error.
+# log, with its error chain but without the Rust backtrace tsi appends.
 
 set -euo pipefail
 
@@ -39,8 +39,10 @@ for pkg in $FAILED; do
     echo "(no log)"
     continue
   fi
-  # Backtrace frames look like "  12: tsi::..." or "      at ./src/...".
-  CLEAN=$(grep -vE '^[[:space:]]+([0-9]+: |at )' "$LOG" || true)
+  # Drop the backtrace from "Stack backtrace:" on. Its frames ("  12: tsi::...")
+  # look just like anyhow's "Caused by:" chain ("    0: Extract tar"), which is
+  # the part that says what went wrong, so cut by position, not by shape.
+  CLEAN=$(sed '/^Stack backtrace:/,$d' "$LOG")
   echo "--- first errors ---"
   # Real errors first: compiler and linker "error:" lines, CMake/configure
   # errors, missing files. Lines make marks "(ignored)" and warnings are noise.
