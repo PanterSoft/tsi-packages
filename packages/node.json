@@ -4,7 +4,8 @@
   "description": "Node.js JavaScript runtime",
   "source": {
     "type": "tarball",
-    "url": "https://nodejs.org/dist/v22.23.3/node-v22.23.3.tar.gz"
+    "url": "https://nodejs.org/dist/v22.23.3/node-v22.23.3.tar.gz",
+    "sha256": "9436c81b284889303d39f5b8bd629bf19e790c665ccb94b4994aa87220d9799a"
   },
   "dependencies": [
     "openssl",

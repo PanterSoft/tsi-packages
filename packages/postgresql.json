@@ -4,7 +4,8 @@
   "description": "PostgreSQL database server",
   "source": {
     "type": "tarball",
-    "url": "https://ftp.postgresql.org/pub/source/v16.15/postgresql-16.15.tar.gz"
+    "url": "https://ftp.postgresql.org/pub/source/v16.15/postgresql-16.15.tar.gz",
+    "sha256": "4f200ca23dfb120ff9838f13ce06014aad1d3c432d16ee9f93ab2000c0eeef7b"
   },
   "dependencies": [
     "openssl",

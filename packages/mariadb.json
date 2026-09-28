@@ -4,7 +4,8 @@
   "description": "MariaDB database server",
   "source": {
     "type": "tarball",
-    "url": "https://archive.mariadb.org/mariadb-11.4.13/source/mariadb-11.4.13.tar.gz"
+    "url": "https://archive.mariadb.org/mariadb-11.4.13/source/mariadb-11.4.13.tar.gz",
+    "sha256": "1bb254b106d0a7ca871cfa18fa6e18d4b80a7430f9ec9d1571ec4271a13def96"
   },
   "dependencies": [
     "openssl",
