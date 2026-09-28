@@ -291,13 +291,17 @@ def generate_version_definition(base_version: Dict, new_version: str) -> Dict:
         url = new_def['source']['url']
         old_version = base_version.get('version', '')
 
-        # Try multiple replacement strategies
-        if old_version in url:
-            # Direct replacement
-            new_def['source']['url'] = url.replace(old_version, new_version)
-        elif f"v{old_version}" in url:
-            # Version with 'v' prefix
-            new_def['source']['url'] = url.replace(f"v{old_version}", f"v{new_version}")
+        # The version as written, and a dotted version spelled with '-' or
+        # '_' -- one URL can hold several: icu's release-74-2/icu4c-74_2-src.tgz,
+        # expat's R_2_6_2/expat-2.6.2.tar.xz. Replace every spelling present.
+        spellings = [(old_version, new_version)]
+        if '.' in old_version:
+            spellings += [(old_version.replace('.', sep), new_version.replace('.', sep))
+                          for sep in '-_']
+        if old_version and any(old in url for old, _ in spellings):
+            for old, new in spellings:
+                url = url.replace(old, new)
+            new_def['source']['url'] = url
         else:
             # Try to find and replace version pattern in URL
             # Handle cases like: package-1.2.3, package_1.2.3, pcre2-10.43, etc.

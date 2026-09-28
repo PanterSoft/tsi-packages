@@ -2,6 +2,37 @@
   "name": "protobuf",
   "versions": [
     {
+      "version": "36.2",
+      "description": "Protocol Buffers data serialization",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/protocolbuffers/protobuf/releases/download/v36.2/protobuf-36.2.tar.gz",
+        "sha256": "3d9642a662d10e68ebae5e53f14dcce5105684212d5078f8e0d47d1ab3ae6b64"
+      },
+      "dependencies": [
+        "zlib",
+        "abseil-cpp"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF",
+        "-Dprotobuf_ABSL_PROVIDER=package"
+      ],
+      "env": {},
+      "cmake_args_darwin": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-Dprotobuf_BUILD_TESTS=OFF",
+        "-Dprotobuf_ABSL_PROVIDER=package",
+        "-Dprotobuf_HAVE_BUILTIN_ATOMICS=ON"
+      ]
+    },
+    {
       "version": "33.2",
       "description": "Protocol Buffers data serialization",
       "source": {

@@ -2,6 +2,28 @@
   "name": "msgpack",
   "versions": [
     {
+      "version": "7.0.2",
+      "description": "Efficient binary serialization format",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/msgpack/msgpack-c/releases/download/c-7.0.2/msgpack-c-7.0.2.tar.gz",
+        "sha256": "6ae50f69612871aa01de76bec904165cd2a2fc30ff9f653f2f60a663c5c1a86c"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DMSGPACK_BUILD_TESTS=OFF"
+      ],
+      "env": {}
+    },
+    {
       "version": "6.1.0",
       "description": "Efficient binary serialization format",
       "source": {
