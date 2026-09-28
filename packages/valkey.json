@@ -1,0 +1,17 @@
+{
+  "name": "valkey",
+  "version": "9.1.2",
+  "description": "High-performance key/value datastore (open-source Redis fork)",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/valkey-io/valkey/archive/refs/tags/9.1.2.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "custom",
+  "build_commands": [
+    "make",
+    "make install PREFIX=$TSI_INSTALL_DIR"
+  ],
+  "env": {}
+}

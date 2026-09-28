@@ -1,0 +1,21 @@
+{
+  "name": "entt",
+  "version": "4.0.0",
+  "description": "Fast and reliable entity-component system for C++ (header-only)",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/skypjack/entt/archive/refs/tags/v4.0.0.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DENTT_BUILD_TESTING=OFF"
+  ],
+  "env": {}
+}

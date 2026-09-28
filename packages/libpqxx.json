@@ -1,0 +1,24 @@
+{
+  "name": "libpqxx",
+  "version": "8.0.2",
+  "description": "Official C++ client API for PostgreSQL",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/jtv/libpqxx/archive/refs/tags/8.0.2.tar.gz"
+  },
+  "dependencies": [
+    "postgresql"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DSKIP_BUILD_TEST=ON"
+  ],
+  "env": {}
+}

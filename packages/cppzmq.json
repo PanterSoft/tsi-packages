@@ -1,0 +1,23 @@
+{
+  "name": "cppzmq",
+  "version": "4.11.0",
+  "description": "Header-only C++ binding for libzmq",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/zeromq/cppzmq/archive/refs/tags/v4.11.0.tar.gz"
+  },
+  "dependencies": [
+    "zeromq"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DCPPZMQ_BUILD_TESTS=OFF"
+  ],
+  "env": {}
+}

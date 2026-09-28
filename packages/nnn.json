@@ -1,0 +1,22 @@
+{
+  "name": "nnn",
+  "version": "5.3",
+  "description": "Tiny, lightning fast, feature-packed terminal file manager",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/jarun/nnn/archive/refs/tags/v5.3.tar.gz"
+  },
+  "dependencies": [
+    "ncurses",
+    "readline"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "make",
+  "make_args": [],
+  "env_darwin": {
+    "CPPFLAGS": "-I$TSI_INSTALL_DIR/include"
+  },
+  "env": {}
+}
