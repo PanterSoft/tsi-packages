@@ -4,7 +4,8 @@
   "description": "Library for reading and editing audio file metadata",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/taglib/taglib/archive/refs/tags/v2.0.2.tar.gz"
+    "url": "https://github.com/taglib/taglib/archive/refs/tags/v2.0.2.tar.gz",
+    "sha256": "0de288d7fe34ba133199fd8512f19cc1100196826eafcb67a33b224ec3a59737"
   },
   "dependencies": [
     "zlib"
