@@ -13,5 +13,8 @@
   "build_dependencies": [],
   "build_system": "autotools",
   "configure_args": [],
-  "env": {}
+  "env": {},
+  "env_darwin": {
+    "CFLAGS": "-O2 -include util.h"
+  }
 }
