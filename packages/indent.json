@@ -7,7 +7,9 @@
     "url": "https://ftp.gnu.org/gnu/indent/indent-2.2.13.tar.gz",
     "sha256": "9e64634fc4ce6797b204bcb8897ce14fdd0ab48ca57696f78767c59cae578095"
   },
-  "dependencies": [],
+  "dependencies": [
+    "gettext"
+  ],
   "build_dependencies": [],
   "build_system": "autotools",
   "configure_args": [

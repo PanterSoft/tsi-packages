@@ -7,9 +7,15 @@
     "url": "https://ftp.gnu.org/gnu/units/units-2.24.tar.gz",
     "sha256": "1e502c4edfacf20b29284716c72e5ddb51a495a2365d7b03e7960494c4a0c902"
   },
-  "dependencies": [],
+  "dependencies": [
+    "readline",
+    "ncurses"
+  ],
   "build_dependencies": [],
   "build_system": "autotools",
   "configure_args": [],
-  "env": {}
+  "env": {},
+  "env_darwin": {
+    "CPPFLAGS": "-I$TSI_INSTALL_DIR/include"
+  }
 }

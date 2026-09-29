@@ -13,7 +13,7 @@
   ],
   "build_system": "custom",
   "build_commands": [
-    "./configure --prefix=$TSI_INSTALL_DIR --enable-shared --disable-static --enable-pic --disable-examples --disable-unit-tests --disable-docs --disable-tools",
+    "case \"$(uname -s)-$(uname -m)\" in Darwin-x86_64) T=--target=x86_64-darwin20-gcc ;; Darwin-arm64) T=--target=arm64-darwin20-gcc ;; *) T= ;; esac; ./configure $T --prefix=$TSI_INSTALL_DIR --enable-shared --disable-static --enable-pic --disable-examples --disable-unit-tests --disable-docs --disable-tools",
     "make",
     "make install"
   ],
