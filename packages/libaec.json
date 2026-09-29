@@ -4,7 +4,7 @@
   "description": "Adaptive Entropy Coding library (CCSDS lossless compression, SZIP replacement)",
   "source": {
     "type": "tarball",
-    "url": "https://gitlab.dkrz.de/k202009/libaec/-/archive/v1.1.3/libaec-v1.1.3.tar.gz"
+    "url": "https://github.com/MathisRosenhauer/libaec/releases/download/v1.1.3/libaec-1.1.3.tar.gz"
   },
   "dependencies": [],
   "build_dependencies": [

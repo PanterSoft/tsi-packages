@@ -4,17 +4,24 @@
   "description": "Library and tool for encoding data in QR Code symbols",
   "source": {
     "type": "tarball",
-    "url": "https://fukuchi.org/works/qrencode/qrencode-4.1.1.tar.gz"
+    "url": "https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz"
   },
   "dependencies": [
     "libpng"
   ],
   "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils",
     "pkg-config"
   ],
-  "build_system": "autotools",
-  "configure_args": [
-    "--disable-static"
-  ],
-  "env": {}
+  "build_system": "cmake",
+  "env": {},
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DWITH_TOOLS=ON",
+    "-DWITH_TESTS=OFF",
+    "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+  ]
 }

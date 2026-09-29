@@ -4,7 +4,8 @@
   "description": "Convex hull, Delaunay triangulation and Voronoi diagram library and tools",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/qhull/qhull/archive/refs/tags/2020.2.tar.gz"
+    "url": "https://github.com/qhull/qhull/archive/refs/tags/2020.2.tar.gz",
+    "sha256": "59356b229b768e6e2b09a701448bfa222c37b797a84f87f864f97462d8dbc7c5"
   },
   "dependencies": [],
   "build_dependencies": [

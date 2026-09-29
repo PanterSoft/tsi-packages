@@ -4,7 +4,8 @@
   "description": "Transforms bitmaps into smooth, scalable vector graphics",
   "source": {
     "type": "tarball",
-    "url": "https://potrace.sourceforge.net/download/1.16/potrace-1.16.tar.gz"
+    "url": "https://potrace.sourceforge.net/download/1.16/potrace-1.16.tar.gz",
+    "sha256": "be8248a17dedd6ccbaab2fcc45835bb0502d062e40fbded3bc56028ce5eb7acc"
   },
   "dependencies": [
     "zlib"

@@ -4,7 +4,8 @@
   "description": "Open Asset Import Library: loads 3D model formats into a common structure",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/assimp/assimp/archive/refs/tags/v5.4.3.tar.gz"
+    "url": "https://github.com/assimp/assimp/archive/refs/tags/v5.4.3.tar.gz",
+    "sha256": "66dfbaee288f2bc43172440a55d0235dfc7bf885dda6435c038e8000e79582cb"
   },
   "dependencies": [
     "zlib"
