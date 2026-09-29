@@ -1,0 +1,18 @@
+{
+  "name": "libconfuse",
+  "version": "3.3",
+  "description": "Configuration file parser library written in C",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/libconfuse/libconfuse/releases/download/v3.3/confuse-3.3.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-nls",
+    "--disable-examples"
+  ],
+  "env": {}
+}

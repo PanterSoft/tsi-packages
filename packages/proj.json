@@ -1,0 +1,27 @@
+{
+  "name": "proj",
+  "version": "9.6.0",
+  "description": "Cartographic projections and coordinate transformations library",
+  "source": {
+    "type": "tarball",
+    "url": "https://download.osgeo.org/proj/proj-9.6.0.tar.gz"
+  },
+  "dependencies": [
+    "sqlite",
+    "libtiff"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils",
+    "pkg-config"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_TESTING=OFF",
+    "-DENABLE_CURL=OFF",
+    "-DBUILD_PROJSYNC=OFF"
+  ],
+  "env": {}
+}

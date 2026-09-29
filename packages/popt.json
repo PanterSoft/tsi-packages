@@ -1,0 +1,17 @@
+{
+  "name": "popt",
+  "version": "1.19",
+  "description": "Command-line option parsing library",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-nls"
+  ],
+  "env": {}
+}

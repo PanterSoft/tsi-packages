@@ -1,0 +1,23 @@
+{
+  "name": "qhull",
+  "version": "2020.2",
+  "description": "Convex hull, Delaunay triangulation and Voronoi diagram library and tools",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/qhull/qhull/archive/refs/tags/2020.2.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_STATIC_LIBS=OFF",
+    "-DBUILD_APPLICATIONS=ON",
+    "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+  ],
+  "env": {}
+}

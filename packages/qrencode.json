@@ -1,0 +1,20 @@
+{
+  "name": "qrencode",
+  "version": "4.1.1",
+  "description": "Library and tool for encoding data in QR Code symbols",
+  "source": {
+    "type": "tarball",
+    "url": "https://fukuchi.org/works/qrencode/qrencode-4.1.1.tar.gz"
+  },
+  "dependencies": [
+    "libpng"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static"
+  ],
+  "env": {}
+}

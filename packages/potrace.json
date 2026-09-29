@@ -1,0 +1,19 @@
+{
+  "name": "potrace",
+  "version": "1.16",
+  "description": "Transforms bitmaps into smooth, scalable vector graphics",
+  "source": {
+    "type": "tarball",
+    "url": "https://potrace.sourceforge.net/download/1.16/potrace-1.16.tar.gz"
+  },
+  "dependencies": [
+    "zlib"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--with-libpotrace",
+    "--disable-static"
+  ],
+  "env": {}
+}
