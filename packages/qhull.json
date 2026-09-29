@@ -13,12 +13,11 @@
     "make",
     "coreutils"
   ],
-  "build_system": "cmake",
-  "cmake_args": [
-    "-DCMAKE_BUILD_TYPE=Release",
-    "-DBUILD_STATIC_LIBS=OFF",
-    "-DBUILD_APPLICATIONS=ON",
-    "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
-  ],
-  "env": {}
+  "build_system": "custom",
+  "env": {},
+  "build_commands": [
+    "cmake -S . -B build-tsi -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$TSI_INSTALL_DIR -DLIB_INSTALL_DIR=$TSI_INSTALL_DIR/lib -DBUILD_STATIC_LIBS=OFF -DBUILD_APPLICATIONS=ON -DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+    "cmake --build build-tsi -j4",
+    "cmake --install build-tsi"
+  ]
 }

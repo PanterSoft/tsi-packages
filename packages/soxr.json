@@ -21,5 +21,14 @@
     "-DWITH_OPENMP=OFF",
     "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
   ],
-  "env": {}
+  "env": {},
+  "cmake_args_darwin": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_TESTS=OFF",
+    "-DBUILD_EXAMPLES=OFF",
+    "-DWITH_OPENMP=OFF",
+    "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+    "-DWITH_CR32S=OFF",
+    "-DWITH_CR64S=OFF"
+  ]
 }
