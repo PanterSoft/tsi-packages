@@ -1,0 +1,22 @@
+{
+  "name": "libsigcplusplus",
+  "version": "3.6.0",
+  "description": "Typesafe callback system for standard C++",
+  "source": {
+    "type": "tarball",
+    "url": "https://download.gnome.org/sources/libsigc++/3.6/libsigc++-3.6.0.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "meson",
+    "ninja",
+    "pkg-config"
+  ],
+  "build_system": "meson",
+  "configure_args": [
+    "-Dbuild-examples=false",
+    "-Dbuild-documentation=false",
+    "-Dbuild-tests=false"
+  ],
+  "env": {}
+}

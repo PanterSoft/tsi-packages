@@ -1,0 +1,16 @@
+{
+  "name": "asio",
+  "version": "1.30.2",
+  "description": "Cross-platform C++ library for network and low-level I/O (standalone, header-only)",
+  "source": {
+    "type": "tarball",
+    "url": "https://downloads.sourceforge.net/project/asio/asio/1.30.2%20%28Stable%29/asio-1.30.2.tar.bz2"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--without-boost"
+  ],
+  "env": {}
+}
