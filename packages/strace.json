@@ -4,7 +4,8 @@
   "description": "Diagnostic and debugging tracer for Linux system calls and signals",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/strace/strace/releases/download/v6.12/strace-6.12.tar.xz"
+    "url": "https://github.com/strace/strace/releases/download/v6.12/strace-6.12.tar.xz",
+    "sha256": "c47da93be45b6055f4dc741d7f20efaf50ca10160a5b100c109b294fd9c0bdfe"
   },
   "dependencies": [],
   "build_dependencies": [],
