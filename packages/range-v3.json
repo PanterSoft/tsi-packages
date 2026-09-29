@@ -1,0 +1,25 @@
+{
+  "name": "range-v3",
+  "version": "0.12.0",
+  "description": "Range library for C++14/17/20 (header-only)",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/ericniebler/range-v3/archive/refs/tags/0.12.0.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DRANGE_V3_TESTS=OFF",
+    "-DRANGE_V3_EXAMPLES=OFF",
+    "-DRANGE_V3_PERF=OFF",
+    "-DRANGE_V3_DOCS=OFF",
+    "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+  ],
+  "env": {}
+}

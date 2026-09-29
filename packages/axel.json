@@ -1,0 +1,20 @@
+{
+  "name": "axel",
+  "version": "2.17.14",
+  "description": "Light command-line download accelerator",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/axel-download-accelerator/axel/releases/download/v2.17.14/axel-2.17.14.tar.xz"
+  },
+  "dependencies": [
+    "openssl"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-nls"
+  ],
+  "env": {}
+}

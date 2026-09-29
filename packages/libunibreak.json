@@ -1,0 +1,16 @@
+{
+  "name": "libunibreak",
+  "version": "6.1",
+  "description": "Line and word breaking algorithms of the Unicode standard",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/adah1972/libunibreak/releases/download/libunibreak_6_1/libunibreak-6.1.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static"
+  ],
+  "env": {}
+}

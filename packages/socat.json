@@ -1,0 +1,17 @@
+{
+  "name": "socat",
+  "version": "1.8.0.3",
+  "description": "Multipurpose relay for bidirectional data transfer between two channels",
+  "source": {
+    "type": "tarball",
+    "url": "http://www.dest-unreach.org/socat/download/socat-1.8.0.3.tar.gz"
+  },
+  "dependencies": [
+    "openssl",
+    "readline"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

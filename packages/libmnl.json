@@ -1,0 +1,19 @@
+{
+  "name": "libmnl",
+  "version": "1.0.5",
+  "description": "Minimalistic user-space library for Netlink developers",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.netfilter.org/projects/libmnl/files/libmnl-1.0.5.tar.bz2"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static"
+  ],
+  "platforms": [
+    "linux"
+  ],
+  "env": {}
+}

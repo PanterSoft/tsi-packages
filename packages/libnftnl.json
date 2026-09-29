@@ -1,0 +1,23 @@
+{
+  "name": "libnftnl",
+  "version": "1.2.8",
+  "description": "User-space library for the nf_tables kernel subsystem",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.netfilter.org/projects/libnftnl/files/libnftnl-1.2.8.tar.xz"
+  },
+  "dependencies": [
+    "libmnl"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static"
+  ],
+  "platforms": [
+    "linux"
+  ],
+  "env": {}
+}
