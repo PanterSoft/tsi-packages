@@ -4,7 +4,8 @@
   "description": "CUE sheet parser library",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/lipnitsk/libcue/archive/refs/tags/v2.3.0.tar.gz"
+    "url": "https://github.com/lipnitsk/libcue/archive/refs/tags/v2.3.0.tar.gz",
+    "sha256": "cc1b3a65c60bd88b77a1ddd1574042d83cf7cc32b85fe9481c99613359eb7cfe"
   },
   "dependencies": [],
   "build_dependencies": [
