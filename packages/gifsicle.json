@@ -4,7 +4,8 @@
   "description": "Command-line tool for creating, editing and optimizing GIF images and animations",
   "source": {
     "type": "tarball",
-    "url": "https://www.lcdf.org/gifsicle/gifsicle-1.95.tar.gz"
+    "url": "https://www.lcdf.org/gifsicle/gifsicle-1.95.tar.gz",
+    "sha256": "b2711647009fd2a13130f3be160532ed46538e762bfc0f020dea50618a7dc950"
   },
   "dependencies": [],
   "build_dependencies": [],

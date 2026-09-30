@@ -4,7 +4,8 @@
   "description": "DNS library and tools (drill) for programming DNS tools",
   "source": {
     "type": "tarball",
-    "url": "https://www.nlnetlabs.nl/downloads/ldns/ldns-1.8.4.tar.gz"
+    "url": "https://www.nlnetlabs.nl/downloads/ldns/ldns-1.8.4.tar.gz",
+    "sha256": "838b907594baaff1cd767e95466a7745998ae64bc74be038dccc62e2de2e4247"
   },
   "dependencies": [
     "openssl"

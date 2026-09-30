@@ -4,7 +4,8 @@
   "description": "PNG optimizer that recompresses images losslessly",
   "source": {
     "type": "tarball",
-    "url": "https://downloads.sourceforge.net/project/optipng/OptiPNG/optipng-0.7.8/optipng-0.7.8.tar.gz"
+    "url": "https://downloads.sourceforge.net/project/optipng/OptiPNG/optipng-0.7.8/optipng-0.7.8.tar.gz",
+    "sha256": "25a3bd68481f21502ccaa0f4c13f84dcf6b20338e4c4e8c51f2cefbd8513398c"
   },
   "dependencies": [],
   "build_dependencies": [],

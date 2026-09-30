@@ -4,7 +4,8 @@
   "description": "Automatically restart SSH sessions and tunnels",
   "source": {
     "type": "tarball",
-    "url": "https://www.harding.motd.ca/autossh/autossh-1.4g.tgz"
+    "url": "https://www.harding.motd.ca/autossh/autossh-1.4g.tgz",
+    "sha256": "5fc3cee3361ca1615af862364c480593171d0c54ec156de79fc421e31ae21277"
   },
   "dependencies": [],
   "build_dependencies": [],
