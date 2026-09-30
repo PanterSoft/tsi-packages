@@ -17,6 +17,7 @@
   ],
   "env": {},
   "env_darwin": {
-    "CFLAGS": "-O2 -include string.h"
+    "CFLAGS": "-O2 -include string.h",
+    "LIBS": "-lintl"
   }
 }
