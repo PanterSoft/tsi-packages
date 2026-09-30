@@ -2,6 +2,23 @@
   "name": "libmodbus",
   "versions": [
     {
+      "version": "3.2.0",
+      "description": "Modbus protocol library for serial and TCP devices",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/stephane/libmodbus/releases/download/v3.2.0/libmodbus-3.2.0.tar.gz",
+        "sha256": "72239f319b9b8483e3d393c5a60865d734fcff18a8abbb2486e389834a2f6ef1"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
       "version": "3.1.11",
       "description": "Modbus protocol library for serial and TCP devices",
       "source": {

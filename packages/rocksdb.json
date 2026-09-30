@@ -2,6 +2,47 @@
   "name": "rocksdb",
   "versions": [
     {
+      "version": "11.8.1",
+      "description": "Persistent key-value store",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/facebook/rocksdb/archive/v11.8.1.tar.gz",
+        "sha256": "618d9726a7cb1cf4ce034f4cdca49de98aa64867dda06b91371a791ae8921aff"
+      },
+      "dependencies": [
+        "snappy",
+        "zlib",
+        "lz4",
+        "zstd",
+        "bzip2"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_TESTS=OFF",
+        "-DWITH_ALL_TESTS=OFF",
+        "-DWITH_TOOLS=OFF",
+        "-DWITH_CORE_TOOLS=OFF",
+        "-DWITH_BENCHMARK_TOOLS=OFF",
+        "-DWITH_TRACE_TOOLS=OFF",
+        "-DWITH_EXAMPLES=OFF",
+        "-DWITH_GFLAGS=OFF",
+        "-DWITH_LIBURING=OFF",
+        "-DWITH_SNAPPY=ON",
+        "-DWITH_LZ4=ON",
+        "-DWITH_ZLIB=ON",
+        "-DWITH_ZSTD=ON",
+        "-DWITH_BZ2=ON",
+        "-DROCKSDB_BUILD_SHARED=OFF"
+      ],
+      "env": {}
+    },
+    {
       "version": "10.7.5",
       "description": "Persistent key-value store",
       "source": {

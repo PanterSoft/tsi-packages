@@ -23,8 +23,8 @@ Package format and fields are documented in the [TSI documentation](https://gith
 - **Validation:** The Package Validation workflow runs on push/PR and checks JSON syntax, required fields, source types, build systems, and that all dependencies reference existing packages in this repository.
 - **Test build:** The Test Build Packages workflow runs on push/PR when package definitions change and really builds each changed package (latest version only) on **Linux-x86_64, Linux-aarch64, macOS-aarch64 and macOS-x86_64**. All four must pass: building on one architecture proves nothing about the others. TSI is built from source in CI; known slow packages (e.g. gcc, llvm) are skipped. See `scripts/README.md` for the changed-packages script.
 - **Validate before you push:** from a TSI checkout with this repository as its `tsi-packages` submodule, `make validate PKGS="yourpackage"` builds it in containers on `linux/arm64` and `linux/amd64` locally, so you find an architecture-specific break before CI does.
-- **Platform-restricted packages:** a package that genuinely cannot build everywhere (Linux kernel APIs, say) declares `"platforms": ["linux"]`. Do not use it to paper over a build that is merely broken — it removes the package from the validation matrix on every other platform.
-- **Version discovery:** The discover-versions workflow can add new versions to existing packages; see `scripts/README.md` for the discovery script usage.
+- **Platform-restricted packages:** a package that genuinely cannot build everywhere (Linux kernel APIs, say) declares `"platforms": ["linux"]`. Entries are `<os>` or `<os>-<arch>` in TSI's spelling (`darwin`, `aarch64`, `x86`, `arm`, …); any other OS or arch name is accepted as-is, so custom systems can be targeted too. Do not use it to paper over a build that is merely broken — it removes the package from the validation matrix on every other platform.
+- **Version updates are automatic:** the weekly discover-versions workflow adds each package's newest stable release, records its checksum, builds it on all three platforms and commits the ones that pass straight to `main`. There are no update PRs or branches to merge; anything that fails is listed on a single tracking issue and retried next week. Packages in `scripts/slow-packages.txt` are never auto-updated.
 
 ## What CI checks
 
@@ -34,13 +34,20 @@ Package format and fields are documented in the [TSI documentation](https://gith
 | `test-build-packages` | every push / PR touching packages | changed packages really build on Linux-x86_64, Linux-aarch64, macOS-aarch64 and macOS-x86_64, **and** their installed binaries can actually load |
 | `verify-sources` | weekly | every package's default source still downloads and still matches its recorded sha256 |
 | `validate-all-packages` | weekly + manual | the whole catalogue built on all four platforms (each slow package in a job of its own), regenerating `PACKAGES_STATUS.md` |
+| `discover-versions` | weekly + manual | new upstream releases land on `main` only after downloading, checksumming, validating, building and loading on all three platforms |
 
 Nothing here needs a local run to be trusted, but `make validate PKGS="…"` from a TSI checkout gives you the cross-architecture answer before you push.
 
 ## Package status
 
-`PACKAGES_STATUS.md` holds one column per platform, regenerated from real build
-results by the weekly **Validate All Packages** workflow:
+`PACKAGES_STATUS.md` holds one column per platform plus a per-platform summary,
+rebuilt from the raw results in `status-results/`. The platform set is
+open-ended: common targets (Linux, macOS, Windows and the BSDs across their
+architectures) are always listed, and **any** other OS or architecture — a
+custom Unix-like included — gets a column as soon as someone commits results
+for it (see `status-results/README.md`). The weekly **Validate All Packages**
+workflow refreshes the CI platforms. A platform with no results stays blank
+apart from packages whose `platforms` field rules it out:
 
 | Marker | Meaning |
 |--------|---------|
@@ -63,6 +70,7 @@ up in the Notes column for as long as the package is not green there.
 ```
 packages/          # One .json file per package (e.g. zlib.json, openssl.json)
 scripts/           # Package tooling (validate, build-all, merge-status, discover-versions)
+status-results/    # Raw per-platform build results behind PACKAGES_STATUS.md
 .github/workflows/ # CI: package-validation, test-build-packages, validate-all-packages,
                    #     discover-versions, sync-external-packages
 ```

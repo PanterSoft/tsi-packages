@@ -2,6 +2,29 @@
   "name": "fmt",
   "versions": [
     {
+      "version": "12.2.0",
+      "description": "Modern formatting library for C++",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/fmtlib/fmt/archive/refs/tags/12.2.0.tar.gz",
+        "sha256": "8b852bb5aa6e7d8564f9e81394055395dd1d1936d38dfd3a17792a02bebd7af0"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DFMT_TEST=OFF",
+        "-DFMT_DOC=OFF"
+      ],
+      "env": {}
+    },
+    {
       "version": "11.1.4",
       "description": "Modern formatting library for C++",
       "source": {

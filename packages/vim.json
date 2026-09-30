@@ -2,6 +2,28 @@
   "name": "vim",
   "versions": [
     {
+      "version": "9.2.0999",
+      "description": "Vi IMproved text editor",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/vim/vim/archive/v9.2.0999.tar.gz",
+        "sha256": "3456347ec68da1be172503e65836241fe796dc7a08c0cc8e5927861e747d3e33"
+      },
+      "dependencies": [
+        "ncurses"
+      ],
+      "build_dependencies": [
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-multibyte",
+        "--with-features=huge"
+      ],
+      "env": {}
+    },
+    {
       "version": "9.1.0999",
       "description": "Vi IMproved text editor",
       "source": {

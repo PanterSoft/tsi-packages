@@ -22,6 +22,9 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from platform_id import tsi_arch, tsi_os  # noqa: E402
+
 VALID_SOURCE_TYPES = ["git", "tarball", "zip", "local"]
 # "meta" installs nothing of its own; it exists to pull in dependencies.
 VALID_BUILD_SYSTEMS = ["autotools", "cmake", "meson", "make", "custom", "meta"]
@@ -29,11 +32,12 @@ ARRAY_FIELDS = [
     "dependencies", "build_dependencies", "configure_args",
     "cmake_args", "make_args", "patches", "platforms",
 ]
-# `platforms` entries are TSI's own os names (src/platform/mod.rs), optionally
-# with an arch suffix. A typo ("macos" for "darwin") would make the package
-# unbuildable everywhere while looking perfectly valid, so values are checked.
-VALID_OS = ["linux", "darwin", "windows", "freebsd", "openbsd", "netbsd"]
-VALID_ARCH = ["x86_64", "aarch64", "x86", "arm"]
+# `platforms` entries are `<os>` or `<os>-<arch>`. The set is open -- TSI is
+# meant for any OS and architecture, custom Unix-likes included, so "haiku" or
+# "linux-riscv64" are fine. What is rejected is an alias of a name TSI already
+# spells differently: "macos" for "darwin" would make the package unbuildable
+# everywhere while looking perfectly valid. platform_id.py owns the spellings.
+PLATFORM_ENTRY = re.compile(r"[a-z][a-z0-9_]*(-[a-z0-9_]+)?")
 
 
 def iter_versions(data):
@@ -118,12 +122,18 @@ def validate_version(version, index, path):
     platforms = version.get("platforms", [])
     if isinstance(platforms, list):
         for entry in platforms:
-            os_part, _, arch_part = str(entry).partition("-")
-            if os_part not in VALID_OS or (arch_part and arch_part not in VALID_ARCH):
+            entry = str(entry)
+            if not PLATFORM_ENTRY.fullmatch(entry):
                 print(
                     f"❌ {label}: invalid platform {entry!r} "
-                    f"(expected <os> or <os>-<arch>; os one of {VALID_OS})"
+                    "(expected lower-case <os> or <os>-<arch>, e.g. linux, darwin-aarch64)"
                 )
+                ok = False
+                continue
+            os_part, _, arch_part = entry.partition("-")
+            want = tsi_os(os_part) + (f"-{tsi_arch(arch_part)}" if arch_part else "")
+            if want != entry:
+                print(f"❌ {label}: invalid platform {entry!r} (TSI calls it {want!r})")
                 ok = False
 
     return ok
