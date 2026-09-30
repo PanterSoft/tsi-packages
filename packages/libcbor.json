@@ -21,5 +21,13 @@
     "-DWITH_EXAMPLES=OFF",
     "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
   ],
-  "env": {}
+  "env": {},
+  "cmake_args_darwin": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DWITH_TESTS=OFF",
+    "-DWITH_EXAMPLES=OFF",
+    "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+    "-DCMAKE_INSTALL_NAME_DIR=$TSI_INSTALL_DIR/lib"
+  ]
 }
