@@ -1,0 +1,32 @@
+{
+  "name": "vips",
+  "version": "8.16.0",
+  "description": "Fast, low-memory image processing library and command-line tools",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/libvips/libvips/releases/download/v8.16.0/vips-8.16.0.tar.xz"
+  },
+  "dependencies": [
+    "glib",
+    "expat",
+    "libjpeg-turbo",
+    "libpng",
+    "libwebp",
+    "libtiff",
+    "lcms2"
+  ],
+  "build_dependencies": [
+    "meson",
+    "ninja",
+    "pkg-config"
+  ],
+  "build_system": "meson",
+  "configure_args": [
+    "-Dintrospection=disabled",
+    "-Dmodules=disabled",
+    "-Dcplusplus=true",
+    "-Ddeprecated=false",
+    "-Dexamples=false"
+  ],
+  "env": {}
+}

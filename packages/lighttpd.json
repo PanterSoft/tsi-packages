@@ -1,0 +1,24 @@
+{
+  "name": "lighttpd",
+  "version": "1.4.76",
+  "description": "Secure, fast, compliant and flexible web server",
+  "source": {
+    "type": "tarball",
+    "url": "https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.76.tar.xz"
+  },
+  "dependencies": [
+    "pcre2",
+    "zlib",
+    "openssl"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--with-openssl",
+    "--with-pcre2",
+    "--with-zlib"
+  ],
+  "env": {}
+}

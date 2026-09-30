@@ -1,0 +1,37 @@
+{
+  "name": "poco",
+  "version": "1.14.1",
+  "description": "Portable C++ libraries for network-centric applications",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/pocoproject/poco/archive/refs/tags/poco-1.14.1-release.tar.gz"
+  },
+  "dependencies": [
+    "openssl",
+    "expat",
+    "zlib",
+    "pcre2"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DENABLE_TESTS=OFF",
+    "-DENABLE_SAMPLES=OFF",
+    "-DENABLE_DATA_MYSQL=OFF",
+    "-DENABLE_DATA_POSTGRESQL=OFF",
+    "-DENABLE_DATA_ODBC=OFF",
+    "-DENABLE_MONGODB=OFF",
+    "-DENABLE_REDIS=OFF",
+    "-DENABLE_PDF=OFF",
+    "-DENABLE_APACHECONNECTOR=OFF",
+    "-DENABLE_ACTIVERECORD=OFF",
+    "-DENABLE_ACTIVERECORD_COMPILER=OFF",
+    "-DPOCO_UNBUNDLED=ON"
+  ],
+  "env": {}
+}

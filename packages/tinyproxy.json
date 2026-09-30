@@ -1,0 +1,16 @@
+{
+  "name": "tinyproxy",
+  "version": "1.11.2",
+  "description": "Light-weight HTTP/HTTPS proxy daemon",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/tinyproxy/tinyproxy/releases/download/1.11.2/tinyproxy-1.11.2.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-manpage_support"
+  ],
+  "env": {}
+}

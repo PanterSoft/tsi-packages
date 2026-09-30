@@ -1,0 +1,30 @@
+{
+  "name": "libical",
+  "version": "3.0.19",
+  "description": "Implementation of the iCalendar protocols and data formats",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/libical/libical/releases/download/v3.0.19/libical-3.0.19.tar.gz"
+  },
+  "dependencies": [
+    "icu"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils",
+    "perl",
+    "pkg-config"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DICAL_GLIB=OFF",
+    "-DGOBJECT_INTROSPECTION=OFF",
+    "-DICAL_BUILD_DOCS=OFF",
+    "-DENABLE_GTK_DOC=OFF",
+    "-DLIBICAL_BUILD_TESTING=OFF",
+    "-DSHARED_ONLY=ON"
+  ],
+  "env": {}
+}

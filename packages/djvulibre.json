@@ -1,0 +1,22 @@
+{
+  "name": "djvulibre",
+  "version": "3.5.28",
+  "description": "Library and tools for the DjVu document format",
+  "source": {
+    "type": "tarball",
+    "url": "https://downloads.sourceforge.net/project/djvu/DjVuLibre/3.5.28/djvulibre-3.5.28.tar.gz"
+  },
+  "dependencies": [
+    "libjpeg-turbo",
+    "libtiff"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-desktopfiles"
+  ],
+  "env": {}
+}

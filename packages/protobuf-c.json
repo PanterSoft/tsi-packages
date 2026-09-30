@@ -1,0 +1,21 @@
+{
+  "name": "protobuf-c",
+  "version": "1.5.1",
+  "description": "Protocol Buffers implementation in C",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.1/protobuf-c-1.5.1.tar.gz"
+  },
+  "dependencies": [
+    "protobuf",
+    "abseil-cpp"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static"
+  ],
+  "env": {}
+}

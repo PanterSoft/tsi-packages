@@ -1,0 +1,26 @@
+{
+  "name": "czmq",
+  "version": "4.2.1",
+  "description": "High-level C binding for ZeroMQ",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/zeromq/czmq/releases/download/v4.2.1/czmq-4.2.1.tar.gz"
+  },
+  "dependencies": [
+    "zeromq"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--without-docs",
+    "--without-libcurl",
+    "--without-liblz4",
+    "--without-libuuid",
+    "--without-libsystemd",
+    "--without-libmicrohttpd"
+  ],
+  "env": {}
+}
