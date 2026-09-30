@@ -1,0 +1,24 @@
+{
+  "name": "libspng",
+  "version": "0.7.4",
+  "description": "Simple, modern PNG decoding and encoding library",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/randy408/libspng/archive/refs/tags/v0.7.4.tar.gz"
+  },
+  "dependencies": [
+    "zlib"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DSPNG_STATIC=OFF",
+    "-DBUILD_EXAMPLES=OFF"
+  ],
+  "env": {}
+}

@@ -1,0 +1,25 @@
+{
+  "name": "unbound",
+  "version": "1.22.0",
+  "description": "Validating, recursive and caching DNS resolver",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.nlnetlabs.nl/downloads/unbound/unbound-1.22.0.tar.gz"
+  },
+  "dependencies": [
+    "openssl",
+    "expat"
+  ],
+  "build_dependencies": [
+    "bison",
+    "flex"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--with-ssl=$TSI_INSTALL_DIR",
+    "--with-libexpat=$TSI_INSTALL_DIR",
+    "--disable-flto"
+  ],
+  "env": {}
+}

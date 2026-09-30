@@ -1,0 +1,26 @@
+{
+  "name": "jasper",
+  "version": "4.2.4",
+  "description": "JPEG-2000 codec library and tools",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/jasper-software/jasper/releases/download/version-4.2.4/jasper-4.2.4.tar.gz"
+  },
+  "dependencies": [
+    "libjpeg-turbo"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DJAS_ENABLE_DOC=OFF",
+    "-DJAS_ENABLE_OPENGL=OFF",
+    "-DJAS_ENABLE_AUTOMATIC_DEPENDENCIES=OFF",
+    "-DALLOW_IN_SOURCE_BUILD=ON"
+  ],
+  "env": {}
+}

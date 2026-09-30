@@ -1,0 +1,19 @@
+{
+  "name": "dialog",
+  "version": "1.3-20240619",
+  "description": "Displays user-friendly dialog boxes from shell scripts",
+  "source": {
+    "type": "tarball",
+    "url": "https://invisible-island.net/archives/dialog/dialog-1.3-20240619.tgz"
+  },
+  "dependencies": [
+    "ncurses"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--with-ncursesw",
+    "--disable-nls"
+  ],
+  "env": {}
+}

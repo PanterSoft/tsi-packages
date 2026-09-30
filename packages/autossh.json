@@ -1,0 +1,14 @@
+{
+  "name": "autossh",
+  "version": "1.4g",
+  "description": "Automatically restart SSH sessions and tunnels",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.harding.motd.ca/autossh/autossh-1.4g.tgz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "jpegoptim",
+  "version": "1.5.5",
+  "description": "Utility to optimize and compress JPEG files",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/tjko/jpegoptim/archive/refs/tags/v1.5.5.tar.gz"
+  },
+  "dependencies": [
+    "libjpeg-turbo"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

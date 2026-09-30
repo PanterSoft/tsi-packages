@@ -1,0 +1,16 @@
+{
+  "name": "wdiff",
+  "version": "1.2.2",
+  "description": "Front end to diff for comparing files on a word per word basis",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/wdiff/wdiff-1.2.2.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-nls"
+  ],
+  "env": {}
+}

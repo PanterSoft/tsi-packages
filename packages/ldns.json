@@ -1,0 +1,21 @@
+{
+  "name": "ldns",
+  "version": "1.8.4",
+  "description": "DNS library and tools (drill) for programming DNS tools",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.nlnetlabs.nl/downloads/ldns/ldns-1.8.4.tar.gz"
+  },
+  "dependencies": [
+    "openssl"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--with-ssl=$TSI_INSTALL_DIR",
+    "--with-drill",
+    "--disable-dane-ta-usage"
+  ],
+  "env": {}
+}
