@@ -4,7 +4,8 @@
   "description": "Helper library for string handling (used by rsyslog)",
   "source": {
     "type": "tarball",
-    "url": "https://libestr.adiscon.com/files/download/libestr-0.1.11.tar.gz"
+    "url": "https://libestr.adiscon.com/files/download/libestr-0.1.11.tar.gz",
+    "sha256": "46632b2785ff4a231dcf241eeb0dcb5fc0c7d4da8ee49cf5687722cdbe8b2024"
   },
   "dependencies": [],
   "build_dependencies": [],
