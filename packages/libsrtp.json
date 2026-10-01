@@ -1,0 +1,22 @@
+{
+  "name": "libsrtp",
+  "version": "2.6.0",
+  "description": "Secure Real-time Transport Protocol (SRTP) library",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/cisco/libsrtp/archive/refs/tags/v2.6.0.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DLIBSRTP_TEST_APPS=OFF"
+  ],
+  "env": {}
+}

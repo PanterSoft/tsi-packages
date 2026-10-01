@@ -1,0 +1,20 @@
+{
+  "name": "zip",
+  "version": "3.0",
+  "description": "Info-ZIP compression utility for .zip archives",
+  "source": {
+    "type": "tarball",
+    "url": "https://downloads.sourceforge.net/project/infozip/Zip%203.x%20%28latest%29/3.0/zip30.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "make",
+    "coreutils"
+  ],
+  "build_system": "custom",
+  "build_commands": [
+    "make -f unix/Makefile generic",
+    "make -f unix/Makefile install prefix=$TSI_INSTALL_DIR"
+  ],
+  "env": {}
+}

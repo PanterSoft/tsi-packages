@@ -1,0 +1,19 @@
+{
+  "name": "libdatrie",
+  "version": "0.2.13",
+  "description": "Double-array trie library",
+  "source": {
+    "type": "tarball",
+    "url": "https://linux.thai.net/pub/thailinux/software/libthai/libdatrie-0.2.13.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-doxygen-doc"
+  ],
+  "env": {}
+}

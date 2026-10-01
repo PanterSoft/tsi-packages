@@ -1,0 +1,18 @@
+{
+  "name": "cfitsio",
+  "version": "4.5.0",
+  "description": "Library for reading and writing FITS astronomy data files",
+  "source": {
+    "type": "tarball",
+    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.5.0.tar.gz"
+  },
+  "dependencies": [
+    "zlib"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-curl"
+  ],
+  "env": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "libthai",
+  "version": "0.1.29",
+  "description": "Thai language support library (word breaking, input/output methods)",
+  "source": {
+    "type": "tarball",
+    "url": "https://linux.thai.net/pub/thailinux/software/libthai/libthai-0.1.29.tar.xz"
+  },
+  "dependencies": [
+    "libdatrie"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-doxygen-doc"
+  ],
+  "env": {}
+}

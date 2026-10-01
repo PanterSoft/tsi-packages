@@ -1,0 +1,27 @@
+{
+  "name": "netcdf-c",
+  "version": "4.9.2",
+  "description": "NetCDF C library and tools for array-oriented scientific data",
+  "source": {
+    "type": "tarball",
+    "url": "https://downloads.unidata.ucar.edu/netcdf-c/4.9.2/netcdf-c-4.9.2.tar.gz"
+  },
+  "dependencies": [
+    "hdf5",
+    "zlib"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-dap",
+    "--disable-byterange",
+    "--disable-libxml2",
+    "--disable-nczarr-filters",
+    "--disable-plugins",
+    "--disable-testsets"
+  ],
+  "env": {}
+}

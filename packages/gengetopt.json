@@ -1,0 +1,15 @@
+{
+  "name": "gengetopt",
+  "version": "2.23",
+  "description": "GNU tool that generates C code for parsing command-line options",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/gengetopt/gengetopt-2.23.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "texinfo"
+  ],
+  "build_system": "autotools",
+  "env": {}
+}

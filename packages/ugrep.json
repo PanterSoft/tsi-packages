@@ -1,0 +1,27 @@
+{
+  "name": "ugrep",
+  "version": "7.5.0",
+  "description": "Fast grep with interactive search, fuzzy matching and archive search",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/Genivia/ugrep/archive/refs/tags/v7.5.0.tar.gz"
+  },
+  "dependencies": [
+    "pcre2",
+    "zlib",
+    "bzip2",
+    "xz",
+    "lz4",
+    "zstd",
+    "brotli"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--with-pcre2=$TSI_INSTALL_DIR",
+    "--without-boost-regex"
+  ],
+  "env": {}
+}
