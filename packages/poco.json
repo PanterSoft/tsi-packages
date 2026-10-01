@@ -4,7 +4,8 @@
   "description": "Portable C++ libraries for network-centric applications",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/pocoproject/poco/archive/refs/tags/poco-1.14.1-release.tar.gz"
+    "url": "https://github.com/pocoproject/poco/archive/refs/tags/poco-1.14.1-release.tar.gz",
+    "sha256": "e711712d68d01e580be315e1cca21d2d10ce941fc3252c0402c0a5732f719445"
   },
   "dependencies": [
     "openssl",

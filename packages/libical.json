@@ -4,7 +4,8 @@
   "description": "Implementation of the iCalendar protocols and data formats",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/libical/libical/releases/download/v3.0.19/libical-3.0.19.tar.gz"
+    "url": "https://github.com/libical/libical/releases/download/v3.0.19/libical-3.0.19.tar.gz",
+    "sha256": "6a1e7f0f50a399cbad826bcc286ce10d7151f3df7cc103f641de15160523c73f"
   },
   "dependencies": [
     "icu"

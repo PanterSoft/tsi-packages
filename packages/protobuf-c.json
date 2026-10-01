@@ -4,7 +4,8 @@
   "description": "Protocol Buffers implementation in C",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.1/protobuf-c-1.5.1.tar.gz"
+    "url": "https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.1/protobuf-c-1.5.1.tar.gz",
+    "sha256": "20d1dc257da96f8ddff8be4dd9779215bbd0a6069ed53bbe9de38fa7629be06b"
   },
   "dependencies": [
     "protobuf",

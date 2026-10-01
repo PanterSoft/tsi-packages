@@ -4,7 +4,8 @@
   "description": "High-level C binding for ZeroMQ",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/zeromq/czmq/releases/download/v4.2.1/czmq-4.2.1.tar.gz"
+    "url": "https://github.com/zeromq/czmq/releases/download/v4.2.1/czmq-4.2.1.tar.gz",
+    "sha256": "5d720a204c2a58645d6f7643af15d563a712dad98c9d32c1ed913377daa6ac39"
   },
   "dependencies": [
     "zeromq"

@@ -4,7 +4,8 @@
   "description": "Secure, fast, compliant and flexible web server",
   "source": {
     "type": "tarball",
-    "url": "https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.76.tar.xz"
+    "url": "https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.76.tar.xz",
+    "sha256": "8cbf4296e373cfd0cedfe9d978760b5b05c58fdc4048b4e2bcaf0a61ac8f5011"
   },
   "dependencies": [
     "pcre2",
