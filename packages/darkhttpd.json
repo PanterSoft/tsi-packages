@@ -1,0 +1,18 @@
+{
+  "name": "darkhttpd",
+  "version": "1.16",
+  "description": "Simple, static, single-binary web server",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/emikulic/darkhttpd/archive/refs/tags/v1.16.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "custom",
+  "build_commands": [
+    "make",
+    "mkdir -p $TSI_INSTALL_DIR/bin",
+    "cp darkhttpd $TSI_INSTALL_DIR/bin/"
+  ],
+  "env": {}
+}

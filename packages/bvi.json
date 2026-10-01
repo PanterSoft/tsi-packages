@@ -1,0 +1,16 @@
+{
+  "name": "bvi",
+  "version": "1.4.2",
+  "description": "Display-oriented binary file editor based on vi",
+  "source": {
+    "type": "tarball",
+    "url": "https://downloads.sourceforge.net/project/bvi/bvi/1.4.2/bvi-1.4.2.src.tar.gz"
+  },
+  "dependencies": [
+    "ncurses"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

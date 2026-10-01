@@ -1,0 +1,21 @@
+{
+  "name": "libebml",
+  "version": "1.4.5",
+  "description": "Extensible Binary Meta Language library (the base of Matroska)",
+  "source": {
+    "type": "tarball",
+    "url": "https://dl.matroska.org/downloads/libebml/libebml-1.4.5.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON"
+  ],
+  "env": {}
+}

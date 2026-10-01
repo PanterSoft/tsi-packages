@@ -1,0 +1,23 @@
+{
+  "name": "libmatroska",
+  "version": "1.7.1",
+  "description": "Library for reading and writing Matroska (MKV/WebM) files",
+  "source": {
+    "type": "tarball",
+    "url": "https://dl.matroska.org/downloads/libmatroska/libmatroska-1.7.1.tar.xz"
+  },
+  "dependencies": [
+    "libebml"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON"
+  ],
+  "env": {}
+}

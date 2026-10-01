@@ -1,0 +1,25 @@
+{
+  "name": "libxlsxwriter",
+  "version": "1.1.9",
+  "description": "C library for creating Excel XLSX files",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/jmcnamara/libxlsxwriter/archive/refs/tags/v1.1.9.tar.gz"
+  },
+  "dependencies": [
+    "zlib"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DBUILD_TESTS=OFF",
+    "-DBUILD_EXAMPLES=OFF"
+  ],
+  "env": {}
+}
