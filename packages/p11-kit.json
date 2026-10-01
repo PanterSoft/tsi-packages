@@ -1,0 +1,30 @@
+{
+  "name": "p11-kit",
+  "version": "0.25.5",
+  "description": "Library for loading and sharing PKCS#11 modules",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz"
+  },
+  "dependencies": [
+    "libffi",
+    "libtasn1"
+  ],
+  "build_dependencies": [
+    "meson",
+    "ninja",
+    "pkg-config"
+  ],
+  "build_system": "meson",
+  "configure_args": [
+    "-Dwrap_mode=nodownload",
+    "-Dsystemd=disabled",
+    "-Dbash_completion=disabled",
+    "-Dtest=false",
+    "-Dgtk_doc=false",
+    "-Dman=false",
+    "-Dnls=false",
+    "-Dtrust_module=disabled"
+  ],
+  "env": {}
+}

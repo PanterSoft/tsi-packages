@@ -1,0 +1,23 @@
+{
+  "name": "dropbear",
+  "version": "2024.86",
+  "description": "Small SSH server and client",
+  "source": {
+    "type": "tarball",
+    "url": "https://matt.ucc.asn.au/dropbear/releases/dropbear-2024.86.tar.bz2"
+  },
+  "dependencies": [
+    "zlib"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--with-zlib=$TSI_INSTALL_DIR",
+    "--disable-lastlog",
+    "--disable-utmp",
+    "--disable-utmpx",
+    "--disable-wtmp",
+    "--disable-wtmpx"
+  ],
+  "env": {}
+}

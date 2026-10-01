@@ -1,0 +1,26 @@
+{
+  "name": "apr-util",
+  "version": "1.6.3",
+  "description": "Apache Portable Runtime utility library",
+  "source": {
+    "type": "tarball",
+    "url": "https://archive.apache.org/dist/apr/apr-util-1.6.3.tar.bz2"
+  },
+  "dependencies": [
+    "apr",
+    "expat"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--with-apr=$TSI_INSTALL_DIR",
+    "--with-expat=$TSI_INSTALL_DIR",
+    "--without-berkeley-db",
+    "--without-sqlite3",
+    "--without-pgsql",
+    "--without-mysql",
+    "--without-odbc",
+    "--without-ldap"
+  ],
+  "env": {}
+}

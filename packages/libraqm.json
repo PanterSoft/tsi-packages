@@ -1,0 +1,25 @@
+{
+  "name": "libraqm",
+  "version": "0.10.1",
+  "description": "Complex text layout library (bidi, shaping, script itemization)",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/HOST-Oman/libraqm/releases/download/v0.10.1/raqm-0.10.1.tar.xz"
+  },
+  "dependencies": [
+    "freetype",
+    "harfbuzz",
+    "fribidi"
+  ],
+  "build_dependencies": [
+    "meson",
+    "ninja",
+    "pkg-config"
+  ],
+  "build_system": "meson",
+  "configure_args": [
+    "-Dwrap_mode=nodownload",
+    "-Ddocs=false"
+  ],
+  "env": {}
+}

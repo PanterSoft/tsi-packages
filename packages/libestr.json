@@ -1,0 +1,16 @@
+{
+  "name": "libestr",
+  "version": "0.1.11",
+  "description": "Helper library for string handling (used by rsyslog)",
+  "source": {
+    "type": "tarball",
+    "url": "https://libestr.adiscon.com/files/download/libestr-0.1.11.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static"
+  ],
+  "env": {}
+}

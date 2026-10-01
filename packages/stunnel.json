@@ -1,0 +1,20 @@
+{
+  "name": "stunnel",
+  "version": "5.73",
+  "description": "TLS proxy that adds encryption to existing clients and servers",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.stunnel.org/archive/5.x/stunnel-5.73.tar.gz"
+  },
+  "dependencies": [
+    "openssl"
+  ],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--with-ssl=$TSI_INSTALL_DIR",
+    "--disable-systemd",
+    "--disable-libwrap"
+  ],
+  "env": {}
+}
