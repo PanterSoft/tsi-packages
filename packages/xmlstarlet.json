@@ -19,5 +19,8 @@
     "--with-libxml-prefix=$TSI_INSTALL_DIR",
     "--with-libxslt-prefix=$TSI_INSTALL_DIR"
   ],
-  "env": {}
+  "env": {},
+  "env_darwin": {
+    "CFLAGS": "-O2 -Wno-error=incompatible-function-pointer-types"
+  }
 }
