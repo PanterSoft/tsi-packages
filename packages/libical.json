@@ -27,5 +27,15 @@
     "-DLIBICAL_BUILD_TESTING=OFF",
     "-DSHARED_ONLY=ON"
   ],
-  "env": {}
+  "env": {},
+  "cmake_args_darwin": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DICAL_GLIB=OFF",
+    "-DGOBJECT_INTROSPECTION=OFF",
+    "-DICAL_BUILD_DOCS=OFF",
+    "-DENABLE_GTK_DOC=OFF",
+    "-DLIBICAL_BUILD_TESTING=OFF",
+    "-DSHARED_ONLY=ON",
+    "-DICU_ROOT=$TSI_INSTALL_DIR"
+  ]
 }
