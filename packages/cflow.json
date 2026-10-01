@@ -4,7 +4,8 @@
   "description": "GNU cflow: charts control flow within C source code",
   "source": {
     "type": "tarball",
-    "url": "https://ftp.gnu.org/gnu/cflow/cflow-1.7.tar.xz"
+    "url": "https://ftp.gnu.org/gnu/cflow/cflow-1.7.tar.xz",
+    "sha256": "9e278b10ea420a1ab7ecccd8335fc31fb1921e91ab99d77e33df0729e19dca3b"
   },
   "dependencies": [],
   "build_dependencies": [],
