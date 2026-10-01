@@ -1,0 +1,20 @@
+{
+  "name": "libdvdnav",
+  "version": "6.1.1",
+  "description": "Library for navigating DVD-Video menus",
+  "source": {
+    "type": "tarball",
+    "url": "https://download.videolan.org/pub/videolan/libdvdnav/6.1.1/libdvdnav-6.1.1.tar.bz2"
+  },
+  "dependencies": [
+    "libdvdread"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static"
+  ],
+  "env": {}
+}

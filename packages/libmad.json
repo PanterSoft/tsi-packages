@@ -1,0 +1,22 @@
+{
+  "name": "libmad",
+  "version": "0.16.4",
+  "description": "MPEG audio decoder library (high-quality, fixed-point)",
+  "source": {
+    "type": "tarball",
+    "url": "https://codeberg.org/tenacityteam/libmad/archive/0.16.4.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DEXAMPLE=OFF"
+  ],
+  "env": {}
+}

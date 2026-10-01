@@ -1,0 +1,26 @@
+{
+  "name": "libcdio",
+  "version": "2.1.0",
+  "description": "GNU library for CD-ROM and CD image access",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/libcdio/libcdio-2.1.0.tar.bz2"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-cddb",
+    "--disable-vcd-info",
+    "--without-cd-drive",
+    "--without-cd-info",
+    "--without-cdda-player",
+    "--without-cd-read",
+    "--without-iso-info",
+    "--without-iso-read"
+  ],
+  "env": {}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "rubberband",
+  "version": "3.3.0",
+  "description": "Audio time-stretching and pitch-shifting library",
+  "source": {
+    "type": "tarball",
+    "url": "https://breakfastquay.com/files/releases/rubberband-3.3.0.tar.bz2"
+  },
+  "dependencies": [
+    "fftw",
+    "libsamplerate"
+  ],
+  "build_dependencies": [
+    "meson",
+    "ninja",
+    "pkg-config"
+  ],
+  "build_system": "meson",
+  "configure_args": [
+    "-Dfft=fftw",
+    "-Dresampler=libsamplerate",
+    "-Djni=disabled",
+    "-Dladspa=disabled",
+    "-Dlv2=disabled",
+    "-Dvamp=disabled",
+    "-Dcmdline=disabled",
+    "-Dtests=disabled"
+  ],
+  "env": {}
+}

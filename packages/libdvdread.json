@@ -1,0 +1,19 @@
+{
+  "name": "libdvdread",
+  "version": "6.1.3",
+  "description": "Library for reading DVD-Video discs",
+  "source": {
+    "type": "tarball",
+    "url": "https://download.videolan.org/pub/videolan/libdvdread/6.1.3/libdvdread-6.1.3.tar.bz2"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-apidoc"
+  ],
+  "env": {}
+}

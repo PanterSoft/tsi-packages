@@ -1,0 +1,25 @@
+{
+  "name": "x265",
+  "version": "4.1",
+  "description": "HEVC (H.265) video encoder library and tool",
+  "source": {
+    "type": "tarball",
+    "url": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils",
+    "nasm"
+  ],
+  "build_system": "cmake",
+  "source_dir": "source",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DENABLE_SHARED=ON",
+    "-DENABLE_CLI=ON",
+    "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+  ],
+  "env": {}
+}

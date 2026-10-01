@@ -1,0 +1,16 @@
+{
+  "name": "libmodplug",
+  "version": "0.8.9.0",
+  "description": "Library for decoding tracker music module files (MOD, S3M, XM, IT)",
+  "source": {
+    "type": "tarball",
+    "url": "https://downloads.sourceforge.net/project/modplug-xmms/libmodplug/0.8.9.0/libmodplug-0.8.9.0.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static"
+  ],
+  "env": {}
+}

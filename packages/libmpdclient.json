@@ -1,0 +1,21 @@
+{
+  "name": "libmpdclient",
+  "version": "2.22",
+  "description": "C library for communicating with the Music Player Daemon",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.musicpd.org/download/libmpdclient/2/libmpdclient-2.22.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "meson",
+    "ninja",
+    "pkg-config"
+  ],
+  "build_system": "meson",
+  "configure_args": [
+    "-Ddocumentation=false",
+    "-Dtest=false"
+  ],
+  "env": {}
+}
