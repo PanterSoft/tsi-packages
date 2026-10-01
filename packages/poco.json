@@ -11,7 +11,8 @@
     "openssl",
     "expat",
     "zlib",
-    "pcre2"
+    "pcre2",
+    "utf8proc"
   ],
   "build_dependencies": [
     "cmake",
