@@ -1,0 +1,16 @@
+{
+  "name": "cflow",
+  "version": "1.7",
+  "description": "GNU cflow: charts control flow within C source code",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/cflow/cflow-1.7.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-nls"
+  ],
+  "env": {}
+}

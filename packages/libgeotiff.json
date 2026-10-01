@@ -1,0 +1,27 @@
+{
+  "name": "libgeotiff",
+  "version": "1.7.3",
+  "description": "Library and tools for reading and writing GeoTIFF metadata",
+  "source": {
+    "type": "tarball",
+    "url": "https://download.osgeo.org/geotiff/libgeotiff/libgeotiff-1.7.3.tar.gz"
+  },
+  "dependencies": [
+    "proj",
+    "libtiff",
+    "zlib",
+    "libjpeg-turbo"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--with-proj=$TSI_INSTALL_DIR",
+    "--with-libtiff=$TSI_INSTALL_DIR",
+    "--with-zlib=$TSI_INSTALL_DIR",
+    "--with-jpeg=$TSI_INSTALL_DIR"
+  ],
+  "env": {}
+}

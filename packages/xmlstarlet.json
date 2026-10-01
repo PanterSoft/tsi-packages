@@ -1,0 +1,22 @@
+{
+  "name": "xmlstarlet",
+  "version": "1.6.1",
+  "description": "Command-line toolkit to query, edit and transform XML",
+  "source": {
+    "type": "tarball",
+    "url": "https://downloads.sourceforge.net/project/xmlstar/xmlstarlet/1.6.1/xmlstarlet-1.6.1.tar.gz"
+  },
+  "dependencies": [
+    "libxml2",
+    "libxslt"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--with-libxml-prefix=$TSI_INSTALL_DIR",
+    "--with-libxslt-prefix=$TSI_INSTALL_DIR"
+  ],
+  "env": {}
+}

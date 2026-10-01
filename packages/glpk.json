@@ -1,0 +1,16 @@
+{
+  "name": "glpk",
+  "version": "5.0",
+  "description": "GNU Linear Programming Kit (LP/MIP solver library and glpsol)",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/glpk/glpk-5.0.tar.gz"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static"
+  ],
+  "env": {}
+}

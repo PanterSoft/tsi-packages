@@ -1,0 +1,21 @@
+{
+  "name": "uchardet",
+  "version": "0.0.8",
+  "description": "Encoding detector library (fork of Mozilla's universalchardet)",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_STATIC=OFF"
+  ],
+  "env": {}
+}
