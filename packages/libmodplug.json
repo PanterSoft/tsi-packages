@@ -13,5 +13,8 @@
   "configure_args": [
     "--disable-static"
   ],
-  "env": {}
+  "env": {},
+  "env_darwin": {
+    "LDFLAGS": "-L$TSI_INSTALL_DIR/lib -Wl,-rpath,$TSI_INSTALL_DIR/lib -Wl,-ld_classic"
+  }
 }
