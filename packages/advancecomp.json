@@ -1,0 +1,15 @@
+{
+  "name": "advancecomp",
+  "version": "2.6",
+  "description": "Recompression utilities for .zip, .png, .mng and .gz files",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/amadvance/advancecomp/releases/download/v2.6/advancecomp-2.6.tar.gz",
+    "sha256": "b07d77735540409771cbe1b6df165b5151c11bb9c3d8f01290be0ec88ec3498f"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

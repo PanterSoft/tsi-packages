@@ -1,0 +1,22 @@
+{
+  "name": "libspatialindex",
+  "version": "2.1.0",
+  "description": "C++ spatial indexing library: R*-tree, MVR-tree and TPR-tree",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/libspatialindex/libspatialindex/releases/download/2.1.0/spatialindex-src-2.1.0.tar.bz2",
+    "sha256": "c59932395e98896038d59199f2e2453595df6d730ffbe09d69df2a661bcb619b"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_TESTING=OFF"
+  ],
+  "env": {}
+}

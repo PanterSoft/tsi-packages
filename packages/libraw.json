@@ -1,0 +1,25 @@
+{
+  "name": "libraw",
+  "version": "0.21.3",
+  "description": "Library for reading RAW files from digital cameras",
+  "source": {
+    "type": "tarball",
+    "url": "https://www.libraw.org/data/LibRaw-0.21.3.tar.gz",
+    "sha256": "dba34b7fc1143503942fa32ad9db43e94f714e62a4a856e91617f8f3e1e0aa5c"
+  },
+  "dependencies": [
+    "libjpeg-turbo",
+    "lcms2",
+    "zlib"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-examples",
+    "--disable-openmp"
+  ],
+  "env": {}
+}

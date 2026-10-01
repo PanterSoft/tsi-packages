@@ -1,0 +1,20 @@
+{
+  "name": "speexdsp",
+  "version": "1.2.1",
+  "description": "Speech processing DSP library: preprocessing, echo cancellation, resampling",
+  "source": {
+    "type": "tarball",
+    "url": "https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz",
+    "sha256": "8c777343e4a6399569c72abc38a95b24db56882c83dbdb6c6424a5f4aeb54d3d"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-examples"
+  ],
+  "env": {}
+}

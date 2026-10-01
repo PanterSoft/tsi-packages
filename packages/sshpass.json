@@ -1,0 +1,15 @@
+{
+  "name": "sshpass",
+  "version": "1.10",
+  "description": "Non-interactive ssh password provider",
+  "source": {
+    "type": "tarball",
+    "url": "https://downloads.sourceforge.net/project/sshpass/sshpass/1.10/sshpass-1.10.tar.gz",
+    "sha256": "ad1106c203cbb56185ca3bad8c6ccafca3b4064696194da879f81c8d7bdfeeda"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

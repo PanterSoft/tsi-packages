@@ -1,0 +1,24 @@
+{
+  "name": "libebur128",
+  "version": "1.2.6",
+  "description": "Loudness measurement according to the EBU R128 standard",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/jiixyj/libebur128/archive/refs/tags/v1.2.6.tar.gz",
+    "sha256": "baa7fc293a3d4651e244d8022ad03ab797ca3c2ad8442c43199afe8059faa613"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DBUILD_STATIC_LIBS=OFF",
+    "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+  ],
+  "env": {}
+}

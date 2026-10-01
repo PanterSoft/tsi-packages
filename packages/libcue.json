@@ -1,0 +1,26 @@
+{
+  "name": "libcue",
+  "version": "2.3.0",
+  "description": "CUE sheet parser library",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/lipnitsk/libcue/archive/refs/tags/v2.3.0.tar.gz",
+    "sha256": "cc1b3a65c60bd88b77a1ddd1574042d83cf7cc32b85fe9481c99613359eb7cfe"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils",
+    "flex",
+    "bison"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_SHARED_LIBS=ON",
+    "-DBUILD_TESTING=OFF",
+    "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+  ],
+  "env": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "bc",
+  "version": "1.08.1",
+  "description": "Arbitrary precision numeric processing language",
+  "source": {
+    "type": "tarball",
+    "url": "https://ftp.gnu.org/gnu/bc/bc-1.08.1.tar.gz",
+    "sha256": "b71457ffeb210d7ea61825ff72b3e49dc8f2c1a04102bbe23591d783d1bfe996"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "flex",
+    "bison",
+    "texinfo"
+  ],
+  "build_system": "autotools",
+  "configure_args": [],
+  "env": {}
+}

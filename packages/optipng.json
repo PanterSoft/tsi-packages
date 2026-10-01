@@ -1,0 +1,22 @@
+{
+  "name": "optipng",
+  "version": "0.7.8",
+  "description": "PNG optimizer that recompresses images losslessly",
+  "source": {
+    "type": "tarball",
+    "url": "https://downloads.sourceforge.net/project/optipng/OptiPNG/optipng-0.7.8/optipng-0.7.8.tar.gz",
+    "sha256": "25a3bd68481f21502ccaa0f4c13f84dcf6b20338e4c4e8c51f2cefbd8513398c"
+  },
+  "dependencies": [
+    "libpng",
+    "zlib"
+  ],
+  "build_dependencies": [],
+  "build_system": "custom",
+  "build_commands": [
+    "./configure --prefix=$TSI_INSTALL_DIR --with-system-libpng --with-system-zlib",
+    "make",
+    "make install"
+  ],
+  "env": {}
+}

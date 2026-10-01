@@ -18,7 +18,7 @@ on:
   workflow_dispatch:
     inputs:
       package:
-        description: 'Package name to build (leave empty to build all changed packages)'
+        description: 'Packages to build, space- or comma-separated (leave empty to build all changed packages)'
         required: false
         type: string
       tsi_ref:
@@ -44,11 +44,20 @@ jobs:
 
       - name: List changed packages
         id: changed
+        env:
+          EVENT: ${{ github.event_name }}
+          PACKAGES: ${{ github.event.inputs.package }}
+          BASE_REF: ${{ github.base_ref }}
+          # The commit the branch pointed at before this push, so a push of
+          # several commits builds what all of them changed, not just the last.
+          BEFORE: ${{ github.event.before }}
         run: |
-          if [ "${{ github.event_name }}" = 'workflow_dispatch' ] && [ -n '${{ github.event.inputs.package }}' ]; then
-            echo '${{ github.event.inputs.package }}'
-          elif [ "${{ github.event_name }}" = 'pull_request' ]; then
-            bash scripts/changed-packages.sh "origin/${{ github.base_ref }}" packages/
+          if [ "$EVENT" = workflow_dispatch ] && [ -n "$PACKAGES" ]; then
+            echo "$PACKAGES" | tr ' ,' '\n\n' | sed '/^$/d'
+          elif [ "$EVENT" = pull_request ]; then
+            bash scripts/changed-packages.sh "origin/$BASE_REF" packages/
+          elif [ -n "$BEFORE" ] && git rev-parse --verify -q "$BEFORE^{commit}" >/dev/null; then
+            bash scripts/changed-packages.sh "$BEFORE" packages/
           else
             bash scripts/changed-packages.sh HEAD^ packages/
           fi | tee /tmp/changed.txt

@@ -1,0 +1,23 @@
+{
+  "name": "nanoflann",
+  "version": "1.7.1",
+  "description": "Header-only C++ library for KD-trees of datasets with different topologies",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/jlblancoc/nanoflann/archive/refs/tags/v1.7.1.tar.gz",
+    "sha256": "887e4e57e9c5fbf1c2937f9f5a9bc461c4786d54729b57a9c19547bdedb46986"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DNANOFLANN_BUILD_EXAMPLES=OFF",
+    "-DNANOFLANN_BUILD_TESTS=OFF"
+  ],
+  "env": {}
+}

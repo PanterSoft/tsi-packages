@@ -1,0 +1,20 @@
+{
+  "name": "valgrind",
+  "version": "3.24.0",
+  "description": "Instrumentation framework: memory error detector, profilers and more",
+  "source": {
+    "type": "tarball",
+    "url": "https://sourceware.org/pub/valgrind/valgrind-3.24.0.tar.bz2",
+    "sha256": "71aee202bdef1ae73898ccf7e9c315134fa7db6c246063afc503aef702ec03bd"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-dependency-tracking"
+  ],
+  "platforms": [
+    "linux"
+  ],
+  "env": {}
+}

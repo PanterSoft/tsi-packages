@@ -1,0 +1,18 @@
+{
+  "name": "libconfig",
+  "version": "1.7.3",
+  "description": "Library for processing structured configuration files",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/hyperrealm/libconfig/releases/download/v1.7.3/libconfig-1.7.3.tar.gz",
+    "sha256": "545166d6cac037744381d1e9cc5a5405094e7bfad16a411699bcff40bbb31ee7"
+  },
+  "dependencies": [],
+  "build_dependencies": [],
+  "build_system": "autotools",
+  "configure_args": [
+    "--disable-static",
+    "--disable-examples"
+  ],
+  "env": {}
+}

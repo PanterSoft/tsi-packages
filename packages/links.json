@@ -1,0 +1,24 @@
+{
+  "name": "links",
+  "version": "2.30",
+  "description": "Text and graphics mode web browser",
+  "source": {
+    "type": "tarball",
+    "url": "http://links.twibright.com/download/links-2.30.tar.bz2",
+    "sha256": "c4631c6b5a11527cdc3cb7872fc23b7f2b25c2b021d596be410dadb40315f166"
+  },
+  "dependencies": [
+    "openssl",
+    "zlib"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--without-x",
+    "--without-directfb",
+    "--without-libevent"
+  ],
+  "env": {}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "lynx",
+  "version": "2.9.2",
+  "description": "Text-mode web browser",
+  "source": {
+    "type": "tarball",
+    "url": "https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.2.tar.gz",
+    "sha256": "99f8f28f860094c533100d1cedf058c27fb242ce25e991e2d5f30ece4457a3bf"
+  },
+  "dependencies": [
+    "ncurses",
+    "openssl",
+    "zlib"
+  ],
+  "build_dependencies": [
+    "pkg-config"
+  ],
+  "build_system": "autotools",
+  "configure_args": [
+    "--with-ssl=$TSI_INSTALL_DIR",
+    "--with-screen=ncursesw",
+    "--with-zlib",
+    "--disable-nls"
+  ],
+  "env": {}
+}

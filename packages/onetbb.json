@@ -1,0 +1,24 @@
+{
+  "name": "onetbb",
+  "version": "2022.1.0",
+  "description": "oneAPI Threading Building Blocks: C++ library for parallel programming",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/uxlfoundation/oneTBB/archive/refs/tags/v2022.1.0.tar.gz",
+    "sha256": "ed067603ece0dc832d2881ba5c516625ac2522c665d95f767ef6304e34f961b5"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DTBB_TEST=OFF",
+    "-DTBB_EXAMPLES=OFF",
+    "-DTBB_STRICT=OFF"
+  ],
+  "env": {}
+}

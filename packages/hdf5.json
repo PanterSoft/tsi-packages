@@ -1,0 +1,29 @@
+{
+  "name": "hdf5",
+  "version": "1.14.6",
+  "description": "Data model, library and file format for storing and managing data",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/HDFGroup/hdf5/releases/download/hdf5_1.14.6/hdf5-1.14.6.tar.gz",
+    "sha256": "e4defbac30f50d64e1556374aa49e574417c9e72c6b1de7a4ff88c4b1bea6e9b"
+  },
+  "dependencies": [
+    "zlib"
+  ],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DBUILD_TESTING=OFF",
+    "-DHDF5_BUILD_EXAMPLES=OFF",
+    "-DHDF5_BUILD_FORTRAN=OFF",
+    "-DHDF5_BUILD_JAVA=OFF",
+    "-DHDF5_ENABLE_Z_LIB_SUPPORT=ON",
+    "-DBUILD_STATIC_LIBS=OFF"
+  ],
+  "env": {}
+}

@@ -1,0 +1,23 @@
+{
+  "name": "toml11",
+  "version": "4.4.0",
+  "description": "Feature-rich TOML language library for C++11/14/17/20 (header-only)",
+  "source": {
+    "type": "tarball",
+    "url": "https://github.com/ToruNiina/toml11/archive/refs/tags/v4.4.0.tar.gz",
+    "sha256": "815bfe6792aa11a13a133b86e7f0f45edc5d71eb78f5fb6686c49c7f792b9049"
+  },
+  "dependencies": [],
+  "build_dependencies": [
+    "cmake",
+    "make",
+    "coreutils"
+  ],
+  "build_system": "cmake",
+  "cmake_args": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DTOML11_BUILD_TESTS=OFF",
+    "-DTOML11_BUILD_EXAMPLES=OFF"
+  ],
+  "env": {}
+}
