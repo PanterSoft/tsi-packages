@@ -4,7 +4,8 @@
   "description": "NetCDF C library and tools for array-oriented scientific data",
   "source": {
     "type": "tarball",
-    "url": "https://downloads.unidata.ucar.edu/netcdf-c/4.9.2/netcdf-c-4.9.2.tar.gz"
+    "url": "https://downloads.unidata.ucar.edu/netcdf-c/4.9.2/netcdf-c-4.9.2.tar.gz",
+    "sha256": "cf11babbbdb9963f09f55079e0b019f6d0371f52f8e1264a5ba8e9fdab1a6c48"
   },
   "dependencies": [
     "hdf5",

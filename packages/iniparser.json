@@ -4,7 +4,8 @@
   "description": "Stand-alone INI file parser library",
   "source": {
     "type": "tarball",
-    "url": "https://gitlab.com/iniparser/iniparser/-/archive/v4.2.4/iniparser-v4.2.4.tar.gz"
+    "url": "https://gitlab.com/iniparser/iniparser/-/archive/v4.2.4/iniparser-v4.2.4.tar.gz",
+    "sha256": "3b6a6cf85d18727371d7c02f548e9e34fa311a9244c504690f21d508168bd70e"
   },
   "dependencies": [],
   "build_dependencies": [

@@ -4,7 +4,8 @@
   "description": "Fast grep with interactive search, fuzzy matching and archive search",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/Genivia/ugrep/archive/refs/tags/v7.5.0.tar.gz"
+    "url": "https://github.com/Genivia/ugrep/archive/refs/tags/v7.5.0.tar.gz",
+    "sha256": "08ed29981e4e9ed07077139519a17273658d6097f90642a14d9dfdf07fb74ee9"
   },
   "dependencies": [
     "pcre2",
