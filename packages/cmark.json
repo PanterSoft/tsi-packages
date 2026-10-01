@@ -4,7 +4,8 @@
   "description": "CommonMark parsing and rendering library and program in C",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/commonmark/cmark/archive/refs/tags/0.31.1.tar.gz"
+    "url": "https://github.com/commonmark/cmark/archive/refs/tags/0.31.1.tar.gz",
+    "sha256": "3da93db5469c30588cfeb283d9d62edfc6ded9eb0edc10a4f5bbfb7d722ea802"
   },
   "dependencies": [],
   "build_dependencies": [

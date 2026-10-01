@@ -4,7 +4,8 @@
   "description": "C library for creating Excel XLSX files",
   "source": {
     "type": "tarball",
-    "url": "https://github.com/jmcnamara/libxlsxwriter/archive/refs/tags/v1.1.9.tar.gz"
+    "url": "https://github.com/jmcnamara/libxlsxwriter/archive/refs/tags/v1.1.9.tar.gz",
+    "sha256": "03ae330d50f74c8a70be0b06b52bd50868f7cd1251ed040fe3b68d1ad6fd11dc"
   },
   "dependencies": [
     "zlib"
