@@ -1,4 +1,4 @@
-# source: CI 2026-10-01
+# source: CI 2026-10-04
 boost		not built here (slow)
 llvm		not built here (slow)
 clang		not built here (slow)
@@ -222,7 +222,7 @@ libzip	ok
 links	ok	
 lmdb	ok	
 lua	ok	
-lynx	fail	
+lynx	ok	
 lzfse	ok	
 lzip	ok	
 lzo	ok	
@@ -268,7 +268,7 @@ parallel	ok
 patch	ok	
 patchelf	ok	
 perl	ok	
-pigz	fail	
+pigz	ok	
 pixman	ok	
 popt	ok	
 portaudio	ok	

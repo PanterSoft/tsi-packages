@@ -1,4 +1,4 @@
-# source: CI 2026-10-01
+# source: CI 2026-10-04
 emacs		not built here (slow)
 mongodb		not built here (slow)
 abseil-cpp	ok	
@@ -233,61 +233,61 @@ yaml-cpp	ok
 zxing-cpp	ok	
 llvm		not built here (slow)
 rust		not built here (slow)
-libxml2	fail	
+libxml2	ok	
 asio	ok	
-avro	fail	
-binutils	fail	
-brotli	fail	
-capnproto	fail	
-cpp-httplib	fail	
-dav1d	fail	
-doxygen	fail	
-expat	fail	
-ncurses	fail	
+avro	ok	
+binutils	ok	
+brotli	ok	
+capnproto	ok	
+cpp-httplib	ok	
+dav1d	ok	
+doxygen	ok	
+expat	ok	
+ncurses	ok	
 flac	ok	
-freetype	fail	
-gdbm	fail	
-git	fail	
-gnutls	fail	
-protobuf	fail	
-hdf5	fail	
+freetype	ok	
+gdbm	ok	
+git	ok	
+gnutls	ok	
+protobuf	ok	
+hdf5	ok	
 icu	ok	
-jasper	fail	
+jasper	ok	
 jq	ok	
-less	skipped	needs ncurses
+less	ok	
 xz	ok	
-libpng	fail	
+libpng	ok	
 libconfuse	ok	
-libev	fail	
+libev	ok	
 libgif	ok	
-libidn2	fail	
-libmodbus	fail	
-libpsl	skipped	needs libidn2
-libsndfile	fail	
-libtiff	fail	
+libidn2	ok	
+libmodbus	ok	
+libpsl	ok	
+libsndfile	ok	
+libtiff	ok	
 libusb	ok	
-libwebsockets	fail	
-links	fail	
+libwebsockets	ok	
+links	ok	
 lzo	ok	
-mimalloc	fail	
-mpfr	fail	
-nanoflann	fail	
+mimalloc	ok	
+mpfr	ok	
+nanoflann	ok	
 nghttp3	ok	
 npth	ok	
-openjpeg	skipped	needs libpng
-pango	skipped	needs freetype
-pixman	fail	
-pugixml	fail	
-qrencode	skipped	needs libpng
+openjpeg	ok	
+pango	ok	
+pixman	ok	
+pugixml	ok	
+qrencode	ok	
 redis	ok	
-soxr	fail	
+soxr	ok	
 stow	fail	
-tcpdump	fail	
-tmux	skipped	needs ncurses
-unbound	skipped	needs expat
-utfcpp	fail	
-wget	fail	
-yyjson	fail	
+tcpdump	ok	
+tmux	ok	
+unbound	ok	
+utfcpp	ok	
+wget	ok	
+yyjson	ok	
 clang		not built here (slow)
 make	ok	
 assimp	ok	
@@ -347,7 +347,7 @@ which	ok
 zeromq	ok	
 boost	ok	
 clang	ok	
-emacs	ok	
+emacs	fail	
 gcc	fail	
 llvm	ok	
 mariadb	ok	
