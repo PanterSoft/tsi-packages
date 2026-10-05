@@ -1,17 +1,37 @@
 {
   "name": "gperftools",
-  "version": "2.16",
-  "description": "Fast multi-threaded malloc and performance analysis tools",
-  "source": {
-    "type": "tarball",
-    "url": "https://github.com/gperftools/gperftools/releases/download/gperftools-2.16/gperftools-2.16.tar.gz",
-    "sha256": "f12624af5c5987f2cc830ee534f754c3c5961eec08004c26a8b80de015cf056f"
-  },
-  "dependencies": [],
-  "build_dependencies": [],
-  "build_system": "autotools",
-  "configure_args": [
-    "--disable-static"
-  ],
-  "env": {}
+  "versions": [
+    {
+      "version": "2.18.91",
+      "description": "Fast multi-threaded malloc and performance analysis tools",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/gperftools/gperftools/releases/download/gperftools-2.18.91/gperftools-2.18.91.tar.gz",
+        "sha256": "48e348afe1c09edc60888f8d01f6f5c21bdc87d2d1b50ac276a80936bd263181"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-static"
+      ],
+      "env": {}
+    },
+    {
+      "version": "2.16",
+      "description": "Fast multi-threaded malloc and performance analysis tools",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/gperftools/gperftools/releases/download/gperftools-2.16/gperftools-2.16.tar.gz",
+        "sha256": "f12624af5c5987f2cc830ee534f754c3c5961eec08004c26a8b80de015cf056f"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-static"
+      ],
+      "env": {}
+    }
+  ]
 }

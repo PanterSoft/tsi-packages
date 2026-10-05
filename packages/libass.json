@@ -1,25 +1,53 @@
 {
   "name": "libass",
-  "version": "0.17.3",
-  "description": "Portable subtitle renderer for the ASS/SSA subtitle format",
-  "source": {
-    "type": "tarball",
-    "url": "https://github.com/libass/libass/releases/download/0.17.3/libass-0.17.3.tar.xz",
-    "sha256": "eae425da50f0015c21f7b3a9c7262a910f0218af469e22e2931462fed3c50959"
-  },
-  "dependencies": [
-    "freetype",
-    "fribidi",
-    "harfbuzz",
-    "fontconfig"
-  ],
-  "build_dependencies": [
-    "pkg-config",
-    "nasm"
-  ],
-  "build_system": "autotools",
-  "configure_args": [
-    "--disable-static"
-  ],
-  "env": {}
+  "versions": [
+    {
+      "version": "0.17.5",
+      "description": "Portable subtitle renderer for the ASS/SSA subtitle format",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libass/libass/releases/download/0.17.5/libass-0.17.5.tar.xz",
+        "sha256": "2dca25c0e0c837ddf00b52011b3f82cac1e4ddd3ad018227806b0c2288864acc"
+      },
+      "dependencies": [
+        "freetype",
+        "fribidi",
+        "harfbuzz",
+        "fontconfig"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "nasm"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-static"
+      ],
+      "env": {}
+    },
+    {
+      "version": "0.17.3",
+      "description": "Portable subtitle renderer for the ASS/SSA subtitle format",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libass/libass/releases/download/0.17.3/libass-0.17.3.tar.xz",
+        "sha256": "eae425da50f0015c21f7b3a9c7262a910f0218af469e22e2931462fed3c50959"
+      },
+      "dependencies": [
+        "freetype",
+        "fribidi",
+        "harfbuzz",
+        "fontconfig"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "nasm"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-static"
+      ],
+      "env": {}
+    }
+  ]
 }

@@ -1,20 +1,43 @@
 {
   "name": "iperf3",
-  "version": "3.21",
-  "description": "Network bandwidth measurement tool",
-  "source": {
-    "type": "tarball",
-    "url": "https://github.com/esnet/iperf/archive/refs/tags/3.21.tar.gz",
-    "sha256": "dd289b6700d3bc33eda7fa3ce6db217d6ca42239edbcb2e7f152bf7bf5c8a5aa"
-  },
-  "dependencies": [
-    "openssl"
-  ],
-  "build_dependencies": [],
-  "build_system": "autotools",
-  "configure_args": [
-    "--disable-static",
-    "--disable-profiling"
-  ],
-  "env": {}
+  "versions": [
+    {
+      "version": "3.22",
+      "description": "Network bandwidth measurement tool",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/esnet/iperf/archive/refs/tags/3.22.tar.gz",
+        "sha256": "4dc1bc31ef4a4018973a6f543a3229fab020b20b26229bc7a40ed6779e367699"
+      },
+      "dependencies": [
+        "openssl"
+      ],
+      "build_dependencies": [],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-static",
+        "--disable-profiling"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.21",
+      "description": "Network bandwidth measurement tool",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/esnet/iperf/archive/refs/tags/3.21.tar.gz",
+        "sha256": "dd289b6700d3bc33eda7fa3ce6db217d6ca42239edbcb2e7f152bf7bf5c8a5aa"
+      },
+      "dependencies": [
+        "openssl"
+      ],
+      "build_dependencies": [],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-static",
+        "--disable-profiling"
+      ],
+      "env": {}
+    }
+  ]
 }

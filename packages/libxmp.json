@@ -1,17 +1,37 @@
 {
   "name": "libxmp",
-  "version": "4.6.2",
-  "description": "Library that renders module music files (MOD, S3M, XM, IT)",
-  "source": {
-    "type": "tarball",
-    "url": "https://github.com/libxmp/libxmp/releases/download/libxmp-4.6.2/libxmp-4.6.2.tar.gz",
-    "sha256": "acac1705be2c4fb4d2d70dc05759853ba6aab747a83de576b082784d46f5a4b9"
-  },
-  "dependencies": [],
-  "build_dependencies": [],
-  "build_system": "autotools",
-  "configure_args": [
-    "--disable-static"
-  ],
-  "env": {}
+  "versions": [
+    {
+      "version": "4.7.3",
+      "description": "Library that renders module music files (MOD, S3M, XM, IT)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libxmp/libxmp/releases/download/libxmp-4.7.3/libxmp-4.7.3.tar.gz",
+        "sha256": "b6a98797e4fb9c9a705f5d53112aa5214561857e929a644928b9e658930d9440"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-static"
+      ],
+      "env": {}
+    },
+    {
+      "version": "4.6.2",
+      "description": "Library that renders module music files (MOD, S3M, XM, IT)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libxmp/libxmp/releases/download/libxmp-4.6.2/libxmp-4.6.2.tar.gz",
+        "sha256": "acac1705be2c4fb4d2d70dc05759853ba6aab747a83de576b082784d46f5a4b9"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-static"
+      ],
+      "env": {}
+    }
+  ]
 }

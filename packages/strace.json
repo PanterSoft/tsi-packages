@@ -1,20 +1,43 @@
 {
   "name": "strace",
-  "version": "6.12",
-  "description": "Diagnostic and debugging tracer for Linux system calls and signals",
-  "source": {
-    "type": "tarball",
-    "url": "https://github.com/strace/strace/releases/download/v6.12/strace-6.12.tar.xz",
-    "sha256": "c47da93be45b6055f4dc741d7f20efaf50ca10160a5b100c109b294fd9c0bdfe"
-  },
-  "dependencies": [],
-  "build_dependencies": [],
-  "build_system": "autotools",
-  "configure_args": [
-    "--enable-mpers=no"
-  ],
-  "platforms": [
-    "linux"
-  ],
-  "env": {}
+  "versions": [
+    {
+      "version": "7.2",
+      "description": "Diagnostic and debugging tracer for Linux system calls and signals",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/strace/strace/releases/download/v7.2/strace-7.2.tar.xz",
+        "sha256": "4bde6246926890dcee824f6e6ac42a06752f47d77e5097d86e3c0d6d4b709fe5"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-mpers=no"
+      ],
+      "platforms": [
+        "linux"
+      ],
+      "env": {}
+    },
+    {
+      "version": "6.12",
+      "description": "Diagnostic and debugging tracer for Linux system calls and signals",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/strace/strace/releases/download/v6.12/strace-6.12.tar.xz",
+        "sha256": "c47da93be45b6055f4dc741d7f20efaf50ca10160a5b100c109b294fd9c0bdfe"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "autotools",
+      "configure_args": [
+        "--enable-mpers=no"
+      ],
+      "platforms": [
+        "linux"
+      ],
+      "env": {}
+    }
+  ]
 }
