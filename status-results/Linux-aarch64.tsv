@@ -1,4 +1,4 @@
-# source: CI 2026-10-04
+# source: CI 2026-10-11
 boost		not built here (slow)
 llvm		not built here (slow)
 clang		not built here (slow)
@@ -10,12 +10,13 @@ mysql		not built here (slow)
 node		not built here (slow)
 ros2		not built here (slow)
 rust		not built here (slow)
+coreutils	ok	
+make	ok	
+cmake	ok	
 abseil-cpp	ok	
 advancecomp	ok	
 argon2	ok	
-coreutils	ok	
 libxml2	ok	
-make	ok	
 openssl	ok	
 pkg-config	ok	
 zlib	ok	
@@ -36,7 +37,6 @@ binutils	ok
 bison	ok	
 blake3	ok	
 box2d	ok	
-cmake	ok	
 brotli	ok	
 btop	ok	
 bzip2	ok	
@@ -45,8 +45,10 @@ c-blosc	ok
 cairo	ok	
 capnproto	ok	
 catch2	ok	
+zstd	ok	
 ccache	ok	
 cereal	ok	
+fftw	ok	
 chromaprint	ok	
 cjson	ok	
 cli11	ok	
@@ -74,7 +76,6 @@ expat	ok
 faad2	ok	
 fast-float	ok	
 ffmpeg	ok	
-fftw	ok	
 findutils	ok	
 ncurses	ok	
 gawk	ok	
@@ -112,7 +113,7 @@ googletest	fail
 gperf	ok	
 gperftools	ok	
 protobuf	ok	
-grpc	ok	
+grpc	fail	
 gsl	ok	
 gzip	ok	
 h3	ok	
@@ -129,6 +130,7 @@ indent	ok
 inih	ok	
 iperf3	ok	
 jansson	ok	
+libjpeg-turbo	ok	
 jasper	ok	
 jbig2dec	ok	
 jemalloc	ok	
@@ -148,11 +150,10 @@ libaec	ok
 libaom	ok	
 lz4	ok	
 xz	ok	
-zstd	ok	
 libarchive	ok	
+nasm	ok	
 libass	ok	
 libassuan	ok	
-libjpeg-turbo	ok	
 libpng	ok	
 libavif	ok	
 libcap	ok	
@@ -242,7 +243,6 @@ msgpack	ok
 nano	ok	
 nanoflann	ok	
 nanomsg	ok	
-nasm	ok	
 ncdu	ok	
 nettle	ok	
 nghttp2	ok	
@@ -306,6 +306,7 @@ sshpass	ok
 stow	ok	
 strace	ok	
 swig	ok	
+utfcpp	ok	
 taglib	ok	
 tar	ok	
 tcl	ok	
@@ -327,7 +328,6 @@ universal-ctags	ok
 unixodbc	ok	
 unzip	ok	
 utf8proc	ok	
-utfcpp	ok	
 valgrind	ok	
 valkey	ok	
 vim	ok	
