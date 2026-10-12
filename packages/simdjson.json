@@ -2,6 +2,28 @@
   "name": "simdjson",
   "versions": [
     {
+      "version": "5.0.3",
+      "description": "Parsing gigabytes of JSON per second",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/simdjson/simdjson/archive/refs/tags/v5.0.3.tar.gz",
+        "sha256": "295e96d96d6d55face58e99b47ddc1f6c7c1a302f2ce5edf2c1ba7518972f0ed"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DSIMDJSON_DEVELOPER_MODE=OFF"
+      ],
+      "env": {}
+    },
+    {
       "version": "5.0.2",
       "description": "Parsing gigabytes of JSON per second",
       "source": {

@@ -2,6 +2,31 @@
   "name": "cpp-httplib",
   "versions": [
     {
+      "version": "0.60.1",
+      "description": "C++11 single-file header-only HTTP/HTTPS server and client library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/yhirose/cpp-httplib/archive/refs/tags/v0.60.1.tar.gz",
+        "sha256": "f42fc046e55f968a9dd43b272251f033b08538d3e359235608f980f551053215"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DHTTPLIB_REQUIRE_OPENSSL=OFF",
+        "-DHTTPLIB_USE_OPENSSL_IF_AVAILABLE=OFF",
+        "-DHTTPLIB_USE_ZLIB_IF_AVAILABLE=OFF",
+        "-DHTTPLIB_USE_BROTLI_IF_AVAILABLE=OFF",
+        "-DHTTPLIB_TEST=OFF"
+      ],
+      "env": {}
+    },
+    {
       "version": "0.59.0",
       "description": "C++11 single-file header-only HTTP/HTTPS server and client library",
       "source": {

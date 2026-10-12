@@ -2,6 +2,28 @@
   "name": "lmdb",
   "versions": [
     {
+      "version": "1.0.2",
+      "description": "Lightning Memory-Mapped Database",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/LMDB/lmdb/archive/LMDB_1.0.2.tar.gz",
+        "sha256": "17e4cb8e80874fccc1ff6f7d5fdb62f029624967d001ff40c47c0fb7a5b42d7d"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "prefix=$TSI_INSTALL_DIR"
+      ],
+      "make_args_darwin": [
+        "prefix=$TSI_INSTALL_DIR",
+        "SOEXT=.dylib",
+        "VERSION_OPT=-Wl,-install_name,$TSI_INSTALL_DIR/lib/liblmdb.dylib.1 -Wl,-current_version,1.0"
+      ],
+      "env": {},
+      "source_dir": "libraries/liblmdb"
+    },
+    {
       "version": "1.0.1",
       "description": "Lightning Memory-Mapped Database",
       "source": {
