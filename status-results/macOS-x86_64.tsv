@@ -1,4 +1,4 @@
-# source: CI 2026-10-11
+# source: CI 2026-10-18
 llvm		not built here (slow)
 coreutils	ok	
 libxml2	ok	
@@ -347,12 +347,11 @@ which	ok
 zeromq	ok	
 boost	ok	
 clang	ok	
-emacs	fail	
+emacs	ok	
 gcc	fail	
 llvm	ok	
 mariadb	ok	
 mongodb	fail	
 mysql	fail	
-node	ok	
 ros2	fail	
 rust	ok	

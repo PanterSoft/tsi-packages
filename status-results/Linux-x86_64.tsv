@@ -1,4 +1,4 @@
-# source: CI 2026-10-11
+# source: CI 2026-10-18
 boost		not built here (slow)
 llvm		not built here (slow)
 clang		not built here (slow)
@@ -42,7 +42,7 @@ btop	ok
 bzip2	ok	
 c-ares	ok	
 c-blosc	ok	
-cairo	fail	
+cairo	ok	
 capnproto	ok	
 catch2	ok	
 zstd	ok	
@@ -87,7 +87,7 @@ flac	ok
 flatbuffers	ok	
 flex	ok	
 fmt	ok	
-fontconfig	fail	
+fontconfig	ok	
 fping	ok	
 freetype	ok	
 python	ok	
@@ -152,7 +152,7 @@ lz4	ok
 xz	ok	
 libarchive	ok	
 nasm	ok	
-libass	skipped	needs fontconfig
+libass	ok	
 libassuan	ok	
 libpng	ok	
 libavif	ok	
@@ -223,7 +223,7 @@ libzip	ok
 links	ok	
 lmdb	ok	
 lua	ok	
-lynx	fail	
+lynx	ok	
 lzfse	ok	
 lzip	ok	
 lzo	ok	
@@ -263,12 +263,12 @@ optipng	ok
 opus	ok	
 opusfile	ok	
 paho-mqtt-c	ok	
-pango	skipped	needs cairo
+pango	ok	
 parallel	ok	
 patch	ok	
 patchelf	ok	
 perl	ok	
-pigz	fail	
+pigz	ok	
 pixman	ok	
 popt	ok	
 portaudio	ok	
