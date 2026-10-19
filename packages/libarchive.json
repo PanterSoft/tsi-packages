@@ -2,6 +2,38 @@
   "name": "libarchive",
   "versions": [
     {
+      "version": "3.8.10",
+      "description": "Multi-format archive and compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/libarchive/libarchive/releases/download/v3.8.10/libarchive-3.8.10.tar.gz",
+        "sha256": "a1bffbe5152cfe869751179e7b16648c87c461cb8c46eee75062efbe164cc57c"
+      },
+      "dependencies": [
+        "zlib",
+        "bzip2",
+        "xz",
+        "zstd",
+        "lz4",
+        "openssl"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "autotools",
+      "configure_args": [
+        "--with-zlib",
+        "--with-bz2lib",
+        "--with-lzma",
+        "--with-zstd",
+        "--with-lz4",
+        "--with-openssl"
+      ],
+      "env": {}
+    },
+    {
       "version": "3.8.9",
       "description": "Multi-format archive and compression library",
       "source": {

@@ -2,6 +2,33 @@
   "name": "chromaprint",
   "versions": [
     {
+      "version": "1.6.2",
+      "description": "Audio fingerprinting library (AcoustID)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/acoustid/chromaprint/releases/download/v1.6.2/chromaprint-1.6.2.tar.gz",
+        "sha256": "d54ada62c16b2db396d3251ec54fc7a58909c163131a1cfcf7fa6407dbc14360"
+      },
+      "dependencies": [
+        "fftw"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DFFT_LIB=fftw3",
+        "-DBUILD_TOOLS=OFF",
+        "-DBUILD_TESTS=OFF",
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+      ],
+      "env": {}
+    },
+    {
       "version": "1.6.1",
       "description": "Audio fingerprinting library (AcoustID)",
       "source": {
