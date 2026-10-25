@@ -1,4 +1,4 @@
-# source: CI 2026-10-18
+# source: CI 2026-10-25
 llvm		not built here (slow)
 coreutils	ok	
 libxml2	ok	
@@ -353,5 +353,6 @@ llvm	ok
 mariadb	ok	
 mongodb	fail	
 mysql	fail	
+node	ok	
 ros2	fail	
 rust	ok	
