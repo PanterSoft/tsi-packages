@@ -2,6 +2,34 @@
   "name": "harfbuzz",
   "versions": [
     {
+      "version": "15.0.0",
+      "description": "Text shaping library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/harfbuzz/harfbuzz/releases/download/15.0.0/harfbuzz-15.0.0.tar.xz",
+        "sha256": "968536e9abd782f07f7954044c0c4020199fcdd39b41d221ec42d2a3be4a44df"
+      },
+      "dependencies": [
+        "freetype",
+        "glib"
+      ],
+      "build_dependencies": [
+        "pkg-config",
+        "meson",
+        "ninja",
+        "coreutils"
+      ],
+      "build_system": "meson",
+      "configure_args": [
+        "-Dintrospection=disabled"
+      ],
+      "env": {},
+      "configure_args_darwin": [
+        "-Dcoretext=enabled",
+        "-Dintrospection=disabled"
+      ]
+    },
+    {
       "version": "14.6.0",
       "description": "Text shaping library",
       "source": {

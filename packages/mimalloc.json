@@ -1,23 +1,49 @@
 {
   "name": "mimalloc",
-  "version": "3.5.3",
-  "description": "Compact general-purpose allocator with excellent performance",
-  "source": {
-    "type": "tarball",
-    "url": "https://github.com/microsoft/mimalloc/archive/refs/tags/v3.5.3.tar.gz",
-    "sha256": "3b4a15153a59905995f7070296ed604bb5ccc00cabb8b93446931aff77224d47"
-  },
-  "dependencies": [],
-  "build_dependencies": [
-    "cmake",
-    "make",
-    "coreutils"
-  ],
-  "build_system": "cmake",
-  "cmake_args": [
-    "-DCMAKE_BUILD_TYPE=Release",
-    "-DMI_BUILD_TESTS=OFF",
-    "-DMI_BUILD_OBJECT=OFF"
-  ],
-  "env": {}
+  "versions": [
+    {
+      "version": "3.6.0",
+      "description": "Compact general-purpose allocator with excellent performance",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/microsoft/mimalloc/archive/refs/tags/v3.6.0.tar.gz",
+        "sha256": "c663101ba193b5b823c8541c1b719ab67e3ebf9976e425a02359a5cad5e52990"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DMI_BUILD_TESTS=OFF",
+        "-DMI_BUILD_OBJECT=OFF"
+      ],
+      "env": {}
+    },
+    {
+      "version": "3.5.3",
+      "description": "Compact general-purpose allocator with excellent performance",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/microsoft/mimalloc/archive/refs/tags/v3.5.3.tar.gz",
+        "sha256": "3b4a15153a59905995f7070296ed604bb5ccc00cabb8b93446931aff77224d47"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DMI_BUILD_TESTS=OFF",
+        "-DMI_BUILD_OBJECT=OFF"
+      ],
+      "env": {}
+    }
+  ]
 }

@@ -2,6 +2,38 @@
   "name": "mongo-c-driver",
   "versions": [
     {
+      "version": "2.5.7",
+      "description": "MongoDB C driver (libmongoc and libbson)",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/mongodb/mongo-c-driver/releases/download/2.5.7/mongo-c-driver-2.5.7.tar.gz",
+        "sha256": "fdd7c23b3d95f1ea08400e5a72e48419ce03d478aa12b28b4b66066867ee35ee"
+      },
+      "dependencies": [
+        "openssl",
+        "zlib",
+        "zstd"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DENABLE_TESTS=OFF",
+        "-DENABLE_EXAMPLES=OFF",
+        "-DENABLE_SASL=OFF",
+        "-DENABLE_SNAPPY=OFF",
+        "-DENABLE_ZSTD=ON",
+        "-DENABLE_SSL=OPENSSL",
+        "-DENABLE_UNINSTALL=OFF",
+        "-DENABLE_STATIC=OFF"
+      ],
+      "env": {}
+    },
+    {
       "version": "2.5.6",
       "description": "MongoDB C driver (libmongoc and libbson)",
       "source": {
