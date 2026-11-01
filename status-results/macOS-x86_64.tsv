@@ -1,4 +1,4 @@
-# source: CI 2026-10-25
+# source: CI 2026-11-01
 llvm		not built here (slow)
 coreutils	ok	
 libxml2	ok	

@@ -1,4 +1,4 @@
-# source: CI 2026-10-25
+# source: CI 2026-11-01
 boost		not built here (slow)
 llvm		not built here (slow)
 clang		not built here (slow)
@@ -290,7 +290,7 @@ readline	ok
 redis	ok	
 rlwrap	ok	
 rocksdb	ok	
-rsync	ok	
+rsync	fail	
 ruby	ok	
 screen	ok	
 sdl2	ok	
@@ -345,14 +345,4 @@ zlib-ng	ok
 zopfli	ok	
 zsh	ok	
 zxing-cpp	ok	
-boost	ok	
-clang	ok	
-emacs	ok	
-gcc	fail	
-llvm	ok	
-mariadb	ok	
-mongodb	fail	
 mysql	fail	
-node	ok	
-ros2	fail	
-rust	ok	
