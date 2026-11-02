@@ -2,6 +2,20 @@
   "name": "patchelf",
   "versions": [
     {
+      "version": "0.19.3",
+      "description": "Modify the dynamic linker and RPATH of ELF executables",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/NixOS/patchelf/releases/download/0.19.3/patchelf-0.19.3.tar.gz",
+        "sha256": "fac76a3c0b730e8d53ea1d10cd6015322d78c9900af91736f2cca51d5837b612"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "autotools",
+      "configure_args": [],
+      "env": {}
+    },
+    {
       "version": "0.19.2",
       "description": "Modify the dynamic linker and RPATH of ELF executables",
       "source": {

@@ -2,6 +2,22 @@
   "name": "gperftools",
   "versions": [
     {
+      "version": "2.19.2",
+      "description": "Fast multi-threaded malloc and performance analysis tools",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/gperftools/gperftools/releases/download/gperftools-2.19.2/gperftools-2.19.2.tar.gz",
+        "sha256": "48a127fa4cf2cf9f2764dddd9340f158245f53b9fe6ab4fbf007ecaf304d8e1a"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-static"
+      ],
+      "env": {}
+    },
+    {
       "version": "2.19.1",
       "description": "Fast multi-threaded malloc and performance analysis tools",
       "source": {

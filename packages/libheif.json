@@ -2,6 +2,29 @@
   "name": "libheif",
   "versions": [
     {
+      "version": "1.23.7",
+      "description": "HEIF image format library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/strukturag/libheif/releases/download/v1.23.7/libheif-1.23.7.tar.gz",
+        "sha256": "f7483e818503ea6224c8863e4a56ac02c7089021a98472c811c12aa19faf2475"
+      },
+      "dependencies": [
+        "libpng",
+        "libjpeg-turbo"
+      ],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "env": {}
+    },
+    {
       "version": "1.23.6",
       "description": "HEIF image format library",
       "source": {

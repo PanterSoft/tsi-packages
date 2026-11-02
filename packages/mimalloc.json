@@ -2,6 +2,28 @@
   "name": "mimalloc",
   "versions": [
     {
+      "version": "3.6.1",
+      "description": "Compact general-purpose allocator with excellent performance",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/microsoft/mimalloc/archive/refs/tags/v3.6.1.tar.gz",
+        "sha256": "2672e6a99d4579fb4bb32d9de0d63aa424ce600d31fbfaf06eb74d940d2e07a6"
+      },
+      "dependencies": [],
+      "build_dependencies": [
+        "cmake",
+        "make",
+        "coreutils"
+      ],
+      "build_system": "cmake",
+      "cmake_args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DMI_BUILD_TESTS=OFF",
+        "-DMI_BUILD_OBJECT=OFF"
+      ],
+      "env": {}
+    },
+    {
       "version": "3.6.0",
       "description": "Compact general-purpose allocator with excellent performance",
       "source": {
