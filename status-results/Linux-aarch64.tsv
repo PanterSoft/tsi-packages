@@ -1,4 +1,4 @@
-# source: CI 2026-11-01
+# source: CI 2026-11-08
 boost		not built here (slow)
 llvm		not built here (slow)
 clang		not built here (slow)
@@ -10,349 +10,349 @@ mysql		not built here (slow)
 node		not built here (slow)
 ros2		not built here (slow)
 rust		not built here (slow)
-coreutils	ok	
-make	ok	
-cmake	ok	
-abseil-cpp	ok	
+coreutils	fail	
+make	skipped	needs coreutils
+cmake	skipped	needs coreutils
+abseil-cpp	skipped	needs cmake
 advancecomp	ok	
 argon2	ok	
-libxml2	ok	
-openssl	ok	
-pkg-config	ok	
-zlib	ok	
-aria2	ok	
+libxml2	skipped	needs coreutils
+openssl	skipped	needs coreutils
+pkg-config	skipped	needs coreutils
+zlib	fail	
+aria2	skipped	needs coreutils
 asio	ok	
-assimp	ok	
-autoconf	ok	
-automake	ok	
+assimp	skipped	needs cmake
+autoconf	skipped	needs coreutils
+automake	skipped	needs autoconf
 autossh	ok	
-autotools	ok	
-avro	ok	
-axel	ok	
+autotools	skipped	needs autoconf
+avro	skipped	needs cmake
+axel	skipped	needs openssl
 bash	ok	
-bc	ok	
-benchmark	ok	
-berkeley-db	ok	
-binutils	ok	
-bison	ok	
-blake3	ok	
-box2d	ok	
-brotli	ok	
+bc	fail	
+benchmark	skipped	needs cmake
+berkeley-db	skipped	needs coreutils
+binutils	skipped	needs coreutils
+bison	skipped	needs coreutils
+blake3	skipped	needs cmake
+box2d	skipped	needs cmake
+brotli	skipped	needs cmake
 btop	ok	
 bzip2	ok	
-c-ares	ok	
-c-blosc	ok	
-cairo	ok	
-capnproto	ok	
-catch2	ok	
-zstd	ok	
-ccache	ok	
-cereal	ok	
-fftw	ok	
-chromaprint	ok	
-cjson	ok	
-cli11	ok	
-cmocka	ok	
-concurrentqueue	ok	
+c-ares	skipped	needs cmake
+c-blosc	skipped	needs cmake
+cairo	skipped	needs coreutils
+capnproto	skipped	needs cmake
+catch2	skipped	needs cmake
+zstd	fail	
+ccache	skipped	needs cmake
+cereal	skipped	needs cmake
+fftw	skipped	needs coreutils
+chromaprint	skipped	needs cmake
+cjson	skipped	needs cmake
+cli11	skipped	needs cmake
+cmocka	skipped	needs cmake
+concurrentqueue	skipped	needs cmake
 cpio	ok	
-cpp-httplib	ok	
-cppzmq	ok	
-curl	ok	
-cxxopts	ok	
+cpp-httplib	skipped	needs cmake
+cppzmq	skipped	needs cmake
+curl	skipped	needs coreutils
+cxxopts	skipped	needs cmake
 dash	ok	
 datamash	ok	
-dav1d	ok	
-dialog	ok	
-diffutils	ok	
-doctest	ok	
+dav1d	skipped	needs pkg-config
+dialog	fail	
+diffutils	skipped	needs coreutils
+doctest	skipped	needs cmake
 dos2unix	ok	
-double-conversion	ok	
-doxygen	ok	
-eigen	ok	
+double-conversion	skipped	needs cmake
+doxygen	skipped	needs bison
+eigen	skipped	needs cmake
 entr	ok	
-entt	ok	
-exiv2	ok	
-expat	ok	
-faad2	ok	
-fast-float	ok	
-ffmpeg	ok	
-findutils	ok	
+entt	skipped	needs cmake
+exiv2	skipped	needs cmake
+expat	skipped	needs coreutils
+faad2	skipped	needs cmake
+fast-float	skipped	needs cmake
+ffmpeg	skipped	needs pkg-config
+findutils	skipped	needs coreutils
 ncurses	ok	
-gawk	ok	
-grep	ok	
-sed	ok	
-pcre2	ok	
-fish	ok	
-flac	ok	
-flatbuffers	ok	
-flex	ok	
-fmt	ok	
-fontconfig	ok	
+gawk	skipped	needs coreutils
+grep	skipped	needs coreutils
+sed	skipped	needs coreutils
+pcre2	skipped	needs coreutils
+fish	skipped	needs cmake
+flac	fail	
+flatbuffers	skipped	needs cmake
+flex	skipped	needs coreutils
+fmt	skipped	needs cmake
+fontconfig	skipped	needs coreutils
 fping	ok	
-freetype	ok	
-python	ok	
-meson	ok	
-ninja	ok	
-fribidi	ok	
-gdbm	ok	
-gdk-pixbuf	ok	
-geos	ok	
-gettext	ok	
-gflags	ok	
+freetype	skipped	needs coreutils
+python	skipped	needs coreutils
+meson	skipped	needs coreutils
+ninja	skipped	needs cmake
+fribidi	skipped	needs coreutils
+gdbm	skipped	needs coreutils
+gdk-pixbuf	skipped	needs coreutils
+geos	skipped	needs cmake
+gettext	skipped	needs coreutils
+gflags	skipped	needs cmake
 gifsicle	ok	
-git	ok	
-glib	ok	
-glm	ok	
-glog	ok	
-gmp	ok	
-gnupg	ok	
-gnutls	ok	
+git	skipped	needs coreutils
+glib	skipped	needs coreutils
+glm	skipped	needs cmake
+glog	skipped	needs cmake
+gmp	skipped	needs coreutils
+gnupg	skipped	needs zlib
+gnutls	skipped	needs gmp
 go	ok	
-gobject-introspection	ok	
-googletest	fail	
-gperf	ok	
-gperftools	ok	
-protobuf	ok	
-grpc	fail	
-gsl	ok	
-gzip	ok	
-h3	ok	
-harfbuzz	ok	
-hdf5	ok	
-help2man	ok	
-highway	ok	
-hiredis	ok	
-htop	ok	
-hwloc	ok	
-icu	ok	
-imath	ok	
-indent	ok	
-inih	ok	
-iperf3	ok	
-jansson	ok	
-libjpeg-turbo	ok	
-jasper	ok	
-jbig2dec	ok	
+gobject-introspection	skipped	needs coreutils
+googletest	skipped	needs cmake
+gperf	skipped	needs coreutils
+gperftools	fail	
+protobuf	skipped	needs abseil-cpp
+grpc	skipped	needs abseil-cpp
+gsl	skipped	needs coreutils
+gzip	skipped	needs coreutils
+h3	skipped	needs cmake
+harfbuzz	skipped	needs coreutils
+hdf5	skipped	needs cmake
+help2man	skipped	needs make
+highway	skipped	needs cmake
+hiredis	skipped	needs coreutils
+htop	skipped	needs coreutils
+hwloc	skipped	needs pkg-config
+icu	fail	
+imath	skipped	needs cmake
+indent	skipped	needs gettext
+inih	skipped	needs meson
+iperf3	skipped	needs openssl
+jansson	skipped	needs coreutils
+libjpeg-turbo	skipped	needs cmake
+jasper	skipped	needs cmake
+jbig2dec	skipped	needs pkg-config
 jemalloc	ok	
-jo	ok	
+jo	skipped	needs pkg-config
 joe	ok	
-jpegoptim	ok	
+jpegoptim	skipped	needs libjpeg-turbo
 jq	ok	
-json-c	ok	
-jsoncpp	ok	
+json-c	skipped	needs cmake
+jsoncpp	skipped	needs cmake
 lame	ok	
 lcms2	ok	
-ldns	ok	
+ldns	skipped	needs openssl
 less	ok	
-snappy	ok	
-leveldb	ok	
-libaec	ok	
-libaom	ok	
+snappy	skipped	needs cmake
+leveldb	skipped	needs cmake
+libaec	skipped	needs cmake
+libaom	skipped	needs cmake
 lz4	ok	
-xz	ok	
-libarchive	ok	
+xz	fail	
+libarchive	skipped	needs coreutils
 nasm	ok	
-libass	ok	
+libass	skipped	needs fontconfig
 libassuan	ok	
-libpng	ok	
-libavif	ok	
+libpng	skipped	needs coreutils
+libavif	skipped	needs cmake
 libcap	ok	
-libcbor	ok	
-libccd	ok	
-libconfig	ok	
-libconfuse	ok	
-libcue	ok	
-libde265	ok	
-libdeflate	ok	
-libebur128	ok	
-libedit	ok	
-libev	ok	
-libevent	ok	
+libcbor	skipped	needs cmake
+libccd	skipped	needs cmake
+libconfig	fail	
+libconfuse	fail	
+libcue	skipped	needs bison
+libde265	skipped	needs cmake
+libdeflate	skipped	needs cmake
+libebur128	skipped	needs cmake
+libedit	skipped	needs coreutils
+libev	skipped	needs coreutils
+libevent	skipped	needs coreutils
 libexif	ok	
-libffi	ok	
+libffi	skipped	needs coreutils
 libgcrypt	ok	
-libgd	ok	
+libgd	skipped	needs freetype
 libgif	ok	
-libssh2	ok	
-libgit2	ok	
+libssh2	skipped	needs cmake
+libgit2	skipped	needs cmake
 libgpg-error	ok	
-libheif	ok	
+libheif	skipped	needs cmake
 libidn	ok	
 libidn2	ok	
 libksba	ok	
-libmagic	ok	
+libmagic	skipped	needs coreutils
 libmaxminddb	ok	
 libmicrohttpd	ok	
 libmnl	ok	
-libmodbus	ok	
-libnftnl	ok	
-libnl	ok	
+libmodbus	skipped	needs coreutils
+libnftnl	skipped	needs pkg-config
+libnl	skipped	needs bison
 libogg	ok	
-libpcap	ok	
-libpqxx	ok	
+libpcap	skipped	needs bison
+libpqxx	skipped	needs cmake
 libpsl	ok	
-libraw	ok	
+libraw	skipped	needs libjpeg-turbo
 libsamplerate	ok	
-libseccomp	ok	
+libseccomp	skipped	needs coreutils
 libserialport	ok	
-libsigcplusplus	ok	
-libsndfile	ok	
-libsodium	ok	
-libspatialindex	ok	
-libspng	ok	
-libssh	ok	
+libsigcplusplus	skipped	needs meson
+libsndfile	skipped	needs cmake
+libsodium	skipped	needs coreutils
+libspatialindex	skipped	needs cmake
+libspng	skipped	needs cmake
+libssh	skipped	needs cmake
 libtasn1	ok	
-libtiff	ok	
-libtommath	ok	
-libtool	ok	
+libtiff	skipped	needs coreutils
+libtommath	skipped	needs cmake
+libtool	skipped	needs coreutils
 libunibreak	ok	
 libunistring	ok	
-liburing	ok	
+liburing	skipped	needs coreutils
 libusb	ok	
-libuuid	ok	
-libuv	ok	
-libvorbis	ok	
+libuuid	skipped	needs coreutils
+libuv	skipped	needs cmake
+libvorbis	skipped	needs cmake
 libvpx	ok	
-libwebp	ok	
-libwebsockets	ok	
+libwebp	skipped	needs coreutils
+libwebsockets	skipped	needs cmake
 libxcrypt	ok	
 libxmp	ok	
-libxslt	ok	
-libyaml	ok	
-libzip	ok	
-links	ok	
+libxslt	skipped	needs coreutils
+libyaml	skipped	needs coreutils
+libzip	skipped	needs cmake
+links	skipped	needs openssl
 lmdb	ok	
 lua	ok	
-lynx	ok	
-lzfse	ok	
+lynx	skipped	needs openssl
+lzfse	skipped	needs cmake
 lzip	ok	
 lzo	ok	
 m4	ok	
-magic-enum	ok	
-mbedtls	ok	
-memcached	ok	
-mimalloc	ok	
-mongo-c-driver	ok	
-mosquitto	ok	
-mpc	ok	
+magic-enum	skipped	needs cmake
+mbedtls	skipped	needs cmake
+memcached	skipped	needs libevent
+mimalloc	skipped	needs cmake
+mongo-c-driver	skipped	needs cmake
+mosquitto	skipped	needs cjson
+mpc	skipped	needs coreutils
 mpdecimal	ok	
-mpfr	ok	
-mpg123	ok	
-ms-gsl	ok	
-msgpack	ok	
-nano	ok	
-nanoflann	ok	
-nanomsg	ok	
+mpfr	skipped	needs coreutils
+mpg123	skipped	needs pkg-config
+ms-gsl	skipped	needs cmake
+msgpack	skipped	needs cmake
+nano	skipped	needs coreutils
+nanoflann	skipped	needs cmake
+nanomsg	skipped	needs cmake
 ncdu	ok	
-nettle	ok	
-nghttp2	ok	
+nettle	skipped	needs gmp
+nghttp2	skipped	needs coreutils
 nghttp3	ok	
-nginx	ok	
-nlohmann-json	ok	
-nng	ok	
-nnn	ok	
+nginx	skipped	needs openssl
+nlohmann-json	skipped	needs cmake
+nng	skipped	needs cmake
+nnn	skipped	needs pkg-config
 npth	ok	
-onetbb	ok	
-oniguruma	ok	
+onetbb	skipped	needs cmake
+oniguruma	skipped	needs coreutils
 openblas	ok	
-openexr	ok	
+openexr	skipped	needs cmake
 openh264	ok	
-openjpeg	ok	
-openssh	ok	
-optipng	ok	
-opus	ok	
-opusfile	ok	
-paho-mqtt-c	ok	
-pango	ok	
+openjpeg	skipped	needs cmake
+openssh	skipped	needs openssl
+optipng	skipped	needs libpng
+opus	skipped	needs cmake
+opusfile	skipped	needs opus
+paho-mqtt-c	skipped	needs cmake
+pango	skipped	needs cairo
 parallel	ok	
-patch	ok	
+patch	skipped	needs coreutils
 patchelf	ok	
-perl	ok	
-pigz	ok	
-pixman	ok	
+perl	skipped	needs coreutils
+pigz	skipped	needs zlib
+pixman	skipped	needs coreutils
 popt	ok	
-portaudio	ok	
-postgresql	ok	
-potrace	ok	
-proj	ok	
-pugixml	ok	
+portaudio	skipped	needs cmake
+postgresql	skipped	needs coreutils
+potrace	skipped	needs zlib
+proj	skipped	needs cmake
+pugixml	skipped	needs cmake
 pv	ok	
 python-packaging	ok	
 python-setuptools	ok	
-qhull	ok	
-qpdf	ok	
-qrencode	ok	
-range-v3	ok	
-rapidjson	ok	
-re2	ok	
+qhull	skipped	needs cmake
+qpdf	skipped	needs cmake
+qrencode	skipped	needs cmake
+range-v3	skipped	needs cmake
+rapidjson	skipped	needs cmake
+re2	skipped	needs cmake
 re2c	ok	
-readline	ok	
+readline	skipped	needs coreutils
 redis	ok	
-rlwrap	ok	
-rocksdb	ok	
-rsync	fail	
-ruby	ok	
+rlwrap	skipped	needs readline
+rocksdb	skipped	needs cmake
+rsync	skipped	needs coreutils
+ruby	skipped	needs coreutils
 screen	ok	
-sdl2	ok	
-simdjson	ok	
-slang	ok	
-socat	ok	
-soxr	ok	
-spdlog	ok	
-speex	ok	
-speexdsp	ok	
-sqlite	ok	
+sdl2	skipped	needs cmake
+simdjson	skipped	needs cmake
+slang	skipped	needs zlib
+socat	skipped	needs openssl
+soxr	skipped	needs cmake
+spdlog	skipped	needs cmake
+speex	skipped	needs pkg-config
+speexdsp	skipped	needs pkg-config
+sqlite	skipped	needs coreutils
 sshpass	ok	
-stow	ok	
+stow	skipped	needs perl
 strace	ok	
-swig	ok	
-utfcpp	ok	
-taglib	ok	
-tar	ok	
-tcl	ok	
-tcpdump	ok	
-texinfo	ok	
+swig	skipped	needs bison
+utfcpp	skipped	needs cmake
+taglib	skipped	needs cmake
+tar	skipped	needs coreutils
+tcl	skipped	needs zlib
+tcpdump	skipped	needs libpcap
+texinfo	skipped	needs coreutils
 tig	ok	
 time	ok	
-tinyxml2	ok	
-tl-expected	ok	
-tmux	ok	
-toml11	ok	
-tomlplusplus	ok	
+tinyxml2	skipped	needs cmake
+tl-expected	skipped	needs cmake
+tmux	skipped	needs coreutils
+toml11	skipped	needs cmake
+tomlplusplus	skipped	needs cmake
 tree	ok	
 tree-sitter	ok	
-twolame	ok	
-unbound	ok	
-units	ok	
+twolame	skipped	needs pkg-config
+unbound	skipped	needs bison
+units	skipped	needs readline
 universal-ctags	ok	
 unixodbc	ok	
-unzip	ok	
-utf8proc	ok	
+unzip	skipped	needs coreutils
+utf8proc	skipped	needs cmake
 valgrind	ok	
-valkey	ok	
-vim	ok	
+valkey	fail	
+vim	skipped	needs coreutils
 wavpack	ok	
 wdiff	ok	
-wget	ok	
+wget	skipped	needs coreutils
 which	ok	
-wolfssl	ok	
+wolfssl	skipped	needs cmake
 xxhash	ok	
-yajl	ok	
-yaml-cpp	ok	
-yyjson	ok	
-zeromq	ok	
-zlib-ng	ok	
-zopfli	ok	
-zsh	ok	
-zxing-cpp	ok	
+yajl	skipped	needs cmake
+yaml-cpp	skipped	needs cmake
+yyjson	skipped	needs cmake
+zeromq	skipped	needs coreutils
+zlib-ng	skipped	needs cmake
+zopfli	skipped	needs cmake
+zsh	skipped	needs coreutils
+zxing-cpp	skipped	needs cmake
 boost	ok	
-clang	ok	
-emacs	ok	
+clang	fail	
+emacs	fail	
 gcc	ok	
-llvm	ok	
-mariadb	ok	
+llvm	fail	
+mariadb	fail	
 mongodb	fail	
 mysql	fail	
-node	ok	
+node	fail	
 ros2	fail	
-rust	ok	
+rust	fail	
