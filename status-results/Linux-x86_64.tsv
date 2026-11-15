@@ -1,4 +1,4 @@
-# source: CI 2026-11-08
+# source: CI 2026-11-15
 boost		not built here (slow)
 llvm		not built here (slow)
 clang		not built here (slow)
@@ -14,12 +14,12 @@ coreutils	fail
 make	skipped	needs coreutils
 cmake	skipped	needs coreutils
 abseil-cpp	skipped	needs cmake
-advancecomp	fail	
+advancecomp	ok	
 argon2	ok	
 libxml2	skipped	needs coreutils
 openssl	skipped	needs coreutils
 pkg-config	skipped	needs coreutils
-zlib	fail	
+zlib	ok	
 aria2	skipped	needs coreutils
 asio	ok	
 assimp	skipped	needs cmake
@@ -45,7 +45,7 @@ c-blosc	skipped	needs cmake
 cairo	skipped	needs coreutils
 capnproto	skipped	needs cmake
 catch2	skipped	needs cmake
-zstd	fail	
+zstd	ok	
 ccache	skipped	needs cmake
 cereal	skipped	needs cmake
 fftw	skipped	needs coreutils
@@ -83,7 +83,7 @@ grep	skipped	needs coreutils
 sed	skipped	needs coreutils
 pcre2	skipped	needs bash
 fish	skipped	needs cmake
-flac	fail	
+flac	ok	
 flatbuffers	skipped	needs cmake
 flex	skipped	needs coreutils
 fmt	skipped	needs cmake
@@ -105,7 +105,7 @@ glib	skipped	needs coreutils
 glm	skipped	needs cmake
 glog	skipped	needs cmake
 gmp	skipped	needs coreutils
-gnupg	skipped	needs zlib
+gnupg	fail	
 gnutls	skipped	needs gmp
 go	ok	
 gobject-introspection	skipped	needs coreutils
@@ -124,7 +124,7 @@ highway	skipped	needs cmake
 hiredis	skipped	needs coreutils
 htop	skipped	needs coreutils
 hwloc	skipped	needs pkg-config
-icu	fail	
+icu	ok	
 imath	skipped	needs cmake
 indent	skipped	needs gettext
 inih	skipped	needs meson
@@ -133,11 +133,11 @@ jansson	skipped	needs coreutils
 libjpeg-turbo	skipped	needs cmake
 jasper	skipped	needs cmake
 jbig2dec	skipped	needs pkg-config
-jemalloc	fail	
+jemalloc	ok	
 jo	skipped	needs pkg-config
 joe	skipped	needs ncurses
 jpegoptim	skipped	needs libjpeg-turbo
-jq	fail	
+jq	ok	
 json-c	skipped	needs cmake
 jsoncpp	skipped	needs cmake
 lame	ok	
@@ -181,7 +181,7 @@ libidn	ok
 libidn2	ok	
 libksba	ok	
 libmagic	skipped	needs coreutils
-libmaxminddb	fail	
+libmaxminddb	ok	
 libmicrohttpd	ok	
 libmnl	ok	
 libmodbus	skipped	needs coreutils
@@ -268,12 +268,12 @@ parallel	fail
 patch	skipped	needs coreutils
 patchelf	ok	
 perl	skipped	needs coreutils
-pigz	skipped	needs zlib
+pigz	ok	
 pixman	skipped	needs coreutils
 popt	ok	
 portaudio	skipped	needs cmake
 postgresql	skipped	needs coreutils
-potrace	skipped	needs zlib
+potrace	ok	
 proj	skipped	needs cmake
 pugixml	skipped	needs cmake
 pv	ok	
@@ -295,7 +295,7 @@ ruby	skipped	needs coreutils
 screen	skipped	needs ncurses
 sdl2	skipped	needs cmake
 simdjson	skipped	needs cmake
-slang	skipped	needs zlib
+slang	ok	
 socat	skipped	needs openssl
 soxr	skipped	needs cmake
 spdlog	skipped	needs cmake
@@ -309,7 +309,7 @@ swig	skipped	needs bison
 utfcpp	skipped	needs cmake
 taglib	skipped	needs cmake
 tar	skipped	needs coreutils
-tcl	skipped	needs zlib
+tcl	ok	
 tcpdump	skipped	needs libpcap
 texinfo	skipped	needs coreutils
 tig	skipped	needs ncurses

@@ -1,188 +1,188 @@
-# source: CI 2026-11-08
+# source: CI 2026-11-15
 llvm		not built here (slow)
 coreutils	ok	
 libxml2	ok	
-assimp	fail	
-axel	fail	
+assimp	ok	
+axel	ok	
 bison	ok	
 bzip2	ok	
-zstd	fail	
-cpp-httplib	fail	
-dav1d	fail	
-doxygen	fail	
+zstd	ok	
+cpp-httplib	ok	
+dav1d	ok	
+doxygen	ok	
 expat	ok	
 gawk	ok	
-flatbuffers	fail	
+flatbuffers	ok	
 python	ok	
-gdk-pixbuf	fail	
-glib	fail	
+gdk-pixbuf	ok	
+glib	ok	
 go	fail	
 grpc	fail	
 help2man	ok	
-imath	fail	
-jasper	fail	
+imath	ok	
+jasper	ok	
 jq	ok	
 less	ok	
 xz	ok	
-libavif	fail	
-libcue	fail	
+libavif	ok	
+libcue	ok	
 libevent	ok	
-libssh2	fail	
+libssh2	ok	
 libksba	ok	
 libnftnl	unsupported	linux-only
-libraw	fail	
+libraw	ok	
 libsodium	ok	
-libtommath	fail	
+libtommath	ok	
 libuuid	ok	
 libxcrypt	ok	
 lmdb	ok	
 m4	ok	
-mongo-c-driver	skipped	needs zstd
+mongo-c-driver	ok	
 mpg123	ok	
-nanomsg	fail	
-nlohmann-json	fail	
+nanomsg	ok	
+nlohmann-json	ok	
 oniguruma	ok	
 optipng	ok	
 patch	ok	
-portaudio	fail	
+portaudio	ok	
 python-packaging	ok	
-rapidjson	fail	
-rocksdb	skipped	needs zstd
-sdl2	fail	
+rapidjson	ok	
+rocksdb	ok	
+sdl2	ok	
 speex	ok	
-swig	fail	
+swig	ok	
 texinfo	ok	
-toml11	fail	
+toml11	ok	
 units	ok	
 valkey	ok	
-wolfssl	fail	
-zlib-ng	fail	
+wolfssl	ok	
+zlib-ng	ok	
 clang		not built here (slow)
 mongodb		not built here (slow)
 ros2		not built here (slow)
-make	fail	
-openssl	skipped	needs make
-autoconf	skipped	needs make
+make	ok	
+openssl	ok	
+autoconf	ok	
 bash	ok	
-blake3	skipped	needs make
-c-ares	skipped	needs make
-ccache	skipped	needs make
-cppzmq	skipped	needs make
-dialog	ok	
-eigen	skipped	needs make
-faad2	skipped	needs make
-grep	fail	
-flex	skipped	needs make
-meson	fail	
-geos	skipped	needs make
-glm	skipped	needs make
-gobject-introspection	skipped	needs meson
-gsl	skipped	needs make
-highway	skipped	needs make
+blake3	ok	
+c-ares	ok	
+ccache	ok	
+cppzmq	ok	
+dialog	fail	
+eigen	ok	
+faad2	ok	
+grep	ok	
+flex	ok	
+meson	ok	
+geos	ok	
+glm	ok	
+gobject-introspection	fail	
+gsl	ok	
+highway	ok	
 indent	fail	
 jbig2dec	ok	
-json-c	skipped	needs make
-snappy	skipped	needs make
-libarchive	skipped	needs make
+json-c	ok	
+snappy	ok	
+libarchive	ok	
 libcap	unsupported	linux-only
-libde265	skipped	needs make
+libde265	ok	
 libexif	ok	
-libgit2	skipped	needs make
-libmagic	skipped	needs make
+libgit2	ok	
+libmagic	ok	
 libnl	unsupported	linux-only
 libsamplerate	ok	
-libspatialindex	skipped	needs make
-libtool	skipped	needs grep
-libuv	skipped	needs make
+libspatialindex	ok	
+libtool	ok	
+libuv	ok	
 libxmp	ok	
 lua	ok	
-magic-enum	skipped	needs make
-ms-gsl	skipped	needs make
+magic-enum	ok	
+ms-gsl	ok	
 ncdu	ok	
-nng	skipped	needs make
+nng	ok	
 openblas	fail	
-opus	skipped	needs make
+opus	ok	
 patchelf	ok	
-postgresql	skipped	needs make
+postgresql	ok	
 python-setuptools	ok	
-re2	skipped	needs make
-simdjson	skipped	needs make
+re2	fail	
+simdjson	ok	
 speexdsp	ok	
-utfcpp	skipped	needs make
+utfcpp	ok	
 tig	ok	
-tomlplusplus	skipped	needs make
+tomlplusplus	ok	
 universal-ctags	ok	
-vim	skipped	needs make
+vim	ok	
 xxhash	ok	
-zopfli	skipped	needs make
+zopfli	ok	
 boost		not built here (slow)
 emacs		not built here (slow)
 mariadb		not built here (slow)
-cmake	fail	
+cmake	ok	
 pkg-config	ok	
 automake	ok	
-bc	fail	
-c-blosc	skipped	needs cmake
-cereal	skipped	needs cmake
-cli11	skipped	needs cmake
-curl	fail	
+bc	ok	
+c-blosc	ok	
+cereal	ok	
+cli11	ok	
+curl	ok	
 diffutils	ok	
-fast-float	skipped	needs cmake
+fast-float	ok	
 sed	ok	
-fmt	skipped	needs cmake
-ninja	skipped	needs cmake
+fmt	ok	
+ninja	ok	
 gettext	ok	
-glog	skipped	needs cmake
-googletest	skipped	needs cmake
+glog	ok	
+googletest	ok	
 gzip	ok	
 hiredis	ok	
-inih	skipped	needs ninja
+inih	ok	
 jemalloc	ok	
-jsoncpp	skipped	needs cmake
-leveldb	skipped	needs cmake
+jsoncpp	ok	
+leveldb	ok	
 nasm	ok	
-libcbor	skipped	needs cmake
-libdeflate	skipped	needs cmake
+libcbor	ok	
+libdeflate	ok	
 libffi	ok	
 libgpg-error	ok	
 libmaxminddb	ok	
 libogg	ok	
 libseccomp	unsupported	linux-only
-libspng	skipped	needs cmake
+libspng	ok	
 libunibreak	ok	
-libvorbis	skipped	needs cmake
+libvorbis	ok	
 libxslt	ok	
 lynx	ok	
-mosquitto	skipped	needs cmake
-msgpack	skipped	needs cmake
+mosquitto	ok	
+msgpack	ok	
 nettle	ok	
 nnn	ok	
-openexr	skipped	needs cmake
+openexr	ok	
 opusfile	ok	
 perl	ok	
 potrace	ok	
-qhull	skipped	needs cmake
+qhull	ok	
 re2c	ok	
 rsync	ok	
 slang	ok	
 sqlite	ok	
-taglib	skipped	needs cmake
+taglib	ok	
 time	ok	
 tree	ok	
 unixodbc	ok	
 wavpack	ok	
-yajl	skipped	needs cmake
+yajl	ok	
 zsh	ok	
 mysql		not built here (slow)
 node		not built here (slow)
-abseil-cpp	fail	
-zlib	fail	
+abseil-cpp	ok	
+zlib	ok	
 autossh	ok	
-benchmark	fail	
-box2d	fail	
-cairo	fail	
+benchmark	ok	
+box2d	ok	
+cairo	ok	
 fftw	ok	
-cmocka	fail	
+cmocka	ok	
 cxxopts	ok	
 doctest	ok	
 entr	ok	
@@ -207,7 +207,7 @@ libheif	fail
 libmicrohttpd	ok	
 libpcap	ok	
 libserialport	ok	
-libssh	skipped	needs zlib
+libssh	ok	
 libunistring	ok	
 libvpx	ok	
 libyaml	ok	
@@ -217,11 +217,11 @@ mpc	ok
 nghttp2	ok	
 openh264	ok	
 paho-mqtt-c	ok	
-pigz	skipped	needs zlib
+pigz	ok	
 proj	ok	
-qpdf	skipped	needs zlib
+qpdf	ok	
 readline	ok	
-ruby	skipped	needs zlib
+ruby	ok	
 socat	ok	
 sshpass	ok	
 tar	ok	
@@ -234,7 +234,7 @@ zxing-cpp	ok
 gcc		not built here (slow)
 rust		not built here (slow)
 advancecomp	ok	
-aria2	fail	
+aria2	ok	
 autotools	ok	
 berkeley-db	ok	
 brotli	ok	
@@ -353,6 +353,5 @@ llvm	ok
 mariadb	ok	
 mongodb	fail	
 mysql	fail	
-node	ok	
 ros2	fail	
 rust	ok	
