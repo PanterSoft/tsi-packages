@@ -1,18 +1,39 @@
 {
   "name": "nghttp3",
-  "version": "1.18.0",
-  "description": "HTTP/3 library written in C",
-  "source": {
-    "type": "tarball",
-    "url": "https://github.com/ngtcp2/nghttp3/releases/download/v1.18.0/nghttp3-1.18.0.tar.xz",
-    "sha256": "aad782c23d3f01bd4bb52c8bac7a553b631ef8115fd1612703df6183449fef19"
-  },
-  "dependencies": [],
-  "build_dependencies": [],
-  "build_system": "autotools",
-  "configure_args": [
-    "--disable-static",
-    "--enable-lib-only"
-  ],
-  "env": {}
+  "versions": [
+    {
+      "version": "1.19.0",
+      "description": "HTTP/3 library written in C",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/ngtcp2/nghttp3/releases/download/v1.19.0/nghttp3-1.19.0.tar.xz",
+        "sha256": "228e17f5cc3d4de7bfced9912bd09de30e7f45741cc47503cf88d3fa9209e155"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-static",
+        "--enable-lib-only"
+      ],
+      "env": {}
+    },
+    {
+      "version": "1.18.0",
+      "description": "HTTP/3 library written in C",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/ngtcp2/nghttp3/releases/download/v1.18.0/nghttp3-1.18.0.tar.xz",
+        "sha256": "aad782c23d3f01bd4bb52c8bac7a553b631ef8115fd1612703df6183449fef19"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "autotools",
+      "configure_args": [
+        "--disable-static",
+        "--enable-lib-only"
+      ],
+      "env": {}
+    }
+  ]
 }

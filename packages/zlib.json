@@ -2,6 +2,26 @@
   "name": "zlib",
   "versions": [
     {
+      "version": "1.4",
+      "description": "A compression library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/madler/zlib/releases/download/v1.4/zlib-1.4.tar.gz",
+        "sha256": "02dd159783677a749c04adbdd02b55b8a2bcc7e054f51b76b549199a916ad584"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "custom",
+      "build_commands": [
+        "./configure --prefix=$TSI_INSTALL_DIR --static",
+        "make",
+        "make install"
+      ],
+      "env": {
+        "CFLAGS": "-O3 -fPIC"
+      }
+    },
+    {
       "version": "1.3.2",
       "description": "A compression library",
       "source": {

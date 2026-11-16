@@ -2,6 +2,22 @@
   "name": "lz4",
   "versions": [
     {
+      "version": "1.11.1",
+      "description": "Extremely fast compression algorithm",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/lz4/lz4/archive/v1.11.1.tar.gz",
+        "sha256": "683fed08a844ad012196381e40badf80c0bbe4962959761416d41c9e67d77ec7"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [
+        "PREFIX=$TSI_INSTALL_DIR"
+      ],
+      "env": {}
+    },
+    {
       "version": "1.10.0",
       "description": "Extremely fast compression algorithm",
       "source": {

@@ -2,6 +2,20 @@
   "name": "tree-sitter",
   "versions": [
     {
+      "version": "0.27.2",
+      "description": "Parser generator tool and incremental parsing library",
+      "source": {
+        "type": "tarball",
+        "url": "https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.27.2.tar.gz",
+        "sha256": "356528363bf7fbad12a2cfeb5a2678c0118ef886a4d69ad9a379db5fdef0735f"
+      },
+      "dependencies": [],
+      "build_dependencies": [],
+      "build_system": "make",
+      "make_args": [],
+      "env": {}
+    },
+    {
       "version": "0.27.1",
       "description": "Parser generator tool and incremental parsing library",
       "source": {
