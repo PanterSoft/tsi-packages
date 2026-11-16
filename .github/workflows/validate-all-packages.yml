@@ -65,7 +65,7 @@ jobs:
             platform: Linux-aarch64
             shard: 0/1
             part: 1of1
-          - runner: macos-14
+          - runner: macos-15
             platform: macOS-aarch64
             shard: 0/1
             part: 1of1
@@ -165,13 +165,13 @@ jobs:
       fail-fast: false
       matrix:
         package: ${{ fromJSON(needs.slow-list.outputs.packages) }}
-        runner: [ubuntu-latest, ubuntu-24.04-arm, macos-14, macos-15-intel]
+        runner: [ubuntu-latest, ubuntu-24.04-arm, macos-15, macos-15-intel]
         include:
           - runner: ubuntu-latest
             platform: Linux-x86_64
           - runner: ubuntu-24.04-arm
             platform: Linux-aarch64
-          - runner: macos-14
+          - runner: macos-15
             platform: macOS-aarch64
           - runner: macos-15-intel
             platform: macOS-x86_64
